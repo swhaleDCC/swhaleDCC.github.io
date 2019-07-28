@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[最好的我们]]></title>
-    <url>%2F2019%2F07%2F28%2F%E6%9C%80%E5%A5%BD%E7%9A%84%E6%88%91%E4%BB%AC%2F</url>
-    <content type="text"><![CDATA[最好的我们 最好的青春 如果还没有想好未来，那就一路往前走，努力做到最好，上最好的中学，学最多的本领，考最好的大学，看最多的书，学最多的知识，这些都是资本，这样，等到我有一天有了想做的事情，那么我手里有足够的本领，就可以朝着那个方向努力了，也不会后悔。]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>八月长安</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[LeetCode刷题笔记]]></title>
     <url>%2F2019%2F07%2F28%2F%E5%88%B7%E9%A2%98%2F</url>
     <content type="text"><![CDATA[参加夏令营后越来越觉得算法重要，决定继续刷题并写笔记。]]></content>
@@ -23,6 +12,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[你是人间的四月天]]></title>
+    <url>%2F2019%2F07%2F28%2F%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9%2F</url>
+    <content type="text"><![CDATA[我说你是人间的四月天； 笑响点亮了四面风； 轻灵在春的光艳中交舞着变。 你是四月早天里的云烟， 黄昏吹着风的软， 星子在无意中闪， 细雨点洒在花前。 那轻，那娉婷，你是， 鲜妍百花的冠冕你戴着， 你是天真，庄严， 你是夜夜的月圆。 雪化后那片鹅黄，你像；新鲜初放芽的绿，你是； 柔嫩喜悦， 水光浮动着你梦期待中白莲。 你是一树一树的花开， 是燕在梁间呢喃， ——你是爱，是暖，是希望， 你是人间的四月天！]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>林徽因</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux入门学习]]></title>
     <url>%2F2019%2F07%2F28%2FLinux%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[最近访客 第一章 Linux Linux是一套操作系统,不含有其他应用程序]]></content>
@@ -31,6 +31,17 @@
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[最好的我们]]></title>
+    <url>%2F2019%2F07%2F27%2F%E6%9C%80%E5%A5%BD%E7%9A%84%E6%88%91%E4%BB%AC%2F</url>
+    <content type="text"><![CDATA[最好的我们 最好的青春 如果还没有想好未来，那就一路往前走，努力做到最好，上最好的中学，学最多的本领，考最好的大学，看最多的书，学最多的知识，这些都是资本，这样，等到我有一天有了想做的事情，那么我手里有足够的本领，就可以朝着那个方向努力了，也不会后悔。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>八月长安</tag>
       </tags>
   </entry>
 </search>
