@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-07-28T13:24:35.343Z</updated>
+  <updated>2019-07-31T07:47:55.093Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019电子竞赛准备和比赛过程记录</title>
+    <link href="https://swhaledcc.github.io/2019/07/31/2019%E7%94%B5%E5%AD%90%E7%AB%9E%E8%B5%9B%E5%9B%BD%E8%B5%9B/"/>
+    <id>https://swhaledcc.github.io/2019/07/31/2019电子竞赛国赛/</id>
+    <published>2019-07-31T01:37:19.107Z</published>
+    <updated>2019-07-31T07:47:55.093Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://imgconvert.csdnimg.cn/aHR0cHM6Ly9yZXMubnVlZGMtdHJhaW5pbmcuY29tLmNuL3MvanBnLzIwMTkvMDcvMTEvcmV2aWV3XzIwMTkwNzExODAyMy5qcGc&quot; alt=&quot;电赛&quot;&gt;&lt;br&gt;比赛时间：2019.8.7-10&lt;/p&gt;
+&lt;h2 id=&quot;7月31日——复习PID算法&quot;&gt;&lt;a href=&quot;#7月31日——复习PID算法&quot; class=&quot;headerlink&quot; title=&quot;7月31日——复习PID算法&quot;&gt;&lt;/a&gt;7月31日——复习PID算法&lt;/h2&gt;&lt;p&gt;五月份的时候练习17年国赛滚球系统已经了解过PID算法，但是并不熟练，比赛前还是有必要再进一步熟悉PID算法的。&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_40631927/article/details/90109991&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;滚球经验总结&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="电子类" scheme="https://swhaledcc.github.io/categories/%E7%94%B5%E5%AD%90%E7%B1%BB/"/>
+    
+    
+      <category term="电子竞赛" scheme="https://swhaledcc.github.io/tags/%E7%94%B5%E5%AD%90%E7%AB%9E%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题笔记</title>
@@ -33,29 +54,6 @@
     
     
       <category term="ACM算法" scheme="https://swhaledcc.github.io/tags/ACM%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你是人间的四月天</title>
-    <link href="https://swhaledcc.github.io/2019/07/28/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/"/>
-    <id>https://swhaledcc.github.io/2019/07/28/你是人间的四月天/</id>
-    <published>2019-07-28T11:07:38.822Z</published>
-    <updated>2019-07-28T14:15:55.965Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564228798313&amp;di=beabc55eba057c5151cebed1469c48a7&amp;imgtype=0&amp;src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190304%2F1e47aa931cc24bb9a92f82337466637a.jpeg&quot; alt=&quot;四月天&quot;&gt;&lt;/p&gt;
-&lt;p&gt;我说你是人间的四月天；&lt;/p&gt;
-&lt;p&gt;笑响点亮了四面风；&lt;/p&gt;
-&lt;p&gt;轻灵在春的光艳中交舞着变。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://swhaledcc.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="林徽因" scheme="https://swhaledcc.github.io/tags/%E6%9E%97%E5%BE%BD%E5%9B%A0/"/>
     
   </entry>
   

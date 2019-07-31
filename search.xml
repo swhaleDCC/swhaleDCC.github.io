@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[2019电子竞赛准备和比赛过程记录]]></title>
+    <url>%2F2019%2F07%2F31%2F2019%E7%94%B5%E5%AD%90%E7%AB%9E%E8%B5%9B%E5%9B%BD%E8%B5%9B%2F</url>
+    <content type="text"><![CDATA[比赛时间：2019.8.7-10 7月31日——复习PID算法五月份的时候练习17年国赛滚球系统已经了解过PID算法，但是并不熟练，比赛前还是有必要再进一步熟悉PID算法的。滚球经验总结 摄像头openmv17年国赛控制题滚球系统用到了摄像头的图像处理，老师预测19年还会用到图像处理，因此我们选择了openmv。跟ov系列摄像头比起来，openmv实在是太好用了，不用再拘泥于C，可以使用python。上面滚球经验总结里面也有写openmv跟stm32f407战舰版通信方法。但是比赛的时候不能用学习板，所以我们买了407的核心板。 接线方式：openmv——407核心板P4————RX（PA10_USART1）P5————TX（PA9_USART1）GND———GND]]></content>
+      <categories>
+        <category>电子类</category>
+      </categories>
+      <tags>
+        <tag>电子竞赛</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode刷题笔记]]></title>
     <url>%2F2019%2F07%2F28%2F%E5%88%B7%E9%A2%98%2F</url>
     <content type="text"><![CDATA[参加夏令营后越来越觉得算法重要，决定继续刷题并写笔记。]]></content>
@@ -9,17 +20,6 @@
       </categories>
       <tags>
         <tag>ACM算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[你是人间的四月天]]></title>
-    <url>%2F2019%2F07%2F28%2F%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9%2F</url>
-    <content type="text"><![CDATA[我说你是人间的四月天； 笑响点亮了四面风； 轻灵在春的光艳中交舞着变。 你是四月早天里的云烟， 黄昏吹着风的软， 星子在无意中闪， 细雨点洒在花前。 那轻，那娉婷，你是， 鲜妍百花的冠冕你戴着， 你是天真，庄严， 你是夜夜的月圆。 雪化后那片鹅黄，你像；新鲜初放芽的绿，你是； 柔嫩喜悦， 水光浮动着你梦期待中白莲。 你是一树一树的花开， 是燕在梁间呢喃， ——你是爱，是暖，是希望， 你是人间的四月天！]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>林徽因</tag>
       </tags>
   </entry>
   <entry>
