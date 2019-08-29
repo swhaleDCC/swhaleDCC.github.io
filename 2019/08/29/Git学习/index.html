@@ -118,7 +118,9 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/918921150461184/0">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919020037470528/0">
-<meta property="og:updated_time" content="2019-08-29T06:16:29.170Z">
+<meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919022412005504/0">
+<meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919023260793600/0">
+<meta property="og:updated_time" content="2019-08-29T10:07:09.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习">
 <meta name="twitter:image" content="https://www.liaoxuefeng.com/files/attachments/918921150461184/0">
@@ -438,7 +440,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/专业工具/" itemprop="url" rel="index"><span itemprop="name">专业工具</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Git工具/" itemprop="url" rel="index"><span itemprop="name">Git工具</span></a></span>
 
                 
                 
@@ -483,11 +485,12 @@
       
         <p><img src="https://www.liaoxuefeng.com/files/attachments/918921150461184/0" alt></p>
 <a id="more"></a>
-<h2 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h2><h3 id="集中式和分布式的区别："><a href="#集中式和分布式的区别：" class="headerlink" title="集中式和分布式的区别："></a>集中式和分布式的区别：</h3><p>集中式：CVS、SVN</p>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git学习教程推荐</a><br><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a></p>
+<h1 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h1><h2 id="集中式和分布式的区别"><a href="#集中式和分布式的区别" class="headerlink" title="集中式和分布式的区别"></a>集中式和分布式的区别</h2><p>集中式：CVS、SVN</p>
 <blockquote>
 <p>集中式版本控制系统最大的毛病就是必须联网才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟。<br>分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。既然每个人电脑上都有一个完整的版本库。<br>和集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。</p>
 </blockquote>
-<h3 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h3><p>又名仓库，英文名repository，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+<h1 id="时光穿梭机"><a href="#时光穿梭机" class="headerlink" title="时光穿梭机"></a>时光穿梭机</h1><h2 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h2><p>又名仓库，英文名repository，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir learngit   //选择一个合适的地方，创建一个空目录</span><br><span class="line">$ cd learngit</span><br><span class="line">$ pwd</span><br><span class="line">$ git init   //这个目录变成Git可以管理的仓库</span><br></pre></td></tr></table></figure>
 
 <p>当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。</p>
@@ -498,16 +501,18 @@
 <p>要随时掌握工作区的状态，使用git status命令。<br>如果git status告诉你有文件被修改过，用git diff可以查看修改内容。<br>在Git中，我们用git log命令查看。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git diff readme.txt</span><br><span class="line">git log</span><br></pre></td></tr></table></figure>
 
-<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交1094adb…（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</p>
+<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><p>Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交1094adb…（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD^</span><br><span class="line">$ git reset --hard deb9275</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
 
 <p>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
-<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><p>工作区（Working Directory）,就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区。</p>
+<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p>工作区（Working Directory）,就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区。</p>
 <p>工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
 <p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" alt></p>
+<blockquote>
 <p>第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；<br>第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。<br>因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。</p>
-<h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><p>Git管理的是修改，而不是文件<br>每次修改，如果不用git add到暂存区，那就不会加入到commit中。</p>
-<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>在准备提交前，猛然发现了错误,发现得很及时，就可以很容易地纠正它。你可以删掉最后一行，手动把文件恢复到上一个版本的状态。</p>
+</blockquote>
+<h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><p>Git管理的是修改，而不是文件<br>每次修改，如果不用git add到暂存区，那就不会加入到commit中。</p>
+<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><p>在准备提交前，猛然发现了错误,发现得很及时，就可以很容易地纠正它。你可以删掉最后一行，手动把文件恢复到上一个版本的状态。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- readme.txt</span><br></pre></td></tr></table></figure>
 
 <p>命令git checkout – readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：<br>一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；<br>一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。<br>总之，就是让这个文件回到最近一次git commit或git add时的状态。</p>
@@ -521,7 +526,40 @@
 <blockquote>
 <p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</p>
 </blockquote>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><p>命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。</p>
+<p>先添加一个新文件test.txt到Git并且提交，git add test.txt，git commit -m “add test.txt”，直接在文件管理器中把没用的文件删了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ rm test.txt    //工作区已经把该文件删除</span><br><span class="line">//下一步分为两种情况：</span><br><span class="line">//（1）如果删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：</span><br><span class="line">$ git checkout -- test.txt    //注意：从来没有被添加到版本库就被删除的文件，是无法恢复的！</span><br><span class="line">//（2）确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit</span><br><span class="line">$ git rm test.txt</span><br><span class="line">$ git commit -m &quot;remove test.txt&quot;</span><br></pre></td></tr></table></figure>
 
+<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><p>github：提供Git仓库托管服务的，所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。<br>本地Git仓库和GitHub仓库之间的传输是通过SSH加密，具体做法参考我的<a href="https://mp.csdn.net/postedit/89412674" target="_blank" rel="noopener">csdn博客</a>。</p>
+<p>在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，并且让这两个仓库进行远程同步，这样，GitHub上的仓库既可以作为备份，又可以让其他人通过该仓库来协作，操作步骤为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/swhaleDCC/learn.git</span><br><span class="line">//添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。下一步，就可以把本地库的所有内容推送到远程库上：</span><br><span class="line">git push -u origin master</span><br><span class="line">//用git push命令，实际上是把当前分支master推送到远程,由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令</span><br><span class="line">//从现在起，只要本地作了提交，就可以通过命令：</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p>Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。</p>
+<h1 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h1><h2 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h2><p>一开始的时候，master分支是一条线，Git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点:<br><img src="https://www.liaoxuefeng.com/files/attachments/919022412005504/0" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//创建dev分支，然后切换到dev分支:</span><br><span class="line">$ git checkout -b dev</span><br><span class="line">//加上-b参数表示创建并切换，相当于以下两条命令：</span><br><span class="line">$ git branch dev</span><br><span class="line">$ git checkout dev</span><br><span class="line">//用git branch命令查看当前分支：</span><br><span class="line">$ git branch</span><br><span class="line">//然后，我们就可以在dev分支上正常提交</span><br><span class="line"></span><br><span class="line">//现在，dev分支的工作完成，我们就可以切换回master分支：</span><br><span class="line">$ git checkout master</span><br><span class="line"></span><br><span class="line">//现在，我们把dev分支的工作成果合并到master分支上：</span><br><span class="line">$ git merge dev    //git merge命令用于合并指定分支到当前分支</span><br><span class="line">//删除分支</span><br><span class="line">$ git branch -d dev</span><br><span class="line"></span><br><span class="line">//总结：</span><br><span class="line">查看分支：git branch</span><br><span class="line">创建分支：git branch &lt;name&gt;</span><br><span class="line">切换分支：git checkout &lt;name&gt;或者git switch &lt;name&gt;</span><br><span class="line">创建+切换分支：git checkout -b &lt;name&gt;或者git switch -c &lt;name&gt;</span><br><span class="line">合并某分支到当前分支：git merge &lt;name&gt;</span><br><span class="line">删除分支：git branch -d &lt;name&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。<br>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。<br>用git log –graph命令可以看到分支合并图。</p>
+<p>##分支管理策略<br>通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。<br>如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。<br>首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；<br>那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；<br>你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。<br>所以，团队合作的分支看起来就像这样：<br><img src="https://www.liaoxuefeng.com/files/attachments/919023260793600/0" alt></p>
+<h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；<br>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场；<br>在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。</commit></p>
+<h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>开发一个新feature，最好新建一个分支；<br>如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。</name></p>
+<h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><p>查看远程库信息，使用git remote -v；</p>
+<p>本地新建的分支如果不推送到远程，对其他人就是不可见的；</p>
+<p>从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；</p>
+<p>在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；</p>
+<p>建立本地分支和远程分支的关联，使用git branch –set-upstream branch-name origin/branch-name；</p>
+<p>从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。</p>
+<h2 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a>Rebase</h2><p>rebase操作可以把本地未push的分叉提交历史整理成直线；</p>
+<p>rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</p>
+<h1 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h1><h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git tag v1.0</span><br><span class="line">$ git tag  //查看所有标签</span><br><span class="line">$ git show v1.0   //查看标签信息</span><br><span class="line">$ git tag -a v0.1 -m &quot;version 0.1 released&quot; 1094adb   //创建带有说明的标签，用-a指定标签名，-m指定说明文字</span><br></pre></td></tr></table></figure>
+
+<p>默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？<br>方法是找到历史提交的commit id，然后打上就可以了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline --abbrev-commit</span><br><span class="line">$ git tag v0.9 f52c633</span><br></pre></td></tr></table></figure>
+
+<p>注意：标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。</p>
+<h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v0.1   //删除标签，因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除</span><br><span class="line">$ git push origin &lt;tagname&gt;   //推送某个标签到远程</span><br><span class="line">$ git push origin --tags   //一次性推送全部尚未推送到远程的本地标签</span><br><span class="line">//如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：</span><br><span class="line">$ git tag -d v0.9</span><br><span class="line">然后，从远程删除。删除命令也是push，但是格式如下：</span><br><span class="line">$ git push origin :refs/tags/v0.9</span><br></pre></td></tr></table></figure>
+
+<h1 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h1><p>国内的Git托管服务——<a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></p>
+<h1 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h1>
       
     </div>
 
@@ -843,7 +881,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git：分布式版本控制系统"><span class="nav-text">Git：分布式版本控制系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集中式和分布式的区别："><span class="nav-text">集中式和分布式的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本库"><span class="nav-text">版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本回退"><span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区和暂存区"><span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理修改"><span class="nav-text">管理修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销修改"><span class="nav-text">撤销修改</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git：分布式版本控制系统"><span class="nav-text">Git：分布式版本控制系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#集中式和分布式的区别"><span class="nav-text">集中式和分布式的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时光穿梭机"><span class="nav-text">时光穿梭机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本库"><span class="nav-text">版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区和暂存区"><span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理修改"><span class="nav-text">管理修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-text">删除文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程仓库"><span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分支管理"><span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建与合并分支"><span class="nav-text">创建与合并分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决冲突"><span class="nav-text">解决冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bug分支"><span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature分支"><span class="nav-text">Feature分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人协作"><span class="nav-text">多人协作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rebase"><span class="nav-text">Rebase</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签管理"><span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建标签"><span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作标签"><span class="nav-text">操作标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#码云"><span class="nav-text">码云</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义Git"><span class="nav-text">自定义Git</span></a></li></ol></div>
             
 
           </div>
@@ -891,7 +929,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.1k字</span>
+  <span class="post-count">博客全站共6k字</span>
 </div>
         
 <div class="busuanzi-count">
