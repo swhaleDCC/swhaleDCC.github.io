@@ -116,14 +116,14 @@
 <meta property="og:url" content="https://swhaledcc.github.io/2019/08/29/Git学习/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/918921150461184/0">
+<meta property="og:image" content="https://git-scm.com/images/logo@2x.png">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919020037470528/0">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919022412005504/0">
-<meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919023260793600/0">
-<meta property="og:updated_time" content="2019-08-29T10:07:09.502Z">
+<meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919023225142304/0">
+<meta property="og:updated_time" content="2019-08-30T02:22:39.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习">
-<meta name="twitter:image" content="https://www.liaoxuefeng.com/files/attachments/918921150461184/0">
+<meta name="twitter:image" content="https://git-scm.com/images/logo@2x.png">
 
 
 
@@ -483,7 +483,7 @@
       
 
       
-        <p><img src="https://www.liaoxuefeng.com/files/attachments/918921150461184/0" alt></p>
+        <p><img src="https://git-scm.com/images/logo@2x.png" alt></p>
 <a id="more"></a>
 <p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git学习教程推荐</a><br><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a></p>
 <h1 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h1><h2 id="集中式和分布式的区别"><a href="#集中式和分布式的区别" class="headerlink" title="集中式和分布式的区别"></a>集中式和分布式的区别</h2><p>集中式：CVS、SVN</p>
@@ -507,7 +507,7 @@
 <p>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
 <h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p>工作区（Working Directory）,就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区。</p>
 <p>工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
-<p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" alt></p>
+<p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" alt="工作区和暂存区关系图"></p>
 <blockquote>
 <p>第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；<br>第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。<br>因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。</p>
 </blockquote>
@@ -539,7 +539,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//创建dev分支，然后切换到dev分支:</span><br><span class="line">$ git checkout -b dev</span><br><span class="line">//加上-b参数表示创建并切换，相当于以下两条命令：</span><br><span class="line">$ git branch dev</span><br><span class="line">$ git checkout dev</span><br><span class="line">//用git branch命令查看当前分支：</span><br><span class="line">$ git branch</span><br><span class="line">//然后，我们就可以在dev分支上正常提交</span><br><span class="line"></span><br><span class="line">//现在，dev分支的工作完成，我们就可以切换回master分支：</span><br><span class="line">$ git checkout master</span><br><span class="line"></span><br><span class="line">//现在，我们把dev分支的工作成果合并到master分支上：</span><br><span class="line">$ git merge dev    //git merge命令用于合并指定分支到当前分支</span><br><span class="line">//删除分支</span><br><span class="line">$ git branch -d dev</span><br><span class="line"></span><br><span class="line">//总结：</span><br><span class="line">查看分支：git branch</span><br><span class="line">创建分支：git branch &lt;name&gt;</span><br><span class="line">切换分支：git checkout &lt;name&gt;或者git switch &lt;name&gt;</span><br><span class="line">创建+切换分支：git checkout -b &lt;name&gt;或者git switch -c &lt;name&gt;</span><br><span class="line">合并某分支到当前分支：git merge &lt;name&gt;</span><br><span class="line">删除分支：git branch -d &lt;name&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。<br>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。<br>用git log –graph命令可以看到分支合并图。</p>
-<p>##分支管理策略<br>通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。<br>如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。<br>首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；<br>那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；<br>你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。<br>所以，团队合作的分支看起来就像这样：<br><img src="https://www.liaoxuefeng.com/files/attachments/919023260793600/0" alt></p>
+<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><p>通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。<br>如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。<br>首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；<br>那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；<br>你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。<br>所以，团队合作的分支看起来就像这样：<br><img src="https://www.liaoxuefeng.com/files/attachments/919023225142304/0" alt></p>
 <h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；<br>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场；<br>在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。</commit></p>
 <h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>开发一个新feature，最好新建一个分支；<br>如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。</name></p>
 <h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><p>查看远程库信息，使用git remote -v；</p>
@@ -652,6 +652,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/08/30/图论/" rel="prev" title="图论">
+                图论 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -720,7 +724,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -774,7 +778,9 @@
         
           
         
-        <span class="site-state-item-count">5</span>
+          
+        
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -881,7 +887,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git：分布式版本控制系统"><span class="nav-text">Git：分布式版本控制系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#集中式和分布式的区别"><span class="nav-text">集中式和分布式的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时光穿梭机"><span class="nav-text">时光穿梭机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本库"><span class="nav-text">版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区和暂存区"><span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理修改"><span class="nav-text">管理修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-text">删除文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程仓库"><span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分支管理"><span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建与合并分支"><span class="nav-text">创建与合并分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决冲突"><span class="nav-text">解决冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bug分支"><span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature分支"><span class="nav-text">Feature分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人协作"><span class="nav-text">多人协作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rebase"><span class="nav-text">Rebase</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签管理"><span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建标签"><span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作标签"><span class="nav-text">操作标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#码云"><span class="nav-text">码云</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义Git"><span class="nav-text">自定义Git</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git：分布式版本控制系统"><span class="nav-text">Git：分布式版本控制系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#集中式和分布式的区别"><span class="nav-text">集中式和分布式的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时光穿梭机"><span class="nav-text">时光穿梭机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本库"><span class="nav-text">版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区和暂存区"><span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理修改"><span class="nav-text">管理修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-text">删除文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程仓库"><span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分支管理"><span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建与合并分支"><span class="nav-text">创建与合并分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决冲突"><span class="nav-text">解决冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理策略"><span class="nav-text">分支管理策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bug分支"><span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature分支"><span class="nav-text">Feature分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人协作"><span class="nav-text">多人协作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rebase"><span class="nav-text">Rebase</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签管理"><span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建标签"><span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作标签"><span class="nav-text">操作标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#码云"><span class="nav-text">码云</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义Git"><span class="nav-text">自定义Git</span></a></li></ol></div>
             
 
           </div>
