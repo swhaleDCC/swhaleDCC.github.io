@@ -110,18 +110,17 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="Stay Hungry,Stay Foolish">
-<meta name="keywords" content="图论">
+  <meta name="keywords" content="图论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="图论">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/08/30/图论/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="Stay Hungry,Stay Foolish">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-30T02:12:44.404Z">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
+<meta property="og:updated_time" content="2019-08-31T07:17:57.933Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图论">
-<meta name="twitter:description" content="Stay Hungry,Stay Foolish">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
 
 
 
@@ -481,7 +480,24 @@
       
 
       
-        
+        <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
+<a id="more"></a>
+
+<h3 id="997-找到小镇的法官-easy"><a href="#997-找到小镇的法官-easy" class="headerlink" title="997. 找到小镇的法官   easy"></a>997. 找到小镇的法官   easy</h3><blockquote>
+<p>在一个小镇里，按从 1 到 N 标记了 N 个人。传言称，这些人中有一个是小镇上的秘密法官。<br>如果小镇的法官真的存在，那么：<br>小镇的法官不相信任何人。<br>每个人（除了小镇法官外）都信任小镇的法官。<br>只有一个人同时满足属性 1 和属性 2 。<br>给定数组 trust，该数组由信任对 trust[i] = [a, b] 组成，表示标记为 a 的人信任标记为 b 的人。<br>如果小镇存在秘密法官并且可以确定他的身份，请返回该法官的标记。否则，返回 -1。<br>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/find-the-town-judge" target="_blank" rel="noopener">https://leetcode-cn.com/problems/find-the-town-judge</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<blockquote>
+<p>解答：思路很简单——入度数等于N-1，出度数为0，则这个人就是法官，否则无法确定法官。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">int findJudge(int N, vector&lt;vector&lt;int&gt;&gt;&amp; trust) &#123;</span><br><span class="line">	int m=trust.size();</span><br><span class="line">	vector&lt;int&gt;per(N,0);</span><br><span class="line">	for(int i=0;i&lt;m;i++)   //计算每个人的出度</span><br><span class="line">	&#123;</span><br><span class="line">		per[trust[i][0]-1]++;</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i=0;i&lt;N;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if(per[i]==0)</span><br><span class="line">		&#123;</span><br><span class="line">			int sum=0;</span><br><span class="line">			for(int j=0;j&lt;m;j++)   //计算第i+1个人的入度</span><br><span class="line">			&#123;</span><br><span class="line">				if(i+1==trust[j][1])sum++;</span><br><span class="line">			&#125;</span><br><span class="line">			if(sum==N-1)return i+1;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1042-不邻接植花-需二刷"><a href="#1042-不邻接植花-需二刷" class="headerlink" title="1042. 不邻接植花   需二刷"></a>1042. 不邻接植花   需二刷</h3><blockquote>
+<p>有 N 个花园，按从 1 到 N 标记。在每个花园中，你打算种下四种花之一。<br>paths[i] = [x, y] 描述了花园 x 到花园 y 的双向路径。<br>另外，没有花园有 3 条以上的路径可以进入或者离开。<br>你需要为每个花园选择一种花，使得通过路径相连的任何两个花园中的花的种类互不相同。<br>以数组形式返回选择的方案作为答案 answer，其中 answer[i] 为在第 (i+1) 个花园中种植的花的种类。花的种类用  1, 2, 3, 4 表示。保证存在答案。<br>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/flower-planting-with-no-adjacent" target="_blank" rel="noopener">https://leetcode-cn.com/problems/flower-planting-with-no-adjacent</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<blockquote>
+<p>解答：由于这个问题的数据量很大，并且只是easy难度，所以不难想到是通过贪心来处理。思路非常简单，从前向后遍历path，遍历的过程中，检查遍历到的点周围颜色情况，然后挑一个没用过的颜色放入即可。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">bool judge(int j, vector&lt;int&gt;&amp; res, vector&lt;int&gt;&amp; vec)</span><br><span class="line">&#123;</span><br><span class="line">	for(int k=0;k&lt;vec.size();k++)</span><br><span class="line">	&#123;</span><br><span class="line">		if(res[vec[k]]==j)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; gardenNoAdj(int N, vector&lt;vector&lt;int&gt;&gt;&amp; paths) </span><br><span class="line">&#123;</span><br><span class="line">	vector&lt;int&gt; res(N,0);</span><br><span class="line">	int m=paths.size();  //路的条数</span><br><span class="line">	vector&lt;vector&lt;int&gt;&gt; tmp(N); </span><br><span class="line">	for(int i=0;i&lt;m;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		tmp[paths[i][0]-1].push_back(paths[i][1]-1);</span><br><span class="line">		tmp[paths[i][1]-1].push_back(paths[i][0]-1);</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i=0;i&lt;N;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for(int j=1;j&lt;=4;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if(judge(j,res,tmp[i]))</span><br><span class="line">			&#123;</span><br><span class="line">				res[i]=j;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -621,8 +637,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -793,6 +818,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#997-找到小镇的法官-easy"><span class="nav-text">997. 找到小镇的法官   easy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1042-不邻接植花-需二刷"><span class="nav-text">1042. 不邻接植花   需二刷</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -834,7 +876,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.7k字</span>
+  <span class="post-count">博客全站共7.6k字</span>
 </div>
         
 <div class="busuanzi-count">

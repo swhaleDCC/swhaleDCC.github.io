@@ -120,7 +120,7 @@
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919020037470528/0">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919022412005504/0">
 <meta property="og:image" content="https://www.liaoxuefeng.com/files/attachments/919023225142304/0">
-<meta property="og:updated_time" content="2019-08-30T02:22:39.430Z">
+<meta property="og:updated_time" content="2019-08-31T01:52:57.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习">
 <meta name="twitter:image" content="https://git-scm.com/images/logo@2x.png">
@@ -486,7 +486,13 @@
         <p><img src="https://git-scm.com/images/logo@2x.png" alt></p>
 <a id="more"></a>
 <p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git学习教程推荐</a><br><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a></p>
-<h1 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h1><h2 id="集中式和分布式的区别"><a href="#集中式和分布式的区别" class="headerlink" title="集中式和分布式的区别"></a>集中式和分布式的区别</h2><p>集中式：CVS、SVN</p>
+<h1 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h1><p>基本的 Git 工作流程如下：</p>
+<ol>
+<li>在工作目录中修改文件。</li>
+<li>暂存文件，将文件的快照放入暂存区域。</li>
+<li>提交更新，找到暂存区域的文件，将快照永久性存储到 Git 仓库目录。</li>
+</ol>
+<h2 id="集中式和分布式的区别"><a href="#集中式和分布式的区别" class="headerlink" title="集中式和分布式的区别"></a>集中式和分布式的区别</h2><p>集中式：CVS、SVN</p>
 <blockquote>
 <p>集中式版本控制系统最大的毛病就是必须联网才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟。<br>分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。既然每个人电脑上都有一个完整的版本库。<br>和集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。</p>
 </blockquote>
@@ -508,6 +514,7 @@
 <h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p>工作区（Working Directory）,就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区。</p>
 <p>工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
 <p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" alt="工作区和暂存区关系图"></p>
+<p>Git 有三种状态——已提交（committed）、已修改（modified）和已暂存（staged）</p>
 <blockquote>
 <p>第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；<br>第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。<br>因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。</p>
 </blockquote>
@@ -942,7 +949,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.7k字</span>
+  <span class="post-count">博客全站共7.6k字</span>
 </div>
         
 <div class="busuanzi-count">
