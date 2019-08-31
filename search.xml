@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python学习]]></title>
+    <url>%2F2019%2F08%2F31%2Fpython%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java学习]]></title>
+    <url>%2F2019%2F08%2F31%2FJava%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[图论]]></title>
     <url>%2F2019%2F08%2F30%2F%E5%9B%BE%E8%AE%BA%2F</url>
     <content type="text"><![CDATA[997. 找到小镇的法官 easy 在一个小镇里，按从 1 到 N 标记了 N 个人。传言称，这些人中有一个是小镇上的秘密法官。如果小镇的法官真的存在，那么：小镇的法官不相信任何人。每个人（除了小镇法官外）都信任小镇的法官。只有一个人同时满足属性 1 和属性 2 。给定数组 trust，该数组由信任对 trust[i] = [a, b] 组成，表示标记为 a 的人信任标记为 b 的人。如果小镇存在秘密法官并且可以确定他的身份，请返回该法官的标记。否则，返回 -1。来源：力扣（LeetCode）链接：https://leetcode-cn.com/problems/find-the-town-judge著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。 解答：思路很简单——入度数等于N-1，出度数为0，则这个人就是法官，否则无法确定法官。 123456789101112131415161718192021int findJudge(int N, vector&lt;vector&lt;int&gt;&gt;&amp; trust) &#123; int m=trust.size(); vector&lt;int&gt;per(N,0); for(int i=0;i&lt;m;i++) //计算每个人的出度 &#123; per[trust[i][0]-1]++; &#125; for(int i=0;i&lt;N;i++) &#123; if(per[i]==0) &#123; int sum=0; for(int j=0;j&lt;m;j++) //计算第i+1个人的入度 &#123; if(i+1==trust[j][1])sum++; &#125; if(sum==N-1)return i+1; &#125; &#125; return -1;&#125; 1042. 不邻接植花 需二刷 有 N 个花园，按从 1 到 N 标记。在每个花园中，你打算种下四种花之一。paths[i] = [x, y] 描述了花园 x 到花园 y 的双向路径。另外，没有花园有 3 条以上的路径可以进入或者离开。你需要为每个花园选择一种花，使得通过路径相连的任何两个花园中的花的种类互不相同。以数组形式返回选择的方案作为答案 answer，其中 answer[i] 为在第 (i+1) 个花园中种植的花的种类。花的种类用 1, 2, 3, 4 表示。保证存在答案。来源：力扣（LeetCode）链接：https://leetcode-cn.com/problems/flower-planting-with-no-adjacent著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。 解答：由于这个问题的数据量很大，并且只是easy难度，所以不难想到是通过贪心来处理。思路非常简单，从前向后遍历path，遍历的过程中，检查遍历到的点周围颜色情况，然后挑一个没用过的颜色放入即可。 1234567891011121314151617181920212223242526272829303132333435bool judge(int j, vector&lt;int&gt;&amp; res, vector&lt;int&gt;&amp; vec)&#123; for(int k=0;k&lt;vec.size();k++) &#123; if(res[vec[k]]==j) &#123; return false; &#125; &#125; return true;&#125;vector&lt;int&gt; gardenNoAdj(int N, vector&lt;vector&lt;int&gt;&gt;&amp; paths) &#123; vector&lt;int&gt; res(N,0); int m=paths.size(); //路的条数 vector&lt;vector&lt;int&gt;&gt; tmp(N); for(int i=0;i&lt;m;i++) &#123; tmp[paths[i][0]-1].push_back(paths[i][1]-1); tmp[paths[i][1]-1].push_back(paths[i][0]-1); &#125; for(int i=0;i&lt;N;i++) &#123; for(int j=1;j&lt;=4;j++) &#123; if(judge(j,res,tmp[i])) &#123; res[i]=j; break; &#125; &#125; &#125; return res;&#125;]]></content>
