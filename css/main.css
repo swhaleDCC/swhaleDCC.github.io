@@ -1717,7 +1717,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #95ffc9;
+  background: #28c994;
 }
 .feed-link,
 .chat {
@@ -2768,6 +2768,6 @@ ul.breadcrumb li+li:last-child {
   margin-top: 0px;
   margin-bottom: 30px;
   padding: 60px;
-  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.8);
-  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 20px rgba(202,203,203,0.9);
+  -moz-box-shadow: 0 0 20px rgba(202,203,204,0.9);
 }
