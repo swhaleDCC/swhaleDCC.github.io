@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=cb207312252eb938f86072a0b40bee50/d043ad4bd11373f01dc51f6cae0f4bfbfaed044e.jpg">
-<meta property="og:updated_time" content="2019-09-03T07:08:35.029Z">
+<meta property="og:updated_time" content="2019-09-03T08:30:46.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="生物识别技术课程">
 <meta name="twitter:image" content="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=cb207312252eb938f86072a0b40bee50/d043ad4bd11373f01dc51f6cae0f4bfbfaed044e.jpg">
@@ -495,6 +495,10 @@
 </blockquote>
 <p>2.生物特征识别方法（简述具体实现过程，按步骤描述实现过程，并重点介绍每一步骤中的关键技术）</p>
 <blockquote>
+<p><a href="https://blog.csdn.net/lowkeyway/article/details/69487147" target="_blank" rel="noopener">参考</a><br>（1）图像采集：图像采集的方式有很多，常见的有打卡机式的光学指纹采集模块和用在手机或其他终端设备上的电容式指纹采集模块。<br>（2）图像归一化：因为按压力度的不一致，导致传感器采集图像会有偏向。中间部分的脊线颜色比较重，二边缘侧的脊线则又细又不清楚，那么可以用过图片间的归一化使图片均值、方差一样一致，这样在图片中的直观表现就是指纹像是一张对焦成功的二维图像。<br>（3）图像增强：使用算法做图像增强，目的是让指纹脊线更清晰，断裂的脊线可以连起来，并保持原来的结构。经常使用的方法是<strong>滤波去噪</strong>。比如常用的<strong>频域滤波</strong>就是把图像转换到频域，通过滤波找到能量最大、符合指纹频率范围的，恢复到空间域，就可以得到清晰的指纹的空域图像。<br>（4）二值化：非黑即白，没有所谓的中间灰的过度，没有8bit甚至更高的修饰，这样做的处理可以让图像更清晰。<br>（5）提取特征点<br>（6）构造特征算子：获取到了特征点之后，就要把这些特征点记录下来，组成一个图，一个表或者通过某一个公式关联起来，这样便于我们存储，以及以后的匹配算法的使用。<br>（7）匹配特征算子、计算匹配分数：经过上述的所有处理步骤后，就要去我们的指纹库中匹配有没有一致的指纹影像，通过特定的算法给这种匹配程度打分，如果分数及格（我们可定义及格分数），那我们就认为新采集的指纹是可以跟我们的数据库中的某一个指纹匹配成功的。</p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.douban.com/note/446975745/" target="_blank" rel="noopener">参考</a><br>指纹识别主要包括指纹增强、特征提取和指纹匹配三个过程。<br>1、指纹增强：在指纹采集过程中，由于各种原因，采集到的指纹图像不可避免的引入了一些噪声，如果直接用于指纹识别，往往难以达到较好的效果。我们可以通过一定的图像增强技术，改善指纹图像质量。这里会用到的技术有<strong>图像分割、直方图均衡化、滤波增强、二值化、细化</strong>等。<br>2、特征提取：前面提到，细节点特征是最常用的指纹特征。细节点特征的提取，就是在指纹图像中找到脊线终点和脊线分叉两个特征。经过了指纹增强的步骤，如果指纹图像能较好地分割，细节点很容易提取。但实际上有一些噪声很难处理，这样在增强后就会产生一些虚假特征。一般地，<strong>启发式算法</strong>可以删除虚假特征。特征提取后，我们得到了多组脊终点或分叉类型、位置坐标及方向信息等。<br>3、指纹匹配：指纹匹配算法有很多种，包括<strong>点模式匹配、脊模式匹配、基于图像的匹配和基于图形的匹配</strong>等。细节点匹配可以看做是点模式匹配的问题。点模式匹配就是将提取的细节点集与数据库中的细节点集进行匹配，如果通过一些旋转、尺度变换和平移变换，点集间是匹配的，那个两幅指纹图像就是匹配的。指纹识别与安防领域的结合主要体现在指纹锁和考勤等应用。指纹门锁是最近兴起的指纹识别产品之一。常见的指纹锁厂商有普罗巴克，爱迪尔等。由于指纹识别算法比较成熟，业务应用和用户体验对于这类产品显得尤为重要。</p>
 </blockquote>
 
       
@@ -664,7 +668,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -693,9 +697,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -726,9 +728,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -883,7 +883,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共10.5k字</span>
+  <span class="post-count">博客全站共11.5k字</span>
 </div>
         
 <div class="busuanzi-count">
