@@ -149,7 +149,7 @@ template {
 }
 ::selection {
   background: #262a30;
-  color: #fff;
+  color: #555;
 }
 body {
   position: relative;
@@ -1717,7 +1717,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f2ac03;
+  background: #264d74;
 }
 .feed-link,
 .chat {
