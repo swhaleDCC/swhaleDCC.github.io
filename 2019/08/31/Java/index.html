@@ -120,7 +120,7 @@
 <meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190703/291053_1562120552172_568001D9EB97F2B157D06DF96FEB0648">
 <meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190610/195487876_1560130345284_9CB010308570770953E1D02A9381EC93">
 <meta property="og:image" content="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
-<meta property="og:updated_time" content="2019-09-08T06:07:12.761Z">
+<meta property="og:updated_time" content="2019-09-09T09:42:05.383Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习">
 <meta name="twitter:image" content="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D8%2C0%2C583%2C385%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=bda7b89f8b94a4c21e6cbd6b33cc37e5/962bd40735fae6cd10a6f2f103b30f2442a70f0b.jpg">
@@ -504,13 +504,12 @@
 </blockquote>
 </li>
 <li><p>下列代码编译和运行的结果是：（） </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class Threads4&#123;</span><br><span class="line"> public static void main(String[] args)&#123;</span><br><span class="line">  new Threads4().go();</span><br><span class="line"> &#125;</span><br><span class="line"> public void go()&#123;</span><br><span class="line">  Runnable r=new Runnable()&#123;</span><br><span class="line">   public void run()&#123;</span><br><span class="line">    System.out.print(&quot;foo&quot;);</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  Thread t=new Thread(r);</span><br><span class="line">  t.start();</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Threads4&#123;</span><br><span class="line"> public static void main(String[] args)&#123;</span><br><span class="line">  new Threads4().go();</span><br><span class="line"> &#125;</span><br><span class="line"> public void go()&#123;</span><br><span class="line">  Runnable r=new Runnable()&#123;</span><br><span class="line">   public void run()&#123;</span><br><span class="line">    System.out.print(&quot;foo&quot;);</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  Thread t=new Thread(r);</span><br><span class="line">  t.start();</span><br><span class="line"> &#125;</span><br><span class="line">&#125; </span><br><span class="line">&gt;正确答案 :输出：foo</span><br></pre></td></tr></table></figure>
+
+
 
 </li>
 </ol>
-<blockquote>
-<p>正确答案 :输出：foo           </p>
-</blockquote>
 <ol start="3">
 <li><p>以下关于外观模式的叙述中错误是（      ）</p>
 <blockquote>
@@ -578,6 +577,21 @@
 <p>JDK是Java Development Kit，它是功能齐全的Java SDK。它拥有JRE所拥有的一切，还有编译器（javac）和工具（如javadoc和jdb）。它能够创建和编译程序。</p>
 <p>JRE是Java运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括Java虚拟机（JVM），Java类库，java命令和其他的一些基础构件。但是，它不能用于创建新程序。</p>
 <p>如果你只是为了运行一下 Java 程序的话，那么你只需要安装 JRE 就可以了。如果你需要进行一些 Java 编程方面的工作，那么你就需要安装JDK了。但是，这不是绝对的。有时，即使您不打算在计算机上进行任何Java开发，仍然需要安装JDK。例如，如果要使用JSP部署Web应用程序，那么从技术上讲，您只是在应用程序服务器中运行Java程序。那你为什么需要JDK呢？因为应用程序服务器会将 JSP 转换为 Java servlet，并且需要使用 JDK 来编译 servlet。</p>
+</blockquote>
+</li>
+<li><p>Oracle JDK 和 OpenJDK 的对比</p>
+<blockquote>
+<p>问：OpenJDK存储库中的源代码与用于构建Oracle JDK的代码之间有什么区别？<br>答：非常接近 - Oracle JDK版本构建过程基于OpenJDK 7构建，只添加了几个部分，例如部署代码，其中包括Oracle的Java插件和Java WebStart的实现，以及一些封闭的源代码派对组件，如图形光栅化器，一些开源的第三方组件，如Rhino，以及一些零碎的东西，如附加文档或第三方字体。展望未来，我们的目的是开源Oracle JDK的所有部分，除了我们考虑商业功能的部分。<br>总结：<br>Oracle JDK版本将每三年发布一次，而OpenJDK版本每三个月发布一次；<br>OpenJDK 是一个参考模型并且是完全开源的，而Oracle JDK是OpenJDK的一个实现，并不是完全开源的；<br>Oracle JDK 比 OpenJDK 更稳定。OpenJDK和Oracle JDK的代码几乎相同，但Oracle JDK有更多的类和一些错误修复。因此，如果您想开发企业/商业软件，我建议您选择Oracle JDK，因为它经过了彻底的测试和稳定。某些情况下，有些人提到在使用OpenJDK 可能会遇到了许多应用程序崩溃的问题，但是，只需切换到Oracle JDK就可以解决问题；<br>在响应性和JVM性能方面，Oracle JDK与OpenJDK相比提供了更好的性能；<br>Oracle JDK不会为即将发布的版本提供长期支持，用户每次都必须通过更新到最新版本获得支持来获取最新版本；<br>Oracle JDK根据二进制代码许可协议获得许可，而OpenJDK根据GPL v2许可获得许可。</p>
+</blockquote>
+</li>
+<li><p>Java和C++的区别?</p>
+<blockquote>
+<p>都是面向对象的语言，都支持封装、继承和多态.<br>Java 不提供指针来直接访问内存，程序内存更加安全.<br>Java 的类是单继承的，C++ 支持多重继承；虽然 Java 的类不可以多继承，但是接口可以多继承.<br>Java 有自动内存管理机制，不需要程序员手动释放无用内存.</p>
+</blockquote>
+</li>
+<li><p>什么是 Java 程序的主类 应用程序和小程序的主类有何不同?</p>
+<blockquote>
+<p>一个程序中可以有多个类，但只能有一个类是主类。在 Java 应用程序中，这个主类是指包含 main（）方法的类。而在 Java 小程序中，这个主类是一个继承自系统类 JApplet 或 Applet 的子类。应用程序的主类不一定要求是 public 类，但小程序的主类要求必须是 public 类。主类是 Java 程序执行的入口点。</p>
 </blockquote>
 </li>
 </ol>
@@ -964,7 +978,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共14.3k字</span>
+  <span class="post-count">博客全站共15.6k字</span>
 </div>
         
 <div class="busuanzi-count">
