@@ -120,7 +120,8 @@
 <meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190703/291053_1562120552172_568001D9EB97F2B157D06DF96FEB0648">
 <meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190610/195487876_1560130345284_9CB010308570770953E1D02A9381EC93">
 <meta property="og:image" content="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
-<meta property="og:updated_time" content="2019-09-09T09:42:05.383Z">
+<meta property="og:image" content="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg">
+<meta property="og:updated_time" content="2019-09-11T07:40:33.518Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习">
 <meta name="twitter:image" content="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D8%2C0%2C583%2C385%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=bda7b89f8b94a4c21e6cbd6b33cc37e5/962bd40735fae6cd10a6f2f103b30f2442a70f0b.jpg">
@@ -594,6 +595,26 @@
 <p>一个程序中可以有多个类，但只能有一个类是主类。在 Java 应用程序中，这个主类是指包含 main（）方法的类。而在 Java 小程序中，这个主类是一个继承自系统类 JApplet 或 Applet 的子类。应用程序的主类不一定要求是 public 类，但小程序的主类要求必须是 public 类。主类是 Java 程序执行的入口点。</p>
 </blockquote>
 </li>
+<li><p>Java 应用程序与小程序之间有哪些差别?</p>
+<blockquote>
+<p>简单说应用程序是从主线程启动(也就是 main() 方法)。<br>applet 小程序没有 main()方法，主要是嵌在浏览器页面上运行(调用init()或者run()来启动)，嵌入浏览器这点跟 flash 的小游戏类似。</p>
+</blockquote>
+</li>
+<li><p>字符型常量和字符串常量的区别?</p>
+<blockquote>
+<p>形式上: 字符常量是单引号引起的一个字符; 字符串常量是双引号引起的若干个字符<br>含义上: 字符常量相当于一个整型值( ASCII 值),可以参加表达式运算; 字符串常量代表一个地址值(该字符串在内存中存放位置)<br>占内存大小:字符常量只占2个字节; 字符串常量占若干个字节(至少一个字符结束标志) (注意： char在Java中占两个字节)<br><img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg" alt></p>
+</blockquote>
+</li>
+<li><p>构造器 Constructor 是否可被 override?</p>
+<blockquote>
+<p>在讲继承的时候我们就知道父类的私有属性和构造方法并不能被继承，所以 Constructor 也就不能被 override（重写）,但是可以 overload（重载）,所以你可以看到一个类中有多个构造函数的情况。</p>
+</blockquote>
+</li>
+<li><p>重载和重写的区别</p>
+<blockquote>
+<p>重载： 发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。 　　<br>重写： 发生在父子类中，方法名、参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为 private 则子类就不能重写该方法。</p>
+</blockquote>
+</li>
 </ol>
 
       
@@ -978,7 +999,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共15.6k字</span>
+  <span class="post-count">博客全站共16.5k字</span>
 </div>
         
 <div class="busuanzi-count">
