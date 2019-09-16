@@ -121,7 +121,7 @@
 <meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190610/195487876_1560130345284_9CB010308570770953E1D02A9381EC93">
 <meta property="og:image" content="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
 <meta property="og:image" content="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg">
-<meta property="og:updated_time" content="2019-09-11T07:40:33.518Z">
+<meta property="og:updated_time" content="2019-09-11T07:48:42.347Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习">
 <meta name="twitter:image" content="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D8%2C0%2C583%2C385%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=bda7b89f8b94a4c21e6cbd6b33cc37e5/962bd40735fae6cd10a6f2f103b30f2442a70f0b.jpg">
@@ -560,62 +560,40 @@
 </blockquote>
 </li>
 </ol>
-<h1 id="Java-基础知识回顾"><a href="#Java-基础知识回顾" class="headerlink" title="Java 基础知识回顾"></a><a href="https://snailclimb.top/JavaGuide/#/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86" target="_blank" rel="noopener">Java 基础知识回顾</a></h1><ol>
-<li><p>面向对象和面向过程的区别</p>
-<blockquote>
+<h1 id="Java-基础知识回顾"><a href="#Java-基础知识回顾" class="headerlink" title="Java 基础知识回顾"></a><a href="https://snailclimb.top/JavaGuide/#/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86" target="_blank" rel="noopener">Java 基础知识回顾</a></h1><h3 id="1-面向对象和面向过程的区别"><a href="#1-面向对象和面向过程的区别" class="headerlink" title="1. 面向对象和面向过程的区别"></a>1. 面向对象和面向过程的区别</h3><blockquote>
 <p>面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux/Unix等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。<br>面向对象 ：面向对象易维护、易复用、易扩展。 因为面向对象有封装、继承、多态性的特性，所以可以设计出低耦合的系统，使系统更加灵活、更加易于维护。但是，面向对象性能比面向过程低。</p>
 </blockquote>
-</li>
-<li><p>Java 语言有哪些特点?</p>
-<blockquote>
+<h3 id="2-Java-语言有哪些特点"><a href="#2-Java-语言有哪些特点" class="headerlink" title="2. Java 语言有哪些特点?"></a>2. Java 语言有哪些特点?</h3><blockquote>
 <p>面向对象（封装，继承，多态）；<br>平台无关性（ Java 虚拟机实现平台无关性）；<br>可靠性；<br>安全性；<br>支持多线程（ C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）；<br>支持网络编程（ Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便）；<br>编译与解释并存</p>
 </blockquote>
-</li>
-<li><p>关于 JVM JDK 和 JRE 最详细通俗的解答</p>
-<blockquote>
+<h3 id="3-关于-JVM-JDK-和-JRE-最详细通俗的解答"><a href="#3-关于-JVM-JDK-和-JRE-最详细通俗的解答" class="headerlink" title="3. 关于 JVM JDK 和 JRE 最详细通俗的解答"></a>3. 关于 JVM JDK 和 JRE 最详细通俗的解答</h3><blockquote>
 <p>JVM：Java虚拟机,是运行Java字节码的虚拟机。JVM有针对不同系统的特定实现（Windows，Linux），目的是使用相同的字节码，它们都会给出相同的结果。</p>
 <p>什么是字节码?采用字节码的好处是什么?<br>在 Java 中，JVM可以理解的代码就叫做字节码（即扩展名为 .class 的文件），它不面向任何特定的处理器，只面向虚拟机。Java语言通过字节码的方式，在一定程度上解决了传统解释型语言执行效率低的问题，同时又保留了解释型语言可移植的特点。所以 Java程序运行时比较高效，而且，由于字节码并不针对一种特定的机器，因此，Java程序无须重新编译便可在多种不同操作系统的计算机上运行。<br><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png" alt></p>
 <p>JDK是Java Development Kit，它是功能齐全的Java SDK。它拥有JRE所拥有的一切，还有编译器（javac）和工具（如javadoc和jdb）。它能够创建和编译程序。</p>
 <p>JRE是Java运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括Java虚拟机（JVM），Java类库，java命令和其他的一些基础构件。但是，它不能用于创建新程序。</p>
 <p>如果你只是为了运行一下 Java 程序的话，那么你只需要安装 JRE 就可以了。如果你需要进行一些 Java 编程方面的工作，那么你就需要安装JDK了。但是，这不是绝对的。有时，即使您不打算在计算机上进行任何Java开发，仍然需要安装JDK。例如，如果要使用JSP部署Web应用程序，那么从技术上讲，您只是在应用程序服务器中运行Java程序。那你为什么需要JDK呢？因为应用程序服务器会将 JSP 转换为 Java servlet，并且需要使用 JDK 来编译 servlet。</p>
 </blockquote>
-</li>
-<li><p>Oracle JDK 和 OpenJDK 的对比</p>
-<blockquote>
+<h3 id="4-Oracle-JDK-和-OpenJDK-的对比"><a href="#4-Oracle-JDK-和-OpenJDK-的对比" class="headerlink" title="4. Oracle JDK 和 OpenJDK 的对比"></a>4. Oracle JDK 和 OpenJDK 的对比</h3><blockquote>
 <p>问：OpenJDK存储库中的源代码与用于构建Oracle JDK的代码之间有什么区别？<br>答：非常接近 - Oracle JDK版本构建过程基于OpenJDK 7构建，只添加了几个部分，例如部署代码，其中包括Oracle的Java插件和Java WebStart的实现，以及一些封闭的源代码派对组件，如图形光栅化器，一些开源的第三方组件，如Rhino，以及一些零碎的东西，如附加文档或第三方字体。展望未来，我们的目的是开源Oracle JDK的所有部分，除了我们考虑商业功能的部分。<br>总结：<br>Oracle JDK版本将每三年发布一次，而OpenJDK版本每三个月发布一次；<br>OpenJDK 是一个参考模型并且是完全开源的，而Oracle JDK是OpenJDK的一个实现，并不是完全开源的；<br>Oracle JDK 比 OpenJDK 更稳定。OpenJDK和Oracle JDK的代码几乎相同，但Oracle JDK有更多的类和一些错误修复。因此，如果您想开发企业/商业软件，我建议您选择Oracle JDK，因为它经过了彻底的测试和稳定。某些情况下，有些人提到在使用OpenJDK 可能会遇到了许多应用程序崩溃的问题，但是，只需切换到Oracle JDK就可以解决问题；<br>在响应性和JVM性能方面，Oracle JDK与OpenJDK相比提供了更好的性能；<br>Oracle JDK不会为即将发布的版本提供长期支持，用户每次都必须通过更新到最新版本获得支持来获取最新版本；<br>Oracle JDK根据二进制代码许可协议获得许可，而OpenJDK根据GPL v2许可获得许可。</p>
 </blockquote>
-</li>
-<li><p>Java和C++的区别?</p>
-<blockquote>
+<h3 id="5-Java和C-的区别"><a href="#5-Java和C-的区别" class="headerlink" title="5. Java和C++的区别?"></a>5. Java和C++的区别?</h3><blockquote>
 <p>都是面向对象的语言，都支持封装、继承和多态.<br>Java 不提供指针来直接访问内存，程序内存更加安全.<br>Java 的类是单继承的，C++ 支持多重继承；虽然 Java 的类不可以多继承，但是接口可以多继承.<br>Java 有自动内存管理机制，不需要程序员手动释放无用内存.</p>
 </blockquote>
-</li>
-<li><p>什么是 Java 程序的主类 应用程序和小程序的主类有何不同?</p>
-<blockquote>
+<h3 id="6-什么是-Java-程序的主类-应用程序和小程序的主类有何不同"><a href="#6-什么是-Java-程序的主类-应用程序和小程序的主类有何不同" class="headerlink" title="6. 什么是 Java 程序的主类 应用程序和小程序的主类有何不同?"></a>6. 什么是 Java 程序的主类 应用程序和小程序的主类有何不同?</h3><blockquote>
 <p>一个程序中可以有多个类，但只能有一个类是主类。在 Java 应用程序中，这个主类是指包含 main（）方法的类。而在 Java 小程序中，这个主类是一个继承自系统类 JApplet 或 Applet 的子类。应用程序的主类不一定要求是 public 类，但小程序的主类要求必须是 public 类。主类是 Java 程序执行的入口点。</p>
 </blockquote>
-</li>
-<li><p>Java 应用程序与小程序之间有哪些差别?</p>
-<blockquote>
+<h3 id="7-Java-应用程序与小程序之间有哪些差别"><a href="#7-Java-应用程序与小程序之间有哪些差别" class="headerlink" title="7. Java 应用程序与小程序之间有哪些差别?"></a>7. Java 应用程序与小程序之间有哪些差别?</h3><blockquote>
 <p>简单说应用程序是从主线程启动(也就是 main() 方法)。<br>applet 小程序没有 main()方法，主要是嵌在浏览器页面上运行(调用init()或者run()来启动)，嵌入浏览器这点跟 flash 的小游戏类似。</p>
 </blockquote>
-</li>
-<li><p>字符型常量和字符串常量的区别?</p>
-<blockquote>
+<h3 id="8-字符型常量和字符串常量的区别"><a href="#8-字符型常量和字符串常量的区别" class="headerlink" title="8. 字符型常量和字符串常量的区别?"></a>8. 字符型常量和字符串常量的区别?</h3><blockquote>
 <p>形式上: 字符常量是单引号引起的一个字符; 字符串常量是双引号引起的若干个字符<br>含义上: 字符常量相当于一个整型值( ASCII 值),可以参加表达式运算; 字符串常量代表一个地址值(该字符串在内存中存放位置)<br>占内存大小:字符常量只占2个字节; 字符串常量占若干个字节(至少一个字符结束标志) (注意： char在Java中占两个字节)<br><img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg" alt></p>
 </blockquote>
-</li>
-<li><p>构造器 Constructor 是否可被 override?</p>
-<blockquote>
+<h3 id="9-构造器-Constructor-是否可被-override"><a href="#9-构造器-Constructor-是否可被-override" class="headerlink" title="9. 构造器 Constructor 是否可被 override?"></a>9. 构造器 Constructor 是否可被 override?</h3><blockquote>
 <p>在讲继承的时候我们就知道父类的私有属性和构造方法并不能被继承，所以 Constructor 也就不能被 override（重写）,但是可以 overload（重载）,所以你可以看到一个类中有多个构造函数的情况。</p>
 </blockquote>
-</li>
-<li><p>重载和重写的区别</p>
-<blockquote>
+<h3 id="10-重载和重写的区别"><a href="#10-重载和重写的区别" class="headerlink" title="10. 重载和重写的区别"></a>10. 重载和重写的区别</h3><blockquote>
 <p>重载： 发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。 　　<br>重写： 发生在父子类中，方法名、参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为 private 则子类就不能重写该方法。</p>
 </blockquote>
-</li>
-</ol>
 
       
     </div>
@@ -709,10 +687,6 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/31/生物识别技术课程/" rel="prev" title="生物识别技术课程">
-                生物识别技术课程 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
       
@@ -788,7 +762,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -815,9 +789,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -846,9 +818,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -951,7 +921,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java数据类型"><span class="nav-text">Java数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爱奇艺Java方向试卷"><span class="nav-text">爱奇艺Java方向试卷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础知识回顾"><span class="nav-text">Java 基础知识回顾</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java数据类型"><span class="nav-text">Java数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爱奇艺Java方向试卷"><span class="nav-text">爱奇艺Java方向试卷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础知识回顾"><span class="nav-text">Java 基础知识回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-面向对象和面向过程的区别"><span class="nav-text">1. 面向对象和面向过程的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Java-语言有哪些特点"><span class="nav-text">2. Java 语言有哪些特点?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-关于-JVM-JDK-和-JRE-最详细通俗的解答"><span class="nav-text">3. 关于 JVM JDK 和 JRE 最详细通俗的解答</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Oracle-JDK-和-OpenJDK-的对比"><span class="nav-text">4. Oracle JDK 和 OpenJDK 的对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Java和C-的区别"><span class="nav-text">5. Java和C++的区别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-什么是-Java-程序的主类-应用程序和小程序的主类有何不同"><span class="nav-text">6. 什么是 Java 程序的主类 应用程序和小程序的主类有何不同?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Java-应用程序与小程序之间有哪些差别"><span class="nav-text">7. Java 应用程序与小程序之间有哪些差别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-字符型常量和字符串常量的区别"><span class="nav-text">8. 字符型常量和字符串常量的区别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-构造器-Constructor-是否可被-override"><span class="nav-text">9. 构造器 Constructor 是否可被 override?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-重载和重写的区别"><span class="nav-text">10. 重载和重写的区别</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -999,7 +969,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.5k字</span>
+  <span class="post-count">博客全站共16.1k字</span>
 </div>
         
 <div class="busuanzi-count">
