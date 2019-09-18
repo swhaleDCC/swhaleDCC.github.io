@@ -1764,7 +1764,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7f0581;
+  background: #52f74b;
 }
 .feed-link,
 .chat {
@@ -2980,7 +2980,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("/images/bg.jpg");
+  background: url("/images/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2988,7 +2988,7 @@ body {
 }
 .main-inner {
   background: #fff;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 .header-inner {
   opacity: 0.9;
