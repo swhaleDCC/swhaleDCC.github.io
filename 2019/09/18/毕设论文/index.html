@@ -114,18 +114,20 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="Stay Hungry,Stay Foolish">
+  <meta name="description" content="恶意代码（malicious code）也被称为恶意软件（malware）在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。">
 <meta name="keywords" content="毕设">
 <meta property="og:type" content="article">
 <meta property="og:title" content="毕设笔记">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/09/18/毕设论文/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="Stay Hungry,Stay Foolish">
+<meta property="og:description" content="恶意代码（malicious code）也被称为恶意软件（malware）在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-18T07:39:10.796Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-09-18T12:15:14.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="毕设笔记">
-<meta name="twitter:description" content="Stay Hungry,Stay Foolish">
+<meta name="twitter:description" content="恶意代码（malicious code）也被称为恶意软件（malware）在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
 
 
 
@@ -141,8 +143,8 @@
 
 <script>
     (function(){
-        if('123456'){
-            if (prompt('请输入查看密码') !== '123456'){
+        if('199812'){
+            if (prompt('请输入查看密码') !== '199812'){
                 alert('密码不正确,请询问主编大大！');
                 history.back();
             }
@@ -495,7 +497,27 @@
       
 
       
-        
+        <blockquote>
+<p><strong>恶意代码（malicious code）也被称为恶意软件（malware）</strong><br>在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="恶意代码产生途径"><a href="#恶意代码产生途径" class="headerlink" title="恶意代码产生途径"></a>恶意代码产生途径</h3><blockquote>
+<p>(1)攻击者针对一个新发现的计算机系统漏洞编写一个新的恶意代码，这种方法很多时候会产生一个新的恶意代码的类型或者子类型，实现这种方法的攻击者技术能力往往较强，对于相关系统漏洞的原理有很深入的理解；</p>
+</blockquote>
+<blockquote>
+<p>(2)攻击者修改已有恶意代码来产生新的恶意代码，产生已有恶意代码的一个变种，现如今已经受到广泛发展的混淆技术使得这种方法的技术门槛大大降低，很多非专业人员通过简单的一些教程或者工具就可以实现这一方法，这也使得当前恶意代码数量呈现爆炸式增长。</p>
+</blockquote>
+<h3 id="恶意代码分析技术"><a href="#恶意代码分析技术" class="headerlink" title="恶意代码分析技术"></a>恶意代码分析技术</h3><blockquote>
+<p><strong>静态分析</strong>：通过提取二进制文件或者程序文件中的结构信息进行分析，所以不需要运行样本，基于特征码的方法也可归入这一类。<br><img src="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+</blockquote>
+<blockquote>
+<p><strong>动态分析</strong>：先运行样本并记录其行为，力图通过行为来捕捉其意图从而进行分析。<br>动态行为记录的实现主要有两大类方法：一种是在样本运行之前将整个系统的状态复制一个镜像，在样本运行结束后的状态与镜像做对比，这种方法相对较为容易实现，得到的行为记录也较为粗糙；另一种是在样本运行过程中通过调试器等专有工具来逐步监视样本的行为，这种方法往往较难实现，但是得到的行为记录较为详尽。</p>
+</blockquote>
+<h3 id="本体"><a href="#本体" class="headerlink" title="本体"></a>本体</h3><blockquote>
+<p>本体在哲学中的概念是关于存在论的讨论。在计算机科学与信息科学中，本体用于描述概念（一般是一个领域中实际存在的对象或实体）以及概念与概念之间的联系，可以表示丰富的复杂知识，并且可以被机器所理解。<br>本体的理论与面向对象很类似，但是两者存在本质区别，本体聚焦于类的结构属性，描述的是领域的静态概念模型，而面向对象则是专注于类的操作属性，更主要的是在描述类的动态特征（即行为）。</p>
+</blockquote>
+<h3 id="恶意代码种类"><a href="#恶意代码种类" class="headerlink" title="恶意代码种类"></a>恶意代码种类</h3>
       
     </div>
 
@@ -598,8 +620,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/17/博客搬家/" rel="next" title="将博客搬至CSDN">
-                <i class="fa fa-chevron-left"></i> 将博客搬至CSDN
+              <a href="/2019/08/31/Java/" rel="next" title="Java学习">
+                <i class="fa fa-chevron-left"></i> Java学习
               </a>
             
           </div>
@@ -607,6 +629,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/18/机器学习/" rel="prev" title="机器学习笔记">
+                机器学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -655,8 +681,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -732,7 +767,9 @@
         
           
         
-        <span class="site-state-item-count">7</span>
+          
+        
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -825,6 +862,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#恶意代码产生途径"><span class="nav-text">恶意代码产生途径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恶意代码分析技术"><span class="nav-text">恶意代码分析技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本体"><span class="nav-text">本体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恶意代码种类"><span class="nav-text">恶意代码种类</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -866,7 +920,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.1k字</span>
+  <span class="post-count">博客全站共17.3k字</span>
 </div>
         
 <div class="busuanzi-count">
