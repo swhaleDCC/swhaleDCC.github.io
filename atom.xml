@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-09-18T12:10:16.478Z</updated>
+  <updated>2019-09-18T13:44:12.348Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -21,13 +21,11 @@
     <link href="https://swhaledcc.github.io/2019/09/18/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/18/机器学习/</id>
     <published>2019-09-18T12:08:28.501Z</published>
-    <updated>2019-09-18T12:10:16.478Z</updated>
+    <updated>2019-09-18T13:44:12.348Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;特征缩放(feature scaling)&lt;br&gt;梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h4 id=&quot;特征缩放-feature-scaling&quot;&gt;&lt;a href=&quot;#特征缩放-feature-scaling&quot; class=&quot;headerlink&quot; title=&quot;特征缩放(feature scaling)&quot;&gt;&lt;/a&gt;特征缩放(feature scaling)&lt;/h4&gt;&lt;p&gt;梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。&lt;/p&gt;
     
     </summary>
     
@@ -43,13 +41,11 @@
     <link href="https://swhaledcc.github.io/2019/09/18/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
     <id>https://swhaledcc.github.io/2019/09/18/毕设论文/</id>
     <published>2019-09-18T07:23:33.121Z</published>
-    <updated>2019-09-18T12:15:14.835Z</updated>
+    <updated>2019-09-18T12:24:06.636Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;恶意代码（malicious code）也被称为恶意软件（malware）&lt;/strong&gt;&lt;br&gt;在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;毕设内容学习笔记&lt;/p&gt;
     
     </summary>
     
@@ -87,19 +83,11 @@
     <link href="https://swhaledcc.github.io/2019/08/30/%E5%9B%BE%E8%AE%BA/"/>
     <id>https://swhaledcc.github.io/2019/08/30/图论/</id>
     <published>2019-08-30T02:12:11.124Z</published>
-    <updated>2019-09-18T12:21:19.233Z</updated>
+    <updated>2019-09-18T12:24:18.042Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h3 id=&quot;997-找到小镇的法官（需二刷）&quot;&gt;&lt;a href=&quot;#997-找到小镇的法官（需二刷）&quot; class=&quot;headerlink&quot; title=&quot;997. 找到小镇的法官（需二刷）&quot;&gt;&lt;/a&gt;997.
-        
-      
+      &lt;p&gt;图论算法刷题&lt;/p&gt;
     
     </summary>
     
