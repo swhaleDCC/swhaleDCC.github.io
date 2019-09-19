@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python学习]]></title>
+    <url>%2F2019%2F09%2F19%2Fpython%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[机器学习笔记]]></title>
     <url>%2F2019%2F09%2F18%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[特征缩放(feature scaling)梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。]]></content>
