@@ -1665,11 +1665,6 @@ pre .javascript .function {
   color: #eee;
   border-bottom-color: #eee;
 }
-@media (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
-}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1764,7 +1759,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #83e7d1;
+  background: #24c629;
 }
 .feed-link,
 .chat {
@@ -1887,7 +1882,6 @@ img:hover {
   .sidebar-toggle {
     opacity: 0.8;
     right: 20px;
-    display: none;
   }
 }
 .sidebar-toggle-line {
@@ -2571,8 +2565,11 @@ body {
 }
 .main-inner {
   background: #fff;
-  opacity: 0.9;
+  opacity: 1;
+  width: 1500px;
+  padding: 20px 30px 0 20px;
+  margin-bottom: 30px;
 }
 .header-inner {
-  opacity: 0.9;
+  opacity: 1;
 }
