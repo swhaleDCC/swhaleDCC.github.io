@@ -114,26 +114,17 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="比赛时间：2019.8.7-10">
-<meta name="keywords" content="电子竞赛">
+  <meta name="keywords" content="LeetCode刷题笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019电子竞赛准备和比赛过程记录">
-<meta property="og:url" content="https://swhaledcc.github.io/2019/07/31/2019电子竞赛国赛/index.html">
+<meta property="og:title" content="2018年力扣高频算法面试题(3)堆栈与队列">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题（3）/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="比赛时间：2019.8.7-10">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190731104618602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190731171838583.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190731200919478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190801155117333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190801155335678.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190801155406628.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190731203509372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-09-18T12:16:43.546Z">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
+<meta property="og:updated_time" content="2019-09-20T01:18:50.975Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019电子竞赛准备和比赛过程记录">
-<meta name="twitter:description" content="比赛时间：2019.8.7-10">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190731104618602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta name="twitter:title" content="2018年力扣高频算法面试题(3)堆栈与队列">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
 
 
 
@@ -143,7 +134,7 @@
 
   
   
-  <link rel="canonical" href="https://swhaledcc.github.io/2019/07/31/2019电子竞赛国赛/">
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题（3）/">
 
 
 
@@ -164,7 +155,7 @@
 </script>
 
   
-  <title>2019电子竞赛准备和比赛过程记录 | Dccun's Blog</title>
+  <title>2018年力扣高频算法面试题(3)堆栈与队列 | Dccun's Blog</title>
   
 
 
@@ -400,7 +391,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/07/31/2019电子竞赛国赛/">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题（3）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dccun">
@@ -417,7 +408,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2019电子竞赛准备和比赛过程记录
+          <h1 class="post-title" itemprop="name headline">2018年力扣高频算法面试题(3)堆栈与队列
 
               
             
@@ -445,7 +436,7 @@
                 
               
 
-              <time title="创建时间：2019-07-31 09:37:19" itemprop="dateCreated datePublished" datetime="2019-07-31T09:37:19+08:00">2019-07-31</time>
+              <time title="创建时间：2019-07-28 19:07:00" itemprop="dateCreated datePublished" datetime="2019-07-28T19:07:00+08:00">2019-07-28</time>
             </span>
           
 
@@ -460,7 +451,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/电子类/" itemprop="url" rel="index"><span itemprop="name">电子类</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
 
                 
                 
@@ -503,46 +494,28 @@
       
 
       
-        <p>比赛时间：2019.8.7-10</p>
+        <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
-
-
-
-<h2 id="7月31日"><a href="#7月31日" class="headerlink" title="7月31日"></a>7月31日</h2><p>（没有时间仔细写笔记，只做简单记录，仅供自己比赛使用）</p>
-<h3 id="复习PID算法"><a href="#复习PID算法" class="headerlink" title="复习PID算法"></a>复习PID算法</h3><p>五月份的时候练习2017年国赛滚球系统已经了解过PID算法，但是并不熟练，比赛前还是有必要再进一步熟悉PID算法的。<br><a href="https://blog.csdn.net/qq_40631927/article/details/90109991" target="_blank" rel="noopener">滚球经验总结</a></p>
-<h3 id="摄像头openmv"><a href="#摄像头openmv" class="headerlink" title="摄像头openmv"></a>摄像头openmv</h3><p>17年国赛控制题滚球系统用到了摄像头的图像处理，老师预测19年还会用到图像处理，因此我们选择了openmv。跟ov系列摄像头比起来，openmv实在是太好用了，不用再拘泥于C，可以使用python。上面滚球经验总结里面也有写openmv跟stm32f407战舰版通信方法。<br>openmv主要就是在<a href="https://book.openmv.cc/video/" target="_blank" rel="noopener">官网</a>学习的。</p>
+<h4 id="至少有K个重复字符的最长子串【需二刷】"><a href="#至少有K个重复字符的最长子串【需二刷】" class="headerlink" title="至少有K个重复字符的最长子串【需二刷】"></a>至少有K个重复字符的最长子串【需二刷】</h4><blockquote>
+<p>找到给定字符串（由小写字符组成）中的最长子串 T ， 要求 T 中的每一字符出现次数都不少于 k 。输出 T 的长度。</p>
+</blockquote>
 <blockquote>
-<p>接线方式：<br>openmv——407核心板<br>P4————RX（PA10_USART1）<br>P5————TX（PA9_USART1）<br>GND———GND</p>
+<p>遍历字符串，找到出现次数少于k次的字符，位置记为i，分为(0，i-1) 和(i+1, s.size() - 1)两个区间，再递归，最后取两区间的最大值。</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20190731104618602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="MPU6050六轴传感器"><a href="#MPU6050六轴传感器" class="headerlink" title="MPU6050六轴传感器"></a>MPU6050六轴传感器</h3><p>MPU6050 采用 IIC 与 STM32F4 通信。<br>姿态数据，也就是欧拉角——航向角（yaw）、横滚角（roll）、俯仰角（pitch）。<br>MPU6050 自带了数字运动处理器，即 DMP。<br>检测轴及方向：<br><img src="https://img-blog.csdnimg.cn/20190731171838583.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> MPU6050 与探索者 STM32F4 开发板的连接：<br><img src="https://img-blog.csdnimg.cn/20190731200919478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="8月1日"><a href="#8月1日" class="headerlink" title="8月1日"></a>8月1日</h2><p>今天台风登陆小岛~一直到上午十点多才来电，中午出了器材清单，开始猜题。<br><img src="https://img-blog.csdnimg.cn/20190801155117333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190801155335678.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190801155406628.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="8月2日"><a href="#8月2日" class="headerlink" title="8月2日"></a>8月2日</h2><p>今天一天就是看网上各种猜题，淘宝找做控制类的器材，报给学校一份，自己买了一份备用（主要因为学校买的各种不靠谱）。</p>
-<h2 id="8月3日"><a href="#8月3日" class="headerlink" title="8月3日"></a>8月3日</h2><h3 id="SD卡的使用"><a href="#SD卡的使用" class="headerlink" title="SD卡的使用"></a>SD卡的使用</h3><h4 id="openmv——SD卡"><a href="#openmv——SD卡" class="headerlink" title="openmv——SD卡"></a>openmv——SD卡</h4><p>先插SD卡再上电<br>SD卡的文件系统会自动取代内置的Flash文件系统<br>openmv使用SD卡的情况：</p>
-<ol>
-<li>代码行数太多</li>
-<li>存储图片</li>
-<li>录制视频</li>
-</ol>
-<h4 id="stm32——SD卡"><a href="#stm32——SD卡" class="headerlink" title="stm32——SD卡"></a>stm32——SD卡</h4><p>只运行了stm32自带的例程，并不懂SD卡怎么用。。。</p>
-<h3 id="通信"><a href="#通信" class="headerlink" title="通信"></a>通信</h3><p>通信很重要，当初做滚球，openmv和stm32通信传输小球坐标时费了很大劲，通信还是要好好看看。</p>
-<h4 id="蓝牙模块"><a href="#蓝牙模块" class="headerlink" title="蓝牙模块"></a>蓝牙模块</h4><p>HC-05   <a href="https://blog.csdn.net/qq_38410730/article/details/80368485" target="_blank" rel="noopener">参考博客</a><br>主要想实现的功能是手机蓝牙控制STM32——<br>手机通过蓝牙传输到HC-05上，再通过串口通信和STM32通信。<br>我们组在网上买了一个组装好的小车，手机APP通过蓝牙HC06控制，蓝牙名称BT04，密码1234。<br>测试APP：蓝牙模块通过stlink连接电脑，用串口调试助手观察按下APP的按键时接收的信息。<br><a href="https://appstore.huawei.com/app/C100166101" target="_blank" rel="noopener">蓝牙串口APP</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;stm32f10x.h&quot;</span><br><span class="line"> </span><br><span class="line"> void My_USART1_Init(void)  </span><br><span class="line">&#123;  </span><br><span class="line">    GPIO_InitTypeDef GPIO_InitStrue;  </span><br><span class="line">    USART_InitTypeDef USART_InitStrue;  </span><br><span class="line">    NVIC_InitTypeDef NVIC_InitStrue;  </span><br><span class="line">      </span><br><span class="line">    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);//GPIO端口使能  </span><br><span class="line">    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1,ENABLE);//串口端口使能  </span><br><span class="line">      </span><br><span class="line">    GPIO_InitStrue.GPIO_Mode=GPIO_Mode_AF_PP;  </span><br><span class="line">    GPIO_InitStrue.GPIO_Pin=GPIO_Pin_9;  </span><br><span class="line">    GPIO_InitStrue.GPIO_Speed=GPIO_Speed_10MHz;  </span><br><span class="line">    GPIO_Init(GPIOA,&amp;GPIO_InitStrue);  </span><br><span class="line">      </span><br><span class="line">    GPIO_InitStrue.GPIO_Mode=GPIO_Mode_IN_FLOATING;  </span><br><span class="line">    GPIO_InitStrue.GPIO_Pin=GPIO_Pin_10;  </span><br><span class="line">    GPIO_InitStrue.GPIO_Speed=GPIO_Speed_10MHz;  </span><br><span class="line">    GPIO_Init(GPIOA,&amp;GPIO_InitStrue);  </span><br><span class="line">      </span><br><span class="line">    USART_InitStrue.USART_BaudRate=115200;  </span><br><span class="line">    USART_InitStrue.USART_HardwareFlowControl=USART_HardwareFlowControl_None;  </span><br><span class="line">    USART_InitStrue.USART_Mode=USART_Mode_Tx|USART_Mode_Rx;  </span><br><span class="line">    USART_InitStrue.USART_Parity=USART_Parity_No;  </span><br><span class="line">    USART_InitStrue.USART_StopBits=USART_StopBits_1;  </span><br><span class="line">    USART_InitStrue.USART_WordLength=USART_WordLength_8b;  </span><br><span class="line">      </span><br><span class="line">    USART_Init(USART1,&amp;USART_InitStrue);</span><br><span class="line">      </span><br><span class="line">    USART_Cmd(USART1,ENABLE);//使能串口1  </span><br><span class="line">      </span><br><span class="line">    USART_ITConfig(USART1,USART_IT_RXNE,ENABLE);//开启接收中断  </span><br><span class="line">      </span><br><span class="line">    NVIC_InitStrue.NVIC_IRQChannel=USART1_IRQn;  </span><br><span class="line">    NVIC_InitStrue.NVIC_IRQChannelCmd=ENABLE;  </span><br><span class="line">    NVIC_InitStrue.NVIC_IRQChannelPreemptionPriority=1;  </span><br><span class="line">    NVIC_InitStrue.NVIC_IRQChannelSubPriority=1;  </span><br><span class="line">    NVIC_Init(&amp;NVIC_InitStrue);  </span><br><span class="line">      </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">void USART1_IRQHandler(void)  </span><br><span class="line">&#123;  </span><br><span class="line">    u8 res;  </span><br><span class="line">     if(USART_GetITStatus(USART1,USART_IT_RXNE)!=RESET)  </span><br><span class="line"> &#123;  </span><br><span class="line">     res= USART_ReceiveData(USART1); 	 </span><br><span class="line">     USART_SendData(USART1,res);     </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">   </span><br><span class="line"> int main(void)  </span><br><span class="line"> &#123;    </span><br><span class="line">	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  </span><br><span class="line">    My_USART1_Init();  </span><br><span class="line">     while(1);  </span><br><span class="line">       </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">int longestSubstring(string s, int k) </span><br><span class="line">&#123;</span><br><span class="line">	if (!s.size()) return 0;</span><br><span class="line">	int *hashMap = new int[26];</span><br><span class="line">	for (int i = 0; i &lt; 26; i++)</span><br><span class="line">		hashMap[i] = 0;</span><br><span class="line">	for (int i = 0; i &lt; s.size(); i++)  //hashmap[i]表示字符i出现的次数</span><br><span class="line">		hashMap[s[i] - &apos;a&apos;]++;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	bool flag = false;  //记录是否有小于k次的字符</span><br><span class="line">	for (int i = 0; i &lt; s.size(); i++) </span><br><span class="line">	&#123;</span><br><span class="line">		if (hashMap[s[i] - &apos;a&apos;] &lt; k) </span><br><span class="line">		&#123;</span><br><span class="line">			flag = true;</span><br><span class="line">			sum = max(longestSubstring(s.substr(0, i), k), longestSubstring(s.substr(i + 1, s.size()), k));</span><br><span class="line">			//这里直接break 如果不break 不影响结果 但影响效率 会重复计算相同的情况</span><br><span class="line">			break;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if (!flag)</span><br><span class="line">		return s.size();</span><br><span class="line">	return sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="WiFi模块ESP8266"><a href="#WiFi模块ESP8266" class="headerlink" title="WiFi模块ESP8266"></a>WiFi模块ESP8266</h4><blockquote>
-<p>VCC连接正极(有些是3.3V,有些是5V)<br>GND连接负极<br>RXD:数据的接收端 (连接单片机或者USB转TTL模块的TXD)<br>TXD:数据的发送端 (连接单片机或者USB转TTL模块的RXD)</p>
+<h4 id="二叉树中的最大路径和【需二刷】"><a href="#二叉树中的最大路径和【需二刷】" class="headerlink" title="二叉树中的最大路径和【需二刷】"></a>二叉树中的最大路径和【需二刷】</h4><blockquote>
+<p>给定一个非空二叉树，返回其最大路径和。<br>本题中，路径被定义为一条从树中任意节点出发，达到任意节点的序列。该路径至少包含一个节点，且不一定经过根节点。</p>
 </blockquote>
-<p><a href="https://blog.csdn.net/ljh_1999/article/details/95028436" target="_blank" rel="noopener">参考博客</a></p>
-<h4 id="NRF24L01无线模块"><a href="#NRF24L01无线模块" class="headerlink" title="NRF24L01无线模块"></a>NRF24L01无线模块</h4><p> NRF24L01是SPI 通信接口。<br> 主要想实现的功能是——两个开发板通信，如果做图像处理，有时候一块开发板不够用，就需要两块开发板。<br>开发板上 NRF24L01 模块接口和 STM32F4的连接：<br><img src="https://img-blog.csdnimg.cn/20190731203509372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="8月4日"><a href="#8月4日" class="headerlink" title="8月4日"></a>8月4日</h2><p>学校负责老师突然让学生自己买器材，离比赛只剩两天半时间，服气。</p>
-<h3 id="云台"><a href="#云台" class="headerlink" title="云台"></a>云台</h3><p>在网上买了几个二维云台，用2个舵机控制。</p>
-<h2 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h2><p>A题无线充电小车是去年省赛的题目，没想到会连续出两年，完全没准备，放弃。<br>B题是巡线四旋翼，难，放弃。<br>F题纸张计数，学校仪器设备不够，放弃。<br>最后选了H题，电磁炮，正好用到了之前做滚球时的舵机和openmv。<br>由于H题只要能成功发射电磁炮就能得十分，所以选这个人的题特别特别多，测评结束后我们学校获奖的六个组其中五个组是做电磁炮。<br>只捡几个点写一下吧，毕竟最后只拿了省二<del>~</del>结果不尽人意，大神太多</p>
-<ol>
-<li>电磁炮的炮管放在二维云台上控制电磁炮水平垂直运动，通过控制继电器高低电平控制充电时间，通过控制舵机旋转控制炮管角度，进而控制炮弹发射距离和方向。</li>
-<li>按键模块使用的是手机APP，通过蓝牙模块HC-05向开发板（stm32F407核心板）传输发射距离和角度。</li>
-<li>发挥部分的自动寻靶和测距用的是openmv，这些都能在openmv官网找到代码，openmv找到靶子并且测得距离后通过串口发送给开发板，继而控制舵机，然后发射炮弹。</li>
-</ol>
+<blockquote>
+<p>分析：采取递归的思想，先遍历到叶子节点，逐层返回当前分支最大路径和。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxv=-123123632;</span><br><span class="line">    int maxPathSum(TreeNode* root) &#123;</span><br><span class="line">        if(root==NULL)</span><br><span class="line">            return 0;</span><br><span class="line">        calc(root);</span><br><span class="line">        return maxv;</span><br><span class="line">    &#125;</span><br><span class="line">    int calc(TreeNode* root)</span><br><span class="line">    &#123;</span><br><span class="line">        if(root==NULL)</span><br><span class="line">            return 0;</span><br><span class="line">        int temp=root-&gt;val;</span><br><span class="line">        int lmaxsum=calc(root-&gt;left);</span><br><span class="line">        int rmaxsum=calc(root-&gt;right);</span><br><span class="line">        </span><br><span class="line">        if(lmaxsum&gt;0)</span><br><span class="line">            temp+=lmaxsum;</span><br><span class="line">        if(rmaxsum&gt;0)</span><br><span class="line">            temp+=rmaxsum;</span><br><span class="line">        </span><br><span class="line">        if(temp&gt;maxv)</span><br><span class="line">            maxv=temp;</span><br><span class="line">        </span><br><span class="line">        //返回以当前节点为根节点的子树的和</span><br><span class="line">        return max(root-&gt;val,max(root-&gt;val+lmaxsum,root-&gt;val+rmaxsum));</span><br><span class="line">            </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
+<h4 id="最长连续序列"><a href="#最长连续序列" class="headerlink" title="最长连续序列"></a>最长连续序列</h4><blockquote>
+<p>给定一个未排序的整数数组，找出最长连续序列的长度。<br>要求:算法的时间复杂度为 O(n)。  <a href="https://www.cnblogs.com/TheLaughingMan/p/8189584.html" target="_blank" rel="noopener">参考</a><br>hashmap的插入\查看\删除操作是O(1)，那么n次就是O(n)，符合题意。vector里面的元素作为key，元素所在连续序列的长度作为value。对于元素i，我们就需要找i+1，i-1，如果有将i的value更新为i+1 &amp; i-1的value和并加一，相当于连接了这三个连续的数，同时还需要将这个连续数列的首位两端也更新。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">int longestConsecutive(vector&lt;int&gt; &amp;num) &#123;</span><br><span class="line">	unordered_map&lt;int,int&gt; len;</span><br><span class="line">	int max=0;</span><br><span class="line">	for(auto i:num)</span><br><span class="line">	&#123;</span><br><span class="line">		if(len[i]==0)//避免重复元素</span><br><span class="line">		&#123;</span><br><span class="line">			int l=len[i-1],r=len[i+1];</span><br><span class="line">			len[i]=l+r+1;</span><br><span class="line">			len[i+r]=l+r+1;</span><br><span class="line">			len[i-l]=l+r+1;</span><br><span class="line">			max=max&gt;len[i]?max:len[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -606,7 +579,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/电子竞赛/" rel="tag"><i class="fa fa-tag"></i> 电子竞赛</a>
+            <a href="/tags/LeetCode刷题笔记/" rel="tag"><i class="fa fa-tag"></i> LeetCode刷题笔记</a>
           
         </div>
       
@@ -639,8 +612,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/28/2018年力扣高频算法面试题（3）/" rel="next" title="2018年力扣高频算法面试题(3)堆栈与队列">
-                <i class="fa fa-chevron-left"></i> 2018年力扣高频算法面试题(3)堆栈与队列
+              <a href="/2019/07/28/2018年力扣高频算法面试题汇总/" rel="next" title="2018年力扣高频算法面试题(1)数学 & 位运算">
+                <i class="fa fa-chevron-left"></i> 2018年力扣高频算法面试题(1)数学 & 位运算
               </a>
             
           </div>
@@ -649,8 +622,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/29/Git学习/" rel="prev" title="Git学习">
-                Git学习 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/31/2019电子竞赛国赛/" rel="prev" title="2019电子竞赛准备和比赛过程记录">
+                2019电子竞赛准备和比赛过程记录 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -897,7 +870,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#7月31日"><span class="nav-text">7月31日</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#复习PID算法"><span class="nav-text">复习PID算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#摄像头openmv"><span class="nav-text">摄像头openmv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MPU6050六轴传感器"><span class="nav-text">MPU6050六轴传感器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8月1日"><span class="nav-text">8月1日</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8月2日"><span class="nav-text">8月2日</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8月3日"><span class="nav-text">8月3日</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SD卡的使用"><span class="nav-text">SD卡的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#openmv——SD卡"><span class="nav-text">openmv——SD卡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stm32——SD卡"><span class="nav-text">stm32——SD卡</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通信"><span class="nav-text">通信</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#蓝牙模块"><span class="nav-text">蓝牙模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WiFi模块ESP8266"><span class="nav-text">WiFi模块ESP8266</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NRF24L01无线模块"><span class="nav-text">NRF24L01无线模块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8月4日"><span class="nav-text">8月4日</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#云台"><span class="nav-text">云台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比赛"><span class="nav-text">比赛</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#至少有K个重复字符的最长子串【需二刷】"><span class="nav-text">至少有K个重复字符的最长子串【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二叉树中的最大路径和【需二刷】"><span class="nav-text">二叉树中的最大路径和【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li></ol></div>
             
 
           </div>
@@ -1145,7 +1118,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2019/07/31/2019电子竞赛国赛/'
+    refer: '2019/07/28/2018年力扣高频算法面试题（3）/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
