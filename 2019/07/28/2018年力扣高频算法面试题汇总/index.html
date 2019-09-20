@@ -123,7 +123,7 @@
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144904349.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144923926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-09-20T01:17:52.735Z">
+<meta property="og:updated_time" content="2019-09-20T01:30:31.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(1)数学 &amp; 位运算">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -438,7 +438,7 @@
                 
               
 
-              <time title="创建时间：2019-07-28 19:07:00" itemprop="dateCreated datePublished" datetime="2019-07-28T19:07:00+08:00">2019-07-28</time>
+              <time title="创建时间：2019-07-28 16:07:00" itemprop="dateCreated datePublished" datetime="2019-07-28T16:07:00+08:00">2019-07-28</time>
             </span>
           
 
@@ -539,31 +539,6 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    uint32_t reverseBits(uint32_t n) &#123;</span><br><span class="line">        uint32_t res = 0;</span><br><span class="line">        for (int i = 0; i &lt; 32; ++i) &#123;</span><br><span class="line">            if (n &amp; 1 == 1) &#123;  // 最后一位为1</span><br><span class="line">                res = (res &lt;&lt; 1) + 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                res = res &lt;&lt; 1;</span><br><span class="line">            &#125;</span><br><span class="line">            n = n &gt;&gt; 1;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h4 id="数据流的中位数"><a href="#数据流的中位数" class="headerlink" title="数据流的中位数"></a>数据流的中位数</h4><blockquote>
-<p>中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class MedianFinder &#123;</span><br><span class="line">    priority_queue&lt;int&gt;max;  //从大到小排序</span><br><span class="line">    priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt;min; //从小到大排序</span><br><span class="line">public:</span><br><span class="line">    MedianFinder() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    void addNum(int num) &#123;</span><br><span class="line">        max.push(num);</span><br><span class="line">        min.push(max.top());</span><br><span class="line">        max.pop();</span><br><span class="line">        if(max.size()&lt;min.size())</span><br><span class="line">        &#123;</span><br><span class="line">            max.push(min.top());</span><br><span class="line">            min.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    double findMedian() &#123;</span><br><span class="line">        return (max.size()+min.size())%2 ? max.top() : ((double)max.top()+min.top())/2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="滑动窗口最大值"><a href="#滑动窗口最大值" class="headerlink" title="滑动窗口最大值"></a>滑动窗口最大值</h4><blockquote>
-<p>给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。<br>返回滑动窗口中的最大值。<br>分析：题目要求我们代码的时间复杂度为 O(n)，提示我们要用双向队列deque来解题，并提示我们窗口中只留下有用的值，没用的全移除掉。大概思路是用双向队列保存数字的下标，遍历整个数组，如果此时队列的首元素是 i-k 的话，表示此时窗口向右移了一步，则移除队首元素。然后比较队尾元素和将要进来的值，如果小的话就都移除，然后此时我们把队首元素加入结果中即可，参见代码如下：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; maxSlidingWindow(vector&lt;int&gt;&amp; nums, int k) </span><br><span class="line">    &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        deque&lt;int&gt; q;</span><br><span class="line">        for (int i = 0; i &lt; nums.size(); ++i) </span><br><span class="line">        &#123;</span><br><span class="line">            if (!q.empty() &amp;&amp; q.front() == i - k) q.pop_front();</span><br><span class="line">            while (!q.empty() &amp;&amp; nums[q.back()] &lt; nums[i]) q.pop_back();</span><br><span class="line">            q.push_back(i);</span><br><span class="line">            if (i &gt;= k - 1) res.push_back(nums[q.front()]);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="数组中的第K个最大元素"><a href="#数组中的第K个最大元素" class="headerlink" title="数组中的第K个最大元素"></a>数组中的第K个最大元素</h4><blockquote>
-<p>在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。<br>分析：直接用sort（）排序肯定是最简单的方法，但是确不是本题真正想考察的东西，可以说有一定的偷懒嫌疑。<br>用小跟堆做复杂度是O(n)，先把数组的前k个元素push到优先队列里面，再循环剩下的元素，如果元素比队头元素（优先队列里面最小的元素）还要小，continue，否则，删除队头元素，把该元素push到队列里面，这样，循环结束后队头元素就是这k个元素里面最小的元素，即第k个最大元素。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int findKthLargest(vector&lt;int&gt;&amp; nums, int k) &#123;</span><br><span class="line">        </span><br><span class="line">        priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt;q(nums.begin(),nums.begin()+k);</span><br><span class="line">        </span><br><span class="line">        int i=k;</span><br><span class="line">        for(;i&lt;nums.size();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(nums[i]&lt;q.top())continue;</span><br><span class="line">            if(nums[i]&gt;q.top())</span><br><span class="line">            &#123;</span><br><span class="line">                q.pop();</span><br><span class="line">                q.push(nums[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return q.top();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="有序矩阵中第K小的元素"><a href="#有序矩阵中第K小的元素" class="headerlink" title="有序矩阵中第K小的元素"></a>有序矩阵中第K小的元素</h4><blockquote>
-<p>给定一个 n x n 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第k小的元素。<br>请注意，它是排序后的第k小元素，而不是第k个元素。<br>分析：我们使用一个最大堆，然后遍历数组每一个元素，将其加入堆，根据最大堆的性质，大的元素会排到最前面，然后我们看当前堆中的元素个数是否大于k，大于的话就将首元素去掉，循环结束后我们返回堆中的首元素即为所求。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int kthSmallest(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int k) &#123;</span><br><span class="line">        priority_queue&lt;int&gt;q;</span><br><span class="line">        for(int i=0;i&lt;matrix.size();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            for(int j=0;j&lt;matrix[0].size();j++)</span><br><span class="line">            &#123;</span><br><span class="line">                q.push(matrix[i][j]);</span><br><span class="line">                if(q.size()&gt;k)q.pop();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return q.top();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="前-K-个高频元素"><a href="#前-K-个高频元素" class="headerlink" title="前 K 个高频元素"></a>前 K 个高频元素</h4><blockquote>
-<p>给定一个非空的整数数组，返回其中出现频率前 k 高的元素。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; topKFrequent(vector&lt;int&gt;&amp; nums, int k) &#123;</span><br><span class="line">        map&lt;int,int&gt;m;</span><br><span class="line">        priority_queue&lt;pair&lt;int,int&gt; &gt;q;</span><br><span class="line">        vector&lt;int&gt;ans;</span><br><span class="line">        for(auto a:nums)</span><br><span class="line">            m[a]++;</span><br><span class="line">        for(auto it:m)</span><br><span class="line">            q.push(&#123;it.second,it.first&#125;);</span><br><span class="line">        for(int i=0;i&lt;k;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            ans.push_back(q.top().second);</span><br><span class="line">            q.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
@@ -661,8 +636,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/28/2018年力扣高频算法面试题-2-数学-位运算/" rel="next" title="2018年力扣高频算法面试题(2)图论">
-                <i class="fa fa-chevron-left"></i> 2018年力扣高频算法面试题(2)图论
+              <a href="/2019/07/27/最好的我们/" rel="next" title="你好，旧时光">
+                <i class="fa fa-chevron-left"></i> 你好，旧时光
               </a>
             
           </div>
@@ -671,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/28/2018年力扣高频算法面试题（3）/" rel="prev" title="2018年力扣高频算法面试题(3)堆栈与队列">
-                2018年力扣高频算法面试题(3)堆栈与队列 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/28/2018年力扣高频算法面试题-2-数学-位运算/" rel="prev" title="2018年力扣高频算法面试题(2)图论">
+                2018年力扣高频算法面试题(2)图论 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -919,7 +894,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、只出现一次的数字"><span class="nav-text">1、只出现一次的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、直线上最多的点数【需二刷】"><span class="nav-text">2、直线上最多的点数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、分数到小数【需二刷】"><span class="nav-text">3、分数到小数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、阶乘后的零"><span class="nav-text">4、阶乘后的零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、缺失数字"><span class="nav-text">5、缺失数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、3的幂"><span class="nav-text">6、3的幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、颠倒二进制位【需二刷】"><span class="nav-text">7、颠倒二进制位【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据流的中位数"><span class="nav-text">数据流的中位数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#滑动窗口最大值"><span class="nav-text">滑动窗口最大值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组中的第K个最大元素"><span class="nav-text">数组中的第K个最大元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序矩阵中第K小的元素"><span class="nav-text">有序矩阵中第K小的元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前-K-个高频元素"><span class="nav-text">前 K 个高频元素</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、只出现一次的数字"><span class="nav-text">1、只出现一次的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、直线上最多的点数【需二刷】"><span class="nav-text">2、直线上最多的点数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、分数到小数【需二刷】"><span class="nav-text">3、分数到小数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、阶乘后的零"><span class="nav-text">4、阶乘后的零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、缺失数字"><span class="nav-text">5、缺失数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、3的幂"><span class="nav-text">6、3的幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、颠倒二进制位【需二刷】"><span class="nav-text">7、颠倒二进制位【需二刷】</span></a></li></ol></div>
             
 
           </div>
@@ -967,7 +942,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共17.2k字</span>
+  <span class="post-count">博客全站共16.8k字</span>
 </div>
         
 <div class="busuanzi-count">
