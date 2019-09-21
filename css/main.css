@@ -1759,7 +1759,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8a2acc;
+  background: #ec8e1b;
 }
 .feed-link,
 .chat {
@@ -2567,9 +2567,17 @@ body {
   background: #fff;
   opacity: 1;
   width: 1500px;
-  padding: 20px 30px 0 20px;
+  padding: 0;
   margin-bottom: 30px;
+  width: 70% !important;
 }
 .header-inner {
   opacity: 1;
+}
+.post {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 25px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 25px rgba(202,203,204,0.5);
 }
