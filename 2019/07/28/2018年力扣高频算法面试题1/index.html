@@ -114,18 +114,19 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="特征缩放(feature scaling)梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。">
-<meta name="keywords" content="ML算法">
+  <meta name="keywords" content="LeetCode刷题笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习笔记">
-<meta property="og:url" content="https://swhaledcc.github.io/2019/09/18/机器学习/index.html">
+<meta property="og:title" content="2018年力扣高频算法面试题(1)数学 &amp; 位运算">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题1/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="特征缩放(feature scaling)梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-18T13:44:12.348Z">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144904349.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144923926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-09-20T01:30:31.960Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习笔记">
-<meta name="twitter:description" content="特征缩放(feature scaling)梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。">
+<meta name="twitter:title" content="2018年力扣高频算法面试题(1)数学 &amp; 位运算">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
 
 
 
@@ -135,14 +136,14 @@
 
   
   
-  <link rel="canonical" href="https://swhaledcc.github.io/2019/09/18/机器学习/">
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题1/">
 
 
 
 <script>
     (function(){
-        if('199812'){
-            if (prompt('请输入查看密码') !== '199812'){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
                 alert('密码不正确,请询问主编大大！');
                 history.back();
             }
@@ -156,7 +157,7 @@
 </script>
 
   
-  <title>机器学习笔记 | Dccun's Blog</title>
+  <title>2018年力扣高频算法面试题(1)数学 & 位运算 | Dccun's Blog</title>
   
 
 
@@ -392,7 +393,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/09/18/机器学习/">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dccun">
@@ -409,7 +410,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习笔记
+          <h1 class="post-title" itemprop="name headline">2018年力扣高频算法面试题(1)数学 & 位运算
 
               
             
@@ -437,7 +438,7 @@
                 
               
 
-              <time title="创建时间：2019-09-18 20:08:28" itemprop="dateCreated datePublished" datetime="2019-09-18T20:08:28+08:00">2019-09-18</time>
+              <time title="创建时间：2019-07-28 16:07:00" itemprop="dateCreated datePublished" datetime="2019-07-28T16:07:00+08:00">2019-07-28</time>
             </span>
           
 
@@ -495,8 +496,48 @@
       
 
       
-        <h4 id="特征缩放-feature-scaling"><a href="#特征缩放-feature-scaling" class="headerlink" title="特征缩放(feature scaling)"></a>特征缩放(feature scaling)</h4><p>梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。</p>
+        <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
+
+<p><a href="https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/" target="_blank" rel="noopener">2018年力扣高频算法面试题汇总</a><br><a href="https://github.com/grandyang/leetcode" target="_blank" rel="noopener">题解参考-github</a><br><a href="https://www.zhihu.com/question/24964987/answer/586425979" target="_blank" rel="noopener">力扣知乎文章</a></p>
+<p>​​​​<img src="https://img-blog.csdnimg.cn/20190813144904349.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20190813144923926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="1、只出现一次的数字"><a href="#1、只出现一次的数字" class="headerlink" title="1、只出现一次的数字"></a>1、只出现一次的数字</h4><blockquote>
+<p>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。<br>要求：线性时间复杂度、不使用额外空间<br>解答：典型的位运算，相同的两个数异或为0，扩展形式为，找出给定非空整数数组中只出现一次的两个整数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int singleNumber(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int ans=nums[0];</span><br><span class="line">        for(int i=1;i&lt;nums.size();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            ans^=nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、直线上最多的点数【需二刷】"><a href="#2、直线上最多的点数【需二刷】" class="headerlink" title="2、直线上最多的点数【需二刷】"></a>2、直线上最多的点数【需二刷】</h4><p><a href="https://github.com/grandyang/leetcode/issues/149" target="_blank" rel="noopener">参考</a></p>
+<blockquote>
+<p>给定一个二维平面，平面上有 n 个点，求最多有多少个点在同一条直线上。<br>特殊情况：①是当两个点重合时，无法确定一条直线，但这也是共线的情况，需要特殊处理。②是斜率不存在的情况，由于两个点 (x1, y1) 和 (x2, y2) 的斜率k表示为 (y2 - y1) / (x2 - x1)，那么当 x1 = x2 时斜率不存在，这种共线情况需要特殊处理。<br>哈希表：记录斜率和共线点个数之间的映射，其中第一种重合点的情况我们假定其斜率为 INT_MIN，第二种情况我们假定其斜率为 INT_MAX，这样都可以用 map 映射了。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxPoints(vector&lt;vector&lt;int&gt;&gt;&amp; points) &#123;</span><br><span class="line">        int res = 0;</span><br><span class="line">        for (int i = 0; i &lt; points.size(); ++i) &#123;</span><br><span class="line">            int duplicate = 1;</span><br><span class="line">            for (int j = i + 1; j &lt; points.size(); ++j) &#123;</span><br><span class="line">                int cnt = 0;</span><br><span class="line">                long long x1 = points[i][0], y1 = points[i][1];</span><br><span class="line">                long long x2 = points[j][0], y2 = points[j][1];</span><br><span class="line">                if (x1 == x2 &amp;&amp; y1 == y2) &#123;++duplicate; continue;&#125;</span><br><span class="line">                for (int k = 0; k &lt; points.size(); ++k) &#123;</span><br><span class="line">                    int x3 = points[k][0], y3 = points[k][1];</span><br><span class="line">                    if (x1 * y2 + x2 * y3 + x3 * y1 - x3 * y2 - x2 * y1 - x1 * y3 == 0) &#123;</span><br><span class="line">                        ++cnt;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                res = max(res, cnt);</span><br><span class="line">            &#125;</span><br><span class="line">            res = max(res, duplicate);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、分数到小数【需二刷】"><a href="#3、分数到小数【需二刷】" class="headerlink" title="3、分数到小数【需二刷】"></a>3、分数到小数【需二刷】</h4><p><a href="https://cloud.tencent.com/developer/article/1350063" target="_blank" rel="noopener">参考</a></p>
+<blockquote>
+<p>给定两个整数，分别表示分数的分子 numerator 和分母 denominator，以字符串形式返回小数。如果小数部分为循环小数，则将循环的部分括在括号内。<br>①循环体出现的标志是什么？我们研究一下1/6。<br>最开始补零，变成10/6，写成0.1，这时候余数是4。<br>余数4再去除以6，变成40/6，写成0.16，这时候余数是4,。<br>余数4再去除以6……<br>这个时候我们都知道接下来必定是循环体结构了，因为出现了相同的被除数。<br>所以我们不能把两个整数变成double类型，直接相除，而是应该不断地整数相除，记录余数，余数再去除以除数。<br>在这个过程中记录余数，如果出现了重复的余数，那么必定是循环体结构了。<br>②边界条件，比如-2147483648/-1，-1/-2147483648，7/-12等等。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">string fractionToDecimal(int numerator, int denominator) </span><br><span class="line">    &#123;</span><br><span class="line">        if(numerator==INT_MIN&amp;&amp;denominator==-1)//边界条件，没法直接除，因为除完结果溢出</span><br><span class="line">        return &quot;2147483648&quot;;</span><br><span class="line">        if(numerator==-1&amp;&amp;denominator==INT_MIN)//边界条件，都是int类型，没法除</span><br><span class="line">        return &quot;0.0000000004656612873077392578125&quot;;</span><br><span class="line">        int shang=numerator/denominator,yushu=numerator%denominator;//记录商和余数</span><br><span class="line">        string res;//最终要返回的string</span><br><span class="line">        if(double(numerator)/double(denominator)&lt;0)//如果两个数一正一负</span><br><span class="line">        &#123;</span><br><span class="line">            if(shang==0)//如果商为0</span><br><span class="line">                res=&apos;-&apos;+to_string(abs(shang));//可能有的同学疑惑为什么要这样处理，比如7/-12，除完shang为0，但是我们要的是-0</span><br><span class="line">            else</span><br><span class="line">                res=to_string(shang);//如果不为0，那么直接处理</span><br><span class="line">        &#125;</span><br><span class="line">        else//如果都是正数或者都是负数</span><br><span class="line">            res=to_string(shang);//直接处理</span><br><span class="line">        if(yushu==0)//如果余数为0，那么到此为止，返回res就可以了</span><br><span class="line">            return res;</span><br><span class="line">        res+=&apos;.&apos;;//如果还有余数，那么要加个小数点</span><br><span class="line">        unordered_map&lt;int,int&gt;record;//记录出现过的余数和余数除以除数得到的商的位置</span><br><span class="line">        while(yushu!=0)</span><br><span class="line">        &#123;</span><br><span class="line">            yushu=abs(yushu);//余数有可能是负的，全都转为正数</span><br><span class="line">            denominator=abs(denominator);//除数也转为正数</span><br><span class="line">            yushu*=10;//余数乘10，作为新的被除数</span><br><span class="line">            if(record.count(yushu))//如果之前出现过了这个余数，那么可以取出循环体了</span><br><span class="line">            &#123;</span><br><span class="line">                int start=record[yushu],end=res.size()-1;//start和end表示循环体的开端和末尾</span><br><span class="line">                res=res.substr(0,start)+&apos;(&apos;+res.substr(start,end-start+1)+&apos;)&apos;;//加一下括号</span><br><span class="line">                return res;//直接返回</span><br><span class="line">            &#125;</span><br><span class="line">            record[yushu]=res.size();//如果没出现过，那么记录在record中，value是这个余数除以除数得到的商应该放的位置</span><br><span class="line">            shang=yushu/denominator;//更新商</span><br><span class="line">            yushu=yushu%denominator;//更新余数</span><br><span class="line">            res+=to_string(shang);//加入最新的商</span><br><span class="line">        &#125;</span><br><span class="line">        return res;//如果一直没有出现重复的余数，那么最终跳出循环后直接返回res</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、阶乘后的零"><a href="#4、阶乘后的零" class="headerlink" title="4、阶乘后的零"></a>4、阶乘后的零</h4><blockquote>
+<p>给定一个整数 n，返回 n! 结果尾数中零的数量。<br>要求：时间复杂度应为 O(log n)。<br>思路：1~n之间有多少5的倍数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int trailingZeroes(int n) &#123;</span><br><span class="line">        int res = 0;</span><br><span class="line">        while(n)&#123;</span><br><span class="line">            n /= 5;</span><br><span class="line">            res += n;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5、缺失数字"><a href="#5、缺失数字" class="headerlink" title="5、缺失数字"></a>5、缺失数字</h4><blockquote>
+<p>给定一个包含 0, 1, 2, …, n 中 n 个数的序列，找出 0 .. n 中没有出现在序列中的那个数。<br>要求：算法应具有线性时间复杂度，仅使用额外常数空间来实现。<br>不缺失数字时候的和可以计算，缺失数字之后的和遍历一遍也可以计算出来，二者相减就是缺失的数字.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int missingNumber(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int res=nums.size();</span><br><span class="line">        for(int i=0;i&lt;nums.size();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            res +=(i-nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6、3的幂"><a href="#6、3的幂" class="headerlink" title="6、3的幂"></a>6、3的幂</h4><blockquote>
+<p>给定一个整数，写一个函数来判断它是否是 3 的幂次方。<br>进阶：你能不使用循环或者递归来完成本题吗？</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPowerOfThree(int n) &#123;</span><br><span class="line">        if(n == 0) return false;</span><br><span class="line">        while(n%3 == 0) n /= 3;</span><br><span class="line">        if(n == 1) return true;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="7、颠倒二进制位【需二刷】"><a href="#7、颠倒二进制位【需二刷】" class="headerlink" title="7、颠倒二进制位【需二刷】"></a>7、颠倒二进制位【需二刷】</h4><blockquote>
+<p>颠倒给定的 32 位无符号整数的二进制位。<br>进阶:如果多次调用这个函数，你将如何优化你的算法？</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    uint32_t reverseBits(uint32_t n) &#123;</span><br><span class="line">        uint32_t res = 0;</span><br><span class="line">        for (int i = 0; i &lt; 32; ++i) &#123;</span><br><span class="line">            if (n &amp; 1 == 1) &#123;  // 最后一位为1</span><br><span class="line">                res = (res &lt;&lt; 1) + 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                res = res &lt;&lt; 1;</span><br><span class="line">            &#125;</span><br><span class="line">            n = n &gt;&gt; 1;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -562,7 +603,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/ML算法/" rel="tag"><i class="fa fa-tag"></i> ML算法</a>
+            <a href="/tags/LeetCode刷题笔记/" rel="tag"><i class="fa fa-tag"></i> LeetCode刷题笔记</a>
           
         </div>
       
@@ -595,8 +636,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/18/毕设论文/" rel="next" title="毕设笔记">
-                <i class="fa fa-chevron-left"></i> 毕设笔记
+              <a href="/2019/07/27/最好的我们/" rel="next" title="你好，旧时光">
+                <i class="fa fa-chevron-left"></i> 你好，旧时光
               </a>
             
           </div>
@@ -605,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/19/python/" rel="prev" title="Python学习">
-                Python学习 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/28/2018年力扣高频算法面试题2/" rel="prev" title="2018年力扣高频算法面试题(2)图论">
+                2018年力扣高频算法面试题(2)图论 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -865,7 +906,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#特征缩放-feature-scaling"><span class="nav-text">特征缩放(feature scaling)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、只出现一次的数字"><span class="nav-text">1、只出现一次的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、直线上最多的点数【需二刷】"><span class="nav-text">2、直线上最多的点数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、分数到小数【需二刷】"><span class="nav-text">3、分数到小数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、阶乘后的零"><span class="nav-text">4、阶乘后的零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、缺失数字"><span class="nav-text">5、缺失数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、3的幂"><span class="nav-text">6、3的幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、颠倒二进制位【需二刷】"><span class="nav-text">7、颠倒二进制位【需二刷】</span></a></li></ol></div>
             
 
           </div>
@@ -913,7 +954,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.7k字</span>
+  <span class="post-count">博客全站共18.9k字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -1113,7 +1154,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2019/09/18/机器学习/'
+    refer: '2019/07/28/2018年力扣高频算法面试题1/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
