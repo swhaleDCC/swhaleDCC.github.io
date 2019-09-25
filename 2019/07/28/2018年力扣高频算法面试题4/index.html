@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
-<meta property="og:updated_time" content="2019-09-24T10:38:28.139Z">
+<meta property="og:updated_time" content="2019-09-25T09:36:49.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(4)动态规划">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -496,6 +496,11 @@
       
         <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
+
+<h4 id="矩阵中的最长递增路径"><a href="#矩阵中的最长递增路径" class="headerlink" title="矩阵中的最长递增路径"></a>矩阵中的最长递增路径</h4><blockquote>
+<p>给定一个整数矩阵，找出最长递增路径的长度。<br>对于每个单元格，你可以往上，下，左，右四个方向移动。 你不能在对角线方向上移动或移动到边界外（即不允许环绕）。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int m, n; </span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; memo;</span><br><span class="line">    int dfs(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int x, int y) &#123;</span><br><span class="line">        if(memo[x][y] != -1)</span><br><span class="line">            return memo[x][y];</span><br><span class="line">        int ret = 1;        </span><br><span class="line">        if(x&gt;0 &amp;&amp; matrix[x-1][y]&gt;matrix[x][y]) </span><br><span class="line">            ret = max(ret, 1 + dfs(matrix, x-1, y));</span><br><span class="line">        if(x&lt;m-1 &amp;&amp; matrix[x+1][y]&gt;matrix[x][y])</span><br><span class="line">            ret = max(ret, 1 + dfs(matrix, x+1, y));</span><br><span class="line">        if(y&gt;0 &amp;&amp; matrix[x][y-1]&gt;matrix[x][y])</span><br><span class="line">            ret = max(ret, 1 + dfs(matrix, x, y-1));</span><br><span class="line">        if(y&lt;n-1 &amp;&amp; matrix[x][y+1]&gt;matrix[x][y])</span><br><span class="line">            ret = max(ret, 1 + dfs(matrix, x, y+1));</span><br><span class="line">        memo[x][y] = ret;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">    int longestIncreasingPath(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        m = matrix.size();</span><br><span class="line">        if(m == 0) return 0;</span><br><span class="line">        n = matrix[0].size();</span><br><span class="line">        memo.resize(m);</span><br><span class="line">        int ans = 1;</span><br><span class="line">        for(int i = 0; i &lt; m; ++i) memo[i].resize(n, -1);</span><br><span class="line">        for(int i = 0; i &lt; m; ++i) </span><br><span class="line">            for(int j = 0; j &lt; n; ++j) </span><br><span class="line">                ans=max(ans,dfs(matrix, i, j));</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h4 id="零钱兑换"><a href="#零钱兑换" class="headerlink" title="零钱兑换"></a>零钱兑换</h4><blockquote>
 <p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。<br>分析：dp[i]表示钱数为i时的最小硬币数</p>
@@ -897,7 +902,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#矩阵中的最长递增路径"><span class="nav-text">矩阵中的最长递增路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
             
 
           </div>
@@ -945,7 +950,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.9k字</span>
+  <span class="post-count">博客全站共17.2k字</span>
 </div>
         
 <div class="busuanzi-count">
