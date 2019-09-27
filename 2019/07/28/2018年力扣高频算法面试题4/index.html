@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
-<meta property="og:updated_time" content="2019-09-25T09:36:49.406Z">
+<meta property="og:updated_time" content="2019-09-27T03:44:49.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(4)动态规划">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -496,6 +496,16 @@
       
         <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
+
+<h4 id="乘积最大子序列"><a href="#乘积最大子序列" class="headerlink" title="乘积最大子序列"></a>乘积最大子序列</h4><blockquote>
+<p>给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。<br>分析：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxProduct(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int res = nums[0], mx = res, mn = res;</span><br><span class="line">        for (int i = 1; i &lt; nums.size(); ++i) </span><br><span class="line">        &#123;</span><br><span class="line">            if (nums[i] &lt; 0) swap(mx, mn);</span><br><span class="line">            mx = max(nums[i], mx * nums[i]);</span><br><span class="line">            mn = min(nums[i], mn * nums[i]);</span><br><span class="line">            res = max(res, mx);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="打乱数组"><a href="#打乱数组" class="headerlink" title="打乱数组"></a>打乱数组</h4><blockquote>
+<p>打乱一个没有重复元素的数组。<br>C++11中，获取随机数的新方法default_random_engine，<a href="https://blog.csdn.net/tsbyj/article/details/46994851" target="_blank" rel="noopener">使用方法</a>。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt;ori;</span><br><span class="line">    vector&lt;int&gt;cur;</span><br><span class="line">    int n;</span><br><span class="line">    default_random_engine e;</span><br><span class="line">    Solution(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        ori=nums;</span><br><span class="line">        cur=nums;</span><br><span class="line">        n=nums.size();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    vector&lt;int&gt; reset() &#123;</span><br><span class="line">        return ori;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    vector&lt;int&gt; shuffle() &#123;</span><br><span class="line">        for (int i = 0; i &lt; n; ++i) &#123;</span><br><span class="line">            int j = (e() % (n - i)) + i;</span><br><span class="line">            swap(cur[i], cur[j]);</span><br><span class="line">        &#125;</span><br><span class="line">        return cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h4 id="矩阵中的最长递增路径"><a href="#矩阵中的最长递增路径" class="headerlink" title="矩阵中的最长递增路径"></a>矩阵中的最长递增路径</h4><blockquote>
 <p>给定一个整数矩阵，找出最长递增路径的长度。<br>对于每个单元格，你可以往上，下，左，右四个方向移动。 你不能在对角线方向上移动或移动到边界外（即不允许环绕）。</p>
@@ -902,7 +912,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#矩阵中的最长递增路径"><span class="nav-text">矩阵中的最长递增路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#乘积最大子序列"><span class="nav-text">乘积最大子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打乱数组"><span class="nav-text">打乱数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矩阵中的最长递增路径"><span class="nav-text">矩阵中的最长递增路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
             
 
           </div>
@@ -950,7 +960,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共17.2k字</span>
+  <span class="post-count">博客全站共17.4k字</span>
 </div>
         
 <div class="busuanzi-count">
