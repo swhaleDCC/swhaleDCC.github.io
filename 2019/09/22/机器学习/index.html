@@ -117,16 +117,17 @@
   <meta name="description" content="&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;TensorFlow 2.0 Tutorial 入门教程实战案例tensorflow官网_tensorflow2.0 examples">
 <meta name="keywords" content="ML算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习深度学习笔记">
+<meta property="og:title" content="机器学习深度学习笔记(加密文章)">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/09/22/机器学习/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:description" content="&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;TensorFlow 2.0 Tutorial 入门教程实战案例tensorflow官网_tensorflow2.0 examples">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-0.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-1.png">
-<meta property="og:updated_time" content="2019-10-03T02:54:33.433Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-2.png">
+<meta property="og:updated_time" content="2019-10-03T09:11:52.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习深度学习笔记">
+<meta name="twitter:title" content="机器学习深度学习笔记(加密文章)">
 <meta name="twitter:description" content="&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;TensorFlow 2.0 Tutorial 入门教程实战案例tensorflow官网_tensorflow2.0 examples">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-0.png">
 
@@ -159,7 +160,7 @@
 </script>
 
   
-  <title>机器学习深度学习笔记 | Dccun's Blog</title>
+  <title>机器学习深度学习笔记(加密文章) | Dccun's Blog</title>
   
 
 
@@ -412,7 +413,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习深度学习笔记
+          <h1 class="post-title" itemprop="name headline">机器学习深度学习笔记(加密文章)
 
               
             
@@ -513,10 +514,23 @@
 <h4 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h4><blockquote>
 <p>查看Ubantu显卡的型号：</p>
 </blockquote>
-<figure class="highlight plain"><figcaption><span>VGA```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">我的电脑显示的是00:02.0 VGA compatible controller: Intel Corporation HD Graphics 530 (rev 06)</span><br><span class="line"></span><br><span class="line">#### MNIST Dataset</span><br><span class="line">&gt;[MNIST Dataset Introduction](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb)</span><br><span class="line">mnist数据集里的每张图片大小为28 * 28像素，可以用28*28的大小的数组来表示一张图片。</span><br><span class="line">标签用大小为10的数组来表示，这种编码我们称之为One hot（独热编码）。</span><br><span class="line"></span><br><span class="line">#### One-hot编码</span><br><span class="line">&gt;One-hot编码（独热编码）</span><br><span class="line">独热编码使用N位代表N种状态，任意时候只有其中一位有效。</span><br><span class="line">采用独热编码的例子</span><br><span class="line">性别:  </span><br><span class="line">[0, 1]代表女，[1, 0]代表男</span><br><span class="line">数字0-9: </span><br><span class="line">[0,0,0,0,0,0,0,0,0,1]代表9，[0,1,0,0,0,0,0,0,0,0]代表1</span><br><span class="line"></span><br><span class="line">#### 损失函数（loss function）</span><br><span class="line">&gt;常见的损失函数定义:</span><br><span class="line">差的平方和 sum((y - label)^2)</span><br><span class="line">交叉熵 -sum(label * log(y))(交叉熵只关注独热编码中有效位的损失)</span><br><span class="line"></span><br><span class="line">#### 梯度下降</span><br><span class="line">![upload successful](/images/pasted-2.png)</span><br><span class="line">learning_rate:学习速率</span><br><span class="line"></span><br><span class="line">#### softmax激活函数</span><br><span class="line">&gt;作用:一是放大效果，二是梯度下降时需要一个可导的函数。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lspci|grep VGA</span><br></pre></td></tr></table></figure>
 
-<p>def softmax(x):<br>    import numpy as np<br>    return np.exp(x) / np.sum(np.exp(x), axis=0)<br>softmax([4, 5, 10])</p>
-<pre><code></code></pre>
+<p>我的电脑显示的是00:02.0 VGA compatible controller: Intel Corporation HD Graphics 530 (rev 06)</p>
+<h4 id="MNIST-Dataset"><a href="#MNIST-Dataset" class="headerlink" title="MNIST Dataset"></a>MNIST Dataset</h4><blockquote>
+<p><a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb" target="_blank" rel="noopener">MNIST Dataset Introduction</a><br>mnist数据集里的每张图片大小为28 * 28像素，可以用28*28的大小的数组来表示一张图片。<br>标签用大小为10的数组来表示，这种编码我们称之为One hot（独热编码）。</p>
+</blockquote>
+<h4 id="One-hot编码"><a href="#One-hot编码" class="headerlink" title="One-hot编码"></a>One-hot编码</h4><blockquote>
+<p>One-hot编码（独热编码）<br>独热编码使用N位代表N种状态，任意时候只有其中一位有效。<br>采用独热编码的例子<br>性别:<br>[0, 1]代表女，[1, 0]代表男<br>数字0-9:<br>[0,0,0,0,0,0,0,0,0,1]代表9，[0,1,0,0,0,0,0,0,0,0]代表1</p>
+</blockquote>
+<h4 id="损失函数（loss-function）"><a href="#损失函数（loss-function）" class="headerlink" title="损失函数（loss function）"></a>损失函数（loss function）</h4><blockquote>
+<p>常见的损失函数定义:<br>差的平方和 sum((y - label)^2)<br>交叉熵 -sum(label * log(y))(交叉熵只关注独热编码中有效位的损失)</p>
+</blockquote>
+<h4 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h4><p><img src="/images/pasted-2.png" alt="upload successful"><br>learning_rate:学习速率</p>
+<h4 id="softmax激活函数"><a href="#softmax激活函数" class="headerlink" title="softmax激活函数"></a>softmax激活函数</h4><blockquote>
+<p>作用:一是放大效果，二是梯度下降时需要一个可导的函数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def softmax(x):</span><br><span class="line">    import numpy as np</span><br><span class="line">    return np.exp(x) / np.sum(np.exp(x), axis=0)</span><br><span class="line">softmax([4, 5, 10])</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -887,7 +901,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习框架"><span class="nav-text">深度学习框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征缩放"><span class="nav-text">特征缩放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行"><span class="nav-text">命令行</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习框架"><span class="nav-text">深度学习框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征缩放"><span class="nav-text">特征缩放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行"><span class="nav-text">命令行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MNIST-Dataset"><span class="nav-text">MNIST Dataset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#One-hot编码"><span class="nav-text">One-hot编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#损失函数（loss-function）"><span class="nav-text">损失函数（loss function）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度下降"><span class="nav-text">梯度下降</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#softmax激活函数"><span class="nav-text">softmax激活函数</span></a></li></ol></div>
             
 
           </div>
