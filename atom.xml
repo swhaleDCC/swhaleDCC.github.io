@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-09-30T07:59:45.135Z</updated>
+  <updated>2019-10-02T14:10:28.341Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2019-09-30T07:59:45.135Z</updated>
+    <updated>2019-10-02T14:10:28.341Z</updated>
     
     <summary type="html">
     
@@ -43,12 +43,12 @@
     <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
     <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-09-30T08:47:27.697Z</updated>
+    <updated>2019-10-02T06:32:00.205Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;jiamiwenzhang&lt;/p&gt;
+&lt;p&gt;加密文章&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -83,15 +83,17 @@
   </entry>
   
   <entry>
-    <title>机器学习笔记</title>
+    <title>机器学习深度学习笔记</title>
     <link href="https://swhaledcc.github.io/2019/09/22/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/22/机器学习/</id>
     <published>2019-09-22T12:12:57.000Z</published>
-    <updated>2019-09-22T12:16:55.276Z</updated>
+    <updated>2019-10-02T14:34:41.060Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;特征缩放-feature-scaling&quot;&gt;&lt;a href=&quot;#特征缩放-feature-scaling&quot; class=&quot;headerlink&quot; title=&quot;特征缩放(feature scaling)&quot;&gt;&lt;/a&gt;特征缩放(feature scaling)&lt;/h4&gt;&lt;p&gt;梯度下降算法中，在有多个特征的情况下，如果能确保这些不同的特征都处在一个相近的范围，这样梯度下降法就能更快地收敛。&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -132,8 +134,8 @@
     <title>图论</title>
     <link href="https://swhaledcc.github.io/2019/08/30/%E5%9B%BE%E8%AE%BA/"/>
     <id>https://swhaledcc.github.io/2019/08/30/图论/</id>
-    <published>2019-08-30T02:12:11.124Z</published>
-    <updated>2019-09-18T12:24:18.042Z</updated>
+    <published>2019-08-30T02:12:00.000Z</published>
+    <updated>2019-10-02T06:32:48.380Z</updated>
     
     <summary type="html">
     
@@ -153,11 +155,13 @@
     <link href="https://swhaledcc.github.io/2019/08/29/Git%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/08/29/Git学习/</id>
     <published>2019-08-29T01:08:00.000Z</published>
-    <updated>2019-09-19T12:53:39.364Z</updated>
+    <updated>2019-10-02T14:20:27.998Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Git学习教程推荐 —— &lt;a href=&quot;https://www.liaoxuefeng.com/wiki/896043488029600&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;廖雪峰&lt;/a&gt;  &lt;a href=&quot;https://snailclimb.top/JavaGuide/#/tools/Git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide&lt;/a&gt;  &lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git官网&lt;/a&gt;&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/896043488029600&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;廖雪峰教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/tools/Git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git官网&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
