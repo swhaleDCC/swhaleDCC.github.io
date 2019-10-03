@@ -114,20 +114,15 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="加密文章">
-<meta name="keywords" content="毕设">
+  <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="毕设笔记（加密文章 慎入）">
-<meta property="og:url" content="https://swhaledcc.github.io/2019/09/25/毕设论文/index.html">
+<meta property="og:title" content="Python学习">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/09/21/python/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="加密文章">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-10-02T06:32:00.205Z">
+<meta property="og:updated_time" content="2019-10-03T01:39:41.974Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="毕设笔记（加密文章 慎入）">
-<meta name="twitter:description" content="加密文章">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta name="twitter:title" content="Python学习">
 
 
 
@@ -137,14 +132,14 @@
 
   
   
-  <link rel="canonical" href="https://swhaledcc.github.io/2019/09/25/毕设论文/">
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/09/21/python/">
 
 
 
 <script>
     (function(){
-        if('199812'){
-            if (prompt('请输入查看密码') !== '199812'){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
                 alert('密码不正确,请询问主编大大！');
                 history.back();
             }
@@ -158,7 +153,7 @@
 </script>
 
   
-  <title>毕设笔记（加密文章 慎入） | Dccun's Blog</title>
+  <title>Python学习 | Dccun's Blog</title>
   
 
 
@@ -394,7 +389,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/09/25/毕设论文/">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/09/21/python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dccun">
@@ -411,7 +406,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">毕设笔记（加密文章 慎入）
+          <h1 class="post-title" itemprop="name headline">Python学习
 
               
             
@@ -439,7 +434,7 @@
                 
               
 
-              <time title="创建时间：2019-09-25 19:49:00" itemprop="dateCreated datePublished" datetime="2019-09-25T19:49:00+08:00">2019-09-25</time>
+              <time title="创建时间：2019-09-21 20:20:00" itemprop="dateCreated datePublished" datetime="2019-09-21T20:20:00+08:00">2019-09-21</time>
             </span>
           
 
@@ -454,7 +449,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
 
                 
                 
@@ -497,36 +492,7 @@
       
 
       
-        <blockquote>
-<p>加密文章</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="GAN-Generative-Adversarial-Network-生成式对抗网络"><a href="#GAN-Generative-Adversarial-Network-生成式对抗网络" class="headerlink" title="GAN(Generative Adversarial Network  生成式对抗网络)"></a>GAN(Generative Adversarial Network  生成式对抗网络)</h3><blockquote>
-<p><strong>生成</strong>：模型通过学习一些数据，然后生成类似的数据。<br>GAN 有两个网络，一个是 generator，一个是 discriminator。</p>
-</blockquote>
-<blockquote>
-<p><strong>主要流程</strong>：首先，有一个一代的 generator，它能生成一些很差的图片，然后有一个一代的 discriminator，它能准确的把生成的图片，和真实的图片分类，简而言之，这个 discriminator 就是一个二分类器，对生成的图片输出 0，对真实的图片输出 1。<br>接着，开始训练出二代的 generator，它能生成稍好一点的图片，能够让一代的 discriminator 认为这些生成的图片是真实的图片。然后会训练出一个二代的 discriminator，它能准确的识别出真实的图片，和二代 generator 生成的图片。以此类推，会有三代，四代…n 代的 generator 和 discriminator，最后 discriminator 无法分辨生成的图片和真实图片，这个网络就拟合了。</p>
-</blockquote>
-<h4 id="恶意代码产生途径"><a href="#恶意代码产生途径" class="headerlink" title="恶意代码产生途径"></a>恶意代码产生途径</h4><blockquote>
-<p><strong>恶意代码（malicious code）也被称为恶意软件（malware）</strong><br>在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API 调用、DLL 模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。</p>
-</blockquote>
-<blockquote>
-<p>(1)攻击者针对一个新发现的计算机系统漏洞编写一个新的恶意代码，这种方法很多时候会产生一个新的恶意代码的类型或者子类型，实现这种方法的攻击者技术能力往往较强，对于相关系统漏洞的原理有很深入的理解；</p>
-</blockquote>
-<blockquote>
-<p>(2)攻击者修改已有恶意代码来产生新的恶意代码，产生已有恶意代码的一个变种，现如今已经受到广泛发展的混淆技术使得这种方法的技术门槛大大降低，很多非专业人员通过简单的一些教程或者工具就可以实现这一方法，这也使得当前恶意代码数量呈现爆炸式增长。</p>
-</blockquote>
-<h4 id="恶意代码分析技术"><a href="#恶意代码分析技术" class="headerlink" title="恶意代码分析技术"></a>恶意代码分析技术</h4><blockquote>
-<p><strong>静态分析</strong>：通过提取二进制文件或者程序文件中的结构信息进行分析，所以不需要运行样本，基于特征码的方法也可归入这一类。<br><img src="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-</blockquote>
-<blockquote>
-<p><strong>动态分析</strong>：先运行样本并记录其行为，力图通过行为来捕捉其意图从而进行分析。<br>动态行为记录的实现主要有两大类方法：一种是在样本运行之前将整个系统的状态复制一个镜像，在样本运行结束后的状态与镜像做对比，这种方法相对较为容易实现，得到的行为记录也较为粗糙；另一种是在样本运行过程中通过调试器等专有工具来逐步监视样本的行为，这种方法往往较难实现，但是得到的行为记录较为详尽。</p>
-</blockquote>
-<h4 id="本体"><a href="#本体" class="headerlink" title="本体"></a>本体</h4><blockquote>
-<p>本体在哲学中的概念是关于存在论的讨论。在计算机科学与信息科学中，本体用于描述概念（一般是一个领域中实际存在的对象或实体）以及概念与概念之间的联系，可以表示丰富的复杂知识，并且可以被机器所理解。<br>本体的理论与面向对象很类似，但是两者存在本质区别，本体聚焦于类的结构属性，描述的是领域的静态概念模型，而面向对象则是专注于类的操作属性，更主要的是在描述类的动态特征（即行为）。</p>
-</blockquote>
-
+        <a id="more"></a>
       
     </div>
 
@@ -590,7 +556,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/毕设/" rel="tag"><i class="fa fa-tag"></i> 毕设</a>
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
           
         </div>
       
@@ -623,8 +589,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/22/机器学习/" rel="next" title="机器学习深度学习笔记">
-                <i class="fa fa-chevron-left"></i> 机器学习深度学习笔记
+              <a href="/2019/09/20/Java/" rel="next" title="Java学习">
+                <i class="fa fa-chevron-left"></i> Java学习
               </a>
             
           </div>
@@ -633,8 +599,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/30/ubantu入门/" rel="prev" title="ubantu">
-                ubantu <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/22/机器学习/" rel="prev" title="机器学习深度学习笔记">
+                机器学习深度学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -684,17 +650,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -886,23 +843,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#GAN-Generative-Adversarial-Network-生成式对抗网络"><span class="nav-text">GAN(Generative Adversarial Network  生成式对抗网络)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#恶意代码产生途径"><span class="nav-text">恶意代码产生途径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#恶意代码分析技术"><span class="nav-text">恶意代码分析技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本体"><span class="nav-text">本体</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1145,7 +1085,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2019/09/25/毕设论文/'
+    refer: '2019/09/21/python/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];

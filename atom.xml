@@ -61,38 +61,17 @@
   </entry>
   
   <entry>
-    <title>Java学习</title>
-    <link href="https://swhaledcc.github.io/2019/09/25/Java/"/>
-    <id>https://swhaledcc.github.io/2019/09/25/Java/</id>
-    <published>2019-09-25T08:36:45.000Z</published>
-    <updated>2019-09-30T08:00:57.873Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文部分内容转载自JavaGuide，地址：&lt;a href=&quot;https://github.com/Snailclimb/JavaGuide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Snailclimb/JavaGuide&lt;/a&gt; ，作者：SnailClimb.&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/?id=java&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide阅读书籍&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="https://swhaledcc.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="Java" scheme="https://swhaledcc.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习深度学习笔记</title>
     <link href="https://swhaledcc.github.io/2019/09/22/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/22/机器学习/</id>
     <published>2019-09-22T12:12:57.000Z</published>
-    <updated>2019-10-02T14:34:41.060Z</updated>
+    <updated>2019-10-03T02:54:33.433Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;br&gt;&lt;a href=&quot;https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow2.0 examples&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -106,10 +85,10 @@
   
   <entry>
     <title>Python学习</title>
-    <link href="https://swhaledcc.github.io/2019/09/19/python/"/>
-    <id>https://swhaledcc.github.io/2019/09/19/python/</id>
-    <published>2019-09-19T12:12:28.171Z</published>
-    <updated>2019-09-19T12:14:32.335Z</updated>
+    <link href="https://swhaledcc.github.io/2019/09/21/python/"/>
+    <id>https://swhaledcc.github.io/2019/09/21/python/</id>
+    <published>2019-09-21T12:20:00.000Z</published>
+    <updated>2019-10-03T01:39:41.974Z</updated>
     
     <summary type="html">
     
@@ -131,22 +110,24 @@
   </entry>
   
   <entry>
-    <title>图论</title>
-    <link href="https://swhaledcc.github.io/2019/08/30/%E5%9B%BE%E8%AE%BA/"/>
-    <id>https://swhaledcc.github.io/2019/08/30/图论/</id>
-    <published>2019-08-30T02:12:00.000Z</published>
-    <updated>2019-10-02T06:32:48.380Z</updated>
+    <title>Java学习</title>
+    <link href="https://swhaledcc.github.io/2019/09/20/Java/"/>
+    <id>https://swhaledcc.github.io/2019/09/20/Java/</id>
+    <published>2019-09-20T08:36:00.000Z</published>
+    <updated>2019-10-03T01:39:22.686Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;图论算法刷题&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;本文部分内容转载自JavaGuide，地址：&lt;a href=&quot;https://github.com/Snailclimb/JavaGuide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Snailclimb/JavaGuide&lt;/a&gt; ，作者：SnailClimb.&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/?id=java&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide阅读书籍&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
-      <category term="算法" scheme="https://swhaledcc.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="编程语言" scheme="https://swhaledcc.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="图论" scheme="https://swhaledcc.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+      <category term="Java" scheme="https://swhaledcc.github.io/tags/Java/"/>
     
   </entry>
   
@@ -174,10 +155,10 @@
   
   <entry>
     <title>2019电子竞赛准备和比赛过程记录</title>
-    <link href="https://swhaledcc.github.io/2019/07/31/2019%E7%94%B5%E5%AD%90%E7%AB%9E%E8%B5%9B%E5%9B%BD%E8%B5%9B/"/>
-    <id>https://swhaledcc.github.io/2019/07/31/2019电子竞赛国赛/</id>
-    <published>2019-07-31T01:37:19.107Z</published>
-    <updated>2019-09-18T12:16:43.546Z</updated>
+    <link href="https://swhaledcc.github.io/2019/08/07/2019%E7%94%B5%E5%AD%90%E7%AB%9E%E8%B5%9B%E5%9B%BD%E8%B5%9B/"/>
+    <id>https://swhaledcc.github.io/2019/08/07/2019电子竞赛国赛/</id>
+    <published>2019-08-07T12:20:00.000Z</published>
+    <updated>2019-10-03T01:38:09.601Z</updated>
     
     <summary type="html">
     
