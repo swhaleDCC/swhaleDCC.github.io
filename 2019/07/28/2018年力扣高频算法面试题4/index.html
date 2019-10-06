@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
-<meta property="og:updated_time" content="2019-09-27T03:44:49.502Z">
+<meta property="og:updated_time" content="2019-10-05T11:23:15.433Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(4)动态规划">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -496,6 +496,16 @@
       
         <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
+
+<h4 id="除自身以外数组的乘积"><a href="#除自身以外数组的乘积" class="headerlink" title="除自身以外数组的乘积"></a>除自身以外数组的乘积</h4><blockquote>
+<p>给定长度为 n 的整数数组 nums，其中 n &gt; 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。<br>说明: 请不要使用除法，且在 O(n) 时间复杂度内完成此题。<br>分析: 对于某一个数字，如果我们知道其前面所有数字的乘积，同时也知道后面所有的数乘积，那么二者相乘就是我们要的结果，所以我们只要分别创建出这两个数组即可，分别从数组的两个方向遍历就可以分别创建出乘积累积数组。<br>优化: 不用单独的数组来保存乘积，而是直接累积到结果 res 中，我们先从前面遍历一遍，将乘积的累积存入结果 res 中，然后从后面开始遍历，用到一个临时变量 right，初始化为1，然后每次不断累积，最终得到正确结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; productExceptSelf(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        vector&lt;int&gt; res(nums.size(), 1);</span><br><span class="line">        for (int i = 1; i &lt; nums.size(); ++i) &#123;</span><br><span class="line">            res[i] = res[i - 1] * nums[i - 1];</span><br><span class="line">        &#125;</span><br><span class="line">        int right = 1;</span><br><span class="line">        for (int i = nums.size() - 1; i &gt;= 0; --i) &#123;</span><br><span class="line">            res[i] *= right;</span><br><span class="line">            right *= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="递增的三元子序列"><a href="#递增的三元子序列" class="headerlink" title="递增的三元子序列"></a>递增的三元子序列</h4><blockquote>
+<p>给定一个未排序的数组，判断这个数组中是否存在长度为 3 的递增子序列。<br>数学表达式如下:<br>如果存在这样的 i, j, k,  且满足 0 ≤ i &lt; j &lt; k ≤ n-1，使得 arr[i] &lt; arr[j] &lt; arr[k] ，返回 true ; 否则返回 false 。<br>说明: 要求算法的时间复杂度为 O(n)，空间复杂度为 O(1) 。<br>分析: 遍历数组，如果m1大于等于当前数字，则将当前数字赋给m1；如果m1小于当前数字且m2大于等于当前数字，那么将当前数字赋给m2，一旦m2被更新了，说明一定会有一个数小于m2，那么我们就成功的组成了一个长度为2的递增子序列，所以我们一旦遍历到比m2还大的数，我们直接返回ture。如果我们遇到比m1小的数，还是要更新m1，有可能的话也要更新m2为更小的值，毕竟m2的值越小，能组成长度为3的递增序列的可能性越大</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool increasingTriplet(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int m1 = INT_MAX, m2 = INT_MAX;</span><br><span class="line">        for (auto a : nums) &#123;</span><br><span class="line">            if (m1 &gt;= a) m1 = a;</span><br><span class="line">            else if (m2 &gt;= a) m2 = a;</span><br><span class="line">            else return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h4 id="乘积最大子序列"><a href="#乘积最大子序列" class="headerlink" title="乘积最大子序列"></a>乘积最大子序列</h4><blockquote>
 <p>给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。<br>分析：</p>
@@ -916,7 +926,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#乘积最大子序列"><span class="nav-text">乘积最大子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打乱数组"><span class="nav-text">打乱数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矩阵中的最长递增路径"><span class="nav-text">矩阵中的最长递增路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#除自身以外数组的乘积"><span class="nav-text">除自身以外数组的乘积</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#递增的三元子序列"><span class="nav-text">递增的三元子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#乘积最大子序列"><span class="nav-text">乘积最大子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打乱数组"><span class="nav-text">打乱数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矩阵中的最长递增路径"><span class="nav-text">矩阵中的最长递增路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零钱兑换"><span class="nav-text">零钱兑换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长连续序列"><span class="nav-text">最长连续序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长上升子序列"><span class="nav-text">最长上升子序列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全平方数"><span class="nav-text">完全平方数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鸡蛋掉落"><span class="nav-text">鸡蛋掉落</span></a></li></ol></div>
             
 
           </div>
@@ -964,7 +974,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.2k字</span>
+  <span class="post-count">博客全站共16.9k字</span>
 </div>
         
 <div class="busuanzi-count">
