@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-02T14:10:28.341Z</updated>
+  <updated>2019-10-13T01:25:56.948Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2019-10-02T14:10:28.341Z</updated>
+    <updated>2019-10-13T01:25:56.948Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;今天装了ubantu18.04,感觉很神奇,记录一下安装完ubantu之后做的事情.&lt;/p&gt;
+&lt;p&gt;今天装了ubantu18.04,记录一下安装完ubantu之后做的事情.&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -39,24 +39,49 @@
   </entry>
   
   <entry>
-    <title>毕设笔记（加密文章 慎入）</title>
-    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
-    <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
+    <title>[学位论文]阅读笔记1</title>
+    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
+    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-02T06:32:00.205Z</updated>
+    <updated>2019-10-13T03:39:04.332Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;加密文章&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kreader.cnki.net/Kreader/CatalogViewPage.aspx?dbCode=cdmd&amp;filename=1017290472.nh&amp;tablename=CMFD201801&amp;compose=&amp;first=1&amp;uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajlaWWVITzdybTVNaGNOMm9tcz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;基于双重遍历的行为触发方法&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="随笔" scheme="https://swhaledcc.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
     
     
-      <category term="毕设" scheme="https://swhaledcc.github.io/tags/%E6%AF%95%E8%AE%BE/"/>
+      <category term="学位论文笔记" scheme="https://swhaledcc.github.io/tags/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毕设笔记[加密文章]</title>
+    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
+    <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
+    <published>2019-09-25T11:49:00.000Z</published>
+    <updated>2019-10-13T02:36:51.603Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
+    
+    
+      <category term="毕设笔记" scheme="https://swhaledcc.github.io/tags/%E6%AF%95%E8%AE%BE%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -65,7 +90,7 @@
     <link href="https://swhaledcc.github.io/2019/09/22/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/22/机器学习/</id>
     <published>2019-09-22T12:12:57.000Z</published>
-    <updated>2019-10-06T08:43:02.128Z</updated>
+    <updated>2019-10-13T01:26:49.705Z</updated>
     
     <summary type="html">
     

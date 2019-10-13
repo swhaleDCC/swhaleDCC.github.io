@@ -126,7 +126,7 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-1.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-2.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-3.png">
-<meta property="og:updated_time" content="2019-10-06T08:43:02.128Z">
+<meta property="og:updated_time" content="2019-10-13T01:26:49.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习深度学习笔记(加密文章)">
 <meta name="twitter:description" content="&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;TensorFlow 2.0 Tutorial 入门教程实战案例tensorflow官网_tensorflow2.0 examples">
@@ -534,6 +534,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def softmax(x):</span><br><span class="line">    import numpy as np</span><br><span class="line">    return np.exp(x) / np.sum(np.exp(x), axis=0)</span><br><span class="line">softmax([4, 5, 10])</span><br></pre></td></tr></table></figure>
 
 <h4 id="tensorflow-playground"><a href="#tensorflow-playground" class="headerlink" title="tensorflow playground"></a>tensorflow playground</h4><p>附上一张我试着训练出来的loss最小的螺旋神经网络<br><img src="/images/pasted-3.png" alt="upload successful"></p>
+<h3 id="GAN-Generative-Adversarial-Network-生成式对抗网络"><a href="#GAN-Generative-Adversarial-Network-生成式对抗网络" class="headerlink" title="GAN(Generative Adversarial Network  生成式对抗网络)"></a>GAN(Generative Adversarial Network  生成式对抗网络)</h3><blockquote>
+<p><strong>生成</strong>：模型通过学习一些数据，然后生成类似的数据。<br>GAN 有两个网络，一个是 generator，一个是 discriminator。</p>
+</blockquote>
+<blockquote>
+<p><strong>主要流程</strong>：首先，有一个一代的 generator，它能生成一些很差的图片，然后有一个一代的 discriminator，它能准确的把生成的图片，和真实的图片分类，简而言之，这个 discriminator 就是一个二分类器，对生成的图片输出 0，对真实的图片输出 1。<br>接着，开始训练出二代的 generator，它能生成稍好一点的图片，能够让一代的 discriminator 认为这些生成的图片是真实的图片。然后会训练出一个二代的 discriminator，它能准确的识别出真实的图片，和二代 generator 生成的图片。以此类推，会有三代，四代…n 代的 generator 和 discriminator，最后 discriminator 无法分辨生成的图片和真实图片，这个网络就拟合了。</p>
+</blockquote>
 
       
     </div>
@@ -641,8 +647,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/25/毕设论文/" rel="prev" title="毕设笔记（加密文章 慎入）">
-                毕设笔记（加密文章 慎入） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/25/毕设论文/" rel="prev" title="毕设笔记[加密文章]">
+                毕设笔记[加密文章] <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -720,7 +726,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -749,7 +755,9 @@
         
           
         
-        <span class="site-state-item-count">6</span>
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -786,7 +794,11 @@
         
           
         
-        <span class="site-state-item-count">9</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -905,7 +917,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习框架"><span class="nav-text">深度学习框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征缩放"><span class="nav-text">特征缩放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行"><span class="nav-text">命令行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MNIST-Dataset"><span class="nav-text">MNIST Dataset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#One-hot编码"><span class="nav-text">One-hot编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#损失函数（loss-function）"><span class="nav-text">损失函数（loss function）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度下降"><span class="nav-text">梯度下降</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#softmax激活函数"><span class="nav-text">softmax激活函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tensorflow-playground"><span class="nav-text">tensorflow playground</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习框架"><span class="nav-text">深度学习框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征缩放"><span class="nav-text">特征缩放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行"><span class="nav-text">命令行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MNIST-Dataset"><span class="nav-text">MNIST Dataset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#One-hot编码"><span class="nav-text">One-hot编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#损失函数（loss-function）"><span class="nav-text">损失函数（loss function）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度下降"><span class="nav-text">梯度下降</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#softmax激活函数"><span class="nav-text">softmax激活函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tensorflow-playground"><span class="nav-text">tensorflow playground</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#GAN-Generative-Adversarial-Network-生成式对抗网络"><span class="nav-text">GAN(Generative Adversarial Network  生成式对抗网络)</span></a></li></div>
             
 
           </div>
@@ -953,7 +965,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.9k字</span>
+  <span class="post-count">博客全站共17.2k字</span>
 </div>
         
 <div class="busuanzi-count">
