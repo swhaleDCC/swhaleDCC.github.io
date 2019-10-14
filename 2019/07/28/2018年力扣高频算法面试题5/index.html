@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
-<meta property="og:updated_time" content="2019-10-06T08:22:07.225Z">
+<meta property="og:updated_time" content="2019-10-13T09:15:02.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(5)字符串">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -497,6 +497,10 @@
         <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center" alt="leetcode"></p>
 <a id="more"></a>
 
+<h4 id="分割回文串"><a href="#分割回文串" class="headerlink" title="分割回文串"></a>分割回文串</h4><blockquote>
+<p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。<br>返回 s 所有可能的分割方案。<br>示例:<br>输入: “aab”<br>输出:<br>[<br>  [“aa”,”b”],<br>  [“a”,”a”,”b”]<br>]<br>分析:DFS—既然题目要求找到所有可能拆分成回文数的情况，那么肯定是所有的情况都要遍历到，对于每一个子字符串都要分别判断一次是不是回文数，那么肯定有一个判断回文数的子函数，还需要一个DFS函数用来递归，再加上原本的这个函数，总共需要三个函数来求解。<br>我们将已经检测好的回文子串放到字符串数组out中，当s遍历完了之后，将out加入结果res中。那么在递归函数中我们必须要知道当前遍历到的位置，用变量start来表示，所以在递归函数中，如果start等于字符串s的长度，说明已经遍历完成，将out加入结果res中，并返回。否则就从start处开始遍历，由于不知道该如何切割，所以我们要遍历所有的切割情况，即一个字符，两个字符，三个字符，等等。。<br>首先判断取出的子串是否是回文串，调用一个判定回文串的子函数即可，这个子函数传入了子串的起始和终止的范围，若子串是回文串，那么我们将其加入out，并且调用递归函数，此时start传入 i+1，之后还要恢复out的状态。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; partition(string s) &#123;</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; res;</span><br><span class="line">        vector&lt;string&gt; out;</span><br><span class="line">        helper(s, 0, out, res);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    void helper(string s, int start, vector&lt;string&gt;&amp; out, vector&lt;vector&lt;string&gt;&gt;&amp; res) &#123;</span><br><span class="line">        if (start == s.size()) &#123; res.push_back(out); return; &#125;</span><br><span class="line">        for (int i = start; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            if (!isPalindrome(s, start, i)) continue;</span><br><span class="line">            out.push_back(s.substr(start, i - start + 1));</span><br><span class="line">            helper(s, i + 1, out, res);</span><br><span class="line">            out.pop_back();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    bool isPalindrome(string s, int start, int end) &#123;</span><br><span class="line">        while (start &lt; end) &#123;</span><br><span class="line">            if (s[start] != s[end]) return false;</span><br><span class="line">            ++start; --end;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -603,8 +607,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/28/2018年力扣高频算法面试题4/" rel="prev" title="2018年力扣高频算法面试题(4)动态规划">
-                2018年力扣高频算法面试题(4)动态规划 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/28/2018年力扣高频算法面试题6/" rel="prev" title="2018年力扣高频算法面试题(6)链表">
+                2018年力扣高频算法面试题(6)链表 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -654,8 +658,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -673,7 +686,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -854,6 +867,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#分割回文串"><span class="nav-text">分割回文串</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -895,7 +925,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共17.2k字</span>
+  <span class="post-count">博客全站共18.2k字</span>
 </div>
         
 <div class="busuanzi-count">

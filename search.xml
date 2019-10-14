@@ -3,12 +3,23 @@
   <entry>
     <title><![CDATA[ubantu]]></title>
     <url>%2F2019%2F09%2F30%2Fubantu%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[今天装了ubantu18.04,记录一下安装完ubantu之后做的事情. ubantu18.04+win10双系统安装与配置双系统安装过程记录参考: https://blog.csdn.net/wb15374515921/article/details/89853278 用同学的U盘装的,省了不少事. 安装好Ubuntu18.04之后要做的事大全参考: https://blog.csdn.net/haeasringnar/article/details/81809040 要安装WPS,VSCODE,GIT,搜狗拼音这里面都有安装教程 安装 Anaconda3参考: https://blog.csdn.net/qq_15192373/article/details/81091098 安装tensorflow2.0pip install tensorflow==2.0.0-beta1遇到的问题:ERROR: Cannot uninstall ‘wrapt’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.办法：输入 pip install -U –ignore-installed wrapt enum34 simplejson netaddr参考：https://www.cnblogs.com/xiaowei2092/p/11025155.html 安装Mac主题参考: https://www.cnblogs.com/feipeng8848/p/8970556.html 这个感觉很高级的样子,看起来很复杂,等以后有时间了再尝试 E: 有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get -f install”(也可以指定一个解决办法)参考: https://blog.csdn.net/zhangfeng2015/article/details/79539727 遇到此类问题，直接在终端输入sudo apt-get –fix-broken install即可解决问题。 安装MySQL8.0参考:https://www.cnblogs.com/luoli-/p/9249769.htmlubuntu18.04 首次登录mysql未设置密码或忘记密码解决方法:https://blog.csdn.net/qq_38737992/article/details/81090373]]></content>
+    <content type="text"><![CDATA[今天装了ubantu18.04,记录一下安装完ubantu之后做的事情. ubantu18.04+win10双系统安装与配置双系统安装过程记录参考: https://blog.csdn.net/wb15374515921/article/details/89853278 用同学的U盘装的,省了不少事. 安装好Ubuntu18.04之后要做的事大全参考: https://blog.csdn.net/haeasringnar/article/details/81809040 要安装WPS,VSCODE,GIT,搜狗拼音这里面都有安装教程 安装 Anaconda3参考: https://blog.csdn.net/qq_15192373/article/details/81091098 安装tensorflow2.0pip install tensorflow==2.0.0-beta1遇到的问题:ERROR: Cannot uninstall ‘wrapt’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.办法：输入 pip install -U –ignore-installed wrapt enum34 simplejson netaddr参考：https://www.cnblogs.com/xiaowei2092/p/11025155.html 安装Mac主题参考: https://www.cnblogs.com/feipeng8848/p/8970556.html 这个感觉很高级的样子,看起来很复杂,等以后有时间了再尝试 E: 有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get -f install”(也可以指定一个解决办法)参考: https://blog.csdn.net/zhangfeng2015/article/details/79539727 遇到此类问题，直接在终端输入sudo apt-get –fix-broken install即可解决问题。 安装MySQL8.0参考:https://www.cnblogs.com/luoli-/p/9249769.htmlubuntu18.04 首次登录mysql未设置密码或忘记密码解决方法:https://blog.csdn.net/qq_38737992/article/details/81090373 安装mendeley参考:https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions]]></content>
       <categories>
         <category>ubantu</category>
       </categories>
       <tags>
         <tag>ubantu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[[论文笔记]Android恶意代码检测技术的研究与实现]]></title>
+    <url>%2F2019%2F09%2F25%2F%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA%2F</url>
+    <content type="text"><![CDATA[[基于双重遍历的行为触发方法] Android恶意代码检测技术的研究与实现 肖强-北京邮电大学 [链接]((https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017290472.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajlaWWVITzdybTVNaGNOMm9tcz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDA0MjIyNkdiR3hIdFhMclpFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSTE9lWitkc0Z5bmtWNzdMVkY=) 摘要：本文首先介绍了当前Android恶意代码检测技术的研究现状,分析了当前在动态检测方法上的不足。从如何提高恶意行为触发率角度出发,结合当前Android平台下自动化检测技术,提出了基于双重遍历的行为触发方法。该方法由深度界面遍历以及组件遍历两部分构成。深度界面遍历以基于控件的深度遍历算法,重新构建遍历规则,并且在遍历的过程中会对界面进行分析,对控件进行筛选以此减少重复操作提高遍历的效率。组件遍历用以对应用程序的Service、Receiver进行遍历,以期触发可能隐藏于Service和Receiver中的恶意行为。同时,为实现Android恶意应用的行为监控,对基于Zygote注入的HOOK技术方案进行了研究与实现,通过对应用程序框架层以及核心库中API的劫持,获取应用行为特征。在行为分析阶段,使用机器学习中的分类算法支持向量机对应用进行检测判别。 静态检测: 优点:效率高 缺点:难以应对代码加密混淆和多态变形技术 动态检测: 通过实际运行程序来获取应用行为特征 影响检出率的关键技术1:应用行为监控技术 影响检出率的关键技术2:软件行为触发技术(重点和难点) 样本来源 恶意程序样本来源:virusShare 国外站点 良性样本来源:Google应用市场 腾讯移动安全实验室2019年上半年手机安全报告:https://m.qq.com/security_lab/news_detail_517.html 恶意程序的判别—分类问题—支持向量机 Android软件恶意行为检测技术研究 曲家兴-哈尔滨工程大学 [链接](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2018&filename=1018083097.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajkrUVcxODJ0WDRFYjkxU2NMRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDY3ODFGMjZGck93SGRIRnFKRWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxPZVorZHNGeURuVzd6T1Y=) 中国互联网络信息中心(CNNIC)第44次《中国互联网络发展状况统计报告》:http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/hlwtjbg/201908/t20190830_70800.htm 马尔科夫链]]></content>
+      <categories>
+        <category>毕设</category>
+      </categories>
+      <tags>
+        <tag>学位论文笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>毕设笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[[学位论文]阅读笔记1]]></title>
-    <url>%2F2019%2F09%2F25%2F%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA%2F</url>
-    <content type="text"><![CDATA[基于双重遍历的行为触发方法 Android恶意代码检测技术的研究与实现 肖强-北京邮电大学 摘要：本文首先介绍了当前Android恶意代码检测技术的研究现状,分析了当前在动态检测方法上的不足。从如何提高恶意行为触发率角度出发,结合当前Android平台下自动化检测技术,提出了基于双重遍历的行为触发方法。该方法由深度界面遍历以及组件遍历两部分构成。深度界面遍历以基于控件的深度遍历算法,重新构建遍历规则,并且在遍历的过程中会对界面进行分析,对控件进行筛选以此减少重复操作提高遍历的效率。组件遍历用以对应用程序的Service、Receiver进行遍历,以期触发可能隐藏于Service和Receiver中的恶意行为。同时,为实现Android恶意应用的行为监控,对基于Zygote注入的HOOK技术方案进行了研究与实现,通过对应用程序框架层以及核心库中API的劫持,获取应用行为特征。在行为分析阶段,使用机器学习中的分类算法支持向量机对应用进行检测判别。 静态检测: 优点:效率高 缺点:难以应对代码加密混淆和多态变形技术 动态检测: 通过实际运行程序来获取应用行为特征 影响检出率的关键技术1:应用行为监控技术 影响检出率的关键技术2:软件行为触发技术, 样本来源 恶意程序样本来源:virusShare 国外站点 良性样本来源:Google应用市场 反编译—扫描smali文件—提取样本包含的关键API集合]]></content>
-      <categories>
-        <category>毕设</category>
-      </categories>
-      <tags>
-        <tag>学位论文笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -100,9 +100,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[2018年力扣高频算法面试题(6)链表]]></title>
+    <url>%2F2019%2F07%2F28%2F2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%986%2F</url>
+    <content type="text"><![CDATA[之前在CSDN写过一篇链表与快慢指针的笔记: https://blog.csdn.net/qq_40631927/article/details/89813518 排序链表 在 O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。分析:看到时间复杂度O(nlgn)最先想到的就是把链表的数据存到vector,用sort进行排序,然后把排好序的数据重新建成一个链表…很明显这个方法效率太低.归并排序:归并排序的核心其实是分治法 Divide and Conquer，就是将链表从中间断开，分成两部分，左右两边再分别调用排序的递归函数 sortList()，得到各自有序的链表后，再进行 merge()，这样整体就是有序的了。 12345678910111213141516171819202122232425class Solution &#123;public: ListNode* sortList(ListNode* head) &#123; if (!head || !head-&gt;next) return head; ListNode *slow = head, *fast = head, *pre = head; while (fast &amp;&amp; fast-&gt;next) &#123; pre = slow; slow = slow-&gt;next; fast = fast-&gt;next-&gt;next; &#125; pre-&gt;next = NULL; return merge(sortList(head), sortList(slow)); &#125; ListNode* merge(ListNode* l1, ListNode* l2) &#123; if (!l1) return l2; if (!l2) return l1; if (l1-&gt;val &lt; l2-&gt;val) &#123; l1-&gt;next = merge(l1-&gt;next, l2); return l1; &#125; else &#123; l2-&gt;next = merge(l1, l2-&gt;next); return l2; &#125; &#125;&#125;;]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>LeetCode刷题笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018年力扣高频算法面试题(5)字符串]]></title>
     <url>%2F2019%2F07%2F28%2F2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%985%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[分割回文串 给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回 s 所有可能的分割方案。示例:输入: “aab”输出:[ [“aa”,”b”], [“a”,”a”,”b”]]分析:DFS—既然题目要求找到所有可能拆分成回文数的情况，那么肯定是所有的情况都要遍历到，对于每一个子字符串都要分别判断一次是不是回文数，那么肯定有一个判断回文数的子函数，还需要一个DFS函数用来递归，再加上原本的这个函数，总共需要三个函数来求解。我们将已经检测好的回文子串放到字符串数组out中，当s遍历完了之后，将out加入结果res中。那么在递归函数中我们必须要知道当前遍历到的位置，用变量start来表示，所以在递归函数中，如果start等于字符串s的长度，说明已经遍历完成，将out加入结果res中，并返回。否则就从start处开始遍历，由于不知道该如何切割，所以我们要遍历所有的切割情况，即一个字符，两个字符，三个字符，等等。。首先判断取出的子串是否是回文串，调用一个判定回文串的子函数即可，这个子函数传入了子串的起始和终止的范围，若子串是回文串，那么我们将其加入out，并且调用递归函数，此时start传入 i+1，之后还要恢复out的状态。 12345678910111213141516171819202122232425class Solution &#123;public: vector&lt;vector&lt;string&gt;&gt; partition(string s) &#123; vector&lt;vector&lt;string&gt;&gt; res; vector&lt;string&gt; out; helper(s, 0, out, res); return res; &#125; void helper(string s, int start, vector&lt;string&gt;&amp; out, vector&lt;vector&lt;string&gt;&gt;&amp; res) &#123; if (start == s.size()) &#123; res.push_back(out); return; &#125; for (int i = start; i &lt; s.size(); ++i) &#123; if (!isPalindrome(s, start, i)) continue; out.push_back(s.substr(start, i - start + 1)); helper(s, i + 1, out, res); out.pop_back(); &#125; &#125; bool isPalindrome(string s, int start, int end) &#123; while (start &lt; end) &#123; if (s[start] != s[end]) return false; ++start; --end; &#125; return true; &#125;&#125;;]]></content>
       <categories>
         <category>算法</category>
       </categories>
