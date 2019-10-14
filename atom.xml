@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-13T11:22:04.815Z</updated>
+  <updated>2019-10-14T08:15:56.027Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Androwarn：一款针对Android端恶意软件的全功能静态代码分析工具</title>
+    <link href="https://swhaledcc.github.io/2019/10/14/Androwarn/"/>
+    <id>https://swhaledcc.github.io/2019/10/14/Androwarn/</id>
+    <published>2019-10-14T07:56:00.000Z</published>
+    <updated>2019-10-14T08:15:56.027Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="恶意代码检测" scheme="https://swhaledcc.github.io/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B/"/>
+    
+    
+      <category term="静态检测" scheme="https://swhaledcc.github.io/tags/%E9%9D%99%E6%80%81%E6%A3%80%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ubantu</title>
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2019-10-13T11:22:04.815Z</updated>
+    <updated>2019-10-14T07:54:44.487Z</updated>
     
     <summary type="html">
     
@@ -65,15 +87,12 @@
     <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
     <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-13T02:36:51.603Z</updated>
+    <updated>2019-10-14T08:00:44.882Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;友链&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -90,13 +109,13 @@
     <link href="https://swhaledcc.github.io/2019/09/22/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/22/机器学习/</id>
     <published>2019-09-22T12:12:57.000Z</published>
-    <updated>2019-10-13T01:26:49.705Z</updated>
+    <updated>2019-10-14T07:59:20.847Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;br&gt;&lt;a href=&quot;https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow2.0 examples&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;br&gt;&lt;a href=&quot;https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow2.0 examples&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -109,42 +128,16 @@
   </entry>
   
   <entry>
-    <title>Python学习</title>
-    <link href="https://swhaledcc.github.io/2019/09/21/python/"/>
-    <id>https://swhaledcc.github.io/2019/09/21/python/</id>
-    <published>2019-09-21T12:20:00.000Z</published>
-    <updated>2019-10-03T01:39:41.974Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="编程语言" scheme="https://swhaledcc.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="Python" scheme="https://swhaledcc.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java学习</title>
     <link href="https://swhaledcc.github.io/2019/09/20/Java/"/>
     <id>https://swhaledcc.github.io/2019/09/20/Java/</id>
     <published>2019-09-20T08:36:00.000Z</published>
-    <updated>2019-10-03T01:39:22.686Z</updated>
+    <updated>2019-10-14T07:59:07.123Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;本文部分内容转载自JavaGuide，地址：&lt;a href=&quot;https://github.com/Snailclimb/JavaGuide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Snailclimb/JavaGuide&lt;/a&gt; ，作者：SnailClimb.&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/?id=java&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide阅读书籍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;本文部分内容转载自JavaGuide，地址：&lt;a href=&quot;https://github.com/Snailclimb/JavaGuide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Snailclimb/JavaGuide&lt;/a&gt; ，作者：SnailClimb.&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/?id=java&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide阅读书籍&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -161,12 +154,12 @@
     <link href="https://swhaledcc.github.io/2019/08/29/Git%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/08/29/Git学习/</id>
     <published>2019-08-29T01:08:00.000Z</published>
-    <updated>2019-10-02T14:20:27.998Z</updated>
+    <updated>2019-10-14T07:59:52.791Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/896043488029600&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;廖雪峰教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://snailclimb.top/JavaGuide/#/tools/Git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaGuide&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/896043488029600&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;廖雪峰教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git官网&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -199,11 +192,11 @@
   </entry>
   
   <entry>
-    <title>2018年力扣高频算法面试题(4)动态规划</title>
-    <link href="https://swhaledcc.github.io/2019/07/28/2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%984/"/>
-    <id>https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题4/</id>
+    <title>2018年力扣高频算法面试题(6)链表</title>
+    <link href="https://swhaledcc.github.io/2019/07/28/2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%986/"/>
+    <id>https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题6/</id>
     <published>2019-07-28T12:07:00.000Z</published>
-    <updated>2019-10-05T11:23:15.433Z</updated>
+    <updated>2019-10-14T07:53:01.789Z</updated>
     
     <summary type="html">
     
@@ -219,11 +212,11 @@
   </entry>
   
   <entry>
-    <title>2018年力扣高频算法面试题(6)链表</title>
-    <link href="https://swhaledcc.github.io/2019/07/28/2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%986/"/>
-    <id>https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题6/</id>
+    <title>2018年力扣高频算法面试题(4)动态规划</title>
+    <link href="https://swhaledcc.github.io/2019/07/28/2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%984/"/>
+    <id>https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题4/</id>
     <published>2019-07-28T12:07:00.000Z</published>
-    <updated>2019-10-13T09:14:22.589Z</updated>
+    <updated>2019-10-05T11:23:15.433Z</updated>
     
     <summary type="html">
     
@@ -303,11 +296,15 @@
     <link href="https://swhaledcc.github.io/2019/07/28/2018%E5%B9%B4%E5%8A%9B%E6%89%A3%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%981/"/>
     <id>https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题1/</id>
     <published>2019-07-28T08:07:00.000Z</published>
-    <updated>2019-09-20T01:30:31.960Z</updated>
+    <updated>2019-10-14T07:57:50.576Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center&quot; alt=&quot;leetcode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2018年力扣高频算法面试题汇总&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/grandyang/leetcode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题解参考-github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/24964987/answer/586425979&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;力扣知乎文章&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
