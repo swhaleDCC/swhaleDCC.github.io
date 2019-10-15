@@ -114,18 +114,17 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。">
-<meta name="keywords" content="静态检测">
+  <meta name="keywords" content="静态检测">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Androwarn：一款针对Android端恶意软件的全功能静态代码分析工具">
+<meta property="og:title" content="Androwarn | Androguard | Apktool">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/10/14/Androwarn/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-14T08:15:56.027Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
+<meta property="og:updated_time" content="2019-10-14T13:24:29.998Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Androwarn：一款针对Android端恶意软件的全功能静态代码分析工具">
-<meta name="twitter:description" content="Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。">
+<meta name="twitter:title" content="Androwarn | Androguard | Apktool">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
 
 
 
@@ -156,7 +155,7 @@
 </script>
 
   
-  <title>Androwarn：一款针对Android端恶意软件的全功能静态代码分析工具 | Dccun's Blog</title>
+  <title>Androwarn | Androguard | Apktool | Dccun's Blog</title>
   
 
 
@@ -409,7 +408,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Androwarn：一款针对Android端恶意软件的全功能静态代码分析工具
+          <h1 class="post-title" itemprop="name headline">Androwarn | Androguard | Apktool
 
               
             
@@ -495,11 +494,24 @@
       
 
       
-        <blockquote>
-<p>Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。</p>
-</blockquote>
+        <p><img src="/images/pasted-4.png" alt="upload successful"></p>
 <a id="more"></a>
 
+<h1 id="Apktool"><a href="#Apktool" class="headerlink" title="Apktool"></a>Apktool</h1><p>A tool for reverse engineering（逆向工具） Android apk files.</p>
+<blockquote>
+<p>github博客链接:<br><a href="https://ibotpeaches.github.io/Apktool/" target="_blank" rel="noopener">https://ibotpeaches.github.io/Apktool/</a></p>
+</blockquote>
+<h1 id="Androguard"><a href="#Androguard" class="headerlink" title="Androguard"></a>Androguard</h1><blockquote>
+<p>github链接:<br><a href="https://github.com/androguard/androguard" target="_blank" rel="noopener">https://github.com/androguard/androguard</a><br>项目主页:<br><a href="https://code.google.com/archive/p/androguard/" target="_blank" rel="noopener">https://code.google.com/archive/p/androguard/</a><br>使用说明中文版:<br><a href="https://www.jianshu.com/p/079e40800ef4" target="_blank" rel="noopener">https://www.jianshu.com/p/079e40800ef4</a></p>
+</blockquote>
+<p>安装:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install androguard==3.3.5</span><br></pre></td></tr></table></figure>
+
+<p>androguard主要用来进行静态分析，其默认采用ded作为反编译的软件，同时提供了很多模块供分析人员使用。</p>
+<h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><blockquote>
+<p>github链接:<br><a href="https://github.com/maaaaz/androwarn/" target="_blank" rel="noopener">https://github.com/maaaaz/androwarn/</a><br>附一个中文版教程链接:<br><a href="https://www.freebuf.com/sectool/199407.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/199407.html</a></p>
+</blockquote>
+<p>Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。</p>
 <p>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行静态分析，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
 
       
@@ -655,8 +667,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -859,6 +880,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Apktool"><span class="nav-text">Apktool</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androguard"><span class="nav-text">Androguard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androwarn"><span class="nav-text">Androwarn</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -900,7 +938,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.3k字</span>
+  <span class="post-count">博客全站共18.5k字</span>
 </div>
         
 <div class="busuanzi-count">
