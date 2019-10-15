@@ -114,18 +114,18 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情.">
+  <meta name="description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。">
 <meta name="keywords" content="ubantu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubantu">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/09/30/ubantu入门/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情.">
+<meta property="og:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-15T01:44:44.000Z">
+<meta property="og:updated_time" content="2019-10-15T12:47:31.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubantu">
-<meta name="twitter:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情.">
+<meta name="twitter:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。">
 
 
 
@@ -496,25 +496,32 @@
 
       
         <blockquote>
-<p>今天装了ubantu18.04,记录一下安装完ubantu之后做的事情.</p>
+<p>今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。</p>
 </blockquote>
 <a id="more"></a>
 
-<p>ubuntu是基于debian开发的，centos是基于redhat开发的，所以ubuntu可以使用deb结尾的包，而centos使用rpm结尾的包</p>
+<p>ubuntu是基于debian开发的，centos是基于redhat开发的，所以ubuntu可以使用deb结尾的包，而centos使用rpm结尾的包。</p>
+<p>显示文件夹中隐藏的文件：ctrl+H。</p>
 <h3 id="双系统安装过程记录"><a href="#双系统安装过程记录" class="headerlink" title="双系统安装过程记录"></a>双系统安装过程记录</h3><p>参考: <a href="https://blog.csdn.net/wb15374515921/article/details/89853278" target="_blank" rel="noopener">https://blog.csdn.net/wb15374515921/article/details/89853278</a></p>
 <p>用同学的U盘装的,省了不少事.</p>
 <h3 id="安装好Ubuntu18-04之后要做的事大全"><a href="#安装好Ubuntu18-04之后要做的事大全" class="headerlink" title="安装好Ubuntu18.04之后要做的事大全"></a>安装好Ubuntu18.04之后要做的事大全</h3><p>参考: <a href="https://blog.csdn.net/haeasringnar/article/details/81809040" target="_blank" rel="noopener">https://blog.csdn.net/haeasringnar/article/details/81809040</a></p>
-<p>要安装WPS,VSCODE,GIT,搜狗拼音这里面都有安装教程</p>
+<p>要安装<strong>搜狗拼音、git</strong>可以按照这个里面的教程，下面补充几个更好用的按照教程</p>
 <h3 id="安装-Anaconda3"><a href="#安装-Anaconda3" class="headerlink" title="安装 Anaconda3"></a>安装 Anaconda3</h3><p>参考: <a href="https://blog.csdn.net/qq_15192373/article/details/81091098" target="_blank" rel="noopener">https://blog.csdn.net/qq_15192373/article/details/81091098</a></p>
-<h3 id="安装tensorflow2-0"><a href="#安装tensorflow2-0" class="headerlink" title="安装tensorflow2.0"></a>安装tensorflow2.0</h3><p><code>pip install tensorflow==2.0.0-beta1</code><br>遇到的问题:<br>ERROR: Cannot uninstall ‘wrapt’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.<br>办法：输入 pip install -U –ignore-installed wrapt enum34 simplejson netaddr<br>参考：<a href="https://www.cnblogs.com/xiaowei2092/p/11025155.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaowei2092/p/11025155.html</a></p>
-<h3 id="安装Mac主题"><a href="#安装Mac主题" class="headerlink" title="安装Mac主题"></a>安装Mac主题</h3><p>参考: <a href="https://www.cnblogs.com/feipeng8848/p/8970556.html" target="_blank" rel="noopener">https://www.cnblogs.com/feipeng8848/p/8970556.html</a></p>
-<p>这个感觉很高级的样子,看起来很复杂,等以后有时间了再尝试</p>
-<h3 id="E-有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get-f-install”-也可以指定一个解决办法"><a href="#E-有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get-f-install”-也可以指定一个解决办法" class="headerlink" title="E: 有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get -f install”(也可以指定一个解决办法)"></a>E: 有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get -f install”(也可以指定一个解决办法)</h3><p>参考: <a href="https://blog.csdn.net/zhangfeng2015/article/details/79539727" target="_blank" rel="noopener">https://blog.csdn.net/zhangfeng2015/article/details/79539727</a></p>
-<p>遇到此类问题，直接在终端输入sudo apt-get –fix-broken install即可解决问题。</p>
-<h3 id="安装MySQL8-0"><a href="#安装MySQL8-0" class="headerlink" title="安装MySQL8.0"></a>安装MySQL8.0</h3><p>参考:<a href="https://www.cnblogs.com/luoli-/p/9249769.html" target="_blank" rel="noopener">https://www.cnblogs.com/luoli-/p/9249769.html</a><br>ubuntu18.04 </p>
-<p>首次登录mysql未设置密码或忘记密码解决方法:<br><a href="https://blog.csdn.net/qq_38737992/article/details/81090373" target="_blank" rel="noopener">https://blog.csdn.net/qq_38737992/article/details/81090373</a></p>
-<h3 id="安装mendeley"><a href="#安装mendeley" class="headerlink" title="安装mendeley"></a>安装mendeley</h3><p>参考:<a href="https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions" target="_blank" rel="noopener">https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions</a></p>
-<h3 id="安装配置JAVA环境"><a href="#安装配置JAVA环境" class="headerlink" title="安装配置JAVA环境"></a>安装配置JAVA环境</h3><p>参考:<a href="https://blog.csdn.net/weixx3/article/details/80296779" target="_blank" rel="noopener">https://blog.csdn.net/weixx3/article/details/80296779</a><br><a href="https://zhidao.baidu.com/question/531884871.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/531884871.html</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">在清华大学开源软件镜像站下载：</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</span><br><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br><span class="line">若在终端输入 python，仍然会显示Ubuntu自带的python版本，我们执行：</span><br><span class="line">sudo gedit ~/.bashrc</span><br><span class="line">export PATH=&quot;/home/xupp/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装tensorflow2-0"><a href="#安装tensorflow2-0" class="headerlink" title="安装tensorflow2.0"></a>安装tensorflow2.0</h3><figure class="highlight plain"><figcaption><span>install tensorflow</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">遇到的问题:</span><br><span class="line">ERROR: Cannot uninstall &apos;wrapt&apos;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</span><br><span class="line">办法：输入 pip install -U --ignore-installed wrapt enum34 simplejson netaddr</span><br><span class="line">参考：https://www.cnblogs.com/xiaowei2092/p/11025155.html</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装Mac主题</span><br><span class="line"></span><br><span class="line">参考: https://www.cnblogs.com/feipeng8848/p/8970556.html</span><br><span class="line"></span><br><span class="line">这个感觉很高级的样子,看起来很复杂,等以后有时间了再尝试</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装MySQL8.0</span><br><span class="line">参考:https://www.cnblogs.com/luoli-/p/9249769.html</span><br><span class="line">ubuntu18.04 </span><br><span class="line"></span><br><span class="line">首次登录mysql未设置密码或忘记密码解决方法:</span><br><span class="line">https://blog.csdn.net/qq_38737992/article/details/81090373</span><br></pre></td></tr></table></figure>
+
+<p>下载deb包：<a href="https://dev.mysql.com/downloads/repo/apt/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/apt/</a><br>sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb<br>sudo apt update<br>sudo apt install mysql-server<br>密码加密方式选择5.x<br>查看mysql是否安装成功：mysql -u root -p<br>查看mysql字符集，mysql8字符集默认为utf-8：show variables like ‘%char%’;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装mendeley</span><br><span class="line">参考:https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions</span><br></pre></td></tr></table></figure>
+
+<p>在上面链接中下载deb包<br>sudo dpkg -i <path-to-downloaded-package></path-to-downloaded-package></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装配置JAVA环境</span><br><span class="line">参考:https://blog.csdn.net/weixx3/article/details/80296779</span><br><span class="line">https://zhidao.baidu.com/question/531884871.html</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装wps</span><br><span class="line"></span><br><span class="line">安装按照上面《安装好Ubuntu18.04之后要做的事大全》一文，字体缺失按照下面教程：</span><br><span class="line">WPS for Linux（ubuntu）字体配置(字体缺失解决办法)：</span><br><span class="line">https://www.cnblogs.com/liangml/p/5969404.html</span><br></pre></td></tr></table></figure>
+
+<p>在官网下载wps：<a href="https://www.wps.cn/product/wpslinux/" target="_blank" rel="noopener">https://www.wps.cn/product/wpslinux/</a><br>安装wps：sudo dpkg -i wps*.deb  安装wps<br>下载缺失字体：<br>国内下载地址：<a href="https://pan.baidu.com/s/1eS6xIzo" target="_blank" rel="noopener">https://pan.baidu.com/s/1eS6xIzo</a><br>下载完成后，解压并进入目录中，继续执行：<br>sudo cp * /usr/share/fonts<br>sudo mkfontscale<br>sudo mkfontdir<br>运行fc-cache命令更新字体缓存：<br>sudo fc-cache<br>重启wps即可，字体缺失的提示不再出现。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 安装node、npm、hexo</span><br><span class="line">参考：https://www.cnblogs.com/guanine/p/9392411.html</span><br><span class="line">https://blog.csdn.net/Iversonx/article/details/82807598</span><br></pre></td></tr></table></figure>
+
+<p>键入以下内容刷新本地包索引：<br>sudo apt update<br>从存储库安装Node.js：<br>sudo apt install nodejs<br>需要额外安装npm，你可以通过输入以下命令来完成<br>sudo apt install npm<br>安装hexo<br>sudo npm install –unsafe-perm –verbose -g hexo<br>```</p>
+<h3 id="安装钉钉"><a href="#安装钉钉" class="headerlink" title="安装钉钉"></a>安装钉钉</h3><p>参考：<a href="https://blog.csdn.net/qq_27331631/article/details/90449151" target="_blank" rel="noopener">https://blog.csdn.net/qq_27331631/article/details/90449151</a><br>腾讯的QQ微信都不支持ubantu系统，安装阿里的钉钉，可以像QQ一样往手机传文件。</p>
 
       
     </div>
@@ -890,7 +897,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#双系统安装过程记录"><span class="nav-text">双系统安装过程记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装好Ubuntu18-04之后要做的事大全"><span class="nav-text">安装好Ubuntu18.04之后要做的事大全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Anaconda3"><span class="nav-text">安装 Anaconda3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装tensorflow2-0"><span class="nav-text">安装tensorflow2.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Mac主题"><span class="nav-text">安装Mac主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E-有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get-f-install”-也可以指定一个解决办法"><span class="nav-text">E: 有未能满足的依赖关系。请尝试不指明软件包的名字来运行“apt-get -f install”(也可以指定一个解决办法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MySQL8-0"><span class="nav-text">安装MySQL8.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装mendeley"><span class="nav-text">安装mendeley</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装配置JAVA环境"><span class="nav-text">安装配置JAVA环境</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#双系统安装过程记录"><span class="nav-text">双系统安装过程记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装好Ubuntu18-04之后要做的事大全"><span class="nav-text">安装好Ubuntu18.04之后要做的事大全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Anaconda3"><span class="nav-text">安装 Anaconda3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装tensorflow2-0"><span class="nav-text">安装tensorflow2.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装钉钉"><span class="nav-text">安装钉钉</span></a></li></ol></div>
             
 
           </div>
@@ -938,7 +945,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.5k字</span>
+  <span class="post-count">博客全站共18.9k字</span>
 </div>
         
 <div class="busuanzi-count">
