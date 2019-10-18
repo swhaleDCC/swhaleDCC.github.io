@@ -122,7 +122,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:description" content="学位论文阅读笔记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-18T02:20:09.337Z">
+<meta property="og:updated_time" content="2019-10-18T02:55:28.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[论文笔记]Android恶意代码检测技术的研究与实现">
 <meta name="twitter:description" content="学位论文阅读笔记">
@@ -533,10 +533,10 @@
 <hr>
 <p><strong><center>Android软件恶意行为检测技术研究</center></strong></p>
 <center>曲家兴-哈尔滨工程大学-2017</center>
-<center>[链接](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2018&filename=1018083097.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajkrUVcxODJ0WDRFYjkxU2NMRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDY3ODFGMjZGck93SGRIRnFKRWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxPZVorZHNGeURuVzd6T1Y=)</center>
+<center>[链接]( https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2018&filename=1018083097.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajkrUVcxODJ0WDRFYjkxU2NMRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDY3ODFGMjZGck93SGRIRnFKRWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxPZVorZHNGeURuVzd6T1Y= )</center>
 
 <blockquote>
-<p>摘要：第一,提出了<strong>面向行为规则</strong>的Android软件恶意行为检测机制。首先,<strong>使用基于二元映射编码的软件行为描述语言</strong>,将Android软件再映射为按执行时序排列的二元组。然后,采用<strong>马尔科夫链构建行为转移概率图</strong>。接着,提出一套<strong>行为约简规则集</strong>,用于从行为转移概率图中提取恶意行为的“指纹”,根据行为指纹判别软件是否具有恶意行为;最后,通过实验验证的方式评价了本方法的有效性和可用性。<br>第二,提出了多策略组合的Android软件恶意行为检测方案。创新地设计了一个四层恶意行为检测架构,包括动静方式相结合的特征提取模块、基于多策略的初级检测算法模块、基于神经网络的多策略权重学习模块和基于投票策略的恶意行为判别模块。首先,采用动静结合的策略从多个维度收集软件的行为特征,并同时将支持向量机、贝叶斯网络、k-近邻等知名机器学习技术作为初级检测机制对其进行检测;然后,在迭代训练阶段通过采用神经网络技术修正各初级检测机制的决策权重,提高系统对恶意行为的检测能力;最后,通过实验验证的方式评价了本方法的有效性。<br>第三,提出了支持任务迁移的轻量级Android软件恶意行为检测方法。首先,在Android手机客户端提出一种电量消耗敏感的恶意软件检测模型,构造程序代码CPU运行周期与电量消耗的映射关系,在程序解释执行时,通过比对预判能耗与程序的“标准”能耗的关系来标记相关进程是否存在“疑似恶意行为”;其次,根据代码的特性及运行时网络状况,采用任务“捆绑”策略将相应的任务在线迁移至云端,该策略在任务迁移时同时考虑了用户的体验及任务迁移所带来的附加能耗;然后,在云端通过采用虚拟机自省技术来跟踪迁移其上代码的“运行轨迹”。</p>
+<p>摘要：第一,提出了<strong>面向行为规则</strong>的Android软件恶意行为检测机制。首先,<strong>使用基于二元映射编码的软件行为描述语言</strong>,将Android软件再映射为按执行时序排列的二元组。然后,采用<strong>马尔科夫链构建行为转移概率图</strong>。接着,提出一套<strong>行为约简规则集</strong>,用于从行为转移概率图中提取恶意行为的“指纹”,根据行为指纹判别软件是否具有恶意行为;最后,通过实验验证的方式评价了本方法的有效性和可用性。<br>第二,提出了<strong>多策略组合</strong>的Android软件恶意行为检测方案。创新地设计了一个<strong>四层恶意行为检测架构</strong>,包括动静方式相结合的特征提取模块、基于多策略的初级检测算法模块、基于神经网络的多策略权重学习模块和基于投票策略的恶意行为判别模块。首先,采用动静结合的策略从多个维度收集软件的行为特征,并同时将支持向量机、贝叶斯网络、k-近邻等知名机器学习技术作为初级检测机制对其进行检测;然后,在迭代训练阶段通过采用神经网络技术修正各初级检测机制的决策权重,提高系统对恶意行为的检测能力;最后,通过实验验证的方式评价了本方法的有效性。<br>第三,提出了支持任务迁移的轻量级Android软件恶意行为检测方法。首先,在Android手机客户端提出一种电量消耗敏感的恶意软件检测模型,构造程序代码CPU运行周期与电量消耗的映射关系,在程序解释执行时,通过比对预判能耗与程序的“标准”能耗的关系来标记相关进程是否存在“疑似恶意行为”;其次,根据代码的特性及运行时网络状况,采用任务“捆绑”策略将相应的任务在线迁移至云端,该策略在任务迁移时同时考虑了用户的体验及任务迁移所带来的附加能耗;然后,在云端通过采用虚拟机自省技术来跟踪迁移其上代码的“运行轨迹”。</p>
 </blockquote>
 <p>中国互联网络信息中心(CNNIC)<br>第44次《中国互联网络发展状况统计报告》:<br><a href="http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/hlwtjbg/201908/t20190830_70800.htm" target="_blank" rel="noopener">http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/hlwtjbg/201908/t20190830_70800.htm</a></p>
 
@@ -636,8 +636,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/22/机器学习/" rel="next" title="机器学习深度学习笔记(加密文章)">
-                <i class="fa fa-chevron-left"></i> 机器学习深度学习笔记(加密文章)
+              <a href="/2019/09/25/毕设论文/" rel="next" title="[加密文章]毕设笔记">
+                <i class="fa fa-chevron-left"></i> [加密文章]毕设笔记
               </a>
             
           </div>
@@ -646,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/25/毕设论文/" rel="prev" title="[加密文章]毕设笔记">
-                [加密文章]毕设笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/30/ubantu入门/" rel="prev" title="ubantu配置">
+                ubantu配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
