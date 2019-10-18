@@ -114,18 +114,18 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="[基于双重遍历的行为触发方法]">
+  <meta name="description" content="学位论文阅读笔记">
 <meta name="keywords" content="学位论文笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[论文笔记]Android恶意代码检测技术的研究与实现">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="[基于双重遍历的行为触发方法]">
+<meta property="og:description" content="学位论文阅读笔记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-13T14:32:52.000Z">
+<meta property="og:updated_time" content="2019-10-17T12:28:54.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[论文笔记]Android恶意代码检测技术的研究与实现">
-<meta name="twitter:description" content="[基于双重遍历的行为触发方法]">
+<meta name="twitter:description" content="学位论文阅读笔记">
 
 
 
@@ -496,16 +496,17 @@
 
       
         <blockquote>
-<p>[基于双重遍历的行为触发方法]</p>
+<p>学位论文阅读笔记</p>
 </blockquote>
 <a id="more"></a>
 
+<hr>
 <p><strong><center>Android恶意代码检测技术的研究与实现</center></strong></p>
-<center>肖强-北京邮电大学</center>
-<center>[链接]((https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017290472.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajlaWWVITzdybTVNaGNOMm9tcz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDA0MjIyNkdiR3hIdFhMclpFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSTE9lWitkc0Z5bmtWNzdMVkY=)</center>
+<center>肖强-北京邮电大学-2017</center>
+<center>[链接](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017290472.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajlaWWVITzdybTVNaGNOMm9tcz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDA0MjIyNkdiR3hIdFhMclpFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSTE9lWitkc0Z5bmtWNzdMVkY=)</center>
 
 <blockquote>
-<p>摘要：本文首先介绍了当前Android恶意代码检测技术的研究现状,分析了当前在动态检测方法上的不足。从如何提高恶意行为触发率角度出发,结合当前Android平台下自动化检测技术,提出了<strong>基于双重遍历的行为触发方法</strong>。该方法由<strong>深度界面遍历以及组件遍历</strong>两部分构成。<br><strong>深度界面</strong>遍历以基于控件的深度遍历算法,重新构建遍历规则,并且在遍历的过程中会对界面进行分析,对控件进行筛选以此减少重复操作提高遍历的效率。<br><strong>组件遍历</strong>用以对应用程序的Service、Receiver进行遍历,以期触发可能隐藏于Service和Receiver中的恶意行为。同时,为实现Android恶意应用的行为监控,对基于Zygote注入的HOOK技术方案进行了研究与实现,通过对应用程序框架层以及核心库中API的劫持,获取应用行为特征。<br>在行为分析阶段,使用机器学习中的分类算法<strong>支持向量机</strong>对应用进行检测判别。</p>
+<p>摘要：本文首先介绍了当前Android恶意代码检测技术的研究现状,分析了当前在动态检测方法上的不足。从如何提高恶意行为触发率角度出发,结合当前Android平台下自动化检测技术,提出了<strong>基于双重遍历的行为触发方法</strong>。该方法由<strong>深度界面遍历以及组件遍历</strong>两部分构成。<br>深度<strong>界面遍历</strong>以基于控件的深度遍历算法,重新构建遍历规则,并且在遍历的过程中会对界面进行分析,对控件进行筛选以此减少重复操作提高遍历的效率。<br><strong>组件遍历</strong>用以对应用程序的Service、Receiver进行遍历,以期触发可能隐藏于Service和Receiver中的恶意行为。同时,为实现Android恶意应用的行为监控,对基于Zygote注入的HOOK技术方案进行了研究与实现,通过对应用程序框架层以及核心库中API的劫持,获取应用行为特征。<br>在行为分析阶段,使用机器学习中的分类算法<strong>支持向量机</strong>对应用进行检测判别。</p>
 </blockquote>
 <p>静态检测:</p>
 <ul>
@@ -520,17 +521,24 @@
 </ul>
 <p>样本来源</p>
 <ul>
-<li>恶意程序样本来源:virusShare  国外站点</li>
-<li>良性样本来源:Google应用市场</li>
+<li>恶意程序样本来源：virusShare  国外站点</li>
+<li>良性样本来源：Google应用市场</li>
+</ul>
+<p>分类——支持向量机</p>
+<ul>
+<li>监督学习</li>
+<li>超平面</li>
 </ul>
 <p>腾讯移动安全实验室<br>2019年上半年手机安全报告:<br><a href="https://m.qq.com/security_lab/news_detail_517.html" target="_blank" rel="noopener">https://m.qq.com/security_lab/news_detail_517.html</a></p>
-<p>恶意程序的判别—分类问题—支持向量机</p>
+<hr>
 <p><strong><center>Android软件恶意行为检测技术研究</center></strong></p>
-<center>曲家兴-哈尔滨工程大学</center>
+<center>曲家兴-哈尔滨工程大学-2017</center>
 <center>[链接](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2018&filename=1018083097.nh&uid=WEEvREcwSlJHSldRa1FhdXNXaEhobmcrajkrUVcxODJ0WDRFYjkxU2NMRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MDY3ODFGMjZGck93SGRIRnFKRWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxPZVorZHNGeURuVzd6T1Y=)</center>
 
+<blockquote>
+<p>摘要：第一,提出了<strong>面向行为规则</strong>的Android软件恶意行为检测机制。首先,<strong>使用基于二元映射编码的软件行为描述语言</strong>,将Android软件再映射为按执行时序排列的二元组。然后,采用<strong>马尔科夫链构建行为转移概率图</strong>。接着,提出一套<strong>行为约简规则集</strong>,用于从行为转移概率图中提取恶意行为的“指纹”,根据行为指纹判别软件是否具有恶意行为;最后,通过实验验证的方式评价了本方法的有效性和可用性。<br>第二,提出了多策略组合的Android软件恶意行为检测方案。创新地设计了一个四层恶意行为检测架构,包括动静方式相结合的特征提取模块、基于多策略的初级检测算法模块、基于神经网络的多策略权重学习模块和基于投票策略的恶意行为判别模块。首先,采用动静结合的策略从多个维度收集软件的行为特征,并同时将支持向量机、贝叶斯网络、k-近邻等知名机器学习技术作为初级检测机制对其进行检测;然后,在迭代训练阶段通过采用神经网络技术修正各初级检测机制的决策权重,提高系统对恶意行为的检测能力;最后,通过实验验证的方式评价了本方法的有效性。<br>第三,提出了支持任务迁移的轻量级Android软件恶意行为检测方法。首先,在Android手机客户端提出一种电量消耗敏感的恶意软件检测模型,构造程序代码CPU运行周期与电量消耗的映射关系,在程序解释执行时,通过比对预判能耗与程序的“标准”能耗的关系来标记相关进程是否存在“疑似恶意行为”;其次,根据代码的特性及运行时网络状况,采用任务“捆绑”策略将相应的任务在线迁移至云端,该策略在任务迁移时同时考虑了用户的体验及任务迁移所带来的附加能耗;然后,在云端通过采用虚拟机自省技术来跟踪迁移其上代码的“运行轨迹”。</p>
+</blockquote>
 <p>中国互联网络信息中心(CNNIC)<br>第44次《中国互联网络发展状况统计报告》:<br><a href="http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/hlwtjbg/201908/t20190830_70800.htm" target="_blank" rel="noopener">http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/hlwtjbg/201908/t20190830_70800.htm</a></p>
-<p>马尔科夫链</p>
 
       
     </div>
@@ -638,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/30/ubantu入门/" rel="prev" title="ubantu">
-                ubantu <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/30/ubantu入门/" rel="prev" title="ubantu配置">
+                ubantu配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -928,7 +936,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共19k字</span>
+  <span class="post-count">博客全站共19.7k字</span>
 </div>
         
 <div class="busuanzi-count">

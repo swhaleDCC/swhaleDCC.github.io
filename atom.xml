@@ -37,11 +37,11 @@
   </entry>
   
   <entry>
-    <title>ubantu</title>
+    <title>ubantu配置</title>
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2019-10-15T13:35:25.270Z</updated>
+    <updated>2019-10-17T08:01:04.064Z</updated>
     
     <summary type="html">
     
@@ -55,6 +55,28 @@
     
     
       <category term="ubantu" scheme="https://swhaledcc.github.io/tags/ubantu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[论文笔记]Android恶意代码检测技术的研究与实现</title>
+    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
+    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
+    <published>2019-09-25T11:49:00.000Z</published>
+    <updated>2019-10-17T12:28:54.621Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;学位论文阅读笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
+    
+    
+      <category term="学位论文笔记" scheme="https://swhaledcc.github.io/tags/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -77,28 +99,6 @@
     
     
       <category term="毕设笔记" scheme="https://swhaledcc.github.io/tags/%E6%AF%95%E8%AE%BE%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[论文笔记]Android恶意代码检测技术的研究与实现</title>
-    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
-    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
-    <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-13T14:32:52.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;[基于双重遍历的行为触发方法]&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
-    
-    
-      <category term="学位论文笔记" scheme="https://swhaledcc.github.io/tags/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
