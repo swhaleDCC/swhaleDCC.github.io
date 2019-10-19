@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-18T10:24:51.417Z</updated>
+  <updated>2019-10-19T12:17:31.705Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>kaggle学习笔记</title>
+    <link href="https://swhaledcc.github.io/2019/10/19/kaggle/"/>
+    <id>https://swhaledcc.github.io/2019/10/19/kaggle/</id>
+    <published>2019-10-19T11:31:00.000Z</published>
+    <updated>2019-10-19T12:17:31.705Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;br&gt;kaggle官网：&lt;a href=&quot;https://www.kaggle.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.kaggle.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="kaggle" scheme="https://swhaledcc.github.io/categories/kaggle/"/>
+    
+    
+      <category term="kaggle" scheme="https://swhaledcc.github.io/tags/kaggle/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Androwarn | Androguard | Apktool | Droidbox</title>
     <link href="https://swhaledcc.github.io/2019/10/14/Androwarn/"/>
     <id>https://swhaledcc.github.io/2019/10/14/Androwarn/</id>
     <published>2019-10-14T07:56:00.000Z</published>
-    <updated>2019-10-18T10:24:51.417Z</updated>
+    <updated>2019-10-19T12:39:53.318Z</updated>
     
     <summary type="html">
     
@@ -41,7 +63,7 @@
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2019-10-18T02:17:44.106Z</updated>
+    <updated>2019-10-19T14:45:55.818Z</updated>
     
     <summary type="html">
     
@@ -55,28 +77,6 @@
     
     
       <category term="ubantu" scheme="https://swhaledcc.github.io/tags/ubantu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[论文笔记]Android恶意代码检测技术的研究与实现</title>
-    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
-    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
-    <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-18T02:55:28.481Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;学位论文阅读笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
-    
-    
-      <category term="学位论文笔记" scheme="https://swhaledcc.github.io/tags/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -99,6 +99,28 @@
     
     
       <category term="毕设笔记" scheme="https://swhaledcc.github.io/tags/%E6%AF%95%E8%AE%BE%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[论文笔记]Android恶意代码检测技术的研究与实现</title>
+    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
+    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
+    <published>2019-09-25T11:49:00.000Z</published>
+    <updated>2019-10-18T02:55:28.481Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;学位论文阅读笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
+    
+    
+      <category term="学位论文笔记" scheme="https://swhaledcc.github.io/tags/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -310,33 +332,6 @@
     
     
       <category term="LeetCode刷题笔记" scheme="https://swhaledcc.github.io/tags/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，旧时光</title>
-    <link href="https://swhaledcc.github.io/2019/07/27/%E6%9C%80%E5%A5%BD%E7%9A%84%E6%88%91%E4%BB%AC/"/>
-    <id>https://swhaledcc.github.io/2019/07/27/最好的我们/</id>
-    <published>2019-07-27T05:25:00.000Z</published>
-    <updated>2019-07-28T05:25:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;祝你们都会遇到林杨这样的少年，六十岁也年轻，笑容灿烂，光明坦荡，以身试法告诉你世界美好，即使不好，也还有他，值得冒个险伸手抱一抱。——八月长安&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://swhaledcc.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="八月长安" scheme="https://swhaledcc.github.io/tags/%E5%85%AB%E6%9C%88%E9%95%BF%E5%AE%89/"/>
     
   </entry>
   
