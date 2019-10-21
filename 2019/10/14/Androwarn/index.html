@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
-<meta property="og:updated_time" content="2019-10-20T13:59:46.840Z">
+<meta property="og:updated_time" content="2019-10-21T02:51:11.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Androwarn | Androguard | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
@@ -500,6 +500,22 @@
 <p>Android tools github地址：<br><a href="https://github.com/maoqyhz/DroidCC/blob/master/tools.md" target="_blank" rel="noopener">https://github.com/maoqyhz/DroidCC/blob/master/tools.md</a></p>
 </blockquote>
 <hr>
+<h1 id="Androguard"><a href="#Androguard" class="headerlink" title="Androguard"></a>Androguard</h1><p>androguard主要用来进行<strong>静态分析</strong>，其默认采用ded作为反编译的软件，同时提供了很多模块供分析人员使用。</p>
+<p>友链：</p>
+<ul>
+<li>github地址: <a href="https://github.com/androguard/androguard" target="_blank" rel="noopener">https://github.com/androguard/androguard</a></li>
+<li>项目主页: <a href="https://code.google.com/archive/p/androguard/" target="_blank" rel="noopener">https://code.google.com/archive/p/androguard/</a></li>
+<li>使用文档: <a href="https://androguard.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">https://androguard.readthedocs.io/en/latest/index.html</a></li>
+<li>附一个中文版Androguard使用说明： <a href="https://www.jianshu.com/p/079e40800ef4" target="_blank" rel="noopener">https://www.jianshu.com/p/079e40800ef4</a></li>
+</ul>
+<p>安装:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U androguard</span><br></pre></td></tr></table></figure>
+
+<p>使用：<br>命令行输入:androguard analyze<br>或者用jupyter notebook，当然其他IDE也行，下载好androguard后他就相当于python的一个包，可以直接导入：import androguard</p>
+<hr>
+<h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><p>github链接:<br><a href="https://github.com/maaaaz/androwarn/" target="_blank" rel="noopener">https://github.com/maaaaz/androwarn/</a><br>附一个中文版教程链接:<br><a href="https://www.freebuf.com/sectool/199407.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/199407.html</a></p>
+<p>Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。</p>
+<p>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行静态分析，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
 <h1 id="Droidbox"><a href="#Droidbox" class="headerlink" title="Droidbox"></a>Droidbox</h1><p>动态分析工具</p>
 <p>官网链接：<a href="https://code.google.com/archive/p/droidbox/" target="_blank" rel="noopener">https://code.google.com/archive/p/droidbox/</a><br>github地址：<a href="https://github.com/pjlantz/droidbox" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox</a></p>
 <hr>
@@ -514,22 +530,6 @@
 <li>Try running apktool via cli</li>
 </ol>
 <hr>
-<h1 id="Androguard"><a href="#Androguard" class="headerlink" title="Androguard"></a>Androguard</h1><p>androguard主要用来进行<strong>静态分析</strong>，其默认采用ded作为反编译的软件，同时提供了很多模块供分析人员使用。</p>
-<p>友链：</p>
-<ul>
-<li>github地址: <a href="https://github.com/androguard/androguard" target="_blank" rel="noopener">https://github.com/androguard/androguard</a></li>
-<li>项目主页: <a href="https://code.google.com/archive/p/androguard/" target="_blank" rel="noopener">https://code.google.com/archive/p/androguard/</a></li>
-<li>使用文档: <a href="https://androguard.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">https://androguard.readthedocs.io/en/latest/index.html</a></li>
-<li>附一个中文版Androguard使用说明： <a href="https://www.jianshu.com/p/079e40800ef4" target="_blank" rel="noopener">https://www.jianshu.com/p/079e40800ef4</a></li>
-</ul>
-<p>安装:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U androguard</span><br></pre></td></tr></table></figure>
-
-<p>使用：<br>命令行输入:androguard analyze<br>或者用jupyter notebook，当然其他IDE也行:import androguard</p>
-<hr>
-<h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><p>github链接:<br><a href="https://github.com/maaaaz/androwarn/" target="_blank" rel="noopener">https://github.com/maaaaz/androwarn/</a><br>附一个中文版教程链接:<br><a href="https://www.freebuf.com/sectool/199407.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/199407.html</a></p>
-<p>Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。</p>
-<p>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行静态分析，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
 
       
     </div>
@@ -716,7 +716,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -732,6 +732,8 @@
           
         
         
+        
+          
         
           
         
@@ -790,7 +792,13 @@
         
           
         
-        <span class="site-state-item-count">10</span>
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -909,7 +917,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Droidbox"><span class="nav-text">Droidbox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Apktool"><span class="nav-text">Apktool</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androguard"><span class="nav-text">Androguard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androwarn"><span class="nav-text">Androwarn</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Androguard"><span class="nav-text">Androguard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androwarn"><span class="nav-text">Androwarn</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Droidbox"><span class="nav-text">Droidbox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Apktool"><span class="nav-text">Apktool</span></a></li></ol></div>
             
 
           </div>
@@ -957,7 +965,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共20.5k字</span>
+  <span class="post-count">博客全站共22.3k字</span>
 </div>
         
 <div class="busuanzi-count">

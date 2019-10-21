@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-20T14:09:06.848Z</updated>
+  <updated>2019-10-21T02:41:14.158Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>tensorflow 2.0 学习笔记</title>
+    <link href="https://swhaledcc.github.io/2019/10/21/tensorflow-2-0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://swhaledcc.github.io/2019/10/21/tensorflow-2-0-学习笔记/</id>
+    <published>2019-10-21T02:38:00.000Z</published>
+    <updated>2019-10-21T02:41:14.158Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;br&gt;&lt;a href=&quot;https://tf.wiki/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tf.wiki/&lt;/a&gt;&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="tensorflow" scheme="https://swhaledcc.github.io/tags/tensorflow/"/>
+    
+  </entry>
+  
+  <entry>
     <title>kaggle学习笔记</title>
     <link href="https://swhaledcc.github.io/2019/10/19/kaggle/"/>
     <id>https://swhaledcc.github.io/2019/10/19/kaggle/</id>
     <published>2019-10-19T11:31:00.000Z</published>
-    <updated>2019-10-20T14:09:06.848Z</updated>
+    <updated>2019-10-21T02:38:39.830Z</updated>
     
     <summary type="html">
     
@@ -32,7 +59,7 @@
     
     </summary>
     
-      <category term="kaggle" scheme="https://swhaledcc.github.io/categories/kaggle/"/>
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="kaggle" scheme="https://swhaledcc.github.io/tags/kaggle/"/>
@@ -44,7 +71,7 @@
     <link href="https://swhaledcc.github.io/2019/10/14/Androwarn/"/>
     <id>https://swhaledcc.github.io/2019/10/14/Androwarn/</id>
     <published>2019-10-14T07:56:00.000Z</published>
-    <updated>2019-10-20T13:59:46.840Z</updated>
+    <updated>2019-10-21T02:51:11.637Z</updated>
     
     <summary type="html">
     
@@ -104,11 +131,11 @@
   </entry>
   
   <entry>
-    <title>[论文笔记]Android恶意代码检测技术的研究与实现</title>
-    <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87-Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E8%82%96%E5%BC%BA/"/>
-    <id>https://swhaledcc.github.io/2019/09/25/毕设论文-Android恶意代码检测技术的研究与实现-肖强/</id>
+    <title>学位论文阅读笔记</title>
+    <link href="https://swhaledcc.github.io/2019/09/25/%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
+    <id>https://swhaledcc.github.io/2019/09/25/学位论文阅读笔记/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-18T02:55:28.481Z</updated>
+    <updated>2019-10-21T08:10:22.912Z</updated>
     
     <summary type="html">
     
@@ -129,22 +156,24 @@
     <title>机器学习深度学习笔记(加密文章)</title>
     <link href="https://swhaledcc.github.io/2019/09/22/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/09/22/机器学习/</id>
-    <published>2019-09-22T12:12:57.000Z</published>
-    <updated>2019-10-18T02:17:16.676Z</updated>
+    <published>2019-09-22T12:12:00.000Z</published>
+    <updated>2019-10-21T02:40:54.608Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/geektutu/tensorflow-tutorial-samples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TensorFlow 2.0 Tutorial 入门教程实战案例&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow官网&lt;/a&gt;_&lt;br&gt;&lt;a href=&quot;https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tensorflow2.0 examples&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://zh.d2l.ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&amp;lt;动手深度学习&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="算法" scheme="https://swhaledcc.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="ML算法" scheme="https://swhaledcc.github.io/tags/ML%E7%AE%97%E6%B3%95/"/>
+      <category term="ML" scheme="https://swhaledcc.github.io/tags/ML/"/>
+    
+      <category term="DL" scheme="https://swhaledcc.github.io/tags/DL/"/>
     
   </entry>
   
