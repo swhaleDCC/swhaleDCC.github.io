@@ -121,7 +121,7 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
-<meta property="og:updated_time" content="2019-10-22T04:15:02.042Z">
+<meta property="og:updated_time" content="2019-10-22T11:31:50.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(6)链表">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
@@ -498,6 +498,11 @@
 <a id="more"></a>
 
 <p>之前在CSDN写过一篇链表与快慢指针的笔记(判断链表是否有环、找到环的入口、反转链表):<br><a href="https://blog.csdn.net/qq_40631927/article/details/89813518" target="_blank" rel="noopener">https://blog.csdn.net/qq_40631927/article/details/89813518</a></p>
+<h4 id="删除链表中的节点"><a href="#删除链表中的节点" class="headerlink" title="删除链表中的节点"></a>删除链表中的节点</h4><blockquote>
+<p>请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，你将只被给定要求被删除的节点。<br>分析：之前有同学去哈深面试也问过类似的问题。没有给我们链表的起点，只给我们了一个要删的节点，跟我们以前遇到的情况不太一样，我们之前要删除一个节点的方法是要有其前一个节点的位置，然后将其前一个节点的next连向要删节点的下一个，然后delete掉要删的节点即可。这道题的处理方法是<strong>先把当前节点的值用下一个节点的值覆盖了，然后我们删除下一个节点即可</strong>。<br>吐槽：谁能想到还可以用替身攻击，还可以把下一个的复制到当前节点，然后把下一个节点的删掉，神奇！！！</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void deleteNode(ListNode* node) &#123;</span><br><span class="line">           ListNode* old_node_next = node-&gt;next;</span><br><span class="line">            node-&gt;val = old_node_next-&gt;val;</span><br><span class="line">            node-&gt;next = old_node_next-&gt;next;</span><br><span class="line">            delete old_node_next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <h4 id="复制带随机指针的链表"><a href="#复制带随机指针的链表" class="headerlink" title="复制带随机指针的链表"></a>复制带随机指针的链表</h4><blockquote>
 <p>给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。<br>要求:返回这个链表的深拷贝，必须返回给定头的拷贝作为对克隆列表的引用。<br>其实，，，完全没看懂这个题。。。<br>解答：使用递归的解法，写起来相当的简洁，还是需要一个 HashMap 来建立原链表结点和拷贝链表结点之间的映射。在递归函数中，首先判空，若为空，则返回空指针。然后就是去 HashMap 中查找是否已经在拷贝链表中存在了该结点，是的话直接返回。否则新建一个拷贝结点 res，然后建立原结点和该拷贝结点之间的映射，然后就是要给拷贝结点的 next 和 random 指针赋值了，直接分别调用递归函数即可，参见代码如下：</p>
 </blockquote>
@@ -903,7 +908,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#复制带随机指针的链表"><span class="nav-text">复制带随机指针的链表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相交链表"><span class="nav-text">相交链表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#排序链表"><span class="nav-text">排序链表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除链表中的节点"><span class="nav-text">删除链表中的节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制带随机指针的链表"><span class="nav-text">复制带随机指针的链表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相交链表"><span class="nav-text">相交链表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#排序链表"><span class="nav-text">排序链表</span></a></li></ol></div>
             
 
           </div>
@@ -951,7 +956,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共22.8k字</span>
+  <span class="post-count">博客全站共23.1k字</span>
 </div>
         
 <div class="busuanzi-count">
