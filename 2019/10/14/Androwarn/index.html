@@ -121,7 +121,8 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
-<meta property="og:updated_time" content="2019-10-21T13:59:47.175Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-9.png">
+<meta property="og:updated_time" content="2019-10-23T03:13:47.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Androwarn | Androguard | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
@@ -511,15 +512,29 @@
 <p>安装:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U androguard</span><br></pre></td></tr></table></figure>
 
-<p>使用：<br>命令行输入:androguard analyze<br>或者用jupyter notebook，当然其他IDE也行，下载好androguard后他就相当于python的一个包，可以直接导入：import androguard</p>
+<p>使用：</p>
+<ul>
+<li>命令行输入:androguard analyze</li>
+<li>或者用jupyter notebook，当然其他IDE也行，下载好androguard后他就相当于python的一个包，可以直接导入：import androguard</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import androguard.misc</span><br><span class="line">a, d, dx = androguard.misc.AnalyzeAPK(&quot;sample.apk&quot;)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>Projects using Androguard：<br><a href="https://github.com/alexMyG/AndroPyTool" target="_blank" rel="noopener">AndroPyTool</a></p>
 <hr>
-<h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><p>学习链接：</p>
+<h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><p>Androwarn是一款专为Android端应用程序设计的安全分析工具，主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。<br>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行<strong>静态分析</strong>，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
+<p>学习链接：</p>
 <ul>
 <li>github链接: <a href="https://github.com/maaaaz/androwarn/" target="_blank" rel="noopener">https://github.com/maaaaz/androwarn/</a></li>
 <li>附一个中文版教程链接: <a href="https://www.freebuf.com/sectool/199407.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/199407.html</a></li>
 </ul>
-<p>Androwarn是一款专为Android端应用程序设计的安全分析工具，该功能的主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。</p>
-<p>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行静态分析，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
+<p>安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install androwarn</span><br><span class="line"># Or git clone that repository and ：</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<p>使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python androwarn.py -i my_application_to_be_analyzed.apk -r html -v 3</span><br></pre></td></tr></table></figure>
+
+<p>把github仓库clone到本地，cd 该文件夹，打开终端，把上面命令行的my_application_to_be_analyzed.apk换成你自己要分析的apk文件的名字，就会在该文件夹生成一个html分析文件。如下图所示：<br><img src="/images/pasted-9.png" alt="upload successful"></p>
+<hr>
 <h1 id="Droidbox"><a href="#Droidbox" class="headerlink" title="Droidbox"></a>Droidbox</h1><p>动态分析工具</p>
 <p>学习链接：</p>
 <ul>
@@ -977,7 +992,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共23.1k字</span>
+  <span class="post-count">博客全站共23.2k字</span>
 </div>
         
 <div class="busuanzi-count">
