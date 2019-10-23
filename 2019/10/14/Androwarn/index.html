@@ -122,7 +122,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-9.png">
-<meta property="og:updated_time" content="2019-10-23T03:13:47.312Z">
+<meta property="og:updated_time" content="2019-10-23T11:55:01.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Androwarn | Androguard | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
@@ -519,7 +519,10 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import androguard.misc</span><br><span class="line">a, d, dx = androguard.misc.AnalyzeAPK(&quot;sample.apk&quot;)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
 
-<p>Projects using Androguard：<br><a href="https://github.com/alexMyG/AndroPyTool" target="_blank" rel="noopener">AndroPyTool</a></p>
+<p>关于Androguard的项目：</p>
+<ul>
+<li><a href="https://github.com/alexMyG/AndroPyTool" target="_blank" rel="noopener">AndroPyTool</a></li>
+</ul>
 <hr>
 <h1 id="Androwarn"><a href="#Androwarn" class="headerlink" title="Androwarn"></a>Androwarn</h1><p>Androwarn是一款专为Android端应用程序设计的安全分析工具，主要功能是检测并提醒用户Android应用程序中潜在的恶意行为。<br>在androguard库的帮助下，Androwarn可以通过对目标应用程序的Dalvik字节码和Smali代码进行<strong>静态分析</strong>，来判断目标应用程序中潜在的恶意行为。分析完成之后，工具会自动生成分析报告，报告中的技术细节划分，取决于用户的设置参数。</p>
 <p>学习链接：</p>
@@ -528,35 +531,53 @@
 <li>附一个中文版教程链接: <a href="https://www.freebuf.com/sectool/199407.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/199407.html</a></li>
 </ul>
 <p>安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install androwarn</span><br><span class="line"># Or git clone that repository and ：</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install androwarn</span><br><span class="line"># Or git clone that repository and ：pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
 
 <p>使用：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python androwarn.py -i my_application_to_be_analyzed.apk -r html -v 3</span><br></pre></td></tr></table></figure>
 
 <p>把github仓库clone到本地，cd 该文件夹，打开终端，把上面命令行的my_application_to_be_analyzed.apk换成你自己要分析的apk文件的名字，就会在该文件夹生成一个html分析文件。如下图所示：<br><img src="/images/pasted-9.png" alt="upload successful"></p>
 <hr>
-<h1 id="Droidbox"><a href="#Droidbox" class="headerlink" title="Droidbox"></a>Droidbox</h1><p>动态分析工具</p>
+<h1 id="Apktool"><a href="#Apktool" class="headerlink" title="Apktool"></a>Apktool</h1><p>APKTool是GOOGLE提供的APK编译工具，需要JAVA运行环境，是<strong>逆向分析</strong>工具.</p>
+<p>学习链接：</p>
+<ul>
+<li>博客教程: <a href="https://ibotpeaches.github.io/Apktool/" target="_blank" rel="noopener">https://ibotpeaches.github.io/Apktool/</a></li>
+<li>github地址：<a href="https://github.com/iBotPeaches/Apktool" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool</a></li>
+<li>github地址2：<a href="https://github.com/iBotPeaches/Apktool/tree/gh-pages" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool/tree/gh-pages</a></li>
+</ul>
+<p>安装：</p>
+<ol>
+<li>下载 Linux wrapper script <a href="https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool" target="_blank" rel="noopener">链接</a> (右击，保存为 apktool)</li>
+<li>下载 apktool-2 <a href="https://bitbucket.org/iBotPeaches/apktool/downloads/" target="_blank" rel="noopener">链接</a> (保存为apktool.jar)</li>
+<li>移动文件 (apktool.jar &amp; apktool) 到 /usr/local/bin<br>（sudo cp -i aapt  apktool apktool.jar /usr/local/bin/   基本上到这一步就结束了）</li>
+<li>保证文件可执行 (chmod +x)</li>
+<li>在命令行运行apktool</li>
+</ol>
+<p>使用：</p>
+<ol>
+<li><p>decode：该命令用于进行反编译apk文件<br>apktool d file.apk dir<br>file.apk：代表了要反编译的apk文件的路径，最好写绝对路径<br>dir：代表了反编译后的文件的存储位置</p>
+</li>
+<li><p>build：该命令用于编译修改好的文件<br>apktool b dir   这里的dir就是刚才你反编译时输入的dir</p>
+</li>
+</ol>
+<hr>
+<h1 id="Droidbox"><a href="#Droidbox" class="headerlink" title="Droidbox"></a>Droidbox</h1><p>DroidBox是用来<strong>动态分析</strong>Android应用行为的工具。</p>
 <p>学习链接：</p>
 <ul>
 <li>官网链接：<a href="https://code.google.com/archive/p/droidbox/" target="_blank" rel="noopener">https://code.google.com/archive/p/droidbox/</a></li>
 <li>github地址：<a href="https://github.com/pjlantz/droidbox" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox</a></li>
 </ul>
-<hr>
-<h1 id="Apktool"><a href="#Apktool" class="headerlink" title="Apktool"></a>Apktool</h1><p>A tool for reverse engineering（逆向工具） Android apk files.</p>
-<p>学习链接：</p>
+<p>安装：</p>
 <ul>
-<li>github博客链接: <a href="https://ibotpeaches.github.io/Apktool/" target="_blank" rel="noopener">https://ibotpeaches.github.io/Apktool/</a></li>
-<li>github链接：①<a href="https://github.com/iBotPeaches/Apktool" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool</a> ②<a href="https://github.com/iBotPeaches/Apktool/tree/gh-pages" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool/tree/gh-pages</a></li>
+<li>参考：<a href="https://www.cnblogs.com/dliv3/p/5325633.html" target="_blank" rel="noopener">https://www.cnblogs.com/dliv3/p/5325633.html</a></li>
+<li>安装环境:Oracle JDK、Android SDK、Apktool（这三个都以及安装好了就不写安装过程了）</li>
+<li>下载最新版的DroidBox：<a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz。</li>
+<li>创建android虚拟机：<br>  android list target #查看可获取的安卓虚拟机<br>  android list avd #查看已创建的安卓虚拟机<br>  android create avd -n avd‘name -t android’id #创建一个虚拟机，名字自定义<br>  (启动虚拟机的命令：emulator @droidbox_android4.1.2)</li>
+<li>启动虚拟机：./startemu.sh droidbox_android4.1.2</li>
+<li>安装要分析APK: adb install 1.apk</li>
+<li>开始分析：./droidbox.sh 1.apk</li>
+<li>可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)</li>
 </ul>
-<p>ubantu18.04安装apktool：</p>
-<ol>
-<li>下载 Linux wrapper script <a href="https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool" target="_blank" rel="noopener">链接</a> (右击，保存为 apktool)</li>
-<li>下载 apktool-2 <a href="https://bitbucket.org/iBotPeaches/apktool/downloads/" target="_blank" rel="noopener">链接</a> (保存为apktool.jar)</li>
-<li>移动文件 (apktool.jar &amp; apktool) 到 /usr/local/bin</li>
-<li>Make sure both files are executable (chmod +x)</li>
-<li>Try running apktool via cli</li>
-</ol>
-<hr>
 
       
     </div>
@@ -944,7 +965,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Androguard"><span class="nav-text">Androguard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androwarn"><span class="nav-text">Androwarn</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Droidbox"><span class="nav-text">Droidbox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Apktool"><span class="nav-text">Apktool</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Androguard"><span class="nav-text">Androguard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Androwarn"><span class="nav-text">Androwarn</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Apktool"><span class="nav-text">Apktool</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Droidbox"><span class="nav-text">Droidbox</span></a></li></ol></div>
             
 
           </div>
@@ -992,7 +1013,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共23.2k字</span>
+  <span class="post-count">博客全站共23.8k字</span>
 </div>
         
 <div class="busuanzi-count">
