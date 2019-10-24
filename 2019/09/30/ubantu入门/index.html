@@ -123,7 +123,7 @@
 <meta property="og:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-5.png">
-<meta property="og:updated_time" content="2019-10-23T10:19:11.149Z">
+<meta property="og:updated_time" content="2019-10-24T03:45:14.933Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubantu配置">
 <meta name="twitter:description" content="今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。">
@@ -514,6 +514,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">一：复制移动</span><br><span class="line">sudo cp 要复制的文件 /usr/local/bin（目的文件夹）</span><br><span class="line">sudo mv 要移动的文件 /usr/local/bin（目的文件夹）</span><br><span class="line">二：删除</span><br><span class="line">sudo su    #进入root下</span><br><span class="line">rm -rf 要删除的文件</span><br></pre></td></tr></table></figure>
 
 <p><strong>linux对文件赋权限的命令chmod</strong><br>参考：<a href="https://www.cnblogs.com/insane-Mr-Li/p/10716293.html" target="_blank" rel="noopener">https://www.cnblogs.com/insane-Mr-Li/p/10716293.html</a><br>使用方式 : chmod [-cfvR] [–help] [–version] mode file… </p>
+<p><strong>卸载软件</strong><br>参考：<a href="https://blog.csdn.net/luckydog612/article/details/80877179" target="_blank" rel="noopener">https://blog.csdn.net/luckydog612/article/details/80877179</a><br>输入dpkg –list ,按下Enter键，终端输出电脑上安装的所有软件。<br>在终端上输入命令sudo apt-get –purge remove 包名（–purge是可选项，写上这个属性是将软件及其配置文件一并删除，如不需要删除配置文件，可执行sudo apt-get remove 包名）</p>
 <h1 id="双系统安装过程记录"><a href="#双系统安装过程记录" class="headerlink" title="双系统安装过程记录"></a>双系统安装过程记录</h1><p>参考: <a href="https://blog.csdn.net/wb15374515921/article/details/89853278" target="_blank" rel="noopener">https://blog.csdn.net/wb15374515921/article/details/89853278</a><br>用同学的U盘装的,省了不少事.</p>
 <h1 id="ubuntu下可删除哪些文件来释放系统空间？"><a href="#ubuntu下可删除哪些文件来释放系统空间？" class="headerlink" title="ubuntu下可删除哪些文件来释放系统空间？"></a>ubuntu下可删除哪些文件来释放系统空间？</h1><p>参考：<a href="https://zhidao.baidu.com/question/166531881.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/166531881.html</a></p>
 <h1 id="快速释放Ubuntu磁盘空间的七种方法"><a href="#快速释放Ubuntu磁盘空间的七种方法" class="headerlink" title="快速释放Ubuntu磁盘空间的七种方法"></a>快速释放Ubuntu磁盘空间的七种方法</h1><p>参考：<a href="https://www.jb51.net/os/Ubuntu/563450.html" target="_blank" rel="noopener">https://www.jb51.net/os/Ubuntu/563450.html</a></p>
@@ -536,6 +537,9 @@
 
 <h1 id="安装mendeley"><a href="#安装mendeley" class="headerlink" title="安装mendeley"></a>安装mendeley</h1><p>参考:<a href="https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions" target="_blank" rel="noopener">https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在上面链接中下载deb包</span><br><span class="line">sudo dpkg -i &lt;path-to-downloaded-package&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在使用过程中出现不能输入中文的现象，解决方法：<br><a href="https://blog.csdn.net/weixin_40100431/article/details/82633423" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40100431/article/details/82633423</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先在终端中定位一个文件的位置</span><br><span class="line">locate libfcitxplatforminputcontextplugin.so</span><br><span class="line">然后将上述文献拷贝到mendeley的安装路径当中</span><br><span class="line">sudo cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so /opt/mendeleydesktop/plugins/qt/plugins/platforminputcontexts/</span><br><span class="line">关闭mendeley重新启动即可。</span><br></pre></td></tr></table></figure>
 
 <h1 id="安装配置JAVA环境"><a href="#安装配置JAVA环境" class="headerlink" title="安装配置JAVA环境"></a>安装配置JAVA环境</h1><p>参考:<a href="https://blog.csdn.net/weixx3/article/details/80296779" target="_blank" rel="noopener">https://blog.csdn.net/weixx3/article/details/80296779</a><br><a href="https://zhidao.baidu.com/question/531884871.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/531884871.html</a></p>
 <h1 id="安装wps"><a href="#安装wps" class="headerlink" title="安装wps"></a>安装wps</h1><p>安装按照上面《安装好Ubuntu18.04之后要做的事大全》一文，字体缺失按照下面教程：<br>WPS for Linux（ubuntu）字体配置(字体缺失解决办法)：<br><a href="https://www.cnblogs.com/liangml/p/5969404.html" target="_blank" rel="noopener">https://www.cnblogs.com/liangml/p/5969404.html</a></p>
@@ -735,7 +739,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -817,7 +821,7 @@
         
           
         
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -984,7 +988,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共23.8k字</span>
+  <span class="post-count">博客全站共21k字</span>
 </div>
         
 <div class="busuanzi-count">
