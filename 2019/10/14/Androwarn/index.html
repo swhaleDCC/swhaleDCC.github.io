@@ -116,15 +116,15 @@
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   <meta name="keywords" content="静态检测">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Androwarn | Androguard | Apktool | Droidbox">
+<meta property="og:title" content="Androguard | Androwarn | Apktool | Droidbox">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/10/14/Androwarn/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-9.png">
-<meta property="og:updated_time" content="2019-10-23T11:55:01.856Z">
+<meta property="og:updated_time" content="2019-10-25T13:53:46.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Androwarn | Androguard | Apktool | Droidbox">
+<meta name="twitter:title" content="Androguard | Androwarn | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
 
 
@@ -156,7 +156,7 @@
 </script>
 
   
-  <title>Androwarn | Androguard | Apktool | Droidbox | Dccun's Blog</title>
+  <title>Androguard | Androwarn | Apktool | Droidbox | Dccun's Blog</title>
   
 
 
@@ -409,7 +409,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Androwarn | Androguard | Apktool | Droidbox
+          <h1 class="post-title" itemprop="name headline">Androguard | Androwarn | Apktool | Droidbox
 
               
             
@@ -517,7 +517,7 @@
 <li>命令行输入:androguard analyze</li>
 <li>或者用jupyter notebook，当然其他IDE也行，下载好androguard后他就相当于python的一个包，可以直接导入：import androguard</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import androguard.misc</span><br><span class="line">a, d, dx = androguard.misc.AnalyzeAPK(&quot;sample.apk&quot;)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from  androguard.misc import AnalyzeAPK</span><br><span class="line">a, d, dx = AnalyzeAPK(&quot;sample.apk&quot;)</span><br><span class="line">print(a,d,dx)</span><br></pre></td></tr></table></figure>
 
 <p>关于Androguard的项目：</p>
 <ul>
@@ -555,10 +555,8 @@
 </ol>
 <p>使用：</p>
 <ol>
-<li><p>decode：该命令用于进行反编译apk文件<br>apktool d file.apk dir<br>file.apk：代表了要反编译的apk文件的路径，最好写绝对路径<br>dir：代表了反编译后的文件的存储位置</p>
-</li>
-<li><p>build：该命令用于编译修改好的文件<br>apktool b dir   这里的dir就是刚才你反编译时输入的dir</p>
-</li>
+<li>decode：该命令用于进行反编译apk文件<br>apktool d file.apk dir<br>file.apk：代表了要反编译的apk文件的路径，最好写绝对路径<br>dir：代表了反编译后的文件的存储位置</li>
+<li>build：该命令用于编译修改好的文件<br>apktool b dir   这里的dir就是刚才你反编译时输入的dir</li>
 </ol>
 <hr>
 <h1 id="Droidbox"><a href="#Droidbox" class="headerlink" title="Droidbox"></a>Droidbox</h1><p>DroidBox是用来<strong>动态分析</strong>Android应用行为的工具。</p>
@@ -567,10 +565,12 @@
 <li>官网链接：<a href="https://code.google.com/archive/p/droidbox/" target="_blank" rel="noopener">https://code.google.com/archive/p/droidbox/</a></li>
 <li>github地址：<a href="https://github.com/pjlantz/droidbox" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox</a></li>
 </ul>
-<p>安装：</p>
+<p>安装：<br>参考：<a href="https://www.cnblogs.com/dliv3/p/5325633.html" target="_blank" rel="noopener">https://www.cnblogs.com/dliv3/p/5325633.html</a></p>
+<ol>
+<li>Oracle JDK（在本博客ubantu配置一文中写了jdk安装教程）</li>
+<li>安装sdk：<br>参考：<a href="https://www.jianshu.com/p/86b9c57bf838" target="_blank" rel="noopener">https://www.jianshu.com/p/86b9c57bf838</a><br>linux 服务器下载：wget <a href="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz" target="_blank" rel="noopener">http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz</a><br>将压缩包解压到/home/android/sdk 目录下<br>修改环境变量：<br>vim /etc/profile<br>export xxx<br>source /etc/profile</li>
+</ol>
 <ul>
-<li>参考：<a href="https://www.cnblogs.com/dliv3/p/5325633.html" target="_blank" rel="noopener">https://www.cnblogs.com/dliv3/p/5325633.html</a></li>
-<li>安装环境:Oracle JDK、Android SDK、Apktool（这三个都以及安装好了就不写安装过程了）</li>
 <li>下载最新版的DroidBox：<a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz。</li>
 <li>创建android虚拟机：<br>  android list target #查看可获取的安卓虚拟机<br>  android list avd #查看已创建的安卓虚拟机<br>  android create avd -n avd‘name -t android’id #创建一个虚拟机，名字自定义<br>  (启动虚拟机的命令：emulator @droidbox_android4.1.2)</li>
 <li>启动虚拟机：./startemu.sh droidbox_android4.1.2</li>
