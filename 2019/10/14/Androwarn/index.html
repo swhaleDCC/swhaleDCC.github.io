@@ -122,7 +122,12 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-4.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-9.png">
-<meta property="og:updated_time" content="2019-10-25T13:53:46.981Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-14.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-17.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-19.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-20.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-18.png">
+<meta property="og:updated_time" content="2019-10-26T12:13:10.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Androguard | Androwarn | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
@@ -565,19 +570,26 @@
 <li>官网链接：<a href="https://code.google.com/archive/p/droidbox/" target="_blank" rel="noopener">https://code.google.com/archive/p/droidbox/</a></li>
 <li>github地址：<a href="https://github.com/pjlantz/droidbox" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox</a></li>
 </ul>
-<p>安装：<br>参考：<a href="https://www.cnblogs.com/dliv3/p/5325633.html" target="_blank" rel="noopener">https://www.cnblogs.com/dliv3/p/5325633.html</a></p>
+<p>安装：<br>参考：<a href="https://blog.csdn.net/u012195899/article/details/52814013" target="_blank" rel="noopener">https://blog.csdn.net/u012195899/article/details/52814013</a></p>
 <ol>
-<li>Oracle JDK（在本博客ubantu配置一文中写了jdk安装教程）</li>
-<li>安装sdk：<br>参考：<a href="https://www.jianshu.com/p/86b9c57bf838" target="_blank" rel="noopener">https://www.jianshu.com/p/86b9c57bf838</a><br>linux 服务器下载：wget <a href="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz" target="_blank" rel="noopener">http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz</a><br>将压缩包解压到/home/android/sdk 目录下<br>修改环境变量：<br>vim /etc/profile<br>export xxx<br>source /etc/profile</li>
+<li><p>Oracle JDK（在本博客《ubantu配置》一文中写了jdk安装教程）</p>
+</li>
+<li><p>安装sdk：<br>linux 服务器下载：wget <a href="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz" target="_blank" rel="noopener">http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz</a><br>将压缩包解压到/home/android/sdk 目录下<br>修改环境变量：<br>export PATH=/home/name/Android/Sdk/android-sdk-linux/tools:$PATH<br>export PATH=/home/name/Android/Sdk/android-sdk-linux/platform-tools:$PATH<br><img src="/images/pasted-14.png" alt="upload successful"><br>source ~/.bashrc</p>
+</li>
+<li><p>sdk、avd管理<br>/home/dccun/Android/Sdk/android-sdk-linux/tools目录下：输入android即可进入sdk管理<br><img src="/images/pasted-17.png" alt="upload successful"><br>安装完成之后，大家可以在命令行输入一下命令来查看当前的安装版本：android list targets<br><img src="/images/pasted-19.png" alt="upload successful"><br>下载完之后create虚拟机<br><img src="/images/pasted-20.png" alt="upload successful"><br><img src="/images/pasted-18.png" alt="upload successful"><br>android list target #查看可获取的安卓虚拟机<br>android list avd #查看已创建的安卓虚拟机<br>点击OK创建完毕。这个时候大家可以先运行一下avd是否能够正常开机。<br>我的虚拟机名称是droid，因此命令如下：<br>emulator -avd droid<br>如果成功运行，那么恭喜，你的sdk部分已经配置完成！<br>如果想要删除某个虚拟机，使用的命令为:android delete avd -n avd_name。</p>
+</li>
+<li><p>下载最新版的DroidBox<br><a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz<br>进入droidbox目录下：<br>启动虚拟机：./startemu.sh droid<br>安装要分析APK: adb install 1.apk<br>开始分析：./droidbox.sh 1.apk（apk使用绝对路径）<br>可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)</p>
+</li>
 </ol>
-<ul>
-<li>下载最新版的DroidBox：<a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz。</li>
-<li>创建android虚拟机：<br>  android list target #查看可获取的安卓虚拟机<br>  android list avd #查看已创建的安卓虚拟机<br>  android create avd -n avd‘name -t android’id #创建一个虚拟机，名字自定义<br>  (启动虚拟机的命令：emulator @droidbox_android4.1.2)</li>
-<li>启动虚拟机：./startemu.sh droidbox_android4.1.2</li>
-<li>安装要分析APK: adb install 1.apk</li>
-<li>开始分析：./droidbox.sh 1.apk</li>
-<li>可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)</li>
-</ul>
+<p>出现的问题及解决方法：</p>
+<ol>
+<li><p>Linux系统(Ubuntu)下AndroidStudio创建AVD虚拟器出现“/dev/kvm is missing”<br>参考：<a href="https://blog.csdn.net/lpcrazyboy/article/details/80270816" target="_blank" rel="noopener">https://blog.csdn.net/lpcrazyboy/article/details/80270816</a><br>(1)进入BIOS里，把Virtualization Technology(VT)的状态由Disable改为Enable。（这个在cpu模块里找）<br>(2)打开终端，输入：sudo apt-get install qemu-kvm<br>(3)安装完成后，输入：sudo kvm-ok</p>
+</li>
+<li><p>ubuntu18.04系统下androidstudio启动模拟器发生错误: /dev/kvm device:permission denied<br>参考：<a href="https://blog.csdn.net/blackei/article/details/84559180" target="_blank" rel="noopener">https://blog.csdn.net/blackei/article/details/84559180</a><br>在终端输入：sudo chown username -R /dev/kvm<br>将username替换成自己电脑当前登录的用户名称即可。<br>如当前电脑登录的是android，那么在终端输入的则为：<br>sudo chown android -R /dev/kvm</p>
+</li>
+<li><p>droidbox支持python2，但是我ubantu装的是python3，求解决方法。</p>
+</li>
+</ol>
 
       
     </div>
@@ -1013,7 +1025,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共21k字</span>
+  <span class="post-count">博客全站共21.5k字</span>
 </div>
         
 <div class="busuanzi-count">
