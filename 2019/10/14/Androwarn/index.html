@@ -127,7 +127,8 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-19.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-20.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-18.png">
-<meta property="og:updated_time" content="2019-10-26T12:13:10.239Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-15.png">
+<meta property="og:updated_time" content="2019-10-27T05:38:00.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Androguard | Androwarn | Apktool | Droidbox">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-4.png">
@@ -570,15 +571,17 @@
 <li>官网链接：<a href="https://code.google.com/archive/p/droidbox/" target="_blank" rel="noopener">https://code.google.com/archive/p/droidbox/</a></li>
 <li>github地址：<a href="https://github.com/pjlantz/droidbox" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox</a></li>
 </ul>
-<p>安装：<br>参考：<a href="https://blog.csdn.net/u012195899/article/details/52814013" target="_blank" rel="noopener">https://blog.csdn.net/u012195899/article/details/52814013</a></p>
+<p>安装：<br>（参考：<a href="https://blog.csdn.net/u012195899/article/details/52814013）" target="_blank" rel="noopener">https://blog.csdn.net/u012195899/article/details/52814013）</a></p>
 <ol>
 <li><p>Oracle JDK（在本博客《ubantu配置》一文中写了jdk安装教程）</p>
 </li>
 <li><p>安装sdk：<br>linux 服务器下载：wget <a href="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz" target="_blank" rel="noopener">http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz</a><br>将压缩包解压到/home/android/sdk 目录下<br>修改环境变量：<br>export PATH=/home/name/Android/Sdk/android-sdk-linux/tools:$PATH<br>export PATH=/home/name/Android/Sdk/android-sdk-linux/platform-tools:$PATH<br><img src="/images/pasted-14.png" alt="upload successful"><br>source ~/.bashrc</p>
 </li>
-<li><p>sdk、avd管理<br>/home/dccun/Android/Sdk/android-sdk-linux/tools目录下：输入android即可进入sdk管理<br><img src="/images/pasted-17.png" alt="upload successful"><br>安装完成之后，大家可以在命令行输入一下命令来查看当前的安装版本：android list targets<br><img src="/images/pasted-19.png" alt="upload successful"><br>下载完之后create虚拟机<br><img src="/images/pasted-20.png" alt="upload successful"><br><img src="/images/pasted-18.png" alt="upload successful"><br>android list target #查看可获取的安卓虚拟机<br>android list avd #查看已创建的安卓虚拟机<br>点击OK创建完毕。这个时候大家可以先运行一下avd是否能够正常开机。<br>我的虚拟机名称是droid，因此命令如下：<br>emulator -avd droid<br>如果成功运行，那么恭喜，你的sdk部分已经配置完成！<br>如果想要删除某个虚拟机，使用的命令为:android delete avd -n avd_name。</p>
+<li><p>sdk、avd管理<br>/home/dccun/Android/Sdk/android-sdk-linux/tools目录下：终端输入android即可进入sdk管理，可下载avd<br><img src="/images/pasted-17.png" alt="upload successful"><br>安装完成之后，大家可以在命令行输入一下命令来查看当前的安装版本：android list targets<br><img src="/images/pasted-19.png" alt="upload successful"><br>下载完之后create虚拟机<br><img src="/images/pasted-20.png" alt="upload successful"><br><img src="/images/pasted-18.png" alt="upload successful"><br>点击OK创建完毕。这个时候大家可以先运行一下avd是否能够正常开机。<br>我的虚拟机名称是droid，因此命令如下：<br>emulator -avd droid<br>如果成功运行，那么恭喜，你的sdk部分已经配置完成！<br>如果想要删除某个虚拟机，使用的命令为:android delete avd -n avd_name。<br>android list target #查看可获取的安卓虚拟机<br>android list avd #查看已创建的安卓虚拟机</p>
 </li>
-<li><p>下载最新版的DroidBox<br><a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz<br>进入droidbox目录下：<br>启动虚拟机：./startemu.sh droid<br>安装要分析APK: adb install 1.apk<br>开始分析：./droidbox.sh 1.apk（apk使用绝对路径）<br>可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)</p>
+<li><p>下载最新版的DroidBox<br><a href="https://github.com/pjlantz/droidbox/releases" target="_blank" rel="noopener">https://github.com/pjlantz/droidbox/releases</a> ，这里我下载的时候最新版为：DroidBox411RC.tar.gz<br>进入droidbox目录下：<br>启动虚拟机：./startemu.sh droid<br>开始分析：./droidbox.sh 1.apk（apk使用绝对路径）<br>可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)</p>
+</li>
+<li><p>在虚拟机下载apk<br>把apk放到/Android/Sdk/android-sdk-linux/platform-tools目录下，在这个目录下进入终端，输入adb install sample.apk即可，实践效果如下图所示：<br><img src="/images/pasted-15.png" alt="upload successful"></p>
 </li>
 </ol>
 <p>出现的问题及解决方法：</p>
@@ -1025,7 +1028,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共21.5k字</span>
+  <span class="post-count">博客全站共21.6k字</span>
 </div>
         
 <div class="busuanzi-count">
