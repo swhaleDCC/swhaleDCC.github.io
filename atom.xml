@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-29T13:02:36.823Z</updated>
+  <updated>2019-10-29T14:46:19.059Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -21,13 +21,11 @@
     <link href="https://swhaledcc.github.io/2019/10/29/%E4%BD%BF%E7%94%A8WinSCP%E7%BB%99%E9%98%BF%E9%87%8C%E4%BA%91Ubuntu%E7%B3%BB%E7%BB%9F%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/"/>
     <id>https://swhaledcc.github.io/2019/10/29/使用WinSCP给阿里云Ubuntu系统传输文件/</id>
     <published>2019-10-29T12:51:00.000Z</published>
-    <updated>2019-10-29T13:02:36.823Z</updated>
+    <updated>2019-10-29T14:46:19.059Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;本地文件上传到阿里云Ubuntu系统&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;&lt;img src=&quot;%5Cimages%5Cpasted-26.png%5C&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -136,12 +134,12 @@
     <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
     <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-26T12:37:33.198Z</updated>
+    <updated>2019-10-29T14:44:56.172Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.droidsec.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.droidsec.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;br&gt;kaggle：&lt;a href=&quot;https://www.kaggle.com/c/malware-classification&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.kaggle.com/c/malware-classification&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>

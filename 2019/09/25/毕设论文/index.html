@@ -114,20 +114,21 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="友链:https://github.com/maoqyhz/DroidCChttp://www.droidsec.cn/">
+  <meta name="description" content="友链:https://github.com/maoqyhz/DroidCCkaggle：https://www.kaggle.com/c/malware-classification">
 <meta name="keywords" content="毕设笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[加密文章]毕设笔记">
 <meta property="og:url" content="https://swhaledcc.github.io/2019/09/25/毕设论文/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="友链:https://github.com/maoqyhz/DroidCChttp://www.droidsec.cn/">
+<meta property="og:description" content="友链:https://github.com/maoqyhz/DroidCCkaggle：https://www.kaggle.com/c/malware-classification">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-10-26T12:37:33.198Z">
+<meta property="og:image" content="https://swhaledcc.github.io/2019/09/25/毕设论文/%5Cimages%5Cpasted-24.png%5C">
+<meta property="og:image" content="https://swhaledcc.github.io/2019/09/25/毕设论文/%5Cimages%5Cpasted-25.png%5C">
+<meta property="og:updated_time" content="2019-10-29T14:44:56.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[加密文章]毕设笔记">
-<meta name="twitter:description" content="友链:https://github.com/maoqyhz/DroidCChttp://www.droidsec.cn/">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
+<meta name="twitter:description" content="友链:https://github.com/maoqyhz/DroidCCkaggle：https://www.kaggle.com/c/malware-classification">
+<meta name="twitter:image" content="https://swhaledcc.github.io/2019/09/25/毕设论文/%5Cimages%5Cpasted-24.png%5C">
 
 
 
@@ -498,23 +499,45 @@
 
       
         <blockquote>
-<p>友链:<br><a href="https://github.com/maoqyhz/DroidCC" target="_blank" rel="noopener">https://github.com/maoqyhz/DroidCC</a><br><a href="http://www.droidsec.cn/" target="_blank" rel="noopener">http://www.droidsec.cn/</a></p>
+<p>友链:<br><a href="https://github.com/maoqyhz/DroidCC" target="_blank" rel="noopener">https://github.com/maoqyhz/DroidCC</a><br>kaggle：<a href="https://www.kaggle.com/c/malware-classification" target="_blank" rel="noopener">https://www.kaggle.com/c/malware-classification</a></p>
 </blockquote>
 <a id="more"></a>
 
-
-<blockquote>
-<p><strong>恶意代码（malicious code）也被称为恶意软件（malware）</strong><br>在恶意代码行为中，能够有效代表恶意代码意图和特点的行为主要是恶意代码运行过程中执行的API调用、DLL模块调用、系统调用、文件和注册表的操作（访问、新增、修改、删除）、网络活动等与操作系统的主要交互行为。</p>
-</blockquote>
-<p>(1)攻击者针对一个新发现的计算机系统漏洞编写一个新的恶意代码，这种方法很多时候会产生一个新的恶意代码的类型或者子类型，实现这种方法的攻击者技术能力往往较强，对于相关系统漏洞的原理有很深入的理解；</p>
-<p>(2)攻击者修改已有恶意代码来产生新的恶意代码，产生已有恶意代码的一个变种，现如今已经受到广泛发展的混淆技术使得这种方法的技术门槛大大降低，很多非专业人员通过简单的一些教程或者工具就可以实现这一方法，这也使得当前恶意代码数量呈现爆炸式增长。</p>
-<h4 id="恶意代码分析技术"><a href="#恶意代码分析技术" class="headerlink" title="恶意代码分析技术"></a>恶意代码分析技术</h4><blockquote>
-<p><strong>静态分析</strong>：通过提取二进制文件或者程序文件中的结构信息进行分析，所以不需要运行样本，基于特征码的方法也可归入这一类。</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20190916175420879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<blockquote>
-<p><strong>动态分析</strong>：先运行样本并记录其行为，力图通过行为来捕捉其意图从而进行分析。<br>动态行为记录的实现主要有两大类方法：一种是在样本运行之前将整个系统的状态复制一个镜像，在样本运行结束后的状态与镜像做对比，这种方法相对较为容易实现，得到的行为记录也较为粗糙；另一种是在样本运行过程中通过调试器等专有工具来逐步监视样本的行为，这种方法往往较难实现，但是得到的行为记录较为详尽。</p>
-</blockquote>
+<h1 id="博客笔记"><a href="#博客笔记" class="headerlink" title="博客笔记"></a>博客笔记</h1><p>发现了一个写的很详细的博客：<a href="http://www.vuln.cn/7012" target="_blank" rel="noopener">用机器学习检测Android恶意代码</a>，做个笔记。</p>
+<ol>
+<li><p>安卓恶意代码检测方法</p>
+<ul>
+<li>基于特征代码的检测方法，通过检测文件是否拥有已知恶意软件的特征代码(如一段特殊代码或字符串)来判断其是否为恶意软件。它的优点是快速、准确率高、误报率低，但是无法检测未知的恶意代码。</li>
+<li>基于行为的分析方法又分为动态分析方法和静态分析方法，依靠监视程序的行为与已知的恶意行为模式进行匹配，以此判断目标文件是否具备恶意特征。它的优点可以检测未知的恶意代码变种，缺点是误报率较高。<ul>
+<li>动态分析方法是指利用“沙盒或模拟器”来模拟运行程序，通过监控或者拦截的方式分析程序运行的行为，但是很消耗资源和时间。</li>
+<li>静态分析方法则是通过逆向手段抽取程序的特征，分析其中指令序列等。本文采用静态分析的方法进恶意行代码检测。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Weka与机器学习的分类算法<br>Weka（Waikato Environment for Knowledge Analysis），是一款免费的，非商业化基于JAVA环境下开源的机器学习（machine learning）以及数据挖掘（data minining）软件。Weka存储数据的格式是ARFF（Attribute-Relation File Format）文件，是一种ASCII文本文件。本文就是将特征数据生成ARFF格式的文件，利用Weka自带的分类算法进行数据训练与模型测试。<br>机器学习中分为有监督学习与无监督学习。有监督学习就是根据训练集，用学习算法学习出一个模型，然后可以用测试集对模型进行评估准确度和性能。分类算法属于有监督学习，需要先建立模型。常见的分类算法有：随机森林(Random Forest)、支持向量机(SVM)等。</p>
+</li>
+<li><p>APK的基本格式<br>APK文件格式是一种基于ZIP的格式，它与JAR文件的构造方式相似。参考：<a href="https://en.wikipedia.org/wiki/Android_application_package" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Android_application_package</a><br>一个APK文件通常包含以下文件：</p>
+<ul>
+<li>classes.dex: Dalvik字节码,可被Dalvik虚拟机执行。（需要重点注意，安卓的执行代码被编译后封装在这个文件中。）</li>
+<li>AndroidManifest.xml: 一个的Android清单文件，用于描述该应用程序的名字、版本号、所需权限、注册的服务、链接的其他应用程序。该文件使用XML文件格式。</li>
+<li>META-INF 文件夹: 下面有3个文件<ul>
+<li>MANIFEST.MF: 清单信息</li>
+<li>CERT.RSA: 保存应用程序的证书和授权信息</li>
+<li>CERT.SF: 保存SHA-1信息资源列表</li>
+</ul>
+</li>
+<li>res: APK所需要的资源文件夹</li>
+<li>assets: 不需编译的原始资源文件目录</li>
+<li>resources.arsc:编译后的二进制资源文件</li>
+<li>lib:库文件目录</li>
+</ul>
+</li>
+<li><p>Dalvik虚拟机与反汇编<br>区别与JAVA虚拟机(JVM)，安卓的虚拟机称为Dalvik虚拟机（DVM）。Java虚拟机运行的是Java字节码，Dalvik虚拟机运行的是Dalvik字节码。Java虚拟机基于栈架构，Dalvik虚拟机基于寄存器架构。<br>DVM拥有专属的DEX可执行文件格式和指令集代码。smali和baksmali 则是针对DEX执行文件格式的汇编器和反汇编器，反汇编后DEX 文件会产生.smali 后缀的代码文件，smali代码拥有特定的格式与语法，smali语言是对Dalvik 虚拟机字节码的一种解释。</p>
+</li>
+<li><p>恶意代码模型<br><img src="%5Cimages%5Cpasted-24.png%5C" alt="upload successful"><br>测试恶意代码检测模型<br><img src="%5Cimages%5Cpasted-25.png%5C" alt="upload successful"></p>
+</li>
+</ol>
 
       
     </div>
@@ -736,10 +759,6 @@
         
           
         
-          
-        
-          
-        
         <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span>
         </a>
@@ -756,12 +775,6 @@
           
         
         
-        
-          
-        
-          
-        
-          
         
           
         
@@ -902,7 +915,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#恶意代码分析技术"><span class="nav-text">恶意代码分析技术</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#博客笔记"><span class="nav-text">博客笔记</span></a></li></ol></div>
             
 
           </div>
@@ -950,7 +963,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共22.1k字</span>
+  <span class="post-count">博客全站共22.5k字</span>
 </div>
         
 <div class="busuanzi-count">
