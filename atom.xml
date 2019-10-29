@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-29T14:46:19.059Z</updated>
+  <updated>2019-10-29T15:22:00.675Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>渗透测试</title>
+    <link href="https://swhaledcc.github.io/2019/10/29/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    <id>https://swhaledcc.github.io/2019/10/29/渗透测试/</id>
+    <published>2019-10-29T15:20:00.000Z</published>
+    <updated>2019-10-29T15:22:00.675Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;br&gt;渗透测试入门指南与路线规划（全文版）：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/55484970&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://zhuanlan.zhihu.com/p/55484970&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://swhaledcc.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://swhaledcc.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>本地文件上传到阿里云Ubuntu系统</title>
@@ -65,11 +87,11 @@
   </entry>
   
   <entry>
-    <title>kaggle学习笔记</title>
+    <title>kaggle练习笔记</title>
     <link href="https://swhaledcc.github.io/2019/10/19/kaggle/"/>
     <id>https://swhaledcc.github.io/2019/10/19/kaggle/</id>
     <published>2019-10-19T11:31:00.000Z</published>
-    <updated>2019-10-21T02:38:39.830Z</updated>
+    <updated>2019-10-29T15:12:24.338Z</updated>
     
     <summary type="html">
     
@@ -134,12 +156,12 @@
     <link href="https://swhaledcc.github.io/2019/09/25/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
     <id>https://swhaledcc.github.io/2019/09/25/毕设论文/</id>
     <published>2019-09-25T11:49:00.000Z</published>
-    <updated>2019-10-29T14:44:56.172Z</updated>
+    <updated>2019-10-29T15:06:54.788Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;br&gt;kaggle：&lt;a href=&quot;https://www.kaggle.com/c/malware-classification&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.kaggle.com/c/malware-classification&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;友链:&lt;br&gt;&lt;a href=&quot;https://github.com/maoqyhz/DroidCC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/maoqyhz/DroidCC&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
