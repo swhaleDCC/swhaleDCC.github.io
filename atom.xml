@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2019-10-29T15:22:00.675Z</updated>
+  <updated>2019-10-30T07:19:32.115Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="https://swhaledcc.github.io/2019/10/30/Linux/"/>
+    <id>https://swhaledcc.github.io/2019/10/30/Linux/</id>
+    <published>2019-10-30T05:55:00.000Z</published>
+    <updated>2019-10-30T07:19:32.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链:&lt;br&gt;看完这篇Linux基本的操作就会了:&lt;a href=&quot;https://zhuanlan.zhihu.com/p/36801617&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://zhuanlan.zhihu.com/p/36801617&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="https://swhaledcc.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://swhaledcc.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>渗透测试</title>
