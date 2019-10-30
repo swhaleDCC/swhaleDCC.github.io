@@ -129,8 +129,7 @@ live2d:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@gitee.com:swhaledcc/dccun.git
-  branch: master
+  repo: https://gitee.com/swhaledcc/dccun.git
 
 custom_file_path:
   style: source/_data/styles.styl
