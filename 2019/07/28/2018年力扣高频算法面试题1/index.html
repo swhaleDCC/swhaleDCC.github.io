@@ -125,7 +125,8 @@
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zczAuYmFpZHUuY29tLzczdDFiamVoMUJGM29kQ2YvaXQvdT00MTcyNTQ4MTE1LDExOTA2MDYwMzYmZm09ODUmcz0yQjQ1M0E2QTg1NDYyNkY1NTVFQzdDMDgwMDAwRTA5MA#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144904349.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190813144923926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMxOTI3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-10-28T08:15:48.078Z">
+<meta property="og:image" content="https://swhaledcc.github.io/2019/07/28/2018年力扣高频算法面试题1/%5Cimages%5Cpasted-27.png%5C">
+<meta property="og:updated_time" content="2019-10-30T03:47:56.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018年力扣高频算法面试题(1)数学 &amp; 位运算">
 <meta name="twitter:description" content="友链:  2018年力扣高频算法面试题汇总题解参考-github1题解参考-github2">
@@ -544,6 +545,16 @@
 <p>颠倒给定的 32 位无符号整数的二进制位。<br>进阶:如果多次调用这个函数，你将如何优化你的算法？</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    uint32_t reverseBits(uint32_t n) &#123;</span><br><span class="line">        uint32_t res = 0;</span><br><span class="line">        for (int i = 0; i &lt; 32; ++i) &#123;</span><br><span class="line">            if (n &amp; 1 == 1) &#123;  // 最后一位为1</span><br><span class="line">                res = (res &lt;&lt; 1) + 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                res = res &lt;&lt; 1;</span><br><span class="line">            &#125;</span><br><span class="line">            n = n &gt;&gt; 1;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>补充几个题目</p>
+<h4 id="Sum-of-Two-Integers"><a href="#Sum-of-Two-Integers" class="headerlink" title="Sum of Two Integers"></a>Sum of Two Integers</h4><blockquote>
+<p>Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.<br>由于异或是相同则位0，不同则位1，因此我们可以把异或看成是一种不进位的加减法。<br>由于与是全部位1则位1，否则位0，因此我们可以求与之后左移一位来表示进位。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int getSum(int a, int b) &#123;</span><br><span class="line">        long long carry; // 64-bit</span><br><span class="line">        while (b != 0) &#123;</span><br><span class="line">            carry = a &amp; b;</span><br><span class="line">            a = a ^ b;</span><br><span class="line">            b = ((carry &amp; 0xffffffff) &lt;&lt; 1); // limited to 32 bits</span><br><span class="line">        &#125;</span><br><span class="line">        return a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="%5Cimages%5Cpasted-27.png%5C" alt="upload successful"></p>
+
       
     </div>
 
@@ -920,7 +931,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、只出现一次的数字"><span class="nav-text">1、只出现一次的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、直线上最多的点数【需二刷】"><span class="nav-text">2、直线上最多的点数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、分数到小数【需二刷】"><span class="nav-text">3、分数到小数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、阶乘后的零"><span class="nav-text">4、阶乘后的零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、缺失数字"><span class="nav-text">5、缺失数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、3的幂"><span class="nav-text">6、3的幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、颠倒二进制位【需二刷】"><span class="nav-text">7、颠倒二进制位【需二刷】</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、只出现一次的数字"><span class="nav-text">1、只出现一次的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、直线上最多的点数【需二刷】"><span class="nav-text">2、直线上最多的点数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、分数到小数【需二刷】"><span class="nav-text">3、分数到小数【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、阶乘后的零"><span class="nav-text">4、阶乘后的零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、缺失数字"><span class="nav-text">5、缺失数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、3的幂"><span class="nav-text">6、3的幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、颠倒二进制位【需二刷】"><span class="nav-text">7、颠倒二进制位【需二刷】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Sum-of-Two-Integers"><span class="nav-text">Sum of Two Integers</span></a></li></ol></div>
             
 
           </div>
@@ -968,7 +979,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共22.5k字</span>
+  <span class="post-count">博客全站共22.7k字</span>
 </div>
         
 <div class="busuanzi-count">
