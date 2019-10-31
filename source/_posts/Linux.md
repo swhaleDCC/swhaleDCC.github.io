@@ -92,8 +92,8 @@ date: 2019-10-30 13:55:00
 	- tar -xzvf filename.tar.gz
 
 ### 正则表达式
-![upload successful](\\images\pasted-28.png\)
-![upload successful](\\images\pasted-29.png\)
+![upload successful](/images/pasted-28.png)
+![upload successful](/images/pasted-29.png)
 grep(global search regular expression)是一个强大的文本搜索工具。grep 使用正则表达式搜索文本，并把匹配的行打印出来。
 格式：grep [options] PATTERN [FILE...]
 - PATTERN 是查找条件：可以是普通字符串、可以是正则表达式，通常用单引号将RE括起来。
@@ -151,12 +151,12 @@ Shell变量：查询、显示和取消：
 - 取消变量的声明或赋值
 	- unset <NAME>
 
-![upload successful](\\images\pasted-30.png\)
+![upload successful](/images/pasted-30.png)
 
 ### VI编辑器
 vi 是 “Visual interface” 的简称，它可以执行输出、删除、查找、替换、块操作等众多文本操作，而且用户可以根据自己的需要对其进行定制，这是其他编辑程序所没有的。
-![upload successful](\\images\pasted-31.png\)
-![upload successful](\\images\pasted-32.png\)
+![upload successful](/images/pasted-31.png)
+![upload successful](/images/pasted-32.png)
 
 普通模式
 - G用于直接跳转到文件尾
