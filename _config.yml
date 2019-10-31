@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://swhaledcc.gitee.io/blog
-root: /blog
+url: https://swhaledcc.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -129,7 +129,7 @@ live2d:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@gitee.com:swhaledcc/blog.git
+  repository: git@github.com:swhaleDCC/swhaleDCC.github.io.git
   branch: master
 
 custom_file_path:
