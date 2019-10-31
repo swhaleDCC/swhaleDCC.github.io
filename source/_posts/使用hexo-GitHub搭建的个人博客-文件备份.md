@@ -1,4 +1,4 @@
-title: 使用hexo+GitHub搭建的个人博客 文件备份
+title: 基于GitHub搭建的个人博客进行备份
 author: Dccun
 tags:
   - hexo
