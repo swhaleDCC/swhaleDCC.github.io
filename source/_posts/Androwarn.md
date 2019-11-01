@@ -1,4 +1,4 @@
-title: Androguard | Androwarn | Apktool | Droidbox
+title: 'Androguard | Androwarn | Apktool | Droidbox '
 author: Dccun
 tags:
   - 静态检测
@@ -142,7 +142,6 @@ https://github.com/pjlantz/droidbox/releases ，这里我下载的时候最新�
 把apk放到/Android/Sdk/android-sdk-linux/platform-tools目录下，在这个目录下进入终端，输入adb install sample.apk即可，实践效果如下图所示：
 ![upload successful](/images/pasted-15.png)
 
-
 出现的问题及解决方法：
 1. Linux系统(Ubuntu)下AndroidStudio创建AVD虚拟器出现“/dev/kvm is missing”
 参考：https://blog.csdn.net/lpcrazyboy/article/details/80270816
@@ -158,3 +157,15 @@ https://github.com/pjlantz/droidbox/releases ，这里我下载的时候最新�
 sudo chown android -R /dev/kvm
 
 3. droidbox支持python2，但是我ubantu装的是python3，求解决方法。
+
+# JD-GUI
+学习链接
+- http://java-decompiler.github.io/
+
+# dex2jar
+学习链接
+- https://github.com/pxb1988/dex2jar
+
+# smali/baksmali 
+学习链接
+- https://github.com/JesusFreke/smali

@@ -1,4 +1,4 @@
-title: tensorflow 2.0 学习笔记
+title: tensorflow 2.0 笔记
 author: Dccun
 tags:
   - tensorflow

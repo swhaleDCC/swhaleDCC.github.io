@@ -1,9 +1,9 @@
-title: Git学习
+title: Git
 tags:
   - Git
 categories:
   - Git工具
-date: 2019-08-29 09:08:00
+date: 2019-05-29 09:08:00
 ---
 >友链:
 >[廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 

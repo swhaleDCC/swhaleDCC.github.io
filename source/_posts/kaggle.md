@@ -1,4 +1,4 @@
-title: kaggle练习笔记
+title: kaggle
 author: Dccun
 tags:
   - kaggle

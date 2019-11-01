@@ -1,9 +1,9 @@
-title: Java学习
+title: Java
 tags:
   - Java
 categories:
   - 编程语言
-date: 2019-09-20 16:36:00
+date: 2019-05-20 16:36:00
 ---
 >友链:
 本文部分内容转载自JavaGuide，地址：https://github.com/Snailclimb/JavaGuide ，作者：SnailClimb.

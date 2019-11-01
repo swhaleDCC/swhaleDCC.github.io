@@ -123,8 +123,8 @@ pip install tensorflow==2.0.0-beta1
 
 # 安装Mac主题
 
-参考: https://www.cnblogs.com/feipeng8848/p/8970556.html
-这个感觉很高级的样子,看起来很复杂,等以后有时间了再尝试
+https://zhuanlan.zhihu.com/p/71588449
+尝试了一下效果不错
 
 
 # 安装MySQL8.0
