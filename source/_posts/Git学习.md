@@ -11,6 +11,8 @@ date: 2019-05-29 09:08:00
 
 <!--more-->
 
+附上之前在CSDN写的一篇[git入门博客](https://blog.csdn.net/qq_40631927/article/details/89412674)
+
 # Git：分布式版本控制系统
 
 基本的 Git 工作流程如下：
