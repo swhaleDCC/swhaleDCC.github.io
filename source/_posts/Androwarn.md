@@ -1,4 +1,4 @@
-title: 'Androguard | Androwarn | Apktool | Droidbox '
+title: Apktool | Droidbox | dex2jar ...... tools
 author: Dccun
 tags:
   - 静态检测
@@ -12,7 +12,11 @@ date: 2019-10-14 15:56:00
 <!--more-->
 >Android tools github地址：
 https://github.com/maoqyhz/DroidCC/blob/master/tools.md
+下面是几个Android恶意代码检测用到的工具，总结一下下载方法和使用方法，安装环境为ubantu18.04。
 
+apktool：是apk格式文件与smali文件的转换
+dex2jar：是dex格式文件与jar文件的转换
+smali/baksmali：是dex格式文件与smali文件的转换
 ***
 
 # Androguard
@@ -159,12 +163,30 @@ sudo chown android -R /dev/kvm
 
 # JD-GUI
 学习链接
+- https://github.com/java-decompiler/jd-gui
 - http://java-decompiler.github.io/
 
 # dex2jar
+dex2jar顾名思义，`dex文件2到jar文件`，也就是将apk中的java源码编译生成的java字节码文件反编译成java源码，其中2的英文谐音为two，也就是 dex 到 jar，这样对于我们来说就能看到真实的程序啦。
+
 学习链接
 - https://github.com/pxb1988/dex2jar
 
+下载：[下载链接](https://sourceforge.net/projects/dex2jar/)
+![upload successful](/images/pasted-46.png)
+
+使用：
+```
+sh d2j-dex2jar.sh -f ~/path/to/apk_to_decompile.apk
+```
+运行结束后会在d2j-dex2jar.sh所在文件夹下生成apk_to_decompile-dex2jar.jar文件
+
 # smali/baksmali 
+smali是将Android字节码用可阅读的字符串形式表现出来的一种语言,可以称之为Android字节码的反汇编语言。
+
 学习链接
 - https://github.com/JesusFreke/smali
+- [逆向之Smali入门学习](https://www.jianshu.com/p/40908a016480)
+
+下载：[下载链接](https://bitbucket.org/JesusFreke/smali/downloads/)
+
