@@ -1,20 +1,25 @@
-title: '[加密文章]毕设笔记'
+title: Android恶意代码检测：N-gram Opcode
+author: Dccun
 tags:
-  - 毕设笔记
+  - N-gram Opcode
+  - ''
 categories:
   - 毕设
-password: 199812
-date: 2019-09-25 19:49:00
+date: 2019-11-10 20:18:00
 ---
->友链:
-https://github.com/maoqyhz/DroidCC
+>读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。
 
 <!--more-->
 
+>参考资料：
+[我跑出来的一个代码](https://github.com/swhaleDCC/AndroidMalwareN-gram) 
+[博客原文](http://drops.xmd5.com/static/drops/tips-8151.html)
+[kaggle malware-classification](https://www.kaggle.com/c/malware-classification/)
+[kaggle_Microsoft_Malware github](https://github.com/daxiongshu/kaggle_Microsoft_Malware)
+[用机器学习检测Android恶意代码 – runner](http://www.vuln.cn/7012)
 
-# 用机器学习检测Android恶意代码
-发现了一个写的很详细的博客：[用机器学习检测Android恶意代码](http://www.vuln.cn/7012)，做个笔记。
-
+***
+# 用机器学习检测Android恶意代码 – runner
 1. 安卓恶意代码检测方法
 	- 基于特征代码的检测方法，通过检测文件是否拥有已知恶意软件的特征代码(如一段特殊代码或字符串)来判断其是否为恶意软件。它的优点是快速、准确率高、误报率低，但是无法检测未知的恶意代码。
 	- 基于行为的分析方法又分为动态分析方法和静态分析方法，依靠监视程序的行为与已知的恶意行为模式进行匹配，以此判断目标文件是否具备恶意特征。它的优点可以检测未知的恶意代码变种，缺点是误报率较高。
@@ -48,57 +53,18 @@ DVM拥有专属的DEX可执行文件格式和指令集代码。smali和baksmali 
 测试恶意代码检测模型
 ![upload successful](/images/pasted-25.png)
 
-# 《Android恶意代码分析与渗透测试》
+***
+下面是硕士论文阅读笔记：
 
-![upload successful](/images/pasted-33.png)
+# 基于机器学习的安卓恶意应用检测方法研究
+N-gram Opcode特征实际上是dalvik Opcode特征结合自然语言处理中的N-gram方法而产生的特征集合。
+检测框架：
+![upload successful](/images/pasted-48.png)
 
-1. Android基本概念
-	- dalvik虚拟机（使用dex编译器进行转换，生成位元码后运行）
-	- jvm虚拟机（Java虚拟机）
-    
-2. Android应用程序诊断环境
-wireshark
-ADB（Android debug bridge）
-设置点对点网络
-AP：access point 接入点
-tcpdump二进制文件
-UNIX分析工具包 busybox
-pm：package manager
-logcat：adb logcat
-adb pull xxx.apk  ：导出到本地PC
-dex文件：分析工具010编辑器
-```
-adb devices：显示所有设备的信息
-adb shell：进入shell命令模式
-adb -s emulator-5554 shell：指定设备进入shell命令模式
-adb install xxx.apk
-adb shell ls /data/data 浏览设备中文件夹进行查找已安装软件包
-adb uninstall 包名
-```
+N-gram Opcode：
+![upload successful](/images/pasted-50.png)
+![upload successful](/images/pasted-51.png)
 
-3. Android APP分析方法
-dex2jar
-JD-GUI
-androguard
-droidbox
-sublime插件
-apkInspector（不支持ubantu12.04以上）
-dexplorer、dexdump（Google play store）
-santoku live CD
+![upload successful](/images/pasted-52.png)
 
-4. 恶意代码分析
-在线分析工具：Anubis、virustotal、andrototal、apkscan APP、Dexter、apkanalyzer
-
-6. 使用Android诊断工具
-packetshark：网络数据包截获工具（Google play store）
-drozer：移动诊断框架
-ASEF：移动设备漏洞工具
-droidsheep：web会话截取工具
-
-7. Android APP试题
-查找APP的密钥
-Hex编辑器
-最强大的调试工具：ida pro
-Google safe browsing
-OWASP TOP 10
-Androidlab：虚拟手机银行程序
+![upload successful](/images/pasted-53.png)
