@@ -13,10 +13,19 @@ date: 2019-11-10 20:18:00
 
 >参考资料：
 [我跑出来的一个代码](https://github.com/swhaleDCC/AndroidMalwareN-gram) 
+[用机器学习检测Android恶意代码 – runner](http://www.vuln.cn/7012)
 [博客原文](http://drops.xmd5.com/static/drops/tips-8151.html)
+[博客实现的代码](https://github.com/bindog/ToyMalwareClassification)
 [kaggle malware-classification](https://www.kaggle.com/c/malware-classification/)
 [kaggle_Microsoft_Malware github](https://github.com/daxiongshu/kaggle_Microsoft_Malware)
-[用机器学习检测Android恶意代码 – runner](http://www.vuln.cn/7012)
+
+***
+# N-gram
+`n-gram`是自然语言处理领域的概念，早期的语音识别技术和统计语言模型与它密不可分。n-gram基于一个简单的假设，即认为`一个词出现的概率仅与它之前的n-1个词有关`，这个概率可从大量语料中统计得到。例如“吃”的后面出现“苹果”或“披萨”的概率就会比“公路”的概率大(正常的语料中基本不会出现“吃公路”这种组合)，可以看出n-gram在一定程度上包含了部分语言特征。
+
+将n-gram应用于恶意代码识别的想法最早由Tony等人在2004年的论文N-gram-based Detection of New Malicious Code 中提出，不过他们的方法是基于ByteCode的。2008年Moskovitch等人的论文Unknown Malcode Detection Using OPCODE Representation 中提出利用OpCode代替ByteCode更加科学。
+
+![upload successful](/images/pasted-54.png)
 
 ***
 # 用机器学习检测Android恶意代码 – runner
@@ -57,7 +66,8 @@ DVM拥有专属的DEX可执行文件格式和指令集代码。smali和baksmali 
 下面是硕士论文阅读笔记：
 
 # 基于机器学习的安卓恶意应用检测方法研究
-N-gram Opcode特征实际上是dalvik Opcode特征结合自然语言处理中的N-gram方法而产生的特征集合。
+>N-gram Opcode特征实际上是dalvik Opcode特征结合自然语言处理中的N-gram方法而产生的特征集合。
+
 检测框架：
 ![upload successful](/images/pasted-48.png)
 
