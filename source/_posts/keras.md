@@ -6,11 +6,14 @@ categories:
   - 深度学习
 date: 2019-11-15 09:29:00
 ---
+![upload successful](/images/pasted-70.png)
+
+<!--more-->
+
 >友链：
 keras中文文档： https://keras-cn.readthedocs.io/en/latest/
 keras实例： https://github.com/keras-team/keras/blob/master/examples/mnist_mlp.py
-
-<!--more-->
+知乎专栏的一篇文章：[超快速！10分钟入门Keras指南](https://zhuanlan.zhihu.com/p/34461956)  
 ***
 在kaggle上开gpu跑的keras，很快。
 ![upload successful](/images/pasted-65.png)
@@ -95,3 +98,4 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1]*100,'%')
 ```
 ![upload successful](/images/pasted-64.png)
+
