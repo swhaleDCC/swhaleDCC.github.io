@@ -50,15 +50,10 @@ rm -rf 要删除的文件
 
 # 双系统安装过程记录
 
-参考: https://blog.csdn.net/wb15374515921/article/details/89853278
-用同学的U盘装的,省了不少事.
+参考: https://blog.csdn.net/weixin_43538911/article/details/99647086
 
 # ubuntu下可删除哪些文件来释放系统空间？
 参考：https://zhidao.baidu.com/question/166531881.html
-
-
-# 快速释放Ubuntu磁盘空间的七种方法
-参考：https://www.jb51.net/os/Ubuntu/563450.html
 
 
 # 安装好Ubuntu18.04之后要做的事大全
@@ -84,7 +79,6 @@ sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
 ![upload successful](/images/pasted-10.png)
 最后重启，确保设置都已生效
 ```
-
 
 # 安装 Anaconda3
 
