@@ -37,7 +37,7 @@ for $inject_mixin in hexo-config('injects.mixin')
 // Schemes Layer
 // --------------------------------------------------
 @import "_schemes/" + $scheme;
-
+@import "_custom/custom";
 
 // Custom Layer
 // --------------------------------------------------
@@ -51,16 +51,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
-  
 }
 
 // 修改主体透明度
 .main-inner {
-  background: rgba(255, 255, 255 ,1);
-  //opacity: 0;
-  width: 75% !important;
-  border:2px solid rgba(0, 0, 0 ,0);
-  border-radius:50px;
+  background: #f9f9f9;
+  opacity: 1;
+  width: 70% !important;
+  padding: 2%;
 }
 
 // 修改菜单栏透明度
@@ -69,11 +67,25 @@ body {
 }
 // 主页文章添加阴影效果
 .post {
-   background: #fff;
-   opacity: 1;
-   margin:0px 40px 10px 40px;
    text-align: center;
-   padding: 2%;
-   border:2px solid rgba(0, 0, 0 ,0.5);
-   border-radius:50px;
+}
+
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  &:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
+
+// 上侧边框蓝色
+p#div-border-top-blue {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-top-color: #2780e3;
 }
