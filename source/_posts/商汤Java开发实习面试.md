@@ -1,27 +1,27 @@
 title: 商汤Java开发实习面试
 author: Dccun
 tags:
-  - 商汤java实习面试
+  - 商汤
+  - ''
 categories:
   - 面经
 date: 2019-10-03 14:59:00
 ---
->商汤Java实习，九月底投的简历，远程面试，面试官面了一次后HR就打电话来问什么时候上岗谈薪资然后打算给发offer，地点深圳，最终因为大四课程没有结束放弃了。实习工资还挺高没去真是可惜了。
-
+![upload successful](/images/pasted-72.png)
 <!--more-->
 
 # 商汤Java实习面试 9.25
 
+>商汤Java实习，九月底投的简历，远程面试，面试官面了一次后HR就打电话来问什么时候上岗谈薪资然后打算给发offer，地点深圳，最终因为大四课程没有结束放弃了。实习工资还挺高没去真是可惜了。
 
-## **问：== 与 equals的区别**
+## == 与 equals
 == : 它的作用是判断两个对象的地址是不是相等。即，判断两个对象是不是同一个对象。(基本数据类型==比较的是值，引用数据类型==比较的是内存地址)
 equals() : 它的作用也是判断两个对象是否相等。但它一般有两种使用情况：
 - 情况1：类没有覆盖 equals() 方法。则通过 equals() 比较该类的两个对象时，等价于通过“==”比较这两个对象。
 - 情况2：类覆盖了 equals() 方法。一般，我们都覆盖 equals() 方法来两个对象的内容相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。
 另外，当创建 String 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相同的对象，如果有就把它赋给当前引用。如果没有就在常量池中重新创建一个 String 对象。
 
-## **问：equals()**
-这个好像是问了一个类怎么重写equals()方法。
+好像还问了一个类怎么重写equals()方法。
 ```
 public boolean equals(Object otherObject){       //测试两个对象是否是同一个对象，是的话返回true
            if(this == otherObject) {  //测试检测的对象是否为空，是就返回false
@@ -38,13 +38,13 @@ public boolean equals(Object otherObject){       //测试两个对象是否是�
     }
 ```
 
-## **问：final 关键字的用法**
+## final 关键字的用法
 final关键字主要用在三个地方：变量、方法、类。
 1. 对于一个final变量，如果是基本数据类型的变量，则其数值一旦在初始化之后便不能更改；如果是引用类型的变量，则在对其初始化之后便不能再让其指向另一个对象。
 2. 当用final修饰一个类时，表明这个类不能被继承。final类中的所有成员方法都会被隐式地指定为final方法。
 3. 使用final方法的原因有两个。第一个原因是把方法锁定，以防任何继承类修改它的含义；第二个原因是效率。在早期的Java实现版本中，会将final方法转为内嵌调用。但是如果方法过于庞大，可能看不到内嵌调用带来的任何性能提升（现在的Java版本已经不需要使用final方法进行这些优化了）。类中所有的private方法都隐式地指定为fianl。
 
-## **问：自动装箱与拆箱**
+## 自动装箱与拆箱
 参考：https://blog.csdn.net/teacher_lee_zzsxt/article/details/79230501 。
 装箱：将基本类型用它们对应的引用类型包装起来；
 拆箱：将包装类型转换为基本数据类型。
@@ -103,7 +103,7 @@ System.out.println(g.equals(a+h));//t
 ```
 ![upload successful](/images/pasted-61.png)
 
-## **线程的五大状态及其常用方法**
+## 线程的五大状态及其常用方法
 ![upload successful](/images/pasted-62.png)
 （1）新建状态：即单纯地创建一个线程，创建线程有三种方式
 （2）就绪状态：在创建了线程之后，调用Thread类的start()方法来启动一个线程，即表示线程进入就绪状态
@@ -120,7 +120,7 @@ System.out.println(g.equals(a+h));//t
 - setPriority(int newPriority) getPriority()线程的优先级代表的是概率；范围从1到10，默认为5。
 - stop()终止线程运行，变为死亡态；
 
-## **Java垃圾回收机制（GC）**
+## Java垃圾回收机制（GC）
 参考：https://blog.csdn.net/justloveyou_/article/details/71216049
 https://blog.csdn.net/justloveyou_/article/details/71216049
 >垃圾回收(Garbage Collection)是Java虚拟机(JVM)垃圾回收器提供的一种用于在空闲时间不定时回收无任何对象引用的对象占据的内存空间的一种机制。
@@ -135,10 +135,12 @@ https://blog.csdn.net/justloveyou_/article/details/71216049
 
 
 
-## **最后一问：你有什么问题问我吗？**
+## 最后一问：你有什么问题问我吗？
 （前面挺多问题没回答好，当时觉得应该没戏了，并没有问面试官什么。Java面试突击里也有这个问题）
 
 第一是面对HR或者level比较低的面试官（个人觉得这部分比较常用）
 ![upload successful](/images/pasted-57.png)
 ![upload successful](/images/pasted-55.png)
 ![upload successful](/images/pasted-56.png)
+
+只能记起来这么多了，问的都是java基础，把　https://github.com/Snailclimb/JavaGuide　看一遍基本没什么问题。
