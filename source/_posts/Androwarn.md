@@ -1,10 +1,11 @@
 title: Apktool | Droidbox | dex2jar ...... tools
 author: Dccun
 tags:
-  - 静态检测
+  - android-tool
   - ''
 categories:
-  - 恶意代码检测
+  - 毕设
+  - ''
 date: 2019-10-14 15:56:00
 ---
 ![upload successful](/images/pasted-4.png)
