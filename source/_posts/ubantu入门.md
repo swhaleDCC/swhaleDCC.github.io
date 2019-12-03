@@ -1,12 +1,13 @@
-title: ubantu配置
+title: ubuntu配置
 author: Dccun
 tags:
-  - ubantu
+  - ubuntu
 categories:
-  - ubantu
+  - ubuntu
+  - ''
 date: 2019-09-30 15:15:00
 ---
-> 今天装了ubantu18.04,记录一下安装完ubantu之后做的事情，和使用ubantu的过程中遇到的问题、解决方法、小技巧。
+> 今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。
 
 <!--more-->
 
@@ -14,7 +15,7 @@ ubuntu是基于debian开发的，centos是基于redhat开发的，所以ubuntu�
 
 显示文件夹中隐藏的文件：ctrl+H。
 
-**查看Ubantu显卡的型号：**
+**查看Ubuntu显卡的型号：**
 ```
 lspci|grep VGA
 ```
@@ -217,12 +218,6 @@ sudo apt install npm
 sudo npm install --unsafe-perm --verbose -g hexo
 ```
 
-
-# 安装钉钉
-
-参考：https://blog.csdn.net/qq_27331631/article/details/90449151
-腾讯的QQ微信都不支持ubantu系统，安装阿里的钉钉，可以像QQ一样往手机传文件。
-
 # 安装网易云音乐
 参考： https://blog.csdn.net/weixin_43693233/article/details/90685359
 第一次下载网易云音乐，点击图标打不开，只能用sudo进入，很麻烦，百度也看到好多人都是这种问题，上面这个教程下载的网易云是点击图标可以直接进入的，推荐！
@@ -242,3 +237,14 @@ https://blog.csdn.net/Sacredness/article/details/82929768
 
 # 安装pycharm
 同上
+
+# 安装idea
+参考：https://blog.csdn.net/lishundi/article/details/82762532
+
+```
+下载地址:　https://www.jetbrains.com/idea/download/#section=linux 
+解压到/opt下：sudo tar -zxvf ideaIC-2018.2.3-no-jdk.tar.gz -C /opt
+进入到opt位置：cd  /opt/
+进入到IDEA文件夹下的bin目录：cd  /opt/idea-IC-182.4323.46/bin
+启动 IDEA：./idea.sh 
+```
