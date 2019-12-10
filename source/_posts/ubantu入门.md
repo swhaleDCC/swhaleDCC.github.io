@@ -50,7 +50,6 @@ rm -rf 要删除的文件
 
 
 # 双系统安装过程记录
-
 参考: https://blog.csdn.net/weixin_43538911/article/details/99647086
 
 # ubuntu下可删除哪些文件来释放系统空间？
@@ -103,17 +102,6 @@ export PATH="/home/xxx/anaconda3/bin:$PATH"
 from pip import __main__  //修改
 if __name__ == '__main__':  
     sys.exit(__main__._main())//修改
-```
-
-# 安装tensorflow2.0
-
-遇到的问题:
-ERROR: Cannot uninstall 'wrapt'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
-办法：输入 pip install -U --ignore-installed wrapt enum34 simplejson netaddr
-参考：https://www.cnblogs.com/xiaowei2092/p/11025155.html
-
-```
-pip install tensorflow==2.0.0-beta1
 ```
 
 # 安装Mac主题
@@ -248,3 +236,12 @@ https://blog.csdn.net/Sacredness/article/details/82929768
 进入到IDEA文件夹下的bin目录：cd  /opt/idea-IC-182.4323.46/bin
 启动 IDEA：./idea.sh 
 ```
+
+# 截图工具flameshot
+参考：https://www.jianshu.com/p/e1678c1d175d
+
+```
+sudo apt-get install flameshot
+```
+1. 设置>设备>键盘，设置一个自定义快捷键（拉到最下面）命令填写：flameshot gui
+2. 截完图后保存Ctrl+S，复制到剪贴板 Ctrl+C
