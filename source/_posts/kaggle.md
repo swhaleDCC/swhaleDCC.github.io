@@ -4,7 +4,6 @@ tags:
   - kaggle
 categories:
   - 深度学习
-  - ''
 date: 2019-10-19 19:31:00
 ---
 ![upload successful](/images/pasted-7.png)

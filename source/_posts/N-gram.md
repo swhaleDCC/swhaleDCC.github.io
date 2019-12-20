@@ -2,7 +2,6 @@ title: Android恶意代码检测：N-gram Opcode
 author: Dccun
 tags:
   - N-gram Opcode
-  - ''
 categories:
   - 毕设
 top: true
@@ -145,11 +144,10 @@ combine.py 将两种类型的特征结合
 基于opcode的N-gram安卓恶意软件检测
 
 
-`下面是我已经运行成功的几个code，已经push到我的github上了，都在readme中注明了出处。`
+`下面是我已经运行成功的code，已经push到我的github上了，都在readme中注明了出处。`
 
->[AndroidMalwareN-gram](https://github.com/swhaleDCC/AndroidMalwareN-gram)
-这个代码实现的主要功能是：反汇编——特征提取（提取出smali文件的dalvik指令）——n-gram
-这个代码并没有用机器学习算法实现恶意代码检测，只是提取了android的smali文件的特征码。
+>[AndroidMalware-ngram-RF](https://github.com/swhaleDCC/AndroidMalware-ngram-RF.git) 
+这个代码在原有基础上实现了用机器学习算法实现恶意代码和良性代码的分类。
 
 学习资料：
 [Android Dalvik 指令集](https://mp.weixin.qq.com/s?__biz=MzI4NjEyMDk0MA==&mid=2649846140&idx=1&sn=a248dbec47578c37f276fe461aa82b8f&chksm=f3e41fffc49396e9020490703eb4f7270e4dd6063575b65bedecedbe69c31e0a70e4a96f4cec&scene=0&key=63570224b333d6fd7954fa9343865bc0b865bbe08a0acb3c)

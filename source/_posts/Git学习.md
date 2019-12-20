@@ -2,7 +2,7 @@ title: Git
 tags:
   - Git
 categories:
-  - Git工具
+  - Git
 date: 2019-05-29 09:08:00
 ---
 >友链:
