@@ -1,4 +1,4 @@
-title: GANs-Generative Adversarial Nets
+title: 「文献笔记」GANs-Generative Adversarial Nets
 author: Dccun
 tags:
   - GAN
