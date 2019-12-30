@@ -1,4 +1,4 @@
-title: 「文献笔记」GANs-Generative Adversarial Nets
+title: 「文献笔记」GANs
 author: Dccun
 tags:
   - GAN
@@ -52,4 +52,5 @@ date: 2019-12-27 10:52:00
 
 参考资料：
 [github地址](https://github.com/swhaleDCC/adversarial)
+[GANs博客推荐](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
 [论文解读](https://littletomatodonkey.github.io/2018/11/09/2018-11-09-Generative%20Adversarial%20Nets%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/)
