@@ -6,7 +6,7 @@ categories:
   - 深度学习
 date: 2019-12-27 10:52:00
 ---
->2014-GANs开山之作
+>2014-GANs开山之作 Generative Adversarial Nets
 
 <!--more-->
 
@@ -25,6 +25,8 @@ date: 2019-12-27 10:52:00
 # adversarial nets
 - 定义噪声变量pz(z)，表示generator的分布，可以通过映射关系，将噪声映射到对应的data space，这个映射可以表示为G(z,θg)，MLP的参数为θg，G是可微的（可学习的）。同时定义D(x,θd)，输出一个值，D(x)表示x来自真实数据而非pg的概率。因此主要的工作就是训练D，尽可能使得训练样本和G生成的样品都被赋予正确的label。最终的优化目标是：
 ![upload successful](/images/pasted-75.png)
+下面这幅图片很好地描述了这个过程：
+![upload successful](/images/pasted-81.png)
 ![upload successful](/images/pasted-76.png)
 - 在这里需要注意的是，因为需要最大化D，因此我们使用的是梯度上升法。最终pdata(x)=pg(x)，D(x)=12，在训练的过程中，G和data的分布变化如下
 ![upload successful](/images/pasted-77.png)
@@ -51,6 +53,6 @@ date: 2019-12-27 10:52:00
 ![upload successful](/images/pasted-78.png)
 
 参考资料：
-[github地址](https://github.com/swhaleDCC/adversarial)
-[GANs博客推荐](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
-[论文解读](https://littletomatodonkey.github.io/2018/11/09/2018-11-09-Generative%20Adversarial%20Nets%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/)
+- [github地址](https://github.com/swhaleDCC/adversarial)
+- [GANs相关博客讲解](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
+- [论文解读](https://littletomatodonkey.github.io/2018/11/09/2018-11-09-Generative%20Adversarial%20Nets%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/)

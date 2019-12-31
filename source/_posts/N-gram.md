@@ -20,6 +20,10 @@ date: 2019-11-10 20:18:00
 
 ***
 
+# java、class、dex、smali、jar、apk关系
+
+![upload successful](/images/pasted-73.png)
+
 # N-gram
 `n-gram`是自然语言处理领域的概念，早期的语音识别技术和统计语言模型与它密不可分。n-gram基于一个简单的假设，即认为`一个词出现的概率仅与它之前的n-1个词有关`，这个概率可从大量语料中统计得到。例如“吃”的后面出现“苹果”或“披萨”的概率就会比“公路”的概率大(正常的语料中基本不会出现“吃公路”这种组合)，可以看出n-gram在一定程度上包含了部分语言特征。
 
@@ -81,12 +85,11 @@ N-gram Opcode：
 
 ***
 
-# 仓库
-
-恶 意 代 码 检 测 过 程， 通 常 可 以 分 为 三 个 步 骤： 
-①特 征 提 取 与 选 择； 
-②选取适当的分类模型； 
-③获 取 分 类 结 果． 
+# github项目
+恶意代码检测过程通常可以分为三个步骤：
+- 特征提取与选择
+- 选取适当的分类模型
+- 获取分类结果
 其 中 关 键 技 术 就 是 恶 意 代 码 特 征 提 取， 特 征 的 质 量 直 接 影 响 恶 意 代 码 的 检 测 效 果． 目 前提出的基于机器学习的恶意软件分类方法在恶 意 软 件 特 征 提 取 方 法 上 存 在 较 大 差 异．
 
 
@@ -152,8 +155,4 @@ combine.py 将两种类型的特征结合
 学习资料：
 [Android Dalvik 指令集](https://mp.weixin.qq.com/s?__biz=MzI4NjEyMDk0MA==&mid=2649846140&idx=1&sn=a248dbec47578c37f276fe461aa82b8f&chksm=f3e41fffc49396e9020490703eb4f7270e4dd6063575b65bedecedbe69c31e0a70e4a96f4cec&scene=0&key=63570224b333d6fd7954fa9343865bc0b865bbe08a0acb3c)
 [smali 文件格式(apktool)](https://juejin.im/post/59dd829f6fb9a0450d100dce)
-
-# java、class、dex、smali、jar、apk关系
-
-![upload successful](/images/pasted-73.png)
 
