@@ -4,7 +4,6 @@ tags:
   - N-gram Opcode
 categories:
   - 毕设
-top: true
 date: 2019-11-10 20:18:00
 ---
 >读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。
