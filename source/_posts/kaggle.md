@@ -27,6 +27,8 @@ https://blog.csdn.net/han_xiaoyang/article/details/49797143
 ### 房价预测 House Prices: Advanced Regression Techniques
 kaggle链接：https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
+我的提交：https://www.kaggle.com/dccun1998/house-prices
+
 ***
 
 ### 手写数字识别 Digit Recognizer
