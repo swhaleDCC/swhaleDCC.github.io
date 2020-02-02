@@ -6,14 +6,17 @@ categories:
 date: 2019-05-29 09:08:00
 ---
 >友链:
->[廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 
->[Git官网](https://git-scm.com/)
+[廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 
+[Git官网](https://git-scm.com/)
+[Git必看书籍:Pro Git](https://git-scm.com/book/zh/v2)
 
 <!--more-->
 
-附上之前在CSDN写的一篇[git入门博客](https://blog.csdn.net/qq_40631927/article/details/89412674)
+很久之前在CSDN写的一篇 [git入门博客](https://blog.csdn.net/qq_40631927/article/details/89412674)
 
 # Git：分布式版本控制系统
+
+`Git是版本控制系统，Github是在线的基于Git的代码托管服务。`
 
 基本的 Git 工作流程如下：
 1. 在工作目录中修改文件。
