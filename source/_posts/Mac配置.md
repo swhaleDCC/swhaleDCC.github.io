@@ -26,18 +26,18 @@ brew install wget
 ```
 
 # wget访问https出现问题
-wget https://www.apache.org/
+wget https://www.apache.org/ ---
 出现unsupported scheme提示，这是必然的，因为这是个安全链接。
 
-加个选项试试，不检查证书
-wget --no-check-certificate https://www.apache.org/
+加个选项试试，不检查证书，
+wget --no-check-certificate https://www.apache.org/ ，提示没有这个选项
 wget: unrecognized option --no-check-certificate
-提示没有这个选项。 
+。 
 
-wget --help
+wget --help  可以
 检查没有HTTPS (SSL/TLS) options.
 
-# 解决方法
+解决方法：
 参考：https://www.jianshu.com/p/94bb06811a26
 
 查找wget:
@@ -56,3 +56,40 @@ sudo rm -f /usr/local/bin/wget
 sudo cp /usr/local/Cellar/wget/1.19.5/bin/wget /usr/local/bin/
 ```
 
+# 安装anaconda3
+安装过程和前面写的Ubuntu安装anaconda3是完全一样的
+
+下载地址：https://www.anaconda.com/distribution/#macos
+
+下载哪一个都可以，一个是窗口安装，一个是命令行安装，以命令行为主：
+![upload successful](/images/pasted-97.png)
+
+cd到下载目录下，执行如下代码：
+```
+bash Anaconda3-5.3.0-MacOSX-x86_64.sh
+```
+
+添加环境变量：
+```
+sudo vim ~/.bash_profile
+```
+
+在 .bash_profile 文件中添加下面文本:
+```
+export PATH="/Users/xxx/anaconda3/bin:$PATH"
+```
+
+刷新生效source:
+```
+source ~/.bash_profile
+```
+
+# 卸载Anaconda
+
+```
+rm -rf ~/anaconda3
+vim ~/.bash_profile
+rm -rf ~/.condarc ~/.conda ~/.continuum
+```
+
+手动删除文件夹，然后再去把配置文件里面对应的环境变量删了。
