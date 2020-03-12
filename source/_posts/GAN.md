@@ -54,12 +54,12 @@ date: 2019-12-27 10:52:00
 
 参考资料：
 - [github地址](https://github.com/swhaleDCC/adversarial)
-- [GANs相关博客讲解](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
+- [相关博客讲解](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
 - [论文解读](https://littletomatodonkey.github.io/2018/11/09/2018-11-09-Generative%20Adversarial%20Nets%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/)
 
 ***
 
-GAN随笔：
+# GANs学习笔记
 
 [训练 GANs 一年我学到的 10 个教训](https://mp.weixin.qq.com/s/lfc0BH4X9_iBlrKEO6_RAg)
 来自英伟达的StyleGAN和来自谷歌的BigGAN
@@ -67,12 +67,6 @@ GAN随笔：
 
 [GAN整整6年了！是时候要来捋捋了！](https://mp.weixin.qq.com/s/n0Gc4yHjRzJCGGdlyrxc3A)
 
-
 [GAN 真的创造了新的信息吗？](https://mp.weixin.qq.com/s/ce_cVEtMAtbdq67vp13Xww)
 
-
-
-
-
-
-
+## 纳什均衡

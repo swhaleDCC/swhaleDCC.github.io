@@ -89,8 +89,7 @@ N-gram Opcode：
 - 特征提取与选择
 - 选取适当的分类模型
 - 获取分类结果
-其 中 关 键 技 术 就 是 恶 意 代 码 特 征 提 取， 特 征 的 质 量 直 接 影 响 恶 意 代 码 的 检 测 效 果． 目 前提出的基于机器学习的恶意软件分类方法在恶 意 软 件 特 征 提 取 方 法 上 存 在 较 大 差 异．
-
+其中关键技术就是恶意代码特征提取，特征的质量直接影响恶意代码的检测效果，目前提出的基于机器学习的恶意软件分类方法在恶意软件特征提取方法上存在较大差异。
 
 >[malware_classification_system](https://github.com/BiancaGuo/malware_classification_system)
 这个项目没有readme，不知道怎么跑，里面还有html、css代码，还用到了flask_bootstrap包，看起来更像一个网站。
@@ -154,4 +153,3 @@ combine.py 将两种类型的特征结合
 学习资料：
 [Android Dalvik 指令集](https://mp.weixin.qq.com/s?__biz=MzI4NjEyMDk0MA==&mid=2649846140&idx=1&sn=a248dbec47578c37f276fe461aa82b8f&chksm=f3e41fffc49396e9020490703eb4f7270e4dd6063575b65bedecedbe69c31e0a70e4a96f4cec&scene=0&key=63570224b333d6fd7954fa9343865bc0b865bbe08a0acb3c)
 [smali 文件格式(apktool)](https://juejin.im/post/59dd829f6fb9a0450d100dce)
-

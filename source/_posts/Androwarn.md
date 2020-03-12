@@ -1,4 +1,4 @@
-title: Apktool | Droidbox | dex2jar ...... tools
+title: Apktool等工具的使用
 author: Dccun
 tags:
   - android-tool
