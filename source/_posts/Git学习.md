@@ -6,9 +6,9 @@ categories:
 date: 2019-05-29 09:08:00
 ---
 >友链:
-[廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 
-[Git官网](https://git-scm.com/)
-[Git必看书籍:Pro Git](https://git-scm.com/book/zh/v2)
+- [廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 
+- [Git官网](https://git-scm.com/)
+- [Git必看书籍:Pro Git](https://git-scm.com/book/zh/v2)
 
 <!--more-->
 

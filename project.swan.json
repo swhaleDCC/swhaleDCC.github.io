@@ -1,0 +1,14 @@
+{
+    "host": "baiduboxapp",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.160.8",
+            "extensionJsVersion": "1.11.5"
+        }
+    },
+    "appid": "17767960",
+    "projectname": "swhaleDCC.github.io"
+}

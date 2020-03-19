@@ -11,10 +11,12 @@ date: 2019-11-15 09:29:00
 <!--more-->
 
 >友链：
-keras官方中文文档： https://github.com/keras-team/keras-docs-zh
-keras官方github地址： https://github.com/keras-team/keras
-知乎专栏的一篇文章：[超快速！10分钟入门Keras指南](https://zhuanlan.zhihu.com/p/34461956)  
+- https://github.com/keras-team/keras-docs-zh
+- https://github.com/keras-team/keras
+
+
 ***
+
 在kaggle上开gpu跑的keras，很快。
 ![upload successful](/images/pasted-65.png)
 

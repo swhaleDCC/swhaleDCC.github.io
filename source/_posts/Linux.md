@@ -7,7 +7,7 @@ categories:
 date: 2019-05-30 13:55:00
 ---
 >友链:
-看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617
+- 看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617
 
 <!--more-->
 

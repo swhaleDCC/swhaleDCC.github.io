@@ -6,11 +6,8 @@ categories:
 date: 2019-05-20 16:36:00
 ---
 >友链:
-本文部分内容转载自JavaGuide，地址：https://github.com/Snailclimb/JavaGuide ，作者：SnailClimb。
-本文内容全部参考上述资料。
-推荐几个准备面试的github项目：
-[python_interview_question](https://github.com/kenwoodjw/python_interview_question#30python%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AAlist%E9%87%8C%E9%9D%A2%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0)
-[awesome-interview-questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+- 本文部分内容转载自JavaGuide，地址：https://github.com/Snailclimb/JavaGuide ，作者：SnailClimb。本文内容全部参考上述资料。
+
 <!--more-->
 
 # Java数据类型

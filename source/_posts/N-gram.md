@@ -11,11 +11,11 @@ date: 2019-11-10 20:18:00
 <!--more-->
 
 >参考资料：
-[用机器学习检测Android恶意代码 – runner](http://www.vuln.cn/7012)
-[博客原文](http://drops.xmd5.com/static/drops/tips-8151.html)
-[博客实现的代码](https://github.com/bindog/ToyMalwareClassification)
-[kaggle malware-classification](https://www.kaggle.com/c/malware-classification/)
-[kaggle_Microsoft_Malware github](https://github.com/daxiongshu/kaggle_Microsoft_Malware)
+- [用机器学习检测Android恶意代码 – runner](http://www.vuln.cn/7012)
+- [博客原文](http://drops.xmd5.com/static/drops/tips-8151.html)
+- [博客实现的代码](https://github.com/bindog/ToyMalwareClassification)
+- [kaggle malware-classification](https://www.kaggle.com/c/malware-classification/)
+- [kaggle_Microsoft_Malware github](https://github.com/daxiongshu/kaggle_Microsoft_Malware)
 
 ***
 
