@@ -114,6 +114,64 @@ Keras 有两个重要的概念： 模型（Model） 和 层（Layer） 。层将
 Keras 模型类定义示意图 ：
 ![upload successful](/images/pasted-99.png)
 
+# 变量的保存与恢复
+首先声明一个 Checkpoint：
+```
+checkpoint = tf.train.Checkpoint(myAwesomeModel=model)
+```
+
+接下来，当模型训练完成需要保存的时候，使用：
+```
+checkpoint.save(save_path_with_prefix)
+```
+
+当在其他地方需要为模型重新载入之前保存的参数时，需要再次实例化一个 checkpoint，同时保持键名的一致。再调用 checkpoint 的 restore 方法。就像下面这样：
+```
+model_to_be_restored = MyModel()                                        # 待恢复参数的同一模型
+checkpoint = tf.train.Checkpoint(myAwesomeModel=model_to_be_restored)   # 键名保持为“myAwesomeModel”
+checkpoint.restore(save_path_with_prefix_and_index)
+```
+
+总结：
+```
+# train.py 模型训练阶段
+
+model = MyModel()
+# 实例化Checkpoint，指定保存对象为model（如果需要保存Optimizer的参数也可加入）
+checkpoint = tf.train.Checkpoint(myModel=model)
+# ...（模型训练代码）
+# 模型训练完毕后将参数保存到文件（也可以在模型训练过程中每隔一段时间就保存一次）
+checkpoint.save('./save/model.ckpt')
+
+# test.py 模型使用阶段
+
+model = MyModel()
+checkpoint = tf.train.Checkpoint(myModel=model)             # 实例化Checkpoint，指定恢复对象为model
+checkpoint.restore(tf.train.latest_checkpoint('./save'))    # 从文件恢复模型参数
+# 模型使用代码
+```
+
+# tensorboard:训练过程可视化
+整体框架如下：
+```
+summary_writer = tf.summary.create_file_writer('./tensorboard')
+# 开始模型训练
+for batch_index in range(num_batches):
+    # ...（训练代码，当前batch的损失值放入变量loss中）
+    with summary_writer.as_default():                               # 希望使用的记录器
+        tf.summary.scalar("loss", loss, step=batch_index)
+        tf.summary.scalar("MyScalar", my_scalar, step=batch_index)  # 还可以添加其他自定义的变量   
+```
+
+当我们要对训练过程可视化时，在代码目录打开终端（如需要的话进入 TensorFlow 的 conda 环境），运行:
+```
+tensorboard --logdir=./tensorboard
+```
+然后使用浏览器访问命令行程序所输出的网址（一般是 http:// 计算机名称：6006），即可访问 TensorBoard 的可视界面。
+
+# tf.function:图执行模式
+TensorFlow 2 为我们提供了 tf.function 模块，结合 AutoGraph 机制，使得我们仅需加入一个简单的 @tf.function 修饰符，从而将模型转换为易于部署且高性能的 TensorFlow 图模型。
+
 
 ***
 
