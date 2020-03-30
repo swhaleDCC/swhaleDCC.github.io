@@ -5,7 +5,6 @@ tags:
   - CNN
 categories:
   - 深度学习
-top: true
 date: 2020-01-02 17:19:00
 ---
 >2019-北京大学信息科学技术学院-A Grammar-Based Structural CNN Decoder for Code Generation
