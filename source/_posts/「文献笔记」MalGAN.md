@@ -74,6 +74,16 @@ Smalware是真实的恶意代码数据集，而不是被黑盒检测器标记为
 
 ![upload successful](/images/pasted-110.png)
 
+- 当算法未收敛
+	- 采样生成小批量malware样本M
+	- generator输入M生成对抗样本M’
+	- 采样生成小批量benign样本B
+	- 利用blcak-box detector对M’及B打上标签
+	- 利用梯度下降法更新substitute detector的参数
+	- 利用梯度下降法更新generator的参数
+- 结束循环
+
+
 # experiments
 
 ## experimental setup
