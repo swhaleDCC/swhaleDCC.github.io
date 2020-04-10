@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - DCGAN
 categories:
-  - 深度学习
+  - 文献笔记
+  - ''
 date: 2019-12-27 12:44:00
 ---
 >2016-基于深度卷积对抗生成网络的无监督表示学习 unsupervised representation learning with deep convolutional generative adversarial networks
@@ -58,7 +59,3 @@ date: 2019-12-27 12:44:00
 # conclusion and future work
 
 # supplementary material（补充材料）
-
-参考材料：
-- [GAN学习指南：从原理入门到制作生成Demo](https://zhuanlan.zhihu.com/p/24767059)
-- [github项目地址](https://github.com/carpedm20/DCGAN-tensorflow)

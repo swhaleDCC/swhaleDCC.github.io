@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - GAN
 categories:
-  - 深度学习
+  - 文献笔记
+  - ''
 date: 2019-12-27 10:52:00
 ---
 >2014-GANs开山之作 Generative Adversarial Nets

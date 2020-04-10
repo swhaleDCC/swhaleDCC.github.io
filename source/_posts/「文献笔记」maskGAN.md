@@ -2,9 +2,9 @@ title: 「文献笔记」maskGAN
 author: Dccun
 tags:
   - MaskGAN
-  - ''
 categories:
-  - 深度学习
+  - 文献笔记
+  - ''
 date: 2019-12-29 15:55:00
 ---
 >2018-MASKGAN: better text generative via filling in the ___

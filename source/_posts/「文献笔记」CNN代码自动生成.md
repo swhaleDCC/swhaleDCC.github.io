@@ -4,7 +4,8 @@ tags:
   - 代码自动生成
   - CNN
 categories:
-  - 深度学习
+  - 文献笔记
+  - ''
 date: 2020-01-02 17:19:00
 ---
 >2019-北京大学信息科学技术学院-A Grammar-Based Structural CNN Decoder for Code Generation
