@@ -7,7 +7,7 @@ categories:
   - 文献笔记
 date: 2020-04-10 20:14:00
 ---
-2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models
+2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models - [GITHUB开源项目链接](https://github.com/Metropolis-Hastings-Modifier/MHM)
 
 <!--more-->
 
@@ -19,5 +19,29 @@ date: 2020-04-10 20:14:00
 
 - ![upload successful](/images/pasted-117.png)
 
+***
 
+补充：
 
+# MCMC: Metropolis-Hastings algorithm
+MCMC算法的核心思想是我们已知一个概率密度函数，需要从这个概率分布中采样，来分析这个分布的一些统计特性，然而这个这个函数非常之复杂，怎么去采样？这时，就可以借助MCMC的思想。
+
+MCMC由两个MC组成，即蒙特卡罗方法（Monte Carlo Simulation，简称MC）和马尔科夫链（Markov Chain ，也简称MC）。
+
+![upload successful](/images/pasted-118.png)
+
+# Metropolis Hastings-MH抽样
+https://blog.csdn.net/lin360580306/article/details/51240398
+
+# LSTM
+https://zhuanlan.zhihu.com/p/32085405
+
+长短期记忆（Long short-term memory, LSTM）是一种特殊的RNN，主要是为了解决长序列训练过程中的梯度消失和梯度爆炸问题。简单来说，就是相比普通的RNN，LSTM能够在更长的序列中有更好的表现。
+
+# ASTNN
+https://github.com/zhangj111/astnn
+
+# AST
+https://baijiahao.baidu.com/s?id=1626159656211187310&wfr=spider&for=pc
+
+AST（抽象语法树）
