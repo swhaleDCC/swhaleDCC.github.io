@@ -7,7 +7,7 @@ categories:
   - ''
 date: 2019-12-27 10:52:00
 ---
->2014-GANs开山之作 Generative Adversarial Nets
+>2014-GANs开山之作 Generative Adversarial Networks - [github源码](https://github.com/goodfeli/adversarial)
 
 <!--more-->
 
@@ -60,14 +60,16 @@ date: 2019-12-27 10:52:00
 
 ***
 
-# GANs学习笔记
+# 补充
 
-[训练 GANs 一年我学到的 10 个教训](https://mp.weixin.qq.com/s/lfc0BH4X9_iBlrKEO6_RAg)
+- [DeepLearning-500-questions/ch07_生成对抗网络(GAN)](https://github.com/scutan90/DeepLearning-500-questions/blob/master/ch07_%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C(GAN)/ch7.md)
+
+- [训练 GANs 一年我学到的 10 个教训](https://mp.weixin.qq.com/s/lfc0BH4X9_iBlrKEO6_RAg)
 来自英伟达的StyleGAN和来自谷歌的BigGAN
 文章内有10个训练GAN的小技巧~~~
 
-[GAN整整6年了！是时候要来捋捋了！](https://mp.weixin.qq.com/s/n0Gc4yHjRzJCGGdlyrxc3A)
+- [GAN整整6年了！是时候要来捋捋了！](https://mp.weixin.qq.com/s/n0Gc4yHjRzJCGGdlyrxc3A)
 
-[GAN 真的创造了新的信息吗？](https://mp.weixin.qq.com/s/ce_cVEtMAtbdq67vp13Xww)
+- [GAN 真的创造了新的信息吗？](https://mp.weixin.qq.com/s/ce_cVEtMAtbdq67vp13Xww)
 
 ## 纳什均衡
