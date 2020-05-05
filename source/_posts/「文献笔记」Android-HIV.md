@@ -1,4 +1,4 @@
-title: 「文献笔记」Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detection
+title: 「文献笔记」Android-HIV
 author: Dccun
 tags:
   - 恶意代码重打包
