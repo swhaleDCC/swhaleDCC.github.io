@@ -320,7 +320,7 @@ tag_icon: false
 wechat_subscriber:
   enable: false
   qcode: /images/wechat.png
-  description: 欢迎扫描二维码关注公众号一起成长~
+  description: 欢迎扫描二维码一起成长~
 
 # Reward (Donate)
 reward_settings:

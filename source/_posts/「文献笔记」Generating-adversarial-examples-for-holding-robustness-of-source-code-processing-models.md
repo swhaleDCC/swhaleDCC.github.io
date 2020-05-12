@@ -7,7 +7,7 @@ categories:
   - 文献笔记
 date: 2020-04-10 20:14:00
 ---
-2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models - [github源码](https://github.com/Metropolis-Hastings-Modifier/MHM)
+>2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models - [github源码](https://github.com/Metropolis-Hastings-Modifier/MHM)
 
 <!--more-->
 

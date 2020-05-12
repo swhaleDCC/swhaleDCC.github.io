@@ -6,7 +6,7 @@ categories:
   - 文献笔记
 date: 2020-05-06 10:07:00
 ---
-Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detection
+>Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detection
 
 <!--more-->
 
@@ -56,18 +56,3 @@ Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detectio
 ## C. Android Malware Detection
 
 # VIII. Conslusion and future work
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

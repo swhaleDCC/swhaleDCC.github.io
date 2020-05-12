@@ -6,7 +6,8 @@ categories:
   - 测试
 date: 2020-05-12 10:33:00
 ---
-https://www.zhihu.com/question/20045543/answer/1103961403
+>友链：
+- https://www.zhihu.com/question/20045543/answer/1103961403
 
 <!--more-->
 
