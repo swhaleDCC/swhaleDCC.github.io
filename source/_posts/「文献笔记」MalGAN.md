@@ -6,7 +6,7 @@ categories:
   - 文献笔记
 date: 2020-03-29 14:02:00
 ---
->2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」论文复现：https://github.com/yanminglai/Malware-GAN
+>2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： https://github.com/yanminglai/Malware-GAN
 
 <!--more-->
 

@@ -7,9 +7,11 @@ categories:
   - Mac
 date: 2019-12-27 12:35:00
 ---
->实习的时候公司发的MacBook，记录一下下载配置一些东西的流程。
+![upload successful](/images/pasted-127.png) 
 
 <!--more-->
+
+>实习的时候公司发的MacBook，记录一下下载配置一些东西的流程。
 
 # 安装Homebrew
 链接：https://brew.sh/index_zh-cn.html

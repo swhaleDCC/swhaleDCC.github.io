@@ -5,6 +5,8 @@ categories:
   - Git
 date: 2019-05-29 09:08:00
 ---
+![upload successful](/images/pasted-131.png) 
+
 >友链:
 - [git - 简易指南](https://www.bootcss.com/p/git-guide/)
 - [廖雪峰教程](https://www.liaoxuefeng.com/wiki/896043488029600) 

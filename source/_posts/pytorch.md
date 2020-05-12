@@ -1,4 +1,4 @@
-title: pytorch
+title: PyTorch学习笔记
 author: Dccun
 tags:
   - pytorch
