@@ -320,7 +320,7 @@ tag_icon: false
 wechat_subscriber:
   enable: false
   qcode: /images/wechat.png
-  description: 欢迎扫描二维码一起成长~
+  description: 欢迎扫描二维码,一起成长~
 
 # Reward (Donate)
 reward_settings:
@@ -328,7 +328,7 @@ reward_settings:
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
   enable: true
   animation: false
-  comment: 满分是10分的话，这篇文章你给几分，欢迎打赏~
+  comment: 欢迎打赏~
 
 reward:
   wechatpay: /images/wechat.png
