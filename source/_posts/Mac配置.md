@@ -1,4 +1,4 @@
-title: Mac配置
+title: Mac安装Homebrew、anaconda等
 author: Dccun
 tags:
   - Mac
@@ -11,7 +11,6 @@ date: 2019-12-27 12:35:00
 
 <!--more-->
 
->实习的时候公司发的MacBook，记录一下下载配置一些东西的流程。
 
 # 安装Homebrew
 链接：https://brew.sh/index_zh-cn.html

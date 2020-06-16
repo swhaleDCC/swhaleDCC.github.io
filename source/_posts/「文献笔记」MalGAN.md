@@ -1,7 +1,8 @@
 title: 「文献笔记」MalGAN
 author: Dccun
 tags:
-  - MalGAN
+  - GAN
+  - ''
 categories:
   - 文献笔记
 date: 2020-03-29 14:02:00

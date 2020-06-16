@@ -1,10 +1,10 @@
 title: 「文献笔记」DCGAN
 author: Dccun
 tags:
-  - DCGAN
+  - GAN
+  - ''
 categories:
   - 文献笔记
-  - ''
 date: 2019-12-27 12:44:00
 ---
 >2016-基于深度卷积对抗生成网络的无监督表示学习 unsupervised representation learning with deep convolutional generative adversarial networks
