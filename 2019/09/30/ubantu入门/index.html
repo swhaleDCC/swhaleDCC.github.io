@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "6db189de"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.jpg?v=7.2.0">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: 'search.xml'
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <meta name="description" content="今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。">
+<meta name="keywords" content="ubuntu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu配置">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/09/30/ubantu入门/index.html">
+<meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-130.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-5.png">
+<meta property="og:updated_time" content="2020-07-24T06:40:23.782Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ubuntu配置">
+<meta name="twitter:description" content="今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-130.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Dccun's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/09/30/ubantu入门/">
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大！');
+                history.back();
+            }
+        }
+    })();
+</script>
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>ubuntu配置 | Dccun's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/swhaleDCC/swhaleDCC.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Dccun's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">不烦世事，满心欢喜</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home                          //首页"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive          //归档"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th           //分类"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags                     //标签"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/09/30/ubantu入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dccun">
+      <meta itemprop="description" content="你是我心上百褶，是人间惊鸿客">
+      <meta itemprop="image" content="/images/dcc.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dccun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ubuntu配置
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        	
+
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-30 15:15:00" itemprop="dateCreated datePublished" datetime="2019-09-30T15:15:00+08:00">2019-09-30</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/images/pasted-130.png" alt="upload successful"> </p>
+<blockquote>
+<p>今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>ubuntu是基于debian开发的，centos是基于redhat开发的，所以ubuntu可以使用deb结尾的包，而centos使用rpm结尾的包。</p>
+<p>显示文件夹中隐藏的文件：ctrl+H。</p>
+<p><strong>查看Ubuntu显卡的型号：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lspci|grep VGA</span><br></pre></td></tr></table></figure>
+
+<p><strong>查看CPU</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lscpu</span><br></pre></td></tr></table></figure>
+
+<p><strong>usr内文件夹的删除复制移动</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">一：复制移动</span><br><span class="line">sudo cp 要复制的文件 /usr/local/bin（目的文件夹）</span><br><span class="line">sudo mv 要移动的文件 /usr/local/bin（目的文件夹）</span><br><span class="line">二：删除</span><br><span class="line">sudo su    #进入root下</span><br><span class="line">rm -rf 要删除的文件</span><br></pre></td></tr></table></figure>
+
+<p><strong>linux对文件赋权限的命令chmod</strong><br>参考：<a href="https://www.cnblogs.com/insane-Mr-Li/p/10716293.html" target="_blank" rel="noopener">https://www.cnblogs.com/insane-Mr-Li/p/10716293.html</a><br>使用方式 : chmod [-cfvR] [–help] [–version] mode file… </p>
+<p><strong>卸载软件</strong><br>参考：<a href="https://blog.csdn.net/luckydog612/article/details/80877179" target="_blank" rel="noopener">https://blog.csdn.net/luckydog612/article/details/80877179</a><br>输入dpkg –list<br>终端输出电脑上安装的所有软件<br>在终端上输入命令sudo apt-get –purge remove 包名（–purge是可选项，写上这个属性是将软件及其配置文件一并删除，如不需要删除配置文件，可执行sudo apt-get remove 包名）</p>
+<p><strong>Ubuntu配置环境变量的两种常用方法（.bashrc和/etc/profile）</strong><br>参考：<a href="https://blog.csdn.net/yiminghd2861/article/details/98854882" target="_blank" rel="noopener">https://blog.csdn.net/yiminghd2861/article/details/98854882</a></p>
+<h1 id="双系统安装过程记录"><a href="#双系统安装过程记录" class="headerlink" title="双系统安装过程记录"></a>双系统安装过程记录</h1><p>参考: <a href="https://blog.csdn.net/weixin_43538911/article/details/99647086" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43538911/article/details/99647086</a></p>
+<h1 id="ubuntu下可删除哪些文件来释放系统空间？"><a href="#ubuntu下可删除哪些文件来释放系统空间？" class="headerlink" title="ubuntu下可删除哪些文件来释放系统空间？"></a>ubuntu下可删除哪些文件来释放系统空间？</h1><p>参考：<a href="https://zhidao.baidu.com/question/166531881.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/166531881.html</a></p>
+<h1 id="安装好Ubuntu18-04之后要做的事大全"><a href="#安装好Ubuntu18-04之后要做的事大全" class="headerlink" title="安装好Ubuntu18.04之后要做的事大全"></a>安装好Ubuntu18.04之后要做的事大全</h1><p>参考: <a href="https://blog.csdn.net/haeasringnar/article/details/81809040" target="_blank" rel="noopener">https://blog.csdn.net/haeasringnar/article/details/81809040</a><br>要安装<strong>搜狗拼音、git</strong>可以按照这个里面的教程，下面补充几个更好用的按照教程</p>
+<h1 id="安装搜狗拼音"><a href="#安装搜狗拼音" class="headerlink" title="安装搜狗拼音"></a>安装搜狗拼音</h1><p>如果按照上面一条安装后，因为个人失误导致搜狗拼音不能用，可以参考下面教程：<br><a href="https://blog.csdn.net/qq_33159059/article/details/85019467" target="_blank" rel="noopener">https://blog.csdn.net/qq_33159059/article/details/85019467</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 先卸载掉fcitx，及其所有相关的软件</span><br><span class="line">sudo apt -y remove *fcitx*</span><br><span class="line"># 然后来个彻底清除</span><br><span class="line">sudo apt autoremove</span><br><span class="line"># 安装了下面的这部分，搜狗输入法就可以使用了，不过候选区没有背景，是透明的</span><br><span class="line">sudo apt -y install fcitx fcitx-bin fcitx-table fcitx-table-all</span><br><span class="line"># 安装fcitx可视化的配置界面</span><br><span class="line">sudo apt -y install fcitx-config-gtk</span><br><span class="line"># 就安装gtk，不要安装gtk2。因为gtk2的配置界面没有gtk的强大，而且同时安装，也只有gtk的生效</span><br><span class="line">sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb</span><br><span class="line">进入“语言支持”界面，进行输入法框架的配置：</span><br><span class="line">![upload successful](/images/pasted-10.png)</span><br><span class="line">最后重启，确保设置都已生效</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装-Anaconda3"><a href="#安装-Anaconda3" class="headerlink" title="安装 Anaconda3"></a>安装 Anaconda3</h1><p>参考: <a href="https://blog.csdn.net/qq_15192373/article/details/81091098" target="_blank" rel="noopener">https://blog.csdn.net/qq_15192373/article/details/81091098</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在清华大学开源软件镜像站下载：</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</span><br><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br><span class="line">若在终端输入 python，仍然会显示Ubuntu自带的python版本，我们执行：</span><br><span class="line">sudo gedit ~/.bashrc</span><br><span class="line">在最后一行添加：</span><br><span class="line">export PATH=&quot;/home/xxx/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+<p>问题：pip命令报错Traceback (most recent call last): File “/usr/bin/pip”<br>解决：<a href="https://blog.csdn.net/lyll616/article/details/85090132" target="_blank" rel="noopener">https://blog.csdn.net/lyll616/article/details/85090132</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端，在终端中输入 ： sudo gedit /usr/bin/pip</span><br><span class="line">插入或者修改为：</span><br><span class="line">from pip import __main__  //修改</span><br><span class="line">if __name__ == &apos;__main__&apos;:  </span><br><span class="line">    sys.exit(__main__._main())//修改</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装Mac主题"><a href="#安装Mac主题" class="headerlink" title="安装Mac主题"></a>安装Mac主题</h1><p><a href="https://zhuanlan.zhihu.com/p/71588449" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/71588449</a><br>尝试了一下效果不错</p>
+<h1 id="安装MySQL8-0"><a href="#安装MySQL8-0" class="headerlink" title="安装MySQL8.0"></a>安装MySQL8.0</h1><p>参考:<a href="https://www.cnblogs.com/luoli-/p/9249769.html" target="_blank" rel="noopener">https://www.cnblogs.com/luoli-/p/9249769.html</a><br>ubuntu18.04<br>首次登录mysql未设置密码或忘记密码解决方法:<br><a href="https://blog.csdn.net/qq_38737992/article/details/81090373" target="_blank" rel="noopener">https://blog.csdn.net/qq_38737992/article/details/81090373</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">下载deb包：https://dev.mysql.com/downloads/repo/apt/</span><br><span class="line">sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install mysql-server</span><br><span class="line">密码加密方式选择5.x</span><br><span class="line">查看mysql是否安装成功：mysql -u root -p</span><br><span class="line">查看mysql字符集，mysql8字符集默认为utf-8：show variables like &apos;%char%&apos;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装mendeley"><a href="#安装mendeley" class="headerlink" title="安装mendeley"></a>安装mendeley</h1><p>参考:<a href="https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions" target="_blank" rel="noopener">https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在上面链接中下载deb包</span><br><span class="line">sudo dpkg -i &lt;path-to-downloaded-package&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在使用过程中出现不能输入中文的现象，解决方法：<br><a href="https://blog.csdn.net/weixin_40100431/article/details/82633423" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40100431/article/details/82633423</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先在终端中定位一个文件的位置</span><br><span class="line">locate libfcitxplatforminputcontextplugin.so</span><br><span class="line">然后将上述文献拷贝到mendeley的安装路径当中</span><br><span class="line">sudo cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so /opt/mendeleydesktop/plugins/qt/plugins/platforminputcontexts/</span><br><span class="line">关闭mendeley重新启动即可。</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装配置JAVA环境"><a href="#安装配置JAVA环境" class="headerlink" title="安装配置JAVA环境"></a>安装配置JAVA环境</h1><p>参考:<a href="https://blog.csdn.net/weixx3/article/details/80296779" target="_blank" rel="noopener">https://blog.csdn.net/weixx3/article/details/80296779</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">去oracle官网下载：https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</span><br><span class="line">解压后，将文件从下载目录挪到/usr/local下sudo mv jdk1.8.0_171  /usr/local/jdk1.8</span><br><span class="line"></span><br><span class="line">修改全局配置文件，作用于所有用户：vim /etc/profile</span><br><span class="line"></span><br><span class="line">export JAVA_HOME=/usr/local/jdk1.8</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre</span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib</span><br><span class="line">export PATH=.:$&#123;JAVA_HOME&#125;/bin:$PATH</span><br><span class="line"></span><br><span class="line">修改完后保存并退出，按下Esc后输入:q!即可</span><br><span class="line">使修改的配置立刻生效 ： source /etc/profile </span><br><span class="line"></span><br><span class="line">检查是否安装成功：java -version</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装wps"><a href="#安装wps" class="headerlink" title="安装wps"></a>安装wps</h1><p>安装按照上面《安装好Ubuntu18.04之后要做的事大全》一文，字体缺失按照下面教程：<br>WPS for Linux（ubuntu）字体配置(字体缺失解决办法)：<br><a href="https://www.cnblogs.com/liangml/p/5969404.html" target="_blank" rel="noopener">https://www.cnblogs.com/liangml/p/5969404.html</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在官网下载wps：https://www.wps.cn/product/wpslinux/</span><br><span class="line">安装wps：sudo dpkg -i wps*.deb  安装wps</span><br><span class="line">下载缺失字体：</span><br><span class="line">国内下载地址：https://pan.baidu.com/s/1eS6xIzo</span><br><span class="line">下载完成后，解压并进入目录中，继续执行：</span><br><span class="line">sudo cp * /usr/share/fonts</span><br><span class="line">sudo mkfontscale</span><br><span class="line">sudo mkfontdir</span><br><span class="line">运行fc-cache命令更新字体缓存：</span><br><span class="line">sudo fc-cache</span><br><span class="line">重启wps即可，字体缺失的提示不再出现。</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装node、npm、hexo"><a href="#安装node、npm、hexo" class="headerlink" title="安装node、npm、hexo"></a>安装node、npm、hexo</h1><p>参考：<a href="https://www.cnblogs.com/guanine/p/9392411.html" target="_blank" rel="noopener">https://www.cnblogs.com/guanine/p/9392411.html</a><br><a href="https://blog.csdn.net/Iversonx/article/details/82807598" target="_blank" rel="noopener">https://blog.csdn.net/Iversonx/article/details/82807598</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">键入以下内容刷新本地包索引：</span><br><span class="line">sudo apt update</span><br><span class="line">从存储库安装Node.js：</span><br><span class="line">sudo apt install nodejs</span><br><span class="line">需要额外安装npm，你可以通过输入以下命令来完成</span><br><span class="line">sudo apt install npm </span><br><span class="line">安装hexo</span><br><span class="line">sudo npm install --unsafe-perm --verbose -g hexo</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装网易云音乐"><a href="#安装网易云音乐" class="headerlink" title="安装网易云音乐"></a>安装网易云音乐</h1><p>参考： <a href="https://blog.csdn.net/weixin_43693233/article/details/90685359" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43693233/article/details/90685359</a><br>第一次下载网易云音乐，点击图标打不开，只能用sudo进入，很麻烦，百度也看到好多人都是这种问题，上面这个教程下载的网易云是点击图标可以直接进入的，推荐！</p>
+<h1 id="安装Android-studio"><a href="#安装Android-studio" class="headerlink" title="安装Android studio"></a>安装Android studio</h1><p>参考：<br><a href="https://blog.csdn.net/Sacredness/article/details/86514460" target="_blank" rel="noopener">https://blog.csdn.net/Sacredness/article/details/86514460</a><br>我并没有安装SDK，百度了一下有的博客说android studio 可以默认帮你安装android-sdk。</p>
+<p>下载地址：<a href="https://developer.android.google.cn/studio/#downloads" target="_blank" rel="noopener">https://developer.android.google.cn/studio/#downloads</a><br>将压缩包解压到要安装的位置<br>在软件的bin目录下打开命令行，执行命令bash studio.sh.（如果你需要root权限，执行sudo bash studio.sh）<br>创建桌面图标：<br><img src="/images/pasted-5.png" alt="upload successful"><br>至于怎么新建一个项目，参考：<br><a href="https://blog.csdn.net/Sacredness/article/details/82929768" target="_blank" rel="noopener">https://blog.csdn.net/Sacredness/article/details/82929768</a></p>
+<h1 id="安装pycharm"><a href="#安装pycharm" class="headerlink" title="安装pycharm"></a>安装pycharm</h1><p>同上</p>
+<h1 id="安装idea"><a href="#安装idea" class="headerlink" title="安装idea"></a>安装idea</h1><p>参考：<a href="https://blog.csdn.net/lishundi/article/details/82762532" target="_blank" rel="noopener">https://blog.csdn.net/lishundi/article/details/82762532</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">下载地址:　https://www.jetbrains.com/idea/download/#section=linux </span><br><span class="line">解压到/opt下：sudo tar -zxvf ideaIC-2018.2.3-no-jdk.tar.gz -C /opt</span><br><span class="line">进入到opt位置：cd  /opt/</span><br><span class="line">进入到IDEA文件夹下的bin目录：cd  /opt/idea-IC-182.4323.46/bin</span><br><span class="line">启动 IDEA：./idea.sh</span><br></pre></td></tr></table></figure>
+
+<h1 id="截图工具flameshot"><a href="#截图工具flameshot" class="headerlink" title="截图工具flameshot"></a>截图工具flameshot</h1><p>参考：<a href="https://www.jianshu.com/p/e1678c1d175d" target="_blank" rel="noopener">https://www.jianshu.com/p/e1678c1d175d</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install flameshot</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>设置&gt;设备&gt;键盘，设置一个自定义快捷键（拉到最下面）命令填写：flameshot gui</li>
+<li>截完图后保存Ctrl+S，复制到剪贴板 Ctrl+C</li>
+</ol>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------------------------- 本 文 结 束  <i class="fa fa-paw"></i>  感 谢 阅 读 ----------------------------</div>
+    
+</div>
+  
+</div>
+
+    
+
+    
+      
+    
+
+    
+      <div>
+        <div id="reward-container">
+  <div>欢迎打赏~</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat.png" alt="Dccun 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/ubuntu/" rel="tag"><i class="fa fa-tag"></i> ubuntu</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/22/机器学习/" rel="next" title="[加密文章]机器学习深度学习笔记">
+                <i class="fa fa-chevron-left"></i> [加密文章]机器学习深度学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/10/03/商汤Java开发实习面试/" rel="prev" title="「面试」商汤Java开发实习面试">
+                「面试」商汤Java开发实习面试 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+  
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjM5MC8yMjkwMQ=="></div>
+  </div>
+  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/dcc.jpg" alt="Dccun">
+  
+  <p class="site-author-name" itemprop="name">Dccun</p>
+  <div class="site-description motion-element" itemprop="description">你是我心上百褶，是人间惊鸿客</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/swhaleDCC" title="GitHub &rarr; https://github.com/swhaleDCC" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" title="weibo &rarr; https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>weibo</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_40631927" title="csdn &rarr; https://blog.csdn.net/qq_40631927" rel="noopener" target="_blank"><i class="fa fa-fw fa-crosshairs"></i>csdn</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.jianshu.com/u/e048aac8c8a0" title="简书 &rarr; https://www.jianshu.com/u/e048aac8c8a0" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i>简书</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.zhihu.com/people/zhe-yan-56-43/activities" title="https://www.zhihu.com/people/zhe-yan-56-43/activities" rel="noopener" target="_blank">知乎</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://zhuanlan.zhihu.com/p/32957389" title="https://zhuanlan.zhihu.com/p/32957389" rel="noopener" target="_blank">github+hexo搭建个人博客</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/p/1f8107a8778c" title="https://www.jianshu.com/p/1f8107a8778c" rel="noopener" target="_blank">next主题优化</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://lab.github.com/" title="https://lab.github.com/" rel="noopener" target="_blank">GitHub Learning Lab</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#双系统安装过程记录"><span class="nav-text">双系统安装过程记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ubuntu下可删除哪些文件来释放系统空间？"><span class="nav-text">ubuntu下可删除哪些文件来释放系统空间？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装好Ubuntu18-04之后要做的事大全"><span class="nav-text">安装好Ubuntu18.04之后要做的事大全</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装搜狗拼音"><span class="nav-text">安装搜狗拼音</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Anaconda3"><span class="nav-text">安装 Anaconda3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Mac主题"><span class="nav-text">安装Mac主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装MySQL8-0"><span class="nav-text">安装MySQL8.0</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装mendeley"><span class="nav-text">安装mendeley</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装配置JAVA环境"><span class="nav-text">安装配置JAVA环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装wps"><span class="nav-text">安装wps</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装node、npm、hexo"><span class="nav-text">安装node、npm、hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装网易云音乐"><span class="nav-text">安装网易云音乐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Android-studio"><span class="nav-text">安装Android studio</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装pycharm"><span class="nav-text">安装pycharm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装idea"><span class="nav-text">安装idea</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#截图工具flameshot"><span class="nav-text">截图工具flameshot</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dccun</span>
+
+  
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共38.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<script>
+  window.livereOptions = {
+    refer: '2019/09/30/ubantu入门/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/particle.js"></script>
+  
+ 
+	
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

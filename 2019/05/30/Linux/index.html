@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "6db189de"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.jpg?v=7.2.0">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: 'search.xml'
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <meta name="description" content="友链:  看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/05/30/Linux/index.html">
+<meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="友链:  看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-28.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-29.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-30.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-31.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-32.png">
+<meta property="og:updated_time" content="2020-07-24T06:40:23.780Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux">
+<meta name="twitter:description" content="友链:  看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-28.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Dccun's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/05/30/Linux/">
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大！');
+                history.back();
+            }
+        }
+    })();
+</script>
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>Linux | Dccun's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/swhaleDCC/swhaleDCC.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Dccun's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">不烦世事，满心欢喜</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home                          //首页"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive          //归档"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th           //分类"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags                     //标签"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/05/30/Linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dccun">
+      <meta itemprop="description" content="你是我心上百褶，是人间惊鸿客">
+      <meta itemprop="image" content="/images/dcc.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dccun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Linux
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        	
+
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-30 13:55:00" itemprop="dateCreated datePublished" datetime="2019-05-30T13:55:00+08:00">2019-05-30</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>友链:</p>
+<ul>
+<li>看完这篇Linux基本的操作就会了:<a href="https://zhuanlan.zhihu.com/p/36801617" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/36801617</a></li>
+</ul>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Linux系统的组成："><a href="#Linux系统的组成：" class="headerlink" title="Linux系统的组成："></a>Linux系统的组成：</h3><ul>
+<li>linux内核（linus 团队管理）</li>
+<li>shell：系统的用户界面，提供了用户与内核进行交互操作的一种接口(命令解释器)</li>
+<li>文件系统：ext3、ext4等,windows 有 fat32 、ntfs</li>
+<li>第三方应用软件</li>
+</ul>
+<h3 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h3><ul>
+<li>bin 存放二进制可执行文件(ls,cat,mkdir等)</li>
+<li>boot 存放用于系统引导时使用的各种文件</li>
+<li>dev 用于存放设备文件</li>
+<li>etc 存放系统配置文件</li>
+<li>home 存放所有用户文件的根目录</li>
+<li>lib 存放跟文件系统中的程序运行所需要的共享库及内核模块</li>
+<li>mnt 系统管理员安装临时文件系统的安装点</li>
+<li>opt 额外安装的可选应用程序包所放置的位置</li>
+<li>proc 虚拟文件系统，存放当前内存的映射</li>
+<li>root 超级用户目录</li>
+<li>sbin 存放二进制可执行文件，只有root才能访问</li>
+<li>tmp 用于存放各种临时文件</li>
+<li>usr 用于存放系统应用程序，比较重要的目录/usr/local 本地管理员软件安装目录</li>
+<li>var 用于存放运行时需要改变数据的文件</li>
+</ul>
+<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><ul>
+<li>*：匹配任何字符和任何数目的字符</li>
+<li>?：匹配单一数目的任何字符</li>
+<li>[ ]：匹配[ ]之内的任意一个字符</li>
+<li>[! ]：匹配除了[! ]之外的任意一个字符，!表示非的意思</li>
+</ul>
+<h3 id="文件的类型"><a href="#文件的类型" class="headerlink" title="文件的类型"></a>文件的类型</h3><ul>
+<li>普通文件-</li>
+<li>目录d</li>
+<li>符号链接l<ul>
+<li>硬链接：与普通文件没什么不同，inode 都指向同一个文件在硬盘中的区块</li>
+<li>软链接：保存了其代表的文件的绝对路径，是另外一种文件，在硬盘上有独立的区块，访问时替换自身路径(简单地理解为 Windows 中常见的快捷方式)。</li>
+</ul>
+</li>
+<li>字符设备文件 c</li>
+<li>块设备文件b</li>
+<li>套接字s</li>
+<li>命名管道p</li>
+</ul>
+<h3 id="常用的文件、目录操作命令"><a href="#常用的文件、目录操作命令" class="headerlink" title="常用的文件、目录操作命令"></a>常用的文件、目录操作命令</h3><ul>
+<li>pwd命令查看用户的当前目录</li>
+<li>cd 命令来切换目录<ul>
+<li>.表示当前目录</li>
+<li>.. 表示当前目录的上一级目录（父目录）</li>
+<li>-表示用 cd 命令切换目录前所在的目录</li>
+<li>~ 表示用户主目录的绝对路径名</li>
+</ul>
+</li>
+<li>ls：显示文件或目录信息</li>
+<li>mkdir：当前目录下创建一个空目录</li>
+<li>rmdir：要求目录为空</li>
+<li>touch：生成一个空文件或更改文件的时间(可以改变文件的三种时间，分别是： access time 、 modify time 、 change time)</li>
+<li>cp：复制文件或目录</li>
+<li>mv：移动文件或目录、文件或目录改名</li>
+<li>rm：删除文件或目录</li>
+<li>ln：建立链接文件</li>
+<li>find：查找文件</li>
+<li>file/stat：查看文件类型或文件属性信息</li>
+<li>cat：查看文本文件内容</li>
+<li>more：可以分页看</li>
+<li>less：不仅可以分页，还可以方便地搜索，回翻等操作</li>
+<li>tail -10： 查看文件的尾部的10行</li>
+<li>head -20：查看文件的头部20行</li>
+<li>别名alias</li>
+<li>echo：把内容重定向到指定的文件中 ，有则打开，无则创建</li>
+<li>管道命令 | ：将前面的结果给后面的命令，例如：ls -la | wc，将ls的结果加油wc命令来统计字数</li>
+<li>重定向 &gt; 是覆盖模式，&gt;&gt; 是追加模式，例如：echo “Java3y,zhen de hen xi huan ni” &gt; qingshu.txt把左边的输出放到右边的文件里去</li>
+</ul>
+<h3 id="文件打包和压缩命令"><a href="#文件打包和压缩命令" class="headerlink" title="文件打包和压缩命令"></a>文件打包和压缩命令</h3><ul>
+<li>压缩的方式也是有好几种，我们常用的有下面这三种：<ul>
+<li>gzip</li>
+<li>bzip2</li>
+<li>tar</li>
+</ul>
+</li>
+<li>常用的压缩的命令就有：<ul>
+<li>gzip filename</li>
+<li>bzip2 filename</li>
+<li>tar -czvf filename</li>
+</ul>
+</li>
+<li>常用的解压命令有：<ul>
+<li>gzip -d filename.gz</li>
+<li>bzip2 -d filename.bz2</li>
+<li>tar -xzvf filename.tar.gz</li>
+</ul>
+</li>
+</ul>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p><img src="/images/pasted-28.png" alt="upload successful"><br><img src="/images/pasted-29.png" alt="upload successful"><br>grep(global search regular expression)是一个强大的文本搜索工具。grep 使用正则表达式搜索文本，并把匹配的行打印出来。<br>格式：grep [options] PATTERN [FILE…]</p>
+<ul>
+<li>PATTERN 是查找条件：可以是普通字符串、可以是正则表达式，通常用单引号将RE括起来。</li>
+<li>FILE 是要查找的文件，可以是用空格间隔的多个文件，也可是使用Shell的通配符在多个文件中查找PATTERN，省略时表示在标准输入中查找。</li>
+<li>grep命令不会对输入文件进行任何修改或影响，可以使用输出重定向将结果存为文件</li>
+</ul>
+<p>例子：</p>
+<ul>
+<li>在文件 myfile 中查找包含字符串 mystr的行<ul>
+<li>grep -n mystr myfile</li>
+</ul>
+</li>
+<li>显示 myfile 中第一个字符为字母的所有行<ul>
+<li>grep ‘^[a-zA-Z]’ myfile</li>
+</ul>
+</li>
+<li>在文件 myfile 中查找首字符不是 # 的行（即过滤掉注释行）<ul>
+<li>grep -v ‘^#’ myfile</li>
+</ul>
+</li>
+<li>列出/etc目录（包括子目录）下所有文件内容中包含字符串“root”的文件名<ul>
+<li>grep -lr root /etc/*</li>
+</ul>
+</li>
+</ul>
+<h3 id="Shell变量-和-Shell环境"><a href="#Shell变量-和-Shell环境" class="headerlink" title="Shell变量 和 Shell环境"></a>Shell变量 和 Shell环境</h3><p>Shell 变量大致可以分为三类：</p>
+<ul>
+<li>内部变量：由系统提供，用户只能使用不能修改。<ul>
+<li>?</li>
+<li>GROUPS</li>
+</ul>
+</li>
+<li>环境变量：这些变量决定了用户工作的环境，它们不需要用户去定义，可以直接在 shell 中使用，其中某些变量用户可以修改。</li>
+<li>用户变量：由用户建立和修改，在 shell 脚本编写中会经常用到。<ul>
+<li>变量赋值（定义变量）<ul>
+<li>varName=Value</li>
+<li>export varName=Value</li>
+</ul>
+</li>
+<li>引用变量$varName</li>
+</ul>
+</li>
+</ul>
+<p>Shell变量的作用域：</p>
+<ul>
+<li>局部变量的作用范围仅仅限制在其命令行所在的Shell或Shell脚本文件中；</li>
+<li>全局变量的作用范围则包括本Shell进程及其所有子进程。</li>
+<li>局部变量与全局变量互换：可以使用 export 内置命令将局部变量设置为全局变量。可以使用 export 内置命令将全局变量设置为局部变量。</li>
+</ul>
+<p>export命令：</p>
+<ul>
+<li>显示当前Shell可见的全局变量<ul>
+<li>export [-p]</li>
+</ul>
+</li>
+<li>定义变量值的同时声明为全局变量。<ul>
+<li>export &lt;变量名1=值1&gt; [&lt;变量名2=值2&gt; …]</li>
+</ul>
+</li>
+<li>声明已经赋值的某个（些）局部变量为全局变量。<ul>
+<li>export &lt;变量名1&gt; [&lt;变量名2&gt; …]</li>
+</ul>
+</li>
+<li>声明已经赋值的某个（些）全局变量为局部变量。<ul>
+<li>export -n &lt;变量名1&gt; [&lt;变量名2&gt; …]</li>
+</ul>
+</li>
+</ul>
+<p>Shell环境变量：</p>
+<ul>
+<li>环境变量定义 Shell 的运行环境，保证 Shell 命令的正确执行。</li>
+<li>Shell用环境变量来确定查找路径、注册目录、终端类型、终端名称、用户名等。</li>
+<li>所有环境变量都是全局变量（即可以传递给 Shell 的子进程），并可以由用户重新设置。</li>
+</ul>
+<p>Shell变量：查询、显示和取消：</p>
+<ul>
+<li>显示当前已经定义的所有变量<ul>
+<li>所有环境变量：env</li>
+<li>所有变量和函数（包括环境变量） ：set</li>
+</ul>
+</li>
+<li>显示某（些）个变量的值<ul>
+<li>echo $NAME1 [$NAME2 ……]</li>
+</ul>
+</li>
+<li>取消变量的声明或赋值<ul>
+<li>unset <name></name></li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/pasted-30.png" alt="upload successful"></p>
+<h3 id="VI编辑器"><a href="#VI编辑器" class="headerlink" title="VI编辑器"></a>VI编辑器</h3><p>vi 是 “Visual interface” 的简称，它可以执行输出、删除、查找、替换、块操作等众多文本操作，而且用户可以根据自己的需要对其进行定制，这是其他编辑程序所没有的。<br><img src="/images/pasted-31.png" alt="upload successful"><br><img src="/images/pasted-32.png" alt="upload successful"></p>
+<p>普通模式</p>
+<ul>
+<li>G用于直接跳转到文件尾</li>
+<li>ZZ用于存盘退出Vi</li>
+<li>ZQ用于不存盘退出Vi</li>
+<li>/和？用于查找字符串</li>
+<li>n继续查找下一个</li>
+<li>yy复制一行</li>
+<li>p粘帖在下一行，P粘贴在前一行</li>
+<li>dd删除一行文本</li>
+<li>x删除光标所在的字符</li>
+<li>u取消上一次编辑操作（undo）</li>
+</ul>
+<p>插入模式</p>
+<ul>
+<li>在 Normal 模式下输入插入命令 i、 a 、 o进入insert模式。用户输入的任何字符都被vim当做文件内容保存起来，并将其显示在屏幕上。</li>
+<li>在文本输入过程中，若想回到Normal模式下，按 Esc 键即可。</li>
+</ul>
+<p>命令行模式</p>
+<ul>
+<li>Normal 模式下，用户按冒号 :即可进入 Command 模式，此时 vim 会在显示窗口的最后一行 (屏幕的最后一行) 显示一个 “:” 作为 Command 模式的提示符，等待输入命令。</li>
+<li>:w 保存当前编辑文件，但并不退出</li>
+<li>:w newfile 存为另外一个名为 “newfile” 的文件</li>
+<li>:wq 用于存盘退出Vi</li>
+<li>:q! 用于不存盘退出Vi</li>
+<li>:q用于直接退出Vi （未做修改）</li>
+</ul>
+<p>设置Vi环境:</p>
+<ul>
+<li>:set autoindent 缩进,常用于程序的编写</li>
+<li>:set noautoindent 取消缩进</li>
+<li>:set number 在编辑文件时显示行号</li>
+<li>:set nonumber 不显示行号</li>
+<li>:set tabstop=value 设置显示制表符的空格字符个数</li>
+<li>:set 显示设置的所有选项</li>
+<li>:set all 显示所有可以设置的选项</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------------------------- 本 文 结 束  <i class="fa fa-paw"></i>  感 谢 阅 读 ----------------------------</div>
+    
+</div>
+  
+</div>
+
+    
+
+    
+      
+    
+
+    
+      <div>
+        <div id="reward-container">
+  <div>欢迎打赏~</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat.png" alt="Dccun 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/29/Git学习/" rel="next" title="Git">
+                <i class="fa fa-chevron-left"></i> Git
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/07/2019电子竞赛国赛/" rel="prev" title="2019电子竞赛准备和比赛过程记录">
+                2019电子竞赛准备和比赛过程记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+  
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjM5MC8yMjkwMQ=="></div>
+  </div>
+  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/dcc.jpg" alt="Dccun">
+  
+  <p class="site-author-name" itemprop="name">Dccun</p>
+  <div class="site-description motion-element" itemprop="description">你是我心上百褶，是人间惊鸿客</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/swhaleDCC" title="GitHub &rarr; https://github.com/swhaleDCC" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" title="weibo &rarr; https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>weibo</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_40631927" title="csdn &rarr; https://blog.csdn.net/qq_40631927" rel="noopener" target="_blank"><i class="fa fa-fw fa-crosshairs"></i>csdn</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.jianshu.com/u/e048aac8c8a0" title="简书 &rarr; https://www.jianshu.com/u/e048aac8c8a0" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i>简书</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.zhihu.com/people/zhe-yan-56-43/activities" title="https://www.zhihu.com/people/zhe-yan-56-43/activities" rel="noopener" target="_blank">知乎</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://zhuanlan.zhihu.com/p/32957389" title="https://zhuanlan.zhihu.com/p/32957389" rel="noopener" target="_blank">github+hexo搭建个人博客</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/p/1f8107a8778c" title="https://www.jianshu.com/p/1f8107a8778c" rel="noopener" target="_blank">next主题优化</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://lab.github.com/" title="https://lab.github.com/" rel="noopener" target="_blank">GitHub Learning Lab</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux系统的组成："><span class="nav-text">Linux系统的组成：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件系统结构"><span class="nav-text">文件系统结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通配符"><span class="nav-text">通配符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的类型"><span class="nav-text">文件的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的文件、目录操作命令"><span class="nav-text">常用的文件、目录操作命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件打包和压缩命令"><span class="nav-text">文件打包和压缩命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正则表达式"><span class="nav-text">正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell变量-和-Shell环境"><span class="nav-text">Shell变量 和 Shell环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VI编辑器"><span class="nav-text">VI编辑器</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dccun</span>
+
+  
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共38.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<script>
+  window.livereOptions = {
+    refer: '2019/05/30/Linux/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/particle.js"></script>
+  
+ 
+	
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

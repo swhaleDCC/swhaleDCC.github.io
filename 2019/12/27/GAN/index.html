@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "6db189de"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.jpg?v=7.2.0">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: 'search.xml'
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <meta name="description" content="2014-GANs开山之作 Generative Adversarial Networks - github源码">
+<meta name="keywords" content="GAN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「文献笔记」GANs">
+<meta property="og:url" content="https://swhaledcc.github.io/2019/12/27/GAN/index.html">
+<meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="2014-GANs开山之作 Generative Adversarial Networks - github源码">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-75.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-81.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-76.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-77.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-78.png">
+<meta property="og:updated_time" content="2020-07-24T06:40:23.779Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="「文献笔记」GANs">
+<meta name="twitter:description" content="2014-GANs开山之作 Generative Adversarial Networks - github源码">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-75.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Dccun's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://swhaledcc.github.io/2019/12/27/GAN/">
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大！');
+                history.back();
+            }
+        }
+    })();
+</script>
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>「文献笔记」GANs | Dccun's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/swhaleDCC/swhaleDCC.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Dccun's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">不烦世事，满心欢喜</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home                          //首页"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive          //归档"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th           //分类"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags                     //标签"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/12/27/GAN/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dccun">
+      <meta itemprop="description" content="你是我心上百褶，是人间惊鸿客">
+      <meta itemprop="image" content="/images/dcc.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dccun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">「文献笔记」GANs
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        	
+
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-12-27 10:52:00" itemprop="dateCreated datePublished" datetime="2019-12-27T10:52:00+08:00">2019-12-27</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/文献笔记/" itemprop="url" rel="index"><span itemprop="name">文献笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>2014-GANs开山之作 Generative Adversarial Networks - <a href="https://github.com/goodfeli/adversarial" target="_blank" rel="noopener">github源码</a></p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a>abstract</h1><ul>
+<li>论文基于对抗过程提出了估计生成模型的新框架，主要的做法就是：同时训练2个网络：G网络和D网络，G网络主要是通过学习获取信息分布，使用隐空间的随机变量生成接近于真实的数据，即使得D网络将生成的数据识别为真实的训练数据；而D网络主要是通过学习，尽可能地区分开真实的训练数据与生成的虚假数据。G网络和D网络都是可微的，因此可以使用BP进行学习。</li>
+</ul>
+<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><ul>
+<li>之前在判别式模型方面已经有很多的研究，比如说分类等任务，但是生成模型由于其最大似然估计和相关策略设置都很复杂，因此目前研究较少，本文则是提出了一种新的生成模型，避免了之前的这些问题。</li>
+<li>提出的对抗网络中，D网络是通过学习，判断一个样本是由模型分布（fake）还是有数据分布（real）生成的。G网络则是生成fake samples，使得D网络尽可能混淆真实与虚假数据。</li>
+<li>论文提出的对抗网络不需要使用markov链，只需要使用BP即可，再结合dropout等tricks。</li>
+</ul>
+<h1 id="related-work"><a href="#related-work" class="headerlink" title="related work"></a>related work</h1><ul>
+<li>在之前，大部分在deep generative model上的工作都是希望能够得到一个参数化的概率分布，可以通过最大似然估计进行学习，比较成功的模型有deep Boltzmann machine等。</li>
+<li>之前比较类似的工作是VAE，即使用encoder将训练数据映射到高斯分布中，再使用decoder将其变换到原始的训练数据，从而实现对数据的参数化分布表示。</li>
+</ul>
+<h1 id="adversarial-nets"><a href="#adversarial-nets" class="headerlink" title="adversarial nets"></a>adversarial nets</h1><ul>
+<li>定义噪声变量pz(z)，表示generator的分布，可以通过映射关系，将噪声映射到对应的data space，这个映射可以表示为G(z,θg)，MLP的参数为θg，G是可微的（可学习的）。同时定义D(x,θd)，输出一个值，D(x)表示x来自真实数据而非pg的概率。因此主要的工作就是训练D，尽可能使得训练样本和G生成的样品都被赋予正确的label。最终的优化目标是：<br><img src="/images/pasted-75.png" alt="upload successful"><br>下面这幅图片很好地描述了这个过程：<br><img src="/images/pasted-81.png" alt="upload successful"><br><img src="/images/pasted-76.png" alt="upload successful"></li>
+<li>在这里需要注意的是，因为需要最大化D，因此我们使用的是梯度上升法。最终pdata(x)=pg(x)，D(x)=12，在训练的过程中，G和data的分布变化如下<br><img src="/images/pasted-77.png" alt="upload successful"></li>
+</ul>
+<h1 id="theoretical-results"><a href="#theoretical-results" class="headerlink" title="theoretical results"></a>theoretical results</h1><ul>
+<li>Global Optimality of pg=pdata</li>
+<li>如果G和D都有足够的容量，则在每次迭代过程中，D都会到达其最优解，之后在更新G的时候，G都会进行优化，使得pg向pdata收敛</li>
+</ul>
+<h1 id="Experiments"><a href="#Experiments" class="headerlink" title="Experiments"></a>Experiments</h1><ul>
+<li>作者在mnist、TFD、cifar-10数据集上进行了实验。对生成的结果基于Parzen window的似然估计进行评估，在mnist上，相对之前的DBN、stacked CAE等方法，效果更好一些。</li>
+</ul>
+<h1 id="Advantages-and-disadvantages"><a href="#Advantages-and-disadvantages" class="headerlink" title="Advantages and disadvantages"></a>Advantages and disadvantages</h1><ul>
+<li>disadvantages：没有获得对pg(x)的显性表示，D也必须和G同时训练，共同优化参数，如果只训练其中的一个， 无法获得很好的效果。</li>
+<li>advantages：不再需要markov chains，在训练的时候，直接使用BP即可，并且可以很容易地在模型中嵌入很多其他的函数或者变换。</li>
+</ul>
+<h1 id="conclusion-and-future-work"><a href="#conclusion-and-future-work" class="headerlink" title="conclusion and future work"></a>conclusion and future work</h1><ul>
+<li>CGAN，即根据给定的条件和随机分布，生成特定的数据。</li>
+<li>通过训练一个给定x，预测z的辅助网络，用于样本之间的相似度检测。</li>
+<li>可以训练一个shared model，给定任意子条件和随机分布，生成该条件对应的样本。</li>
+<li>半监督学习：当训练数据有限时，可以使用discriminator的特征或者G网络来提升分类器的性能。</li>
+<li>在训练的过程中，如果可以确定一个更好的z的分布，则训练速度和模型性能都会大大提升。</li>
+<li>在训练的过程中，如果可以确定一个更好的z的分布，则训练速度和模型性能都会大大提升。</li>
+<li>一张图总结一下生成模型以及本文的对抗模型，证明了GAN的光明前景。<br><img src="/images/pasted-78.png" alt="upload successful"></li>
+</ul>
+<p>参考资料：</p>
+<ul>
+<li><a href="https://github.com/swhaleDCC/adversarial" target="_blank" rel="noopener">github地址</a></li>
+<li><a href="https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/" target="_blank" rel="noopener">相关博客讲解</a></li>
+<li><a href="https://littletomatodonkey.github.io/2018/11/09/2018-11-09-Generative%20Adversarial%20Nets%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/" target="_blank" rel="noopener">论文解读</a></li>
+</ul>
+<hr>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><ul>
+<li><p><a href="https://github.com/scutan90/DeepLearning-500-questions/blob/master/ch07_%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C(GAN)/ch7.md" target="_blank" rel="noopener">DeepLearning-500-questions/ch07_生成对抗网络(GAN)</a></p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s/lfc0BH4X9_iBlrKEO6_RAg" target="_blank" rel="noopener">训练 GANs 一年我学到的 10 个教训</a><br>来自英伟达的StyleGAN和来自谷歌的BigGAN<br>文章内有10个训练GAN的小技巧<del>~</del></p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s/n0Gc4yHjRzJCGGdlyrxc3A" target="_blank" rel="noopener">GAN整整6年了！是时候要来捋捋了！</a></p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s/ce_cVEtMAtbdq67vp13Xww" target="_blank" rel="noopener">GAN 真的创造了新的信息吗？</a></p>
+</li>
+</ul>
+<h2 id="纳什均衡"><a href="#纳什均衡" class="headerlink" title="纳什均衡"></a>纳什均衡</h2>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------------------------- 本 文 结 束  <i class="fa fa-paw"></i>  感 谢 阅 读 ----------------------------</div>
+    
+</div>
+  
+</div>
+
+    
+
+    
+      
+    
+
+    
+      <div>
+        <div id="reward-container">
+  <div>欢迎打赏~</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat.png" alt="Dccun 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/GAN/" rel="tag"><i class="fa fa-tag"></i> GAN</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/22/Deep-Learning时代最好用的云GPU——Google-Colab/" rel="next" title="Deep Learning时代最好用的云GPU——Google Colab">
+                <i class="fa fa-chevron-left"></i> Deep Learning时代最好用的云GPU——Google Colab
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/27/Mac配置/" rel="prev" title="Mac配置">
+                Mac配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+  
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjM5MC8yMjkwMQ=="></div>
+  </div>
+  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/dcc.jpg" alt="Dccun">
+  
+  <p class="site-author-name" itemprop="name">Dccun</p>
+  <div class="site-description motion-element" itemprop="description">你是我心上百褶，是人间惊鸿客</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/swhaleDCC" title="GitHub &rarr; https://github.com/swhaleDCC" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" title="weibo &rarr; https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>weibo</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_40631927" title="csdn &rarr; https://blog.csdn.net/qq_40631927" rel="noopener" target="_blank"><i class="fa fa-fw fa-crosshairs"></i>csdn</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.jianshu.com/u/e048aac8c8a0" title="简书 &rarr; https://www.jianshu.com/u/e048aac8c8a0" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i>简书</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.zhihu.com/people/zhe-yan-56-43/activities" title="https://www.zhihu.com/people/zhe-yan-56-43/activities" rel="noopener" target="_blank">知乎</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://zhuanlan.zhihu.com/p/32957389" title="https://zhuanlan.zhihu.com/p/32957389" rel="noopener" target="_blank">github+hexo搭建个人博客</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/p/1f8107a8778c" title="https://www.jianshu.com/p/1f8107a8778c" rel="noopener" target="_blank">next主题优化</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://lab.github.com/" title="https://lab.github.com/" rel="noopener" target="_blank">GitHub Learning Lab</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#abstract"><span class="nav-text">abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#related-work"><span class="nav-text">related work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#adversarial-nets"><span class="nav-text">adversarial nets</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#theoretical-results"><span class="nav-text">theoretical results</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Experiments"><span class="nav-text">Experiments</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Advantages-and-disadvantages"><span class="nav-text">Advantages and disadvantages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#conclusion-and-future-work"><span class="nav-text">conclusion and future work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充"><span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#纳什均衡"><span class="nav-text">纳什均衡</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dccun</span>
+
+  
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共38.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<script>
+  window.livereOptions = {
+    refer: '2019/12/27/GAN/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/particle.js"></script>
+  
+ 
+	
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

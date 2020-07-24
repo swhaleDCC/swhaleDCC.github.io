@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dccun&#39;s Blog</title>
+  
+  <subtitle>不烦世事，满心欢喜</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://swhaledcc.github.io/"/>
+  <updated>2020-07-24T06:40:23.787Z</updated>
+  <id>https://swhaledcc.github.io/</id>
+  
+  <author>
+    <name>Dccun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>联邦学习</title>
+    <link href="https://swhaledcc.github.io/2020/06/16/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://swhaledcc.github.io/2020/06/16/联邦学习/</id>
+    <published>2020-06-16T06:31:00.000Z</published>
+    <updated>2020-07-24T06:40:23.787Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TensorFlow Federated框架： &lt;a href=&quot;https://github.com/tensorflow/federated&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/tensorflow/federated&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FATE框架： &lt;a href=&quot;https://github.com/FederatedAI/FATE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/FederatedAI/FATE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1mE411j7GT/?spm_id_from=333.788.videocard.0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;B站浙大CS博士解读联邦学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="联邦学习" scheme="https://swhaledcc.github.io/tags/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」Can Machine Learning Model with Static Features be Fooled</title>
+    <link href="https://swhaledcc.github.io/2020/06/14/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DCan-Machine-Learning-Model-with-Static-Features-be-Fooled/"/>
+    <id>https://swhaledcc.github.io/2020/06/14/「文献笔记」Can-Machine-Learning-Model-with-Static-Features-be-Fooled/</id>
+    <published>2020-06-14T04:39:00.000Z</published>
+    <updated>2020-07-24T06:40:23.783Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Can Machine Learning Model with Static Features be Fooled:an Adversarial Machine Learning Approach - 2019&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎关注</title>
+    <link href="https://swhaledcc.github.io/2020/06/11/%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8/"/>
+    <id>https://swhaledcc.github.io/2020/06/11/欢迎关注/</id>
+    <published>2020-06-11T03:26:00.000Z</published>
+    <updated>2020-07-24T06:40:23.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;数据结构与算法等博客内容在 &lt;a href=&quot;https://blog.csdn.net/qq_40631927&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试框架 Mocha</title>
+    <link href="https://swhaledcc.github.io/2020/05/15/mocha/"/>
+    <id>https://swhaledcc.github.io/2020/05/15/mocha/</id>
+    <published>2020-05-15T01:12:00.000Z</published>
+    <updated>2020-07-24T06:40:23.781Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="测试" scheme="https://swhaledcc.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="mocha" scheme="https://swhaledcc.github.io/tags/mocha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyTorch学习笔记</title>
+    <link href="https://swhaledcc.github.io/2020/05/12/pytorch/"/>
+    <id>https://swhaledcc.github.io/2020/05/12/pytorch/</id>
+    <published>2020-05-12T02:35:00.000Z</published>
+    <updated>2020-07-24T06:40:23.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-124.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;友链：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PyTorch 1.2中文文档：&lt;a href=&quot;https://pytorch.apachecn.org/docs/1.2/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pytorch.apachecn.org/docs/1.2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="pytorch" scheme="https://swhaledcc.github.io/tags/pytorch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是 A/B 测试？</title>
+    <link href="https://swhaledcc.github.io/2020/05/12/%E4%BB%80%E4%B9%88%E6%98%AF-A-B-%E6%B5%8B%E8%AF%95%EF%BC%9F/"/>
+    <id>https://swhaledcc.github.io/2020/05/12/什么是-A-B-测试？/</id>
+    <published>2020-05-12T02:33:00.000Z</published>
+    <updated>2020-07-24T06:40:23.785Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;友链：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/20045543/answer/1103961403&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zhihu.com/question/20045543/answer/1103961403&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="测试" scheme="https://swhaledcc.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="A/B测试" scheme="https://swhaledcc.github.io/tags/A-B%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」Android-HIV</title>
+    <link href="https://swhaledcc.github.io/2020/05/06/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DAndroid-HIV/"/>
+    <id>https://swhaledcc.github.io/2020/05/06/「文献笔记」Android-HIV/</id>
+    <published>2020-05-06T02:07:00.000Z</published>
+    <updated>2020-07-24T06:40:23.783Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detection&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="恶意代码重打包" scheme="https://swhaledcc.github.io/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%87%8D%E6%89%93%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」Decompiled APK based malicious code classification</title>
+    <link href="https://swhaledcc.github.io/2020/05/05/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DDecompiled-APK-based-malicious-code-classification/"/>
+    <id>https://swhaledcc.github.io/2020/05/05/「文献笔记」Decompiled-APK-based-malicious-code-classification/</id>
+    <published>2020-05-05T02:07:00.000Z</published>
+    <updated>2020-07-24T06:40:23.784Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;April 2020-Decompiled APK based malicious code classification&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="反编译APK" scheme="https://swhaledcc.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91APK/"/>
+    
+      <category term="恶意代码分类" scheme="https://swhaledcc.github.io/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E5%88%86%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」Generating adversarial examples for holding robustness of source code processing models</title>
+    <link href="https://swhaledcc.github.io/2020/04/10/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DGenerating-adversarial-examples-for-holding-robustness-of-source-code-processing-models/"/>
+    <id>https://swhaledcc.github.io/2020/04/10/「文献笔记」Generating-adversarial-examples-for-holding-robustness-of-source-code-processing-models/</id>
+    <published>2020-04-10T12:14:00.000Z</published>
+    <updated>2020-07-24T06:40:23.784Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models - &lt;a href=&quot;https://github.com/Metropolis-Hastings-Modifier/MHM&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github源码&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」MalGAN</title>
+    <link href="https://swhaledcc.github.io/2020/03/29/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DMalGAN/"/>
+    <id>https://swhaledcc.github.io/2020/03/29/「文献笔记」MalGAN/</id>
+    <published>2020-03-29T06:02:00.000Z</published>
+    <updated>2020-07-24T06:40:23.784Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： &lt;a href=&quot;https://github.com/yanminglai/Malware-GAN&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/yanminglai/Malware-GAN&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「面试」松果出行测试实习面试</title>
+    <link href="https://swhaledcc.github.io/2020/02/26/%E6%9D%BE%E6%9E%9C%E5%87%BA%E8%A1%8C%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    <id>https://swhaledcc.github.io/2020/02/26/松果出行实习面试/</id>
+    <published>2020-02-26T03:33:00.000Z</published>
+    <updated>2020-07-24T06:40:23.786Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-126.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android混淆-ProGuard</title>
+    <link href="https://swhaledcc.github.io/2020/01/21/%E6%B7%B7%E6%B7%86%E6%8A%80%E6%9C%AF/"/>
+    <id>https://swhaledcc.github.io/2020/01/21/混淆技术/</id>
+    <published>2020-01-21T06:18:00.000Z</published>
+    <updated>2020-07-24T06:40:23.787Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-91.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
+    
+    
+      <category term="混淆" scheme="https://swhaledcc.github.io/tags/%E6%B7%B7%E6%B7%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」首次成功用CNN自动生成代码：北大研究者搞定了炉石传说</title>
+    <link href="https://swhaledcc.github.io/2020/01/02/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DCNN%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/"/>
+    <id>https://swhaledcc.github.io/2020/01/02/「文献笔记」CNN代码自动生成/</id>
+    <published>2020-01-02T09:19:00.000Z</published>
+    <updated>2020-07-24T06:40:23.783Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2019-北京大学信息科学技术学院-A Grammar-Based Structural CNN Decoder for Code Generation&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="代码自动生成" scheme="https://swhaledcc.github.io/tags/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/"/>
+    
+      <category term="CNN" scheme="https://swhaledcc.github.io/tags/CNN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」maskGAN</title>
+    <link href="https://swhaledcc.github.io/2019/12/29/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DmaskGAN/"/>
+    <id>https://swhaledcc.github.io/2019/12/29/「文献笔记」maskGAN/</id>
+    <published>2019-12-29T07:55:00.000Z</published>
+    <updated>2020-07-24T06:40:23.784Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2018-MASKGAN: better text generative via filling in the ___&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」DCGAN</title>
+    <link href="https://swhaledcc.github.io/2019/12/27/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DDCGAN/"/>
+    <id>https://swhaledcc.github.io/2019/12/27/「文献笔记」DCGAN/</id>
+    <published>2019-12-27T04:44:00.000Z</published>
+    <updated>2020-07-24T06:40:23.783Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2016-基于深度卷积对抗生成网络的无监督表示学习 unsupervised representation learning with deep convolutional generative adversarial networks&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac配置</title>
+    <link href="https://swhaledcc.github.io/2019/12/27/Mac%E9%85%8D%E7%BD%AE/"/>
+    <id>https://swhaledcc.github.io/2019/12/27/Mac配置/</id>
+    <published>2019-12-27T04:35:00.000Z</published>
+    <updated>2020-07-24T10:17:40.910Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-127.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Mac" scheme="https://swhaledcc.github.io/categories/Mac/"/>
+    
+    
+      <category term="Mac" scheme="https://swhaledcc.github.io/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「文献笔记」GANs</title>
+    <link href="https://swhaledcc.github.io/2019/12/27/GAN/"/>
+    <id>https://swhaledcc.github.io/2019/12/27/GAN/</id>
+    <published>2019-12-27T02:52:00.000Z</published>
+    <updated>2020-07-24T06:40:23.779Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2014-GANs开山之作 Generative Adversarial Networks - &lt;a href=&quot;https://github.com/goodfeli/adversarial&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github源码&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deep Learning时代最好用的云GPU——Google Colab</title>
+    <link href="https://swhaledcc.github.io/2019/12/22/Deep-Learning%E6%97%B6%E4%BB%A3%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BA%91GPU%E2%80%94%E2%80%94Google-Colab/"/>
+    <id>https://swhaledcc.github.io/2019/12/22/Deep-Learning时代最好用的云GPU——Google-Colab/</id>
+    <published>2019-12-22T05:47:00.000Z</published>
+    <updated>2020-07-24T06:40:23.779Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-125.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="colab" scheme="https://swhaledcc.github.io/categories/colab/"/>
+    
+    
+      <category term="colab" scheme="https://swhaledcc.github.io/tags/colab/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「面试」字节实习一面凉经</title>
+    <link href="https://swhaledcc.github.io/2019/11/25/%E5%AD%97%E8%8A%82%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    <id>https://swhaledcc.github.io/2019/11/25/字节前端实习面试/</id>
+    <published>2019-11-25T07:03:00.000Z</published>
+    <updated>2020-07-24T06:40:23.786Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-128.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这篇博客没有任何学习意义，因为问的我基本都不会，后面也没有二面三面了，只用来记录一次悲惨的面试。学习面试经验的小伙伴不用点开看啦&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「面试」百度测开实习面试</title>
+    <link href="https://swhaledcc.github.io/2019/11/15/%E7%99%BE%E5%BA%A6%E6%B5%8B%E5%BC%80%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    <id>https://swhaledcc.github.io/2019/11/15/百度测开实习面试/</id>
+    <published>2019-11-15T06:47:00.000Z</published>
+    <updated>2020-07-24T06:40:23.787Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-71.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

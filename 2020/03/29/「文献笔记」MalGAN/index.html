@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "6db189de"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.jpg?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.jpg?v=7.2.0">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: 'search.xml'
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <meta name="description" content="2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： https://github.com/yanminglai/Malware-GAN">
+<meta name="keywords" content="GAN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「文献笔记」MalGAN">
+<meta property="og:url" content="https://swhaledcc.github.io/2020/03/29/「文献笔记」MalGAN/index.html">
+<meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： https://github.com/yanminglai/Malware-GAN">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-108.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-109.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-107.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-114.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-112.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-113.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-110.png">
+<meta property="og:updated_time" content="2020-07-24T06:40:23.784Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="「文献笔记」MalGAN">
+<meta name="twitter:description" content="2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： https://github.com/yanminglai/Malware-GAN">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-108.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Dccun's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://swhaledcc.github.io/2020/03/29/「文献笔记」MalGAN/">
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大！');
+                history.back();
+            }
+        }
+    })();
+</script>
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>「文献笔记」MalGAN | Dccun's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/swhaleDCC/swhaleDCC.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Dccun's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">不烦世事，满心欢喜</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home                          //首页"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive          //归档"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th           //分类"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags                     //标签"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2020/03/29/「文献笔记」MalGAN/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dccun">
+      <meta itemprop="description" content="你是我心上百褶，是人间惊鸿客">
+      <meta itemprop="image" content="/images/dcc.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dccun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">「文献笔记」MalGAN
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        	
+
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-29 14:02:00" itemprop="dateCreated datePublished" datetime="2020-03-29T14:02:00+08:00">2020-03-29</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/文献笔记/" itemprop="url" rel="index"><span itemprop="name">文献笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： <a href="https://github.com/yanminglai/Malware-GAN" target="_blank" rel="noopener">https://github.com/yanminglai/Malware-GAN</a></p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><ul>
+<li><p><img src="/images/pasted-108.png" alt="upload successful"></p>
+</li>
+<li><p>本文提出了基于MalGAN算法的GAN模型，来生成能躲避黑盒检测器的对抗恶意代码样本。MalGAN使用一个代理检测器来拟合黑盒检测器检测系统。生成网络最小化对抗样本被代理检测器预测为的恶意的可能性。</p>
+</li>
+</ul>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p><img src="/images/pasted-109.png" alt="upload successful"></p>
+<h1 id="Architecture-of-MalGAN"><a href="#Architecture-of-MalGAN" class="headerlink" title="Architecture of MalGAN"></a>Architecture of MalGAN</h1><h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul>
+<li><p>MalGAN的结构图：<img src="/images/pasted-107.png" alt="upload successful">我们假设恶意代码的作者只知道黑盒检测器使用什么特征，不知道使用的机器学习算法和训练模型的参数。恶意代码的作者能得到黑盒检测器的检测结果。整个模型包括一个生成器和一个代理检测器，都使用前馈神经网络。生成器和代理检测器一起工作，来攻击基于黑盒恶意代码检测器的机器学习算法。</p>
+</li>
+<li><p>本文模型和已存在的算法主要的不同在于，对抗样本是根据黑盒检测器的反馈动态生成的，大多数已存在的算法使用静态梯度。</p>
+</li>
+<li><p>MalGAN生成的对抗样本的概率分布由生成器的权重决定。为了使机器学习算法有效，训练集和测试集的样本应该遵从同样的概率分布或者相似的概率分布。生成器可以改变对抗样本的概率分布，使它远离黑盒检测器训练集的概率分布。因此生成器有足够多的机会引导黑盒检测器把恶意软件误分类成良性软件。</p>
+</li>
+</ul>
+<h2 id="Generator"><a href="#Generator" class="headerlink" title="Generator"></a>Generator</h2><ul>
+<li><p>生成器把恶意代码特征向量转换成它的对抗版本，它把恶意代码特征向量m和噪声向量z作为输入。m是一个M维的二进制向量，每个元素代表一个特征是否存在。z是一个Z维的向量，Z是一个超参数，z的每个元素是一个随机的数字，遵从0-1的正态分布。z的作用是让生成器从一个单一的恶意样本特征向量生成不同的对抗样本。</p>
+</li>
+<li><p>输入向量以θg权重进入多层前馈神经网络，这个神经网络的输出层有M个神经元，最后一层的激活函数严格限制输出为（0，1），输出标记为o，由于恶意软件特征向量是二进制的，所以根据元素是否大于0.5，对o进行二进制变换，得到二进制向量o’。</p>
+</li>
+<li><p>在为二进制恶意软件特性生成对抗性样本时，我们只考虑添加一些无关的特性。从原始恶意软件中删除一个特性可能会破解它。例如，如果“WriteFile”API从程序中移除，程序将无法执行正常的写功能，恶意软件可能会崩溃。最后生成的对抗样本可以表示为m’ = m|o’，其中“|”是二进制或操作。</p>
+</li>
+<li><p>m’是一个二进制向量，因此梯度不能从代理检测器反向传递给生成器。平滑函数G从代理检测器接收梯度信息。<img src="/images/pasted-114.png" alt="upload successful"><br>max(,)代表取元素最大值操作，如果m的某个元素值为1，则G的相应结果也为1，不能对梯度进行反向传播。如果m的元素有值0，G的结果是神经网络在相应维度的的实数输出，梯度信息能够通过。</p>
+</li>
+</ul>
+<h2 id="Substitute-Detector"><a href="#Substitute-Detector" class="headerlink" title="Substitute Detector"></a>Substitute Detector</h2><ul>
+<li><p>因为恶意代码的作者不知道黑盒检测器结构的细节，因此代理检测器用来适应黑盒检测器，并且提供训练生成器的梯度信息。</p>
+</li>
+<li><p>代理检测器是梯度为θd的多层前馈神经网络，输入是特征向量x。它对恶意样本和良性样本进行分类，预测x是恶意样本的概率记为Dθd（x）。</p>
+</li>
+<li><p>代理检测器的训练数据包括生成器生成的对抗恶意样本和一个恶意代码作者收集的良性样本数据集。训练数据的真实标签不能用来训练代理检测器，代理检测器的目标是适应黑盒检测器。黑盒检测器首先检测训练数据，输出结果。代理检测器使用黑盒检测器的预测标签。</p>
+</li>
+</ul>
+<h1 id="training-MalGAN"><a href="#training-MalGAN" class="headerlink" title="training MalGAN"></a>training MalGAN</h1><ul>
+<li><p>想要训练MalGAN，恶意代码的作者应该首先收集恶意样本数据库和良性样本数据库。</p>
+</li>
+<li><p>检测器的损失函数：<img src="/images/pasted-112.png" alt="upload successful">BBbenign：被黑盒检测器检测为良性样本的集合。BBmalware：被黑盒检测器检测为恶意样本的集合。为了训练代理检测器，LD应该关于代理检测器权重最小化。</p>
+</li>
+<li><p>生成器的损失函数：<img src="/images/pasted-113.png" alt="upload successful">Smalware是真实的恶意代码数据集，而不是被黑盒检测器标记为恶意代码的数据集，LG应该关于生成器权重最小化。</p>
+</li>
+<li><p>最小化LG会降低恶意代码被预测为恶意的可能性，并且推动代理检测器把恶意样本检测为良性样本。因为代理检测器会努力适应黑盒检测器，生成器的训练会进一步欺骗黑盒检测器。</p>
+</li>
+<li><p>生成器根据代理检测器网络的输出优化权重，将输入恶意软件的特征与噪音混合后，输出的恶意软件特征就是添加了perturbation的对抗样本。而训练过程，作者与传统的GAN训练略有区别，整个过程如下：<img src="/images/pasted-110.png" alt="upload successful"></p>
+</li>
+<li><p>当算法未收敛</p>
+<ul>
+<li>采样生成小批量malware样本M</li>
+<li>generator输入M生成对抗样本M’</li>
+<li>采样生成小批量benign样本B</li>
+<li>利用blcak-box detector对M’及B打上标签</li>
+<li>利用梯度下降法更新substitute detector的参数</li>
+<li>利用梯度下降法更新generator的参数</li>
+</ul>
+</li>
+<li><p>结束循环</p>
+</li>
+</ul>
+<h1 id="experiments"><a href="#experiments" class="headerlink" title="experiments"></a>experiments</h1><h2 id="experimental-setup"><a href="#experimental-setup" class="headerlink" title="experimental setup"></a>experimental setup</h2><ul>
+<li><p>为了验证MalGAN生成的对抗样本的可转移性，我们对黑盒检测器尝试了多种不同的机器学习算法，包括RF,LR,DT,SVM,MLP,VOTE。</p>
+</li>
+<li><p>我们采用了两种方法分离数据集：</p>
+<ul>
+<li>80%的数据集作为训练集，20%的数据集作为测试集。MalGAN和黑盒检测器使用相同的训练集，MalGAN进一步采用25%的训练集作为验证集，使用剩余的数据训练神经网络。比如MLP，一些黑盒检测器为了尽早结束，也需要一个验证集。因为恶意代码的作者和反病毒厂商没有交流怎么分离数据集，所以黑盒检测器不能使用MalGAN的验证集。黑盒检测器分离验证集应该独立于MalGAN，二者应该使用不同的随机种子来挑选验证集数据。</li>
+<li>40%的数据作为MalGAN的训练集，40%的数据作为黑盒检测器的训练集，剩余20%作为测试集。</li>
+</ul>
+</li>
+<li><p>在真实场景中，由恶意软件作者和反病毒供应商收集的训练数据不可能是相同的。但是，如果他们从公共来源收集数据，他们的培训数据将相互重叠。在这种情况下，MalGAN的实际性能介于两种分离方式的性能之间。</p>
+</li>
+<li><p>选择Adam优化器，我们调整验证集的超参数，噪声向量z的维度选择10，生成器的各层大小设为170-256-160，代理检测器分层大小设为160-256-1，生成器和代理检测器的学习速率为0.001。MalGAN的最大训练轮数为100。最后选择验证集中检测率最低的epoch来测试MalGAN的性能。</p>
+</li>
+</ul>
+<h2 id="experimental-results"><a href="#experimental-results" class="headerlink" title="experimental results"></a>experimental results</h2><ul>
+<li><p>我们首先分析MalGAN和黑盒检测器使用相同训练集的情况。对于恶意代码检测，TPR（true positive rate）表示恶意代码的检测率。对抗攻击后，TPR的降低可以反应有多少恶对抗意样本成功逃过了检测算法。</p>
+</li>
+<li><p>然后我们分析当MalGAN和黑盒检测器使用不同训练集的结果。</p>
+</li>
+</ul>
+<h2 id="Comparison-with-the-Gradient-basedAlgorithm-to-Generate-Adversarial-Examples"><a href="#Comparison-with-the-Gradient-basedAlgorithm-to-Generate-Adversarial-Examples" class="headerlink" title="Comparison with the Gradient basedAlgorithm to Generate Adversarial Examples"></a>Comparison with the Gradient basedAlgorithm to Generate Adversarial Examples</h2><p>…</p>
+<h2 id="Retraining-the-Black-Box-Detector"><a href="#Retraining-the-Black-Box-Detector" class="headerlink" title="Retraining the Black-Box Detector"></a>Retraining the Black-Box Detector</h2><ul>
+<li>如果反病毒厂商收集足够多的对抗恶意样本，他们能使用对抗样本重训练黑盒检测器，以便学习对抗样本的模式并进行检测。在这里我们使用随机森林作为黑盒检测器算法。</li>
+</ul>
+<h1 id="conclusion"><a href="#conclusion" class="headerlink" title="conclusion"></a>conclusion</h1><ul>
+<li><p>本文提出了一种基于机器学习的黑盒恶意软件检测算法MalGAN来生成对抗样本。采用基于神经网络的代理检测器对黑盒检测器进行拟合。生成器训练来生成能够欺骗代理检测器的对抗性样本。实验结果表明，所生成的对抗样本能够有效地绕过黑盒检测器。</p>
+</li>
+<li><p>对抗检测器的概率分布由生成器的权值控制。恶意软件作者可以通过重新训练MalGAN来频繁地改变概率分布，使得黑盒探测器无法跟上它的步伐，并且无法从中学习稳定的模式。一旦黑盒探测器更新，恶意软件作者可以立即破解它。这个过程使得基于机器学习的恶意软件检测算法无法工作。</p>
+</li>
+</ul>
+<hr>
+<p><a href="https://zhuanlan.zhihu.com/p/88886843" target="_blank" rel="noopener">AI新方向：对抗攻击</a></p>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------------------------- 本 文 结 束  <i class="fa fa-paw"></i>  感 谢 阅 读 ----------------------------</div>
+    
+</div>
+  
+</div>
+
+    
+
+    
+      
+    
+
+    
+      <div>
+        <div id="reward-container">
+  <div>欢迎打赏~</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat.png" alt="Dccun 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/GAN/" rel="tag"><i class="fa fa-tag"></i> GAN</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/26/松果出行实习面试/" rel="next" title="「面试」松果出行测试实习面试">
+                <i class="fa fa-chevron-left"></i> 「面试」松果出行测试实习面试
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/10/「文献笔记」Generating-adversarial-examples-for-holding-robustness-of-source-code-processing-models/" rel="prev" title="「文献笔记」Generating adversarial examples for holding robustness of source code processing models">
+                「文献笔记」Generating adversarial examples for holding robustness of source code processing models <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+  
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjM5MC8yMjkwMQ=="></div>
+  </div>
+  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/dcc.jpg" alt="Dccun">
+  
+  <p class="site-author-name" itemprop="name">Dccun</p>
+  <div class="site-description motion-element" itemprop="description">你是我心上百褶，是人间惊鸿客</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/swhaleDCC" title="GitHub &rarr; https://github.com/swhaleDCC" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" title="weibo &rarr; https://www.weibo.com/5986829280/profile?topnav=1&wvr=6" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>weibo</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_40631927" title="csdn &rarr; https://blog.csdn.net/qq_40631927" rel="noopener" target="_blank"><i class="fa fa-fw fa-crosshairs"></i>csdn</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.jianshu.com/u/e048aac8c8a0" title="简书 &rarr; https://www.jianshu.com/u/e048aac8c8a0" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i>简书</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.zhihu.com/people/zhe-yan-56-43/activities" title="https://www.zhihu.com/people/zhe-yan-56-43/activities" rel="noopener" target="_blank">知乎</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://zhuanlan.zhihu.com/p/32957389" title="https://zhuanlan.zhihu.com/p/32957389" rel="noopener" target="_blank">github+hexo搭建个人博客</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/p/1f8107a8778c" title="https://www.jianshu.com/p/1f8107a8778c" rel="noopener" target="_blank">next主题优化</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://lab.github.com/" title="https://lab.github.com/" rel="noopener" target="_blank">GitHub Learning Lab</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Architecture-of-MalGAN"><span class="nav-text">Architecture of MalGAN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Generator"><span class="nav-text">Generator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Substitute-Detector"><span class="nav-text">Substitute Detector</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#training-MalGAN"><span class="nav-text">training MalGAN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#experiments"><span class="nav-text">experiments</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#experimental-setup"><span class="nav-text">experimental setup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#experimental-results"><span class="nav-text">experimental results</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comparison-with-the-Gradient-basedAlgorithm-to-Generate-Adversarial-Examples"><span class="nav-text">Comparison with the Gradient basedAlgorithm to Generate Adversarial Examples</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Retraining-the-Black-Box-Detector"><span class="nav-text">Retraining the Black-Box Detector</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#conclusion"><span class="nav-text">conclusion</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dccun</span>
+
+  
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共38.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<script>
+  window.livereOptions = {
+    refer: '2020/03/29/「文献笔记」MalGAN/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/particle.js"></script>
+  
+ 
+	
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>
