@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2020-07-24T06:40:23.787Z</updated>
+  <updated>2020-09-10T01:30:17.413Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《动手学深度学习》</title>
+    <link href="https://swhaledcc.github.io/2020/09/10/%E3%80%8A%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%8B/"/>
+    <id>https://swhaledcc.github.io/2020/09/10/《动手学深度学习》/</id>
+    <published>2020-09-10T01:20:00.000Z</published>
+    <updated>2020-09-10T01:30:17.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;友链：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/scutan90/DeepLearning-500-questions&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>联邦学习</title>
@@ -384,7 +412,7 @@
     <link href="https://swhaledcc.github.io/2019/12/27/GAN/"/>
     <id>https://swhaledcc.github.io/2019/12/27/GAN/</id>
     <published>2019-12-27T02:52:00.000Z</published>
-    <updated>2020-07-24T06:40:23.779Z</updated>
+    <updated>2020-09-10T01:24:10.152Z</updated>
     
     <summary type="html">
     
@@ -434,26 +462,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;这篇博客没有任何学习意义，因为问的我基本都不会，后面也没有二面三面了，只用来记录一次悲惨的面试。学习面试经验的小伙伴不用点开看啦&lt;/p&gt;
 &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「面试」百度测开实习面试</title>
-    <link href="https://swhaledcc.github.io/2019/11/15/%E7%99%BE%E5%BA%A6%E6%B5%8B%E5%BC%80%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    <id>https://swhaledcc.github.io/2019/11/15/百度测开实习面试/</id>
-    <published>2019-11-15T06:47:00.000Z</published>
-    <updated>2020-07-24T06:40:23.787Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-71.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
     
     </summary>
     
