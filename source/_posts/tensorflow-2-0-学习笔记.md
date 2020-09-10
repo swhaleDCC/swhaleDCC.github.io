@@ -1,4 +1,4 @@
-title: 'tensorflow 2.0 '
+title: tensorflow & keras
 author: Dccun
 tags:
   - tensorflow
@@ -17,6 +17,7 @@ date: 2019-10-21 10:38:00
 - https://github.com/dragen1860/TensorFlow-2.x-Tutorials
 - `keras中文文档`：https://github.com/keras-team/keras-docs-zh
 - https://github.com/keras-team/keras
+- [keras模型入门教程：40题刷爆Keras，人生苦短我选Keras](https://zhuanlan.zhihu.com/p/103049619)
 - [官方文档太辣鸡？TensorFlow 2.0开源工具书，30天「无痛」上手](https://github.com/lyhue1991/eat_tensorflow2_in_30_days#30%E5%A4%A9%E5%90%83%E6%8E%89%E9%82%A3%E5%8F%AA-tensorflow2)
 
 <!--more-->

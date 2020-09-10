@@ -72,4 +72,8 @@ date: 2019-12-27 10:52:00
 
 - [GAN 真的创造了新的信息吗？](https://mp.weixin.qq.com/s/ce_cVEtMAtbdq67vp13Xww)
 
-## 纳什均衡
+- GAN万字长文综述：https://zhuanlan.zhihu.com/p/58812258
+
+- GAN六年整理：https://zhuanlan.zhihu.com/p/94206978
+
+- 纳什均衡
