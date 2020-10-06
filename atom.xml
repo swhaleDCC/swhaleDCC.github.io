@@ -186,28 +186,6 @@
   </entry>
   
   <entry>
-    <title>「文献笔记」Android-HIV</title>
-    <link href="https://swhaledcc.github.io/2020/05/06/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DAndroid-HIV/"/>
-    <id>https://swhaledcc.github.io/2020/05/06/「文献笔记」Android-HIV/</id>
-    <published>2020-05-06T02:07:00.000Z</published>
-    <updated>2020-07-24T06:40:23.783Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Android HIV: A Study of Repackaging Malware forEvading Machine-Learning Detection&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="恶意代码重打包" scheme="https://swhaledcc.github.io/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%87%8D%E6%89%93%E5%8C%85/"/>
-    
-  </entry>
-  
-  <entry>
     <title>「文献笔记」Decompiled APK based malicious code classification</title>
     <link href="https://swhaledcc.github.io/2020/05/05/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DDecompiled-APK-based-malicious-code-classification/"/>
     <id>https://swhaledcc.github.io/2020/05/05/「文献笔记」Decompiled-APK-based-malicious-code-classification/</id>
@@ -248,28 +226,6 @@
     
       <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>「文献笔记」MalGAN</title>
-    <link href="https://swhaledcc.github.io/2020/03/29/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DMalGAN/"/>
-    <id>https://swhaledcc.github.io/2020/03/29/「文献笔记」MalGAN/</id>
-    <published>2020-03-29T06:02:00.000Z</published>
-    <updated>2020-07-24T06:40:23.784Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;2017「Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN」 论文复现： &lt;a href=&quot;https://github.com/yanminglai/Malware-GAN&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/yanminglai/Malware-GAN&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
     
   </entry>
   
@@ -463,6 +419,48 @@
     
     
       <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「面试」百度测开实习面试</title>
+    <link href="https://swhaledcc.github.io/2019/11/15/%E7%99%BE%E5%BA%A6%E6%B5%8B%E5%BC%80%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    <id>https://swhaledcc.github.io/2019/11/15/百度测开实习面试/</id>
+    <published>2019-11-15T06:47:00.000Z</published>
+    <updated>2020-07-24T06:40:23.787Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-71.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android恶意代码检测：N-gram Opcode</title>
+    <link href="https://swhaledcc.github.io/2019/11/10/N-gram/"/>
+    <id>https://swhaledcc.github.io/2019/11/10/N-gram/</id>
+    <published>2019-11-10T12:18:00.000Z</published>
+    <updated>2020-07-24T06:40:23.781Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="毕设" scheme="https://swhaledcc.github.io/categories/%E6%AF%95%E8%AE%BE/"/>
+    
+    
+      <category term="N-gram Opcode" scheme="https://swhaledcc.github.io/tags/N-gram-Opcode/"/>
     
   </entry>
   
