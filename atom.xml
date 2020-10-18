@@ -210,26 +210,6 @@
   </entry>
   
   <entry>
-    <title>「文献笔记」Generating adversarial examples for holding robustness of source code processing models</title>
-    <link href="https://swhaledcc.github.io/2020/04/10/%E3%80%8C%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0%E3%80%8DGenerating-adversarial-examples-for-holding-robustness-of-source-code-processing-models/"/>
-    <id>https://swhaledcc.github.io/2020/04/10/「文献笔记」Generating-adversarial-examples-for-holding-robustness-of-source-code-processing-models/</id>
-    <published>2020-04-10T12:14:00.000Z</published>
-    <updated>2020-07-24T06:40:23.784Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;2020-北京大学-AAAI-Generating adversarial examples for holding robustness of source code processing models - &lt;a href=&quot;https://github.com/Metropolis-Hastings-Modifier/MHM&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github源码&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>「面试」松果出行测试实习面试</title>
     <link href="https://swhaledcc.github.io/2020/02/26/%E6%9D%BE%E6%9E%9C%E5%87%BA%E8%A1%8C%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
     <id>https://swhaledcc.github.io/2020/02/26/松果出行实习面试/</id>
@@ -461,6 +441,26 @@
     
     
       <category term="N-gram Opcode" scheme="https://swhaledcc.github.io/tags/N-gram-Opcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CNN实现olivettifaces人脸数据库识别 附源码[转]</title>
+    <link href="https://swhaledcc.github.io/2019/11/07/CNN%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E4%BA%8E%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%EF%BC%88%E8%AF%A6%E7%BB%86%E6%B5%81%E7%A8%8B-%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%EF%BC%89/"/>
+    <id>https://swhaledcc.github.io/2019/11/07/CNN卷积神经网络应用于人脸识别（详细流程-代码实现）/</id>
+    <published>2019-11-07T07:12:00.000Z</published>
+    <updated>2020-07-24T06:40:23.779Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-47.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="人脸识别" scheme="https://swhaledcc.github.io/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
     
   </entry>
   
