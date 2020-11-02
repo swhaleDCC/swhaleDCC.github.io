@@ -33,7 +33,7 @@
   <entry>
     <title><![CDATA[欢迎关注]]></title>
     <url>%2F2020%2F06%2F11%2F%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%2F</url>
-    <content type="text"><![CDATA[数据结构与算法等博客内容在 https://blog.csdn.net/qq_40631927 CSDN同步更新，欢迎关注！！！]]></content>
+    <content type="text"><![CDATA[数据结构与算法等博客内容在 https://blog.csdn.net/qq_40631927 CSDN同步更新，欢迎关注！！！ 其实：其实大部分内容我都放在CSDN博客啦，最近都很少在GitHub更新博客。博客源码 ，欢迎 star !]]></content>
   </entry>
   <entry>
     <title><![CDATA[测试框架 Mocha]]></title>
@@ -216,7 +216,7 @@
   <entry>
     <title><![CDATA[个人博客更换成自己的域名]]></title>
     <url>%2F2019%2F11%2F05%2F%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[在腾讯云花了五毛钱买了一个一年的域名，决定把我的博客更换成自己的域名！ 参考：https://blog.csdn.net/qq_42540989/article/details/95321281 打开管理控制台解析 打开cmd ping 一下你的（例如：xxx.github.io） 就可以得到 这个就是记录值 如下图所示填入解析页面 在Hexo目录下的source中建一个CNAME命名的文本文件 绑定域名进入github 项目中，点击setting，进入setting页面后，往下找，改成你购买的域名 这样就能通过访问我们购买的域名去访问博客 最后要说的是：博客源码 ，欢迎 star !]]></content>
+    <content type="text"><![CDATA[在腾讯云花了五毛钱买了一个一年的域名，决定把我的博客更换成自己的域名！2020.11.2更：去年买的域名到期啦，又在腾讯云买了一个 新地址是 http://www.dccun.work/ ~ 参考：https://blog.csdn.net/qq_42540989/article/details/95321281 打开管理控制台解析 打开cmd ping 一下你的（例如：xxx.github.io） 就可以得到 这个就是记录值 如下图所示填入解析页面 在Hexo目录下的source中建一个CNAME命名的文本文件 绑定域名进入github 项目中，点击setting，进入setting页面后，往下找，改成你购买的域名 这样就能通过访问我们购买的域名去访问博客 最后要说的是：博客源码 ，欢迎 star !]]></content>
       <categories>
         <category>hexo</category>
       </categories>
