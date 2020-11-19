@@ -160,7 +160,6 @@ https://github.com/pjlantz/droidbox/releases ，这里我下载的时候最新�
 如当前电脑登录的是android，那么在终端输入的则为：
 sudo chown android -R /dev/kvm
 
-3. droidbox支持python2，但是我ubantu装的是python3，求解决方法。
 
 # JD-GUI
 学习链接
@@ -168,7 +167,7 @@ sudo chown android -R /dev/kvm
 - http://java-decompiler.github.io/
 
 # dex2jar
-dex2jar顾名思义，`dex文件2到jar文件`，也就是将apk中的java源码编译生成的java字节码文件反编译成java源码，其中2的英文谐音为two，也就是 dex 到 jar，这样对于我们来说就能看到真实的程序啦。
+dex2jar是将apk中的java源码编译生成的java字节码文件反编译成java源码。
 
 学习链接
 - https://github.com/pxb1988/dex2jar
@@ -190,6 +189,3 @@ smali是将Android字节码用可阅读的字符串形式表现出来的一种�
 - [逆向之Smali入门学习](https://www.jianshu.com/p/40908a016480)
 
 下载：[下载链接](https://bitbucket.org/JesusFreke/smali/downloads/)
-
-# cuckoo
-
