@@ -122,13 +122,10 @@
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:description" content="April 2020-Decompiled APK based malicious code classification">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-122.png">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-123.png">
-<meta property="og:updated_time" content="2020-07-24T06:40:23.784Z">
+<meta property="og:updated_time" content="2021-01-31T14:39:40.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「文献笔记」Decompiled APK based malicious code classification">
 <meta name="twitter:description" content="April 2020-Decompiled APK based malicious code classification">
-<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-122.png">
 
 
 
@@ -510,51 +507,7 @@
 <li>ROCKY-一种用于源代码分析的新方法，它可以创建通用的N-tokens，包括stop(frequent)和long-tail(rare)token。</li>
 <li>一个严格的评估，包括将提出的基于反编译源代码的分析与静态分析方法进行比较，使用Android权限、API调用和基于反编译的神经网络架构作为大型真实世界公共数据集的基线。</li>
 </ol>
-<h1 id="2-Background"><a href="#2-Background" class="headerlink" title="2.Background"></a>2.Background</h1><h2 id="2-1-Malicious-code-detection"><a href="#2-1-Malicious-code-detection" class="headerlink" title="2.1.Malicious code detection"></a>2.1.Malicious code detection</h2><h2 id="2-2-Android-Package-Kit"><a href="#2-2-Android-Package-Kit" class="headerlink" title="2.2.Android Package Kit"></a>2.2.Android Package Kit</h2><h2 id="2-3-Android-static-analysis-based-on-API-calls"><a href="#2-3-Android-static-analysis-based-on-API-calls" class="headerlink" title="2.3.Android static analysis based on API calls"></a>2.3.Android static analysis based on API calls</h2><h2 id="2-4-Android-static-analysis-based-on-permissions"><a href="#2-4-Android-static-analysis-based-on-permissions" class="headerlink" title="2.4.Android static analysis based on permissions"></a>2.4.Android static analysis based on permissions</h2><h2 id="2-5-Android-malware-dataset"><a href="#2-5-Android-malware-dataset" class="headerlink" title="2.5.Android malware dataset"></a>2.5.Android malware dataset</h2><p>本文数据库——Android malware dataset（AMD），由南佛罗里达大学Argus实验室于2017年公布。</p>
-<h1 id="3-Methods"><a href="#3-Methods" class="headerlink" title="3.Methods"></a>3.Methods</h1><h2 id="3-1-The-ROCKY-framework"><a href="#3-1-The-ROCKY-framework" class="headerlink" title="3.1.The ROCKY framework"></a>3.1.The ROCKY framework</h2><p>ROCKY框架如下图所示：<br><img src="/images/pasted-122.png" alt="upload successful"> </p>
-<p>包括如下主要部分：</p>
-<ol>
-<li>APK文件conversation和反编译（把dex文件反编译为源码）</li>
-<li>源码处理（解析源码，提取包含API调用的token，构造一个集合中出现频率为top k的token的one-token词汇，使用ROCKY方法根据频率把token分为stop、feature、long-tail三种类型）</li>
-<li>通用/广义N-tokens（类似于n-grams，是提取出的token序列。最常见的k个N-tokens的词汇表是基于前面分类的one-token词汇表，无论是像stop或long-tail这样的泛化，还是没有泛化的特征token。）</li>
-<li>特征代表（计算以下指标来将标记表示为用于分类的特征:二进制、词频(TF)、词频反文档频率(TF - idf)、规范化TF和规范化TF - idf）</li>
-<li>分类（训练分类器）</li>
-</ol>
-<h2 id="3-2-Source-code-preprocessing"><a href="#3-2-Source-code-preprocessing" class="headerlink" title="3.2.Source code preprocessing"></a>3.2.Source code preprocessing</h2><p><img src="/images/pasted-123.png" alt="upload successful"> </p>
-<p>定义：</p>
-<ol>
-<li>stop-tokens</li>
-<li>feature-tokens</li>
-<li>long-tail-tokens</li>
-<li>N-tokens</li>
-</ol>
-<h2 id="3-3-Generalized-tokens-and-N-tokens"><a href="#3-3-Generalized-tokens-and-N-tokens" class="headerlink" title="3.3.Generalized tokens and N-tokens"></a>3.3.Generalized tokens and N-tokens</h2><p>使用两种形式的token：</p>
-<ol>
-<li>one-token</li>
-<li>N-tokens</li>
-</ol>
-<h2 id="3-4-Complexity-analysis"><a href="#3-4-Complexity-analysis" class="headerlink" title="3.4.Complexity analysis"></a>3.4.Complexity analysis</h2><ol>
-<li>APK文件conversation和反编译<ul>
-<li>APK文件conversation为jar：O(n)，n代表APK文件中tokens/symbols的数量</li>
-<li>反编译：O(n)</li>
-</ul>
-</li>
-<li>源码处理</li>
-<li>通用/广义N-tokens</li>
-<li>特征代表</li>
-<li>分类</li>
-</ol>
-<h1 id="4-Evaluation"><a href="#4-Evaluation" class="headerlink" title="4.Evaluation"></a>4.Evaluation</h1><h2 id="4-1-Baseline-algorithms"><a href="#4-1-Baseline-algorithms" class="headerlink" title="4.1.Baseline algorithms"></a>4.1.Baseline algorithms</h2><ul>
-<li>permissions</li>
-<li>API calls</li>
-</ul>
-<h2 id="4-2-Dataset"><a href="#4-2-Dataset" class="headerlink" title="4.2.Dataset"></a>4.2.Dataset</h2><h2 id="4-3-Data-representation"><a href="#4-3-Data-representation" class="headerlink" title="4.3.Data representation"></a>4.3.Data representation</h2><h2 id="4-4-Evaluation-metric"><a href="#4-4-Evaluation-metric" class="headerlink" title="4.4.Evaluation metric"></a>4.4.Evaluation metric</h2><h2 id="4-5-Experimental-plan"><a href="#4-5-Experimental-plan" class="headerlink" title="4.5.Experimental plan"></a>4.5.Experimental plan</h2><ul>
-<li>experiment1-ROCKY source code lexical analysis</li>
-<li>experiment2-ROCKY source code vs. neural network architectures</li>
-<li>experiment3-ROCKY source code vs. API calls and permissions</li>
-<li>experiment4-Malicious code detection</li>
-</ul>
-<h1 id="5-Eesult"><a href="#5-Eesult" class="headerlink" title="5.Eesult"></a>5.Eesult</h1><h2 id="5-1-Experiment1-ROCKY-source-code-analysis"><a href="#5-1-Experiment1-ROCKY-source-code-analysis" class="headerlink" title="5.1.Experiment1-ROCKY source code analysis"></a>5.1.Experiment1-ROCKY source code analysis</h2><h2 id="5-2-Experiment2-ROCKY-source-code-vs-neural-network-architectures"><a href="#5-2-Experiment2-ROCKY-source-code-vs-neural-network-architectures" class="headerlink" title="5.2.Experiment2-ROCKY source code vs. neural network architectures"></a>5.2.Experiment2-ROCKY source code vs. neural network architectures</h2><h2 id="5-3-Experiment3-ROCKY-source-code-vs-API-calls-and-permissions"><a href="#5-3-Experiment3-ROCKY-source-code-vs-API-calls-and-permissions" class="headerlink" title="5.3.Experiment3-ROCKY source code vs. API calls and permissions"></a>5.3.Experiment3-ROCKY source code vs. API calls and permissions</h2><h2 id="5-4-Experiment4-Malicious-code-detection"><a href="#5-4-Experiment4-Malicious-code-detection" class="headerlink" title="5.4.Experiment4-Malicious code detection"></a>5.4.Experiment4-Malicious code detection</h2><h1 id="6-Discussion"><a href="#6-Discussion" class="headerlink" title="6.Discussion"></a>6.Discussion</h1><h1 id="7-Conclusions"><a href="#7-Conclusions" class="headerlink" title="7.Conclusions"></a>7.Conclusions</h1>
+
       
     </div>
 
@@ -969,7 +922,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Introduction"><span class="nav-text">1.Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Background"><span class="nav-text">2.Background</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Malicious-code-detection"><span class="nav-text">2.1.Malicious code detection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Android-Package-Kit"><span class="nav-text">2.2.Android Package Kit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-Android-static-analysis-based-on-API-calls"><span class="nav-text">2.3.Android static analysis based on API calls</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-Android-static-analysis-based-on-permissions"><span class="nav-text">2.4.Android static analysis based on permissions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-Android-malware-dataset"><span class="nav-text">2.5.Android malware dataset</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Methods"><span class="nav-text">3.Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-The-ROCKY-framework"><span class="nav-text">3.1.The ROCKY framework</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-Source-code-preprocessing"><span class="nav-text">3.2.Source code preprocessing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-Generalized-tokens-and-N-tokens"><span class="nav-text">3.3.Generalized tokens and N-tokens</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-Complexity-analysis"><span class="nav-text">3.4.Complexity analysis</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Evaluation"><span class="nav-text">4.Evaluation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-Baseline-algorithms"><span class="nav-text">4.1.Baseline algorithms</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-Dataset"><span class="nav-text">4.2.Dataset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-Data-representation"><span class="nav-text">4.3.Data representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-Evaluation-metric"><span class="nav-text">4.4.Evaluation metric</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-Experimental-plan"><span class="nav-text">4.5.Experimental plan</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-Eesult"><span class="nav-text">5.Eesult</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-Experiment1-ROCKY-source-code-analysis"><span class="nav-text">5.1.Experiment1-ROCKY source code analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-Experiment2-ROCKY-source-code-vs-neural-network-architectures"><span class="nav-text">5.2.Experiment2-ROCKY source code vs. neural network architectures</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-Experiment3-ROCKY-source-code-vs-API-calls-and-permissions"><span class="nav-text">5.3.Experiment3-ROCKY source code vs. API calls and permissions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-Experiment4-Malicious-code-detection"><span class="nav-text">5.4.Experiment4-Malicious code detection</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Discussion"><span class="nav-text">6.Discussion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-Conclusions"><span class="nav-text">7.Conclusions</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Introduction"><span class="nav-text">1.Introduction</span></a></li></ol></div>
             
 
           </div>
@@ -990,7 +943,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -1017,7 +970,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共34.4k字</span>
+  <span class="post-count">博客全站共33.8k字</span>
 </div>
         
 <div class="busuanzi-count">

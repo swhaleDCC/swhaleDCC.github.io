@@ -123,7 +123,7 @@
 <meta property="og:description" content="2016-基于深度卷积对抗生成网络的无监督表示学习 unsupervised representation learning with deep convolutional generative adversarial networks">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-79.png">
-<meta property="og:updated_time" content="2020-07-24T06:40:23.783Z">
+<meta property="og:updated_time" content="2021-01-31T14:43:21.911Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「文献笔记」DCGAN">
 <meta name="twitter:description" content="2016-基于深度卷积对抗生成网络的无监督表示学习 unsupervised representation learning with deep convolutional generative adversarial networks">
@@ -502,21 +502,21 @@
 </blockquote>
 <a id="more"></a>
 
-<h1 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a>abstract</h1><ul>
+<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><ul>
 <li>近年来，CNNs的监督学习在计算机视觉应用中得到了广泛的应用。相对而言，使用CNNs进行无监督学习的研究较少。在这项工作中，我们希望能够帮助缩小CNNs在监督学习和非监督学习方面的成就的差距。我们介绍了一类称为深度卷积生成对抗网络(DCGANs)的CNNs，它具有一定的架构约束，并证明了它们是无监督学习的有力候选者。通过对各种图像数据集的训练，我们给出了令人信服的证据，证明我们的深卷积对偶在生成器和鉴别器中都学习了从对象部件到场景的表示层次。此外，我们将学习到的特性用于新任务——演示它们在一般图像上的适用性。</li>
 </ul>
-<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><ul>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><ul>
 <li>我们提出了一种卷积GANs的架构，它能在大多数设置下稳定训练。我们把它命名为深度卷积GANs。</li>
 <li>我们在图像分类任务上使用了预训练的分类器，来展示和其他无监督算法的竞争性。</li>
 <li>我们可视化了GANs学习到的滤波器，并通过经验证明了特定的滤波器已经学会了绘制特定的图像。</li>
 <li>我们证明了生成器具有有趣的向量算术属性，可以方便地操作生成的示例的许多语义质量。</li>
 </ul>
-<h1 id="related-work"><a href="#related-work" class="headerlink" title="related work"></a>related work</h1><ul>
+<h1 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h1><ul>
 <li>无标签数据的表征学习：一个经典方法是对数据进行聚类(例如使用K-means)，并利用聚类来改进分类分数。在图像领域中，可以对图像块学习强大的图像表示。另一个流行的方法是训练自动编码器,编码一个图像到一个压缩码,编码和解码使重建图像尽可能准确。深度信念网络在学习层次表示方面也表现得很好。</li>
 <li>生成自然图像：生成图像模型得到了广泛的研究，分为参数化和非参数化两大类。</li>
 <li>可视化CNNs的内部结构：在CNNs的背景下，Zeiler等人通过反卷积和最大池化，可以找到网络中每个卷积滤波器的近似目的。类似地，对输入使用梯度下降让我们检查激活某些过滤器子集的理想图像(Mordvintsev等)。</li>
 </ul>
-<h1 id="approach-and-model-architecture"><a href="#approach-and-model-architecture" class="headerlink" title="approach and model architecture"></a>approach and model architecture</h1><ul>
+<h1 id="Approach-and-Model-Architecture"><a href="#Approach-and-Model-Architecture" class="headerlink" title="Approach and Model Architecture"></a>Approach and Model Architecture</h1><ul>
 <li>我们的方法的核心是采用和修改最近演示的对CNN架构的三个更改。</li>
 <li>第一个是全卷积网络，它用<code>步长卷积</code>替换了确定性的空间池化函数(如maxpooling)，允许网络学习自己的空间下采样。我们在生成器中使用这种方法，允许它学习自己的空间上采样和鉴别器。</li>
 <li>第二个是在卷积特征之上消除完全连接层的趋势。这方面最有力的例子是全局平均池化，它已被用于最先进的图像分类模型(Mordvintsev等)。我们发现，全局平均池化提高了模型的稳定性，但不利于收敛速度。将最高卷积特性直接连接到生成器和鉴别器的输入和输出的中间地带工作得很好。GAN的第一层以均匀的噪声分布Z作为输入，由于只是矩阵乘法，可以称为全连通，但结果被重新构造为一个四维张量，并作为卷积堆栈的起点。对于鉴别器，最后一个卷积层被平坦化，然后输入一个单一的sigmoid输出。</li>
@@ -530,7 +530,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="details-of-adversarial-training"><a href="#details-of-adversarial-training" class="headerlink" title="details of adversarial training"></a>details of adversarial training</h1><ul>
+<h1 id="Details-of-Adversarial-Training"><a href="#Details-of-Adversarial-Training" class="headerlink" title="Details of Adversarial Training"></a>Details of Adversarial Training</h1><ul>
 <li>除了缩放到tanh激活函数的范围[-1,1]外，训练图像没有进行其他预处理。所有模型均采用mini-batch SGD进行训练，batch为128。所有的权值都是从0为中心的正态分布初始化的，标准差为0.02。在LeakyReLU中，所有模型的泄漏斜率都设置为0.2。以前的GAN工作使用动量来加速培训，而我们使用Adam优化器(Kingma &amp; Ba, 2014)调优超参数。我们发现建议的学习率为0.001，用0.0002代替，太高了。此外,我们发现离开动量项β1的建议值为0.9时导致培训振荡和不稳定,同时减少到0.5帮助稳定训练。<img src="/images/pasted-79.png" alt="upload successful"></li>
 <li>除了缩放到tanh激活函数的范围[-1,1]外，训练图像没有进行其他预处理。所有模型均采用mini-batch SGD进行训练，batch为128。所有的权值都是从0为中心的正态分布初始化的，标准差为0.02。在LeakyReLU中，所有模型的泄漏斜率都设置为0.2。以前的GAN工作使用动量来加速培训，而我们使用Adam优化器(Kingma &amp; Ba, 2014)调优超参数。我们发现建议的学习率为0.001，用0.0002代替，太高了。此外,我们发现离开动量项β1的建议值为0.9时导致培训振荡和不稳定,同时减少到0.5帮助稳定训练。</li>
 <li>在下面三个数据集训练DCGAN<ul>
@@ -540,11 +540,11 @@
 </ul>
 </li>
 </ul>
-<h1 id="empirical-validation-of-DCGANs-capabilities-实验验证DCGANS的能力"><a href="#empirical-validation-of-DCGANs-capabilities-实验验证DCGANS的能力" class="headerlink" title="empirical validation of DCGANs capabilities(实验验证DCGANS的能力)"></a>empirical validation of DCGANs capabilities(实验验证DCGANS的能力)</h1><ul>
+<h1 id="Empirical-Validation-of-DCGANs-Capabilities"><a href="#Empirical-Validation-of-DCGANs-Capabilities" class="headerlink" title="Empirical Validation of DCGANs Capabilities"></a>Empirical Validation of DCGANs Capabilities</h1><ul>
 <li>classifying <code>CIFAR-10</code> using GANs as a feature extractor（使用GANS作为特征提取器对CIFAR-10进行分类）</li>
 <li>classifying <code>SVHN</code> digits using GANs as a feature extractor（使用GANS作为特征提取器对SVHN数字进行分类）</li>
 </ul>
-<h1 id="investigating-and-visualizing-the-internals-of-the-networks-调查和可视化网络的内部结构"><a href="#investigating-and-visualizing-the-internals-of-the-networks-调查和可视化网络的内部结构" class="headerlink" title="investigating and visualizing the internals of the networks(调查和可视化网络的内部结构)"></a>investigating and visualizing the internals of the networks(调查和可视化网络的内部结构)</h1><ul>
+<h1 id="Investigating-and-Visualizing-the-Internals-of-the-Networks"><a href="#Investigating-and-Visualizing-the-Internals-of-the-Networks" class="headerlink" title="Investigating and Visualizing the Internals of the Networks"></a>Investigating and Visualizing the Internals of the Networks</h1><ul>
 <li>walking in the latent space（漫游隐空间）：各种各样的学习通常能告诉我们记忆的迹象（如果有急剧的转变）以及空间分层坍塌的方式。如果在这个潜在的空间中行走导致图像生成语义的变化（例如被添加和删除的对象），我们可以推断该模型已经学习了相关和有趣的表示。</li>
 <li>visualizing the discriminator features（可视化判别器特性）：以前的工作已经证明，在大型图像数据集上进行有监督的CNN训练会产生非常强大的学习功能。此外，在场景分类方面受监督的CNN学习对象检测。我们证明了在大图像数据集上训练无监督的DCGAN也可以学习有趣的特征层次。相比之下，在同一图中，我们为随机初始化特征给出了基线，这些特征在语义上相关或有趣的任何事物上不被激活。</li>
 <li>manipulating the generator representation（操纵生成器表示）<ul>
@@ -553,7 +553,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="conclusion-and-future-work"><a href="#conclusion-and-future-work" class="headerlink" title="conclusion and future work"></a>conclusion and future work</h1><h1 id="supplementary-material（补充材料）"><a href="#supplementary-material（补充材料）" class="headerlink" title="supplementary material（补充材料）"></a>supplementary material（补充材料）</h1>
+
       
     </div>
 
@@ -966,7 +966,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#abstract"><span class="nav-text">abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#related-work"><span class="nav-text">related work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#approach-and-model-architecture"><span class="nav-text">approach and model architecture</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#details-of-adversarial-training"><span class="nav-text">details of adversarial training</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#empirical-validation-of-DCGANs-capabilities-实验验证DCGANS的能力"><span class="nav-text">empirical validation of DCGANs capabilities(实验验证DCGANS的能力)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#investigating-and-visualizing-the-internals-of-the-networks-调查和可视化网络的内部结构"><span class="nav-text">investigating and visualizing the internals of the networks(调查和可视化网络的内部结构)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#conclusion-and-future-work"><span class="nav-text">conclusion and future work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#supplementary-material（补充材料）"><span class="nav-text">supplementary material（补充材料）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Related-Work"><span class="nav-text">Related Work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Approach-and-Model-Architecture"><span class="nav-text">Approach and Model Architecture</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Details-of-Adversarial-Training"><span class="nav-text">Details of Adversarial Training</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Empirical-Validation-of-DCGANs-Capabilities"><span class="nav-text">Empirical Validation of DCGANs Capabilities</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Investigating-and-Visualizing-the-Internals-of-the-Networks"><span class="nav-text">Investigating and Visualizing the Internals of the Networks</span></a></li></ol></div>
             
 
           </div>
@@ -987,7 +987,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -1014,7 +1014,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共34.4k字</span>
+  <span class="post-count">博客全站共33.8k字</span>
 </div>
         
 <div class="busuanzi-count">

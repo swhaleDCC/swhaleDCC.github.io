@@ -123,7 +123,7 @@
 <meta property="og:description" content="2018-MASKGAN: better text generative via filling in the ___">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-80.png">
-<meta property="og:updated_time" content="2020-07-24T06:40:23.784Z">
+<meta property="og:updated_time" content="2021-01-31T14:41:41.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「文献笔记」maskGAN">
 <meta name="twitter:description" content="2018-MASKGAN: better text generative via filling in the ___">
@@ -502,17 +502,17 @@
 </blockquote>
 <a id="more"></a>
 
-<h1 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a>abstract</h1><ul>
+<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><ul>
 <li>神经网络文本生成模型通常为自回归（autoregressive）语言模型或者seq2seq模型。这些模型通过序列抽样词语生成文本（抽样分布将前一个词语作为条件），并且对于几种机器翻译和摘要总结的基准是较先进的模型。这些基准通常通过验证复杂度定义，尽管这不是直接对生成文本质量的衡量。除此以外，这些模型通常使用极大似然或者 teacher forcing进行训练。这些方法非常适合优化复杂度（perplexity），但是可能导致样本质量差，因为生成文本需要将可能从来没有在训练过程中观察到的词语序列作为条件。我们提出使用生成对抗网络（GAN）来提高样本质量，它通过显式地训练生成器产生高质量样本，并且已经在图像生成领域取得很大成功。GAN 最初设计用于输出可微分的值，所以生成离散语言是具有挑战性的。我们认为验证复杂度本身不代表模型生成的文本质量。我们引入条件actor-critic GAN，它可以基于上下文填充缺失的文本。我们从定性和定量的角度证明，相比较大似然训练的模型，这种方法生成了更真实的有条件和无条件文本样本。</li>
 </ul>
-<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><h1 id="related-work"><a href="#related-work" class="headerlink" title="related work"></a>related work</h1><h1 id="maskGAN"><a href="#maskGAN" class="headerlink" title="maskGAN"></a>maskGAN</h1><ul>
+<h1 id="MaskGAN"><a href="#MaskGAN" class="headerlink" title="MaskGAN"></a>MaskGAN</h1><ul>
 <li>notation</li>
 <li>architecture：<img src="/images/pasted-80.png" alt="upload successful"></li>
 <li>training</li>
 <li>alternative approaches for long sequences and large vocabularies</li>
 <li>method details</li>
 </ul>
-<h1 id="evaluation"><a href="#evaluation" class="headerlink" title="evaluation"></a>evaluation</h1>
+
       
     </div>
 
@@ -925,7 +925,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#abstract"><span class="nav-text">abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#related-work"><span class="nav-text">related work</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#maskGAN"><span class="nav-text">maskGAN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#evaluation"><span class="nav-text">evaluation</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MaskGAN"><span class="nav-text">MaskGAN</span></a></li></ol></div>
             
 
           </div>
@@ -946,7 +946,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -973,7 +973,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共34.4k字</span>
+  <span class="post-count">博客全站共33.8k字</span>
 </div>
         
 <div class="busuanzi-count">
