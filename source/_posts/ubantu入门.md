@@ -53,6 +53,12 @@ rm -rf 要删除的文件
 # 双系统安装过程记录
 参考: https://blog.csdn.net/weixin_43538911/article/details/99647086
 
+# 卸载ubuntu
+参考：https://blog.csdn.net/lele_god/article/details/109046860
+
+
+
+
 # ubuntu下可删除哪些文件来释放系统空间？
 参考：https://zhidao.baidu.com/question/166531881.html
 
