@@ -131,7 +131,7 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-155.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-156.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-157.png">
-<meta property="og:updated_time" content="2021-02-15T03:20:48.794Z">
+<meta property="og:updated_time" content="2021-02-15T06:18:45.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="支付宝自动收能量">
 <meta name="twitter:description" content="参考 https://mp.weixin.qq.com/s/shyTtZGWvAgdtXFewUaMzQ ，实现了蚂蚁森林自动收能量。">
@@ -500,7 +500,9 @@
 <li>macOS Big Sur 11.2</li>
 <li>小米10的手机</li>
 </ul>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装uiautomator2"><a href="#安装uiautomator2" class="headerlink" title="安装uiautomator2"></a>安装uiautomator2</h2><p>安装方法：<br><code>pip install --upgrade --pre uiautomator2</code></p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装uiautomator2"><a href="#安装uiautomator2" class="headerlink" title="安装uiautomator2"></a>安装uiautomator2</h2><p>安装方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --upgrade --pre uiautomator2</span><br></pre></td></tr></table></figure>
+
 <p>UiAutomator 是 Google 提供的用来做安卓自动化测试的一个 Java 库，可以获取屏幕上任意一个 APP 的任意一个控件属性，并对其进行任意操作。Uiautomator2 是在 Uiautomator 之上的 Python 的接口封装，简单来说  Uiautomator2 可以看到手机当前屏幕上有哪些控件，其坐标，并且还可以模拟点击。</p>
 <h2 id="开启开发者模式和USB调试"><a href="#开启开发者模式和USB调试" class="headerlink" title="开启开发者模式和USB调试"></a>开启开发者模式和USB调试</h2><p>手机接入电脑前首先需要开启开发者模式，并开启USB调试，USB安装 (以小米10为例：如下图)，这样才能保证uiautomator2有足够的权限操作你的手机。</p>
 <p><img src="/images/pasted-149.png" alt="upload successful"></p>
@@ -510,10 +512,16 @@
 <p><img src="/images/pasted-153.png" alt="upload successful"></p>
 <p><img src="/images/pasted-154.png" alt="upload successful"></p>
 <p>第一次使用过uiautomator2后，它会在你手机上安装ATX这个应用，打开这个应用你就可以之后通过无线的方式操作你的手机了。</p>
-<h2 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h2><p>Mac可以直接使用brew命令安装adb，需要先安装Homebrew：<br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
-<p>安装adb：<br><code>brew install android-platform-tools</code></p>
+<h2 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h2><p>Mac可以直接使用brew命令安装adb，需要先安装Homebrew：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
+
+<p>安装adb：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install android-platform-tools</span><br></pre></td></tr></table></figure>
+
 <p><img src="/images/pasted-155.png" alt="upload successful"></p>
-<p>安装成功执行:<br><code>adb devices</code></p>
+<p>安装成功执行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
 <p>如下图所示即adb安装成功，并且手机和电脑连接成功。<br>￼<br><img src="/images/pasted-156.png" alt="upload successful"></p>
 <p>注：如果adb没有安装会报错 RuntimeError: No adb exe could be found. Install adb on your system。</p>
 <h1 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h1><p>代码实现（具体含义见注释）：</p>
