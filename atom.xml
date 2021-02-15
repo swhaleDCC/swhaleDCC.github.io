@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2021-02-12T03:10:58.018Z</updated>
+  <updated>2021-02-15T03:20:48.794Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>支付宝自动收能量</title>
+    <link href="https://swhaledcc.github.io/2021/02/15/%E6%94%AF%E4%BB%98%E5%AE%9D%E8%87%AA%E5%8A%A8%E6%94%B6%E8%83%BD%E9%87%8F/"/>
+    <id>https://swhaledcc.github.io/2021/02/15/支付宝自动收能量/</id>
+    <published>2021-02-15T02:32:55.000Z</published>
+    <updated>2021-02-15T03:20:48.794Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-148.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考 &lt;a href=&quot;https://mp.weixin.qq.com/s/shyTtZGWvAgdtXFewUaMzQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mp.weixin.qq.com/s/shyTtZGWvAgdtXFewUaMzQ&lt;/a&gt; ，实现了蚂蚁森林自动收能量。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>「面试」网易后台开发实习</title>
@@ -441,26 +460,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;这篇博客没有任何学习意义，因为问的我基本都不会，后面也没有二面三面了，只用来记录一次悲惨的面试。学习面试经验的小伙伴不用点开看了&lt;/p&gt;
 &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「面试」百度测开实习</title>
-    <link href="https://swhaledcc.github.io/2019/11/15/%E7%99%BE%E5%BA%A6%E6%B5%8B%E5%BC%80%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    <id>https://swhaledcc.github.io/2019/11/15/百度测开实习面试/</id>
-    <published>2019-11-15T06:47:00.000Z</published>
-    <updated>2021-02-05T14:06:59.497Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-71.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
     
     </summary>
     
