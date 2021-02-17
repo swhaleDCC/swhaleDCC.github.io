@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2021-02-15T06:18:45.039Z</updated>
+  <updated>2021-02-17T14:56:52.973Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac如何创建虚拟机 | VirtualBox + Vagrant</title>
+    <link href="https://swhaledcc.github.io/2021/02/17/mac%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>https://swhaledcc.github.io/2021/02/17/mac安装虚拟机/</id>
+    <published>2021-02-17T10:06:00.000Z</published>
+    <updated>2021-02-17T14:56:52.973Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-161.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;记录在Mac上安装虚拟机的过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Mac" scheme="https://swhaledcc.github.io/categories/Mac/"/>
+    
+    
+      <category term="virtualbox" scheme="https://swhaledcc.github.io/tags/virtualbox/"/>
+    
+  </entry>
   
   <entry>
     <title>支付宝自动收能量</title>
@@ -444,29 +467,6 @@
     
     
       <category term="colab" scheme="https://swhaledcc.github.io/tags/colab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「面试」字节实习一面凉经</title>
-    <link href="https://swhaledcc.github.io/2019/11/25/%E5%AD%97%E8%8A%82%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    <id>https://swhaledcc.github.io/2019/11/25/字节前端实习面试/</id>
-    <published>2019-11-25T07:03:00.000Z</published>
-    <updated>2021-02-05T14:02:59.943Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-128.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这篇博客没有任何学习意义，因为问的我基本都不会，后面也没有二面三面了，只用来记录一次悲惨的面试。学习面试经验的小伙伴不用点开看了&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
