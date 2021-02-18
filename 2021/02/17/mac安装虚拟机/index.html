@@ -131,7 +131,12 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-165.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-163.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-166.png">
-<meta property="og:updated_time" content="2021-02-17T14:56:52.973Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-167.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-171.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-168.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-170.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-169.png">
+<meta property="og:updated_time" content="2021-02-18T11:26:50.846Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac如何创建虚拟机 | VirtualBox + Vagrant">
 <meta name="twitter:description" content="记录在Mac上安装虚拟机的过程。">
@@ -512,7 +517,7 @@
 <a id="more"></a>
 
 
-<h1 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h1><h2 id="VirtualBox"><a href="#VirtualBox" class="headerlink" title="VirtualBox"></a>VirtualBox</h2><blockquote>
+<h1 id="1-安装软件"><a href="#1-安装软件" class="headerlink" title="1 安装软件"></a>1 安装软件</h1><h2 id="1-1-VirtualBox"><a href="#1-1-VirtualBox" class="headerlink" title="1.1 VirtualBox"></a>1.1 VirtualBox</h2><blockquote>
 <p>VirtualBox 是由德国 Innotek 公司开发，由Sun Microsystems公司出品的软件，使用Qt编写，在 Sun 被 Oracle 收购后正式更名成 Oracle VM VirtualBox。VirtualBox 和 VMWare 是同类型软件，开源，可以在当前运行的系统上构建出一台虚拟电脑。</p>
 </blockquote>
 <p>下载主程序： <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a></p>
@@ -531,7 +536,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nvram boot-args=”kext-dev-mode=1</span><br></pre></td></tr></table></figure>
 
 <p><img src="/images/pasted-160.png" alt="upload successful"></p>
-<h2 id="Vagrant"><a href="#Vagrant" class="headerlink" title="Vagrant"></a>Vagrant</h2><blockquote>
+<h2 id="1-2-Vagrant"><a href="#1-2-Vagrant" class="headerlink" title="1.2 Vagrant"></a>1.2 Vagrant</h2><blockquote>
 <p>vagrant是一个工具，用于创建和部署虚拟化开发环境的。VirtualBox会开放一个创建虚拟机的接口，Vagrant会利用这个接口创建虚拟机，并且通过Vagrant来管理，配置和自动安装虚拟机。</p>
 </blockquote>
 <p>下载链接： <a href="https://www.vagrantup.com/downloads" target="_blank" rel="noopener">https://www.vagrantup.com/downloads</a></p>
@@ -539,11 +544,11 @@
 <p>Vagrant 是没有图形界面的，所以安装完成后也没有桌面快捷方式。可以在终端执行 vagrant version 检查是否安装成功：</p>
 <p><img src="/images/pasted-162.png" alt="upload successful"></p>
 <p><img src="/images/pasted-165.png" alt="upload successful"></p>
-<h1 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h1><h2 id="官方下载虚拟机镜像"><a href="#官方下载虚拟机镜像" class="headerlink" title="官方下载虚拟机镜像"></a>官方下载虚拟机镜像</h2><p>使用 Vagrant 创建虚拟机时，需要指定一个镜像，也就是 box。开始这个 box 不存在，所以 Vagrant 会先从网上下载，然后缓存在本地目录中。</p>
+<h1 id="2-创建虚拟机"><a href="#2-创建虚拟机" class="headerlink" title="2 创建虚拟机"></a>2 创建虚拟机</h1><h2 id="2-1-下载虚拟机基础镜像"><a href="#2-1-下载虚拟机基础镜像" class="headerlink" title="2.1 下载虚拟机基础镜像"></a>2.1 下载虚拟机基础镜像</h2><h3 id="2-1-1-官方下载镜像"><a href="#2-1-1-官方下载镜像" class="headerlink" title="2.1.1 官方下载镜像"></a>2.1.1 官方下载镜像</h3><p>使用 Vagrant 创建虚拟机时，需要指定一个镜像，也就是 box。开始这个 box 不存在，所以 Vagrant 会先从网上下载，然后缓存在本地目录中。</p>
 <p>Vagrant 官方镜像仓库： <a href="https://app.vagrantup.com/boxes/search" target="_blank" rel="noopener">https://app.vagrantup.com/boxes/search</a></p>
 <p>在镜像仓库中选择要下载的版本，点击进入后可以看到如下图所示的how to use：<br><img src="/images/pasted-163.png" alt="upload successful"></p>
 <p>在终端执行：<br><img src="/images/pasted-166.png" alt="upload successful"></p>
-<h2 id="其他方式下载-box"><a href="#其他方式下载-box" class="headerlink" title="其他方式下载.box"></a>其他方式下载.box</h2><p>如果官方默认下载比较慢，可以在其它地方下载到基础镜像，然后按照自己的需要重置。</p>
+<h3 id="2-1-2-其他方式下载-box"><a href="#2-1-2-其他方式下载-box" class="headerlink" title="2.1.2 其他方式下载.box"></a>2.1.2 其他方式下载.box</h3><p>如果官方默认下载比较慢，可以在其它地方下载到基础镜像，然后按照自己的需要重置。</p>
 <ol>
 <li><p>CentOS 的镜像下载网站是： <a href="http://cloud.centos.org/centos/" target="_blank" rel="noopener">http://cloud.centos.org/centos/</a> 。在其中选择自己想要下载的版本，列表中有一个 vagrant 目录，里面是专门为 vagrant 构建的镜像。选择其中的 .box 后缀的文件下载即可。这里可以使用下载工具，以较快的速度下载下来。</p>
 </li>
@@ -553,7 +558,18 @@
 <p>接下来需要将下载后的 .box 文件添加到 vagrant 中。终端执行:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant box add .box文件的路径 --name 自定义镜像的名称</span><br></pre></td></tr></table></figure>
 
-<h2 id="启动虚拟机"><a href="#启动虚拟机" class="headerlink" title="启动虚拟机"></a>启动虚拟机</h2><hr>
+<h2 id="2-2-启动虚拟机"><a href="#2-2-启动虚拟机" class="headerlink" title="2.2 启动虚拟机"></a>2.2 启动虚拟机</h2><h3 id="2-2-1-终端启动虚拟机"><a href="#2-2-1-终端启动虚拟机" class="headerlink" title="2.2.1 终端启动虚拟机"></a>2.2.1 终端启动虚拟机</h3><p><img src="/images/pasted-167.png" alt="upload successful"></p>
+<ul>
+<li>网卡：Adapter 1: nat，第一块网卡，NAT 模式，这是固定的</li>
+<li>端口转发：22 (guest) =&gt; 2222 (host) (adapter 1)，把虚机的 22 端口，映射到宿主机的 2222 端口上，这样就可以通过 127.0.0.1:2222 访问虚拟机了</li>
+<li>SSH 用户名：vagrant，这里使用 private key 登录</li>
+</ul>
+<p>ssh登录：<br><img src="/images/pasted-171.png" alt="upload successful"></p>
+<p>查看虚拟机状态：<br><img src="/images/pasted-168.png" alt="upload successful"></p>
+<h3 id="2-2-2-在-VirtualBox-启动虚拟机"><a href="#2-2-2-在-VirtualBox-启动虚拟机" class="headerlink" title="2.2.2 在 VirtualBox 启动虚拟机"></a>2.2.2 在 VirtualBox 启动虚拟机</h3><p>打开virtualbox：</p>
+<p><img src="/images/pasted-170.png" alt="upload successful"></p>
+<p><img src="/images/pasted-169.png" alt="upload successful"></p>
+<hr>
 <p>参考：</p>
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/259833884" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/259833884</a></li>
@@ -972,7 +988,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装软件"><span class="nav-text">安装软件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#VirtualBox"><span class="nav-text">VirtualBox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vagrant"><span class="nav-text">Vagrant</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建虚拟机"><span class="nav-text">创建虚拟机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#官方下载虚拟机镜像"><span class="nav-text">官方下载虚拟机镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他方式下载-box"><span class="nav-text">其他方式下载.box</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动虚拟机"><span class="nav-text">启动虚拟机</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-安装软件"><span class="nav-text">1 安装软件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-VirtualBox"><span class="nav-text">1.1 VirtualBox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-Vagrant"><span class="nav-text">1.2 Vagrant</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-创建虚拟机"><span class="nav-text">2 创建虚拟机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-下载虚拟机基础镜像"><span class="nav-text">2.1 下载虚拟机基础镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-官方下载镜像"><span class="nav-text">2.1.1 官方下载镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-其他方式下载-box"><span class="nav-text">2.1.2 其他方式下载.box</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-启动虚拟机"><span class="nav-text">2.2 启动虚拟机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-终端启动虚拟机"><span class="nav-text">2.2.1 终端启动虚拟机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-在-VirtualBox-启动虚拟机"><span class="nav-text">2.2.2 在 VirtualBox 启动虚拟机</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1020,7 +1036,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共36k字</span>
+  <span class="post-count">博客全站共36.2k字</span>
 </div>
         
 <div class="busuanzi-count">
