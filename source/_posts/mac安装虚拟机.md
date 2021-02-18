@@ -13,9 +13,9 @@ date: 2021-02-17 18:06:00
 <!--more-->
 
 
-# 安装软件
+# 1 安装软件
 
-## VirtualBox
+## 1.1 VirtualBox
 
 >VirtualBox 是由德国 Innotek 公司开发，由Sun Microsystems公司出品的软件，使用Qt编写，在 Sun 被 Oracle 收购后正式更名成 Oracle VM VirtualBox。VirtualBox 和 VMWare 是同类型软件，开源，可以在当前运行的系统上构建出一台虚拟电脑。
 
@@ -49,7 +49,7 @@ sudo nvram boot-args=”kext-dev-mode=1
 ![upload successful](/images/pasted-160.png)
 
 
-## Vagrant
+## 1.2 Vagrant
 
 >vagrant是一个工具，用于创建和部署虚拟化开发环境的。VirtualBox会开放一个创建虚拟机的接口，Vagrant会利用这个接口创建虚拟机，并且通过Vagrant来管理，配置和自动安装虚拟机。
 
@@ -63,9 +63,11 @@ Vagrant 是没有图形界面的，所以安装完成后也没有桌面快捷方
 
 ![upload successful](/images/pasted-165.png)
 
-# 创建虚拟机
+# 2 创建虚拟机
 
-## 官方下载虚拟机镜像
+## 2.1 下载虚拟机基础镜像
+
+### 2.1.1 官方下载镜像
 
 使用 Vagrant 创建虚拟机时，需要指定一个镜像，也就是 box。开始这个 box 不存在，所以 Vagrant 会先从网上下载，然后缓存在本地目录中。
 
@@ -77,7 +79,7 @@ Vagrant 官方镜像仓库： https://app.vagrantup.com/boxes/search
 在终端执行：
 ![upload successful](/images/pasted-166.png)
 
-## 其他方式下载.box
+### 2.1.2 其他方式下载.box
 
 如果官方默认下载比较慢，可以在其它地方下载到基础镜像，然后按照自己的需要重置。
 
@@ -90,7 +92,31 @@ Vagrant 官方镜像仓库： https://app.vagrantup.com/boxes/search
 vagrant box add .box文件的路径 --name 自定义镜像的名称
 ```
 
-## 启动虚拟机
+## 2.2 启动虚拟机
+
+### 2.2.1 终端启动虚拟机
+![upload successful](/images/pasted-167.png)
+
+- 网卡：Adapter 1: nat，第一块网卡，NAT 模式，这是固定的
+- 端口转发：22 (guest) => 2222 (host) (adapter 1)，把虚机的 22 端口，映射到宿主机的 2222 端口上，这样就可以通过 127.0.0.1:2222 访问虚拟机了
+- SSH 用户名：vagrant，这里使用 private key 登录
+
+ssh登录：
+![upload successful](/images/pasted-171.png)
+
+查看虚拟机状态：
+![upload successful](/images/pasted-168.png)
+
+### 2.2.2 在 VirtualBox 启动虚拟机
+
+打开virtualbox：
+
+![upload successful](/images/pasted-170.png)
+
+![upload successful](/images/pasted-169.png)
+
+
+
 
 
 ---
