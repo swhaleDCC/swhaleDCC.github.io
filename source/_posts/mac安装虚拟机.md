@@ -67,7 +67,7 @@ Vagrant 是没有图形界面的，所以安装完成后也没有桌面快捷方
 
 ## 2.1 下载虚拟机基础镜像
 
-### 2.1.1 官方下载镜像
+方法一：官方下载镜像
 
 使用 Vagrant 创建虚拟机时，需要指定一个镜像，也就是 box。开始这个 box 不存在，所以 Vagrant 会先从网上下载，然后缓存在本地目录中。
 
@@ -79,7 +79,9 @@ Vagrant 官方镜像仓库： https://app.vagrantup.com/boxes/search
 在终端执行：
 ![upload successful](/images/pasted-166.png)
 
-### 2.1.2 其他方式下载.box
+**这个命令为我们在当前目录生成一个 Vagrantfile，下面的所有操作都是在该文件夹下完成的**。
+
+方法二：其他方式下载.box
 
 如果官方默认下载比较慢，可以在其它地方下载到基础镜像，然后按照自己的需要重置。
 
@@ -94,7 +96,8 @@ vagrant box add .box文件的路径 --name 自定义镜像的名称
 
 ## 2.2 启动虚拟机
 
-### 2.2.1 终端启动虚拟机
+方法一：终端启动虚拟机 `vagrant up`
+
 ![upload successful](/images/pasted-167.png)
 
 - 网卡：Adapter 1: nat，第一块网卡，NAT 模式，这是固定的
@@ -107,7 +110,7 @@ ssh登录：
 查看虚拟机状态：
 ![upload successful](/images/pasted-168.png)
 
-### 2.2.2 在 VirtualBox 启动虚拟机
+方法二：在 VirtualBox 启动虚拟机
 
 打开virtualbox：
 
@@ -116,7 +119,34 @@ ssh登录：
 ![upload successful](/images/pasted-169.png)
 
 
+# 3 Mac连接虚拟机
 
+## 3.1 设置Host-Only
+
+Mac连接虚拟机的方法：设置一个Host-Only网络，为虚拟机增加一个Host-Only的网络适配器，实现主机与虚拟机之间的互通。
+
+首先，启动虚拟机，创建一个Host-Only网络，点击新增，会创建 vboxnet0。
+![upload successful](/images/pasted-172.png)
+
+![upload successful](/images/pasted-173.png)
+
+关闭虚拟机，设置虚拟机->网络->网卡2->启用网络连接->选择Host-Only，界面名称选择刚创建的vboxnet0，点OK，重启虚拟机。
+
+![upload successful](/images/pasted-174.png)
+
+mac查看 `ifconfig` 找到以太网适配器 VirtualBox Host-Only Network:
+
+![upload successful](/images/pasted-175.png)
+
+配置网络信息，打开"Vagrantfile"文件: 
+
+`config.vm.network"private_network",ip:"192.168.56.10"`
+
+修改完成后，重启vagrant，ping一下检查宿主机和virtualBox之间的通信是否正常。
+
+## 3.2 开启远程登录
+
+![upload successful](/images/pasted-176.png)
 
 
 ---
@@ -124,3 +154,4 @@ ssh登录：
 参考：
 - https://zhuanlan.zhihu.com/p/259833884
 - https://www.jianshu.com/p/0cabd5072b86
+- https://blog.csdn.net/m0_37167788/article/details/78718245
