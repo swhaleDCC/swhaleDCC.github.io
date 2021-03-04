@@ -122,7 +122,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-146.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-147.png">
-<meta property="og:updated_time" content="2021-02-12T03:10:58.018Z">
+<meta property="og:updated_time" content="2021-03-01T15:50:22.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「面试」网易后台开发实习">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-146.png">
@@ -510,12 +510,15 @@
 <p>重载和重写的区别？<br>答：重载是一个类里面有多个名称相同但是参数列表不同的方法，重写是子类中对父类中的方法进行重新编写….</p>
 <p>几种创建线程的方法？<br>答：四种，继承Thread类，实现Runnable接口，实现Callable接口，线程池。</p>
 <p>前三种方法做个对比？<br>答：不知道，忘记了….</p>
-<p>线程有几种状态？<br>答：五种，创建、就绪、运行、阻塞、死亡….</p>
+<p>线程有几种状态？<br>答：五种，创建、就绪、运行、阻塞、死亡….(后面了解到，java.lang.Thread的state枚举定义了六个状态，也就是java线程其实是有六种状态，而这五种状态是针对os操作系统层面来说的)</p>
 <p>数据库用的什么？<br>答：MySQL。</p>
 <p>解释一下事务是什么？<br>答：事务是数据库执行业务的最小单位，是一个操作序列，构成事务的所有操作要么全都成功执行，要么全都撤回，不管事务是否执行成功，数据库总能保持一致性状态…..<br>（这里提了一下ACID hhh 因为上个月分布式数据库期末考试刚背了这些，果然：）</p>
 <p>解释一下什么是ACID特性？<br>答：原子性、一致性、持久性、隔离性……</p>
-<p>有两个表：<br>员工表：t1：id, name, pid(主管的id)<br>工资表：s1：id, salary<br>找到比主管工资高的员工的name？<br>这个题和力扣一道题极像！！！上学期刚刷过！！！但是我忘了！！！哭死<br>链接：<a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a><br>面试官问的稍微有一点不同，我代码没写出来，我觉得先把两个表连接起来，但是要用哪个关键词做连接忘记了。。。。</p>
-<p>有一个Double数组，所有元素都是正数，求连续子数组最大乘积？<br>这个也是和力扣的求连续子数组的最大和极像！！！我也是一开始代码没写出来，真的是一到面试脑子就成浆糊，面试官来来回回提醒我三次！！！<br>链接：<a href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/</a></p>
+<p>有两个表：<br>员工表：t1：id, name, pid(主管的id)；<br>工资表：s1：id, salary。<br>找到比主管工资高的员工的name？<br>这个题和力扣一道题极像！！！上学期刚刷过！！！但是面试的时候我忘了！！！<br>力扣题目链接：<a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a> 。<br>个人思路：用cross join交叉连接（笛卡尔积）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ts1.name</span><br><span class="line">from (t1 cross join s2) as ts1, (t1 cross join s2) as ts2</span><br><span class="line">where ts1.pid=ts2.id and ts1.salary&gt;ts2.salary</span><br></pre></td></tr></table></figure>
+
+<p>(如果逻辑有问题拜托帮忙指出)</p>
+<p>有一个Double数组，所有元素都是正数，求连续子数组最大乘积？<br>这个也是和力扣的求连续子数组的最大和极像！！！我也是一开始代码没写出来，真的是一到面试脑子就成浆糊，面试官来来回回提醒我三次！！！<br>力扣题目链接：<a href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/</a> 。</p>
 <p>如果数组里面有负数和0呢？说一下思路不用写代码。<br>？？？求解？？？</p>
 
       
@@ -956,7 +959,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共36.5k字</span>
+  <span class="post-count">博客全站共36.6k字</span>
 </div>
         
 <div class="busuanzi-count">
