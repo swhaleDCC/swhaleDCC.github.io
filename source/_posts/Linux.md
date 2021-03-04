@@ -8,8 +8,18 @@ date: 2019-05-30 13:55:00
 ---
 >友链:
 - 看完这篇Linux基本的操作就会了:https://zhuanlan.zhihu.com/p/36801617
+- 搞定 Linux 这一篇就够了：https://mp.weixin.qq.com/s/XWKgzgVDk6lhhzRnYEmEJw
 
 <!--more-->
+
+### Linux命令概览
+
+![upload successful](/images/pasted-177.png)
+
+一些命令：
+
+df命令用来查看系统中磁盘的使用量，用来查看磁盘是否已经到达上限。参数h可以以友好的方式进行展示。
+
 
 ### Linux系统的组成：
 - linux内核（linus 团队管理）
