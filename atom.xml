@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2021-02-23T03:45:07.069Z</updated>
+  <updated>2021-03-18T15:09:58.617Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「面试」阿里Java服务端实习</title>
+    <link href="https://swhaledcc.github.io/2021/03/18/%E3%80%8C%E9%9D%A2%E8%AF%95%E3%80%8D%E9%98%BF%E9%87%8CJava%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E4%B9%A0/"/>
+    <id>https://swhaledcc.github.io/2021/03/18/「面试」阿里Java服务端实习/</id>
+    <published>2021-03-18T15:06:00.000Z</published>
+    <updated>2021-03-18T15:09:58.617Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-182.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="阿里" scheme="https://swhaledcc.github.io/tags/%E9%98%BF%E9%87%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「面试」度小满Java后端实习</title>
+    <link href="https://swhaledcc.github.io/2021/03/18/%E3%80%8C%E9%9D%A2%E8%AF%95%E3%80%8D%E5%BA%A6%E5%B0%8F%E6%BB%A1Java%E5%90%8E%E7%AB%AF%E5%AE%9E%E4%B9%A0/"/>
+    <id>https://swhaledcc.github.io/2021/03/18/「面试」度小满Java后端实习/</id>
+    <published>2021-03-18T14:39:00.000Z</published>
+    <updated>2021-03-18T14:53:08.424Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-178.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="度小满" scheme="https://swhaledcc.github.io/tags/%E5%BA%A6%E5%B0%8F%E6%BB%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac如何创建虚拟机 | VirtualBox + Vagrant</title>
@@ -63,7 +103,7 @@
     <link href="https://swhaledcc.github.io/2021/02/05/%E3%80%8C%E9%9D%A2%E8%AF%95%E3%80%8D%E7%BD%91%E6%98%93%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2021/02/05/「面试」网易后台开发实习/</id>
     <published>2021-02-05T13:54:00.000Z</published>
-    <updated>2021-03-01T15:50:22.296Z</updated>
+    <updated>2021-03-18T14:36:13.006Z</updated>
     
     <summary type="html">
     
@@ -301,11 +341,11 @@
   </entry>
   
   <entry>
-    <title>「面试」松果出行测试实习面试</title>
+    <title>「面试」松果出行测试实习</title>
     <link href="https://swhaledcc.github.io/2020/02/26/%E6%9D%BE%E6%9E%9C%E5%87%BA%E8%A1%8C%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
     <id>https://swhaledcc.github.io/2020/02/26/松果出行实习面试/</id>
     <published>2020-02-26T03:33:00.000Z</published>
-    <updated>2021-02-05T13:59:26.879Z</updated>
+    <updated>2021-03-18T14:39:35.452Z</updated>
     
     <summary type="html">
     
@@ -425,48 +465,6 @@
     
     
       <category term="Mac" scheme="https://swhaledcc.github.io/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「文献笔记」GANs</title>
-    <link href="https://swhaledcc.github.io/2019/12/27/GAN/"/>
-    <id>https://swhaledcc.github.io/2019/12/27/GAN/</id>
-    <published>2019-12-27T02:52:00.000Z</published>
-    <updated>2021-01-31T14:45:03.765Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;2014-GANs开山之作 Generative Adversarial Networks - &lt;a href=&quot;https://github.com/goodfeli/adversarial&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github源码&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="文献笔记" scheme="https://swhaledcc.github.io/categories/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="GAN" scheme="https://swhaledcc.github.io/tags/GAN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deep Learning时代最好用的云GPU——Google Colab</title>
-    <link href="https://swhaledcc.github.io/2019/12/22/Deep-Learning%E6%97%B6%E4%BB%A3%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BA%91GPU%E2%80%94%E2%80%94Google-Colab/"/>
-    <id>https://swhaledcc.github.io/2019/12/22/Deep-Learning时代最好用的云GPU——Google-Colab/</id>
-    <published>2019-12-22T05:47:00.000Z</published>
-    <updated>2020-07-24T06:40:23.779Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-125.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="colab" scheme="https://swhaledcc.github.io/categories/colab/"/>
-    
-    
-      <category term="colab" scheme="https://swhaledcc.github.io/tags/colab/"/>
     
   </entry>
   
