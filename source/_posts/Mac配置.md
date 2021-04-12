@@ -26,6 +26,7 @@ date: 2019-12-27 12:35:00
 
 下载文件brew_install.rb，控制台运行ruby brew_install.rb命令。此文件下载地址： https://pan.baidu.com/s/1rVh8bY73NLc77cQYN_2HoQ 密码：n3si
 
+后来又有一次安装homebrew时发现运行这个文件时报了其他错误，又参考了另一个解决方法 https://www.jianshu.com/p/c8d998903a6a 。
 
 
 # 安装wget
@@ -117,18 +118,3 @@ rm -rf ~/.condarc ~/.conda ~/.continuum
 3. 终端输入 sudo vi /etc/hosts
 4. 添加 151.101.xx.133 raw.githubusercontent.com
 5. 保存，退出 :wq
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
