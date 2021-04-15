@@ -114,17 +114,21 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="keywords" content="混淆">
+  <meta name="description" content="力扣题目链接： 141. 环形链表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android混淆-ProGuard">
-<meta property="og:url" content="https://swhaledcc.github.io/2020/01/21/混淆技术/index.html">
+<meta property="og:title" content="快慢指针之判断链表中是否有环">
+<meta property="og:url" content="https://swhaledcc.github.io/2021/04/15/快慢指针之判断链表中是否有环/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="力扣题目链接： 141. 环形链表">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-91.png">
-<meta property="og:updated_time" content="2020-07-24T06:40:23.787Z">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-183.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-184.png">
+<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-185.png">
+<meta property="og:updated_time" content="2021-04-15T15:05:38.003Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android混淆-ProGuard">
-<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-91.png">
+<meta name="twitter:title" content="快慢指针之判断链表中是否有环">
+<meta name="twitter:description" content="力扣题目链接： 141. 环形链表">
+<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-183.png">
 
 
 
@@ -134,7 +138,7 @@
 
   
   
-  <link rel="canonical" href="https://swhaledcc.github.io/2020/01/21/混淆技术/">
+  <link rel="canonical" href="https://swhaledcc.github.io/2021/04/15/快慢指针之判断链表中是否有环/">
 
 
 
@@ -155,7 +159,7 @@
 </script>
 
   
-  <title>Android混淆-ProGuard | Dccun's Blog</title>
+  <title>快慢指针之判断链表中是否有环 | Dccun's Blog</title>
   
 
 
@@ -391,7 +395,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2020/01/21/混淆技术/">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2021/04/15/快慢指针之判断链表中是否有环/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dccun">
@@ -408,7 +412,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Android混淆-ProGuard
+          <h1 class="post-title" itemprop="name headline">快慢指针之判断链表中是否有环
 
               
             
@@ -436,27 +440,12 @@
                 
               
 
-              <time title="创建时间：2020-01-21 14:18:00" itemprop="dateCreated datePublished" datetime="2020-01-21T14:18:00+08:00">2020-01-21</time>
+              <time title="创建时间：2021-04-15 22:57:00" itemprop="dateCreated datePublished" datetime="2021-04-15T22:57:00+08:00">2021-04-15</time>
             </span>
           
 
           
 
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/毕设/" itemprop="url" rel="index"><span itemprop="name">毕设</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -494,28 +483,15 @@
       
 
       
-        <p><img src="/images/pasted-91.png" alt="upload successful"></p>
+        <p>力扣题目链接： <a href="https://leetcode-cn.com/problems/linked-list-cycle/" target="_blank" rel="noopener">141. 环形链表</a></p>
 <a id="more"></a>
 
-<p>参考：<br><a href="https://www.cnblogs.com/duanxz/p/3651418.html" target="_blank" rel="noopener">https://www.cnblogs.com/duanxz/p/3651418.html</a></p>
-<blockquote>
-<p>通常情况下，编译后的字节码仍然包含了大量的调试信息：源文件名，行号，字段名，方法名，参数名，变量名等等。这些信息使得它很容易被反编译和通过逆向工程获得完整的程序。有时，这是令人厌恶的。例如像ProGuard这样的混淆器就能删除这些调试信息，并用无意义的字符序列来替换所有名字，使得它很难进行逆向工程，它进一步免费的精简代码。除了异常堆栈信息所需要的类名，方法名和行号外，程序只会保留功能上的等价。</p>
-</blockquote>
-<h1 id="ProGuard"><a href="#ProGuard" class="headerlink" title="ProGuard"></a>ProGuard</h1><p>ProGuard是一款免费的Java类文件压缩器、优化器和混淆器。处理的顺序是先压缩，然后优化，最后才进行混淆。</p>
-<ul>
-<li>功能：<ul>
-<li>压缩(Shrink)：检测并移除代码中无用的类、字段、方法和特性（Attribute）。</li>
-<li>优化(Optimize)：对字节码进行优化，移除无用的指令。</li>
-<li>混淆(Obfuscate)：使用a，b，c，d这样简短而无意义的名称，对类、字段和方法进行重命名。</li>
-<li>预检(Preveirfy)：在Java平台上对处理后的代码进行预检，确保加载的class文件是可执行的。</li>
-</ul>
-</li>
-<li>使用：<ul>
-<li>下载地址 <a href="http://proguard.sourceforge.net/" target="_blank" rel="noopener">http://proguard.sourceforge.net/</a> </li>
-<li>解压后，得到的lib包里有proguardgui.jar，是图形界面程序</li>
-</ul>
-</li>
-</ul>
+<p>这是面试高频题，典型的快慢指针题目——快指针每次走两步，慢指针每次走一步，快慢指针相遇的话，就说明链表中有环。</p>
+<p>今天同事说，他面试的时候，面试官问他：如果快指针每次走三步，还能不能和慢指针相遇。</p>
+<p>挺有意思的一个问题，然后同事给出了一个证明：</p>
+<p><img src="/images/pasted-183.png" alt="upload successful"></p>
+<p><img src="/images/pasted-184.png" alt="upload successful"></p>
+<p><img src="/images/pasted-185.png" alt="upload successful"></p>
 
       
     </div>
@@ -575,15 +551,6 @@
 
     <footer class="post-footer">
       
-        
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/混淆/" rel="tag"><i class="fa fa-tag"></i> 混淆</a>
-          
-        </div>
-      
 
       
       
@@ -613,8 +580,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/01/02/「文献笔记」CNN代码自动生成/" rel="next" title="「文献笔记」首次成功用CNN自动生成代码：北大研究者搞定了炉石传说">
-                <i class="fa fa-chevron-left"></i> 「文献笔记」首次成功用CNN自动生成代码：北大研究者搞定了炉石传说
+              <a href="/2021/03/18/「面试」阿里Java服务端实习/" rel="next" title="「面试」阿里Java服务端实习">
+                <i class="fa fa-chevron-left"></i> 「面试」阿里Java服务端实习
               </a>
             
           </div>
@@ -622,10 +589,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/26/松果出行实习面试/" rel="prev" title="「面试」松果出行测试实习">
-                「面试」松果出行测试实习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -674,17 +637,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -927,23 +881,6 @@
       </div>
 
       
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ProGuard"><span class="nav-text">ProGuard</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
       
 
@@ -1185,7 +1122,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2020/01/21/混淆技术/'
+    refer: '2021/04/15/快慢指针之判断链表中是否有环/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
