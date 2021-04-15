@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[快慢指针之判断链表中是否有环]]></title>
     <url>%2F2021%2F04%2F15%2F%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B9%8B%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E4%B8%AD%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF%2F</url>
-    <content type="text"><![CDATA[力扣题目链接： 141. 环形链表 这是面试高频题，典型的快慢指针题目——快指针每次走两步，慢指针每次走一步，快慢指针相遇的话，就说明链表中有环。 今天同事说，他面试的时候，面试官问他：如果快指针每次走三步，还能不能和慢指针相遇。 挺有意思的一个问题，然后同事给出了一个证明：]]></content>
+    <content type="text"><![CDATA[力扣题目链接： 141. 环形链表 这是面试高频题，典型的快慢指针题目——快指针每次走两步，慢指针每次走一步，快慢指针相遇的话，就说明链表中有环。 今天同事说，他面试的时候，面试官问他：如果快指针每次走三步，还能不能和慢指针相遇。 挺有意思的一个问题，然后同事给出了一个证明： 贴一个快指针走三步的AC代码： 12345678910111213class Solution &#123;public: bool hasCycle(ListNode *head) &#123; ListNode *fast = head; ListNode *slow = head; while(fast != NULL &amp;&amp; fast-&gt;next != NULL &amp;&amp; fast-&gt;next-&gt;next != NULL &amp;&amp; fast-&gt;next-&gt;next-&gt;next != NULL) &#123; slow = slow-&gt;next; fast = fast-&gt;next-&gt;next-&gt;next; if(slow == fast) return true; &#125; return false; &#125;&#125;;]]></content>
   </entry>
   <entry>
     <title><![CDATA[「面试」阿里Java服务端实习]]></title>

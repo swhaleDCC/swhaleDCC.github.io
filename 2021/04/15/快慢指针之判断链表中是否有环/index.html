@@ -124,7 +124,7 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-183.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-184.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-185.png">
-<meta property="og:updated_time" content="2021-04-15T15:05:38.003Z">
+<meta property="og:updated_time" content="2021-04-15T15:13:17.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快慢指针之判断链表中是否有环">
 <meta name="twitter:description" content="力扣题目链接： 141. 环形链表">
@@ -492,7 +492,8 @@
 <p><img src="/images/pasted-183.png" alt="upload successful"></p>
 <p><img src="/images/pasted-184.png" alt="upload successful"></p>
 <p><img src="/images/pasted-185.png" alt="upload successful"></p>
-
+<p>贴一个快指针走三步的AC代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool hasCycle(ListNode *head) &#123;</span><br><span class="line">        ListNode *fast = head;</span><br><span class="line">        ListNode *slow = head;</span><br><span class="line">        while(fast != NULL &amp;&amp; fast-&gt;next != NULL &amp;&amp; fast-&gt;next-&gt;next != NULL &amp;&amp; fast-&gt;next-&gt;next-&gt;next != NULL) &#123;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next-&gt;next;</span><br><span class="line">            if(slow == fast) return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -922,7 +923,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共40.3k字</span>
+  <span class="post-count">博客全站共40.4k字</span>
 </div>
         
 <div class="busuanzi-count">
