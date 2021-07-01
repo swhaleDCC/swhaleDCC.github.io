@@ -148,6 +148,12 @@ mac查看 `ifconfig` 找到以太网适配器 VirtualBox Host-Only Network:
 
 ![upload successful](/images/pasted-176.png)
 
+# 4 遇到的问题
+
+https://blog.csdn.net/yimtcode/article/details/109702529
+
+
+
 
 ---
 
