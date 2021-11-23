@@ -122,7 +122,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-146.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-147.png">
-<meta property="og:updated_time" content="2021-03-18T14:36:13.006Z">
+<meta property="og:updated_time" content="2021-11-23T07:27:47.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「面试」网易后台开发实习">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-146.png">
@@ -506,19 +506,16 @@
 <p>最擅长的编程语言是什么？</p>
 <p>答：Java。</p>
 <p>Java的集合介绍一下？</p>
-<p>答：list（ArrayList、LinkedList、Vector）、set（HashSet、TreeSet）、map（HashMap、LinkedHashMap、hashtable）。<br>其实一开始面试很紧张，吧啦吧啦说了一通这些集合。</p>
+<p>答：list（ArrayList、LinkedList、Vector）、set（HashSet、TreeSet）、map（HashMap、LinkedHashMap、hashtable）。</p>
 <p>Set怎么判断是否有重复的？</p>
 <p>答：根据hashcode()和equals方法()…….</p>
 <p>为什么需要hashcode()方法？</p>
-<p>答：当时真的不知道怎么回答…</p>
 <p>Final关键字介绍一下基本用法？</p>
 <p>答：修饰类、方法、变量……</p>
 <p>重载和重写的区别？</p>
 <p>答：重载是一个类里面有多个名称相同但是参数列表不同的方法，重写是子类中对父类中的方法进行重新编写….</p>
-<p>几种创建线程的方法？</p>
+<p>几种创建线程的方法？有什么区别？</p>
 <p>答：四种，继承Thread类，实现Runnable接口，实现Callable接口，线程池。</p>
-<p>前三种方法做个对比？</p>
-<p>答：不知道，忘记了….</p>
 <p>线程有几种状态？</p>
 <p>答：五种，创建、就绪、运行、阻塞、死亡….(后面了解到，java.lang.Thread的state枚举定义了六个状态，也就是java线程其实是有六种状态，而这五种状态是针对os操作系统层面来说的)</p>
 <hr>
@@ -531,15 +528,12 @@
 <p>有两个表：<br>员工表：t1：id, name, pid(主管的id)；<br>工资表：s1：id, salary。<br>找到比主管工资高的员工的name？</p>
 <p>这个题和力扣一道题极像！！！上学期刚刷过！！！但是面试的时候我忘了！！！<br>力扣题目链接：<a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a> 。</p>
 <p>个人思路：用cross join交叉连接（笛卡尔积）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ts1.name</span><br><span class="line">from (t1 cross join s2) as ts1, (t1 cross join s2) as ts2</span><br><span class="line">where ts1.pid=ts2.id and ts1.salary&gt;ts2.salary</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ts1.name</span><br><span class="line">from (t1 cross join s2) as ts1, (t1 cross join s2) as ts2</span><br><span class="line">where ts1.pid = ts2.id and ts1.salary &gt; ts2.salary</span><br></pre></td></tr></table></figure>
 
-<p>(如果逻辑有问题拜托帮忙指出)</p>
 <hr>
 <p>有一个Double数组，所有元素都是正数，求连续子数组最大乘积？</p>
-<p>这个也是和力扣的求连续子数组的最大和极像！！！我也是一开始代码没写出来，真的是一到面试脑子就成浆糊，面试官来来回回提醒我三次！！！</p>
-<p>力扣题目链接：<a href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/</a> 。</p>
 <p>如果数组里面有负数和0呢？说一下思路不用写代码。</p>
-<p>？？？求解？？？</p>
+<p>力扣题目链接：<a href="https://leetcode-cn.com/problems/maximum-product-subarray/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/maximum-product-subarray/</a> </p>
 
       
     </div>
@@ -717,7 +711,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">38</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -983,7 +977,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共40.4k字</span>
+  <span class="post-count">博客全站共40.1k字</span>
 </div>
         
 <div class="busuanzi-count">
