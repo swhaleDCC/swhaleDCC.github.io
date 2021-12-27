@@ -1,4 +1,4 @@
-title: Mac如何创建虚拟机 | VirtualBox + Vagrant
+title: Mac如何创建虚拟机 | VirtualBox + Vagrant | Multipass
 author: Dccun
 tags:
   - virtualbox
@@ -152,6 +152,9 @@ mac查看 `ifconfig` 找到以太网适配器 VirtualBox Host-Only Network:
 
 https://blog.csdn.net/yimtcode/article/details/109702529
 
+# Multipass
+后面使用VirtualBox + Vagrant的过程中碰到很多问题，经常闪退卡死等等，推荐一款更好用的虚拟机软件吧：
+https://mp.weixin.qq.com/s/_0pZj4B-aHOtNlhnZnX0og
 
 
 
