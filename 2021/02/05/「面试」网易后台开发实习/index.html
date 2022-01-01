@@ -116,15 +116,15 @@
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   <meta name="keywords" content="网易">
 <meta property="og:type" content="article">
-<meta property="og:title" content="「面试」网易后台开发实习">
+<meta property="og:title" content="「面试」网易后台开发实习一面挂">
 <meta property="og:url" content="https://swhaledcc.github.io/2021/02/05/「面试」网易后台开发实习/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-146.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-147.png">
-<meta property="og:updated_time" content="2021-11-23T07:27:47.531Z">
+<meta property="og:updated_time" content="2022-01-01T14:02:57.976Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="「面试」网易后台开发实习">
+<meta name="twitter:title" content="「面试」网易后台开发实习一面挂">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-146.png">
 
 
@@ -156,7 +156,7 @@
 </script>
 
   
-  <title>「面试」网易后台开发实习 | Dccun's Blog</title>
+  <title>「面试」网易后台开发实习一面挂 | Dccun's Blog</title>
   
 
 
@@ -409,7 +409,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">「面试」网易后台开发实习
+          <h1 class="post-title" itemprop="name headline">「面试」网易后台开发实习一面挂
 
               
             
@@ -502,7 +502,6 @@
 <p>一面，大概五十多分钟。</p>
 <p>自我介绍</p>
 <p>之前实习做的是xx，实验室的方向是xx，为什么想来做后台开发？</p>
-<p>答：吧啦吧啦…..对后台开发感兴趣…….未来的规划就是做后台开发。</p>
 <p>最擅长的编程语言是什么？</p>
 <p>答：Java。</p>
 <p>Java的集合介绍一下？</p>
@@ -517,8 +516,7 @@
 <p>几种创建线程的方法？有什么区别？</p>
 <p>答：四种，继承Thread类，实现Runnable接口，实现Callable接口，线程池。</p>
 <p>线程有几种状态？</p>
-<p>答：五种，创建、就绪、运行、阻塞、死亡….(后面了解到，java.lang.Thread的state枚举定义了六个状态，也就是java线程其实是有六种状态，而这五种状态是针对os操作系统层面来说的)</p>
-<hr>
+<p>答：五种，创建、就绪、运行、阻塞、死亡….</p>
 <p>数据库用的什么？</p>
 <p>答：MySQL。</p>
 <p>解释一下事务是什么？</p>
@@ -526,14 +524,12 @@
 <p>解释一下什么是ACID特性？</p>
 <p>答：原子性、一致性、持久性、隔离性……</p>
 <p>有两个表：<br>员工表：t1：id, name, pid(主管的id)；<br>工资表：s1：id, salary。<br>找到比主管工资高的员工的name？</p>
-<p>这个题和力扣一道题极像！！！上学期刚刷过！！！但是面试的时候我忘了！！！<br>力扣题目链接：<a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a> 。</p>
+<p>力扣题目链接：<a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a> 。</p>
 <p>个人思路：用cross join交叉连接（笛卡尔积）。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ts1.name</span><br><span class="line">from (t1 cross join s2) as ts1, (t1 cross join s2) as ts2</span><br><span class="line">where ts1.pid = ts2.id and ts1.salary &gt; ts2.salary</span><br></pre></td></tr></table></figure>
 
-<hr>
-<p>有一个Double数组，所有元素都是正数，求连续子数组最大乘积？</p>
-<p>如果数组里面有负数和0呢？说一下思路不用写代码。</p>
-<p>力扣题目链接：<a href="https://leetcode-cn.com/problems/maximum-product-subarray/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/maximum-product-subarray/</a> </p>
+<p>有一个Double数组，所有元素都是正数，求连续子数组最大乘积？<br>如果数组里面有负数和0呢？说一下思路不用写代码。</p>
+<p>力扣题目链接：<a href="https://leetcode-cn.com/problems/maximum-product-subarray/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/maximum-product-subarray/</a></p>
 
       
     </div>
@@ -711,7 +707,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">31</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -752,7 +748,9 @@
         
           
         
-        <span class="site-state-item-count">12</span>
+          
+        
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -831,7 +829,9 @@
         
           
         
-        <span class="site-state-item-count">31</span>
+          
+        
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -977,7 +977,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.1k字</span>
+  <span class="post-count">博客全站共32.8k字</span>
 </div>
         
 <div class="busuanzi-count">

@@ -123,7 +123,7 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-178.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-179.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-180.png">
-<meta property="og:updated_time" content="2021-03-18T14:53:08.424Z">
+<meta property="og:updated_time" content="2022-01-01T13:52:36.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「面试」度小满Java后端实习">
 <meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-178.png">
@@ -506,15 +506,15 @@
 <p>面试官打断，说你已经说的挺清楚了，问：如果用ArrayList存储一亿个数据有什么缺点？<br>答：查询慢（不知道存储海量数据会对ArrayList的查询性能造成影响吗？？？）。<br>ArrayList的空间浪费主要体现在list列表的结尾预留一定的容量空间（ArrayList容量不够时会扩容到原来的1.5倍）。<br>插入和删除元素效率比较低（在最后插入或删除除外）。<br>【网上查的答案：ArrayList 的默认初始容量为 10 ，要插入大量数据的时候需要不断扩容，而扩容是非常影响性能的。因此，如果明确 1亿条数据了，我们可以直接在初始化的时候就设置 ArrayList 的容量，这样就可以提高效率了】</p>
 <p>ArrayList可以在中间插入元素吗，比如长度为10的ArrayList在第五个位置插入一个元素，可以吗？<br>答：可以。</p>
 <p>常量和变量是什么？<br>答：（1）常量在整个程序中只能被赋值一次，在程序运行过程不会改变，用final关键字定义(final int N=10; 常量的命名规则是一般是用大写英文字母表示，如final double PI=3.14;)。<br>（2）变量分为成员变量和局部变量<br>（2.1）在类体中所定义的变量为成员变量，成员变量在整个类中都有效。类的成员变量又分为两种：静态变量和实例变量。<br>（2.2）在类的方法内声明的变量为局部变量，包括方法的参数都属于局部变量，只在当前定义的方法内有效,不能用于类的其他方法中。</p>
-<p>类的变量的初始化默认值是在什么时候？<br>答：在类加载的链接阶段初始化的。<br>【这个答案我不知道，还需要再查一下。】</p>
-<p>了解双亲委派模型吗？<br>答：不了解。<br>【网上的答案：双亲委派模式是在Java 1.2后引入的，其工作原理的是，如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行，如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归，请求最终将到达顶层的启动类加载器，如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载】</p>
+<p>类的变量的初始化默认值是在什么时候？</p>
+<p>了解双亲委派模型吗？<br>答：双亲委派模式是在Java 1.2后引入的，其工作原理的是，如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行，如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归，请求最终将到达顶层的启动类加载器，如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载</p>
 <p>类加载的几个阶段说一下？<br>答：加载、链接（验证、准备、解析）、初始化。</p>
 <p>类的信息加载到JVM的哪个区域？<br>答：我想想</p>
 <p>你知道JVM里面有几个区域吗？<br>答：线程共享的是：堆、方法区（jdk1.8后被元空间取代）；<br>线程私有的是：程序计数器、java虚拟机栈、本地方法栈。</p>
-<p>回到上面的问题，类的信息加载到JVM的哪个区域？<br>答：我只知道类创建对象后对象在堆里面。<br>然后面试官解释了一下类的信息加载到JVM的方法区，就是jdk1.8后的元空间。</p>
+<p>回到上面的问题，类的信息加载到JVM的哪个区域？<br>答：类的信息加载到JVM的方法区，就是jdk1.8后的元空间。</p>
 <p>看看简历，你在百度实习主要做的什么？你写的代码实现什么功能？<br>答：xxx<br>然后又问了几个前端的问题，我都不大懂。</p>
 <p>前端你会一点吗，比如css、标签这些？<br>答：会一些html、css的东西。</p>
-<p>json是什么？<br>答：<br>【JSON (JavaScript Object Notation, JS 对象标记) 是一种轻量级的数据交换格式。】</p>
+<p>json是什么？<br>答：JSON (JavaScript Object Notation, JS 对象标记) 是一种轻量级的数据交换格式。</p>
 <p>写一个编程题，判断一个文件里面是否包括hello字符串。一些api记不住没关系，大概写出来思路就行，主要看你代码规范和思路。<br>答：用的字符流FileReader</p>
 <p><img src="/images/pasted-180.png" alt="upload successful"></p>
 <p>写完后大致说了一下思路，接下来就是面试官针对代码提问。</p>
@@ -561,9 +561,19 @@
 <p>三面应该是经理面吧，主要在聊之前的实习经历、学校的情况，没有技术性的问题。</p>
 <p>结果：面试完立马hr打电话给了结果</p>
 <blockquote>
-<p>总之，度小满的hr和面试官都超级nice，回答不上来的问题会提示甚至解答，我最后提的问题也都会耐心详细解释，一面二面三面的面试官都是男生，hr是女生，很好的一次体验。</p>
+<p>总之，度小满的hr和面试官都超级nice，回答不上来的问题会提示，我最后提的问题也都会耐心详细解释，很好的一次体验。后来入职后感觉团队工作氛围特别好，同事友善，下班也比较早，leader特别好，总之就是很好很好</p>
 </blockquote>
-
+<p id="div-border-top-blue">
+<span style="color:#f63;">
+  <i>2022.1 更：</i>
+  </span>
+  <br>
+  把实习的经历做成了一个视频：
+  <br>
+  https://www.bilibili.com/video/BV1FU4y1M73P?share_source=copy_web
+  <br>
+  欢迎三连哦！
+</p>
       
     </div>
 
@@ -670,8 +680,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/03/18/「面试」阿里Java服务端实习/" rel="prev" title="「面试」阿里Java服务端实习">
-                「面试」阿里Java服务端实习 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/03/18/「面试」阿里Java服务端实习/" rel="prev" title="「面试」阿里Java服务端实习一面挂">
+                「面试」阿里Java服务端实习一面挂 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -749,7 +759,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">31</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -790,7 +800,9 @@
         
           
         
-        <span class="site-state-item-count">12</span>
+          
+        
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -869,7 +881,9 @@
         
           
         
-        <span class="site-state-item-count">31</span>
+          
+        
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -1032,7 +1046,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.1k字</span>
+  <span class="post-count">博客全站共32.8k字</span>
 </div>
         
 <div class="busuanzi-count">

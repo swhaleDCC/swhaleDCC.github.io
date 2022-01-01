@@ -131,7 +131,7 @@
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-51.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-52.png">
 <meta property="og:image" content="https://swhaledcc.github.io/images/pasted-53.png">
-<meta property="og:updated_time" content="2020-07-24T06:40:23.781Z">
+<meta property="og:updated_time" content="2022-01-01T14:14:16.876Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android恶意代码检测：N-gram Opcode">
 <meta name="twitter:description" content="读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。">
@@ -462,7 +462,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/毕设/" itemprop="url" rel="index"><span itemprop="name">毕设</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android恶意代码检测/" itemprop="url" rel="index"><span itemprop="name">Android恶意代码检测</span></a></span>
 
                 
                 
@@ -520,12 +520,10 @@
 <li><a href="https://github.com/daxiongshu/kaggle_Microsoft_Malware" target="_blank" rel="noopener">kaggle_Microsoft_Malware github</a></li>
 </ul>
 </blockquote>
-<hr>
 <h1 id="java、class、dex、smali、jar、apk关系"><a href="#java、class、dex、smali、jar、apk关系" class="headerlink" title="java、class、dex、smali、jar、apk关系"></a>java、class、dex、smali、jar、apk关系</h1><p><img src="/images/pasted-73.png" alt="upload successful"></p>
 <h1 id="N-gram"><a href="#N-gram" class="headerlink" title="N-gram"></a>N-gram</h1><p><code>n-gram</code>是自然语言处理领域的概念，早期的语音识别技术和统计语言模型与它密不可分。n-gram基于一个简单的假设，即认为<code>一个词出现的概率仅与它之前的n-1个词有关</code>，这个概率可从大量语料中统计得到。例如“吃”的后面出现“苹果”或“披萨”的概率就会比“公路”的概率大(正常的语料中基本不会出现“吃公路”这种组合)，可以看出n-gram在一定程度上包含了部分语言特征。</p>
 <p>将n-gram应用于恶意代码识别的想法最早由Tony等人在2004年的论文N-gram-based Detection of New Malicious Code 中提出，不过他们的方法是基于ByteCode的。2008年Moskovitch等人的论文Unknown Malcode Detection Using OPCODE Representation 中提出利用OpCode代替ByteCode更加科学。</p>
 <p><img src="/images/pasted-54.png" alt="upload successful"></p>
-<hr>
 <h1 id="用机器学习检测Android恶意代码-–-runner"><a href="#用机器学习检测Android恶意代码-–-runner" class="headerlink" title="用机器学习检测Android恶意代码 – runner"></a>用机器学习检测Android恶意代码 – runner</h1><ol>
 <li><p>安卓恶意代码检测方法</p>
 <ul>
@@ -560,7 +558,6 @@
 <li><p>恶意代码模型<br><img src="/images/pasted-24.png" alt="upload successful"><br>测试恶意代码检测模型<br><img src="/images/pasted-25.png" alt="upload successful"></p>
 </li>
 </ol>
-<hr>
 <h1 id="基于机器学习的安卓恶意应用检测方法研究"><a href="#基于机器学习的安卓恶意应用检测方法研究" class="headerlink" title="基于机器学习的安卓恶意应用检测方法研究"></a>基于机器学习的安卓恶意应用检测方法研究</h1><blockquote>
 <p>N-gram Opcode特征实际上是dalvik Opcode特征结合自然语言处理中的N-gram方法而产生的特征集合。</p>
 </blockquote>
@@ -568,39 +565,6 @@
 <p>N-gram Opcode：<br><img src="/images/pasted-50.png" alt="upload successful"><br><img src="/images/pasted-51.png" alt="upload successful"></p>
 <p><img src="/images/pasted-52.png" alt="upload successful"></p>
 <p><img src="/images/pasted-53.png" alt="upload successful"></p>
-<hr>
-<h1 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a>github项目</h1><p>恶意代码检测过程通常可以分为三个步骤：</p>
-<ul>
-<li>特征提取与选择</li>
-<li>选取适当的分类模型</li>
-<li>获取分类结果<br>其中关键技术就是恶意代码特征提取，特征的质量直接影响恶意代码的检测效果，目前提出的基于机器学习的恶意软件分类方法在恶意软件特征提取方法上存在较大差异。</li>
-</ul>
-<blockquote>
-<p><a href="https://github.com/BiancaGuo/malware_classification_system" target="_blank" rel="noopener">malware_classification_system</a><br>这个项目没有readme，不知道怎么跑，里面还有html、css代码，还用到了flask_bootstrap包，看起来更像一个网站。</p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/2015-10-10/MalwareClassification" target="_blank" rel="noopener">MalwareClassification</a>（这个代码看上去不错，跑一下试试）<br>gramfeature.csv文件存储特征，分为训练数据和测试数据<br>VirusShare.csv和yingyongbao.csv存储数据id和class<br>tpr_fpr.py文件为模型检测程序<br>.txt文件为ROC曲线实验数据<br>plot.py为ROC曲线画图程序<br>其中，良性样本选自yingyongbao（yingyongbao.csv：class为０），恶性样本选自virusshare（VirusShare.csv：class为１）。还用到了TF-IDF（term frequency–inverse document frequency），一种用于信息检索与数据挖掘的常用加权技术。TF意思是词频(Term Frequency)，IDF意思是逆文本频率指数(Inverse Document Frequency)。</p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/VoldyRCX/MalwareAnalyze" target="_blank" rel="noopener">MalwareAnalyze</a><br>需要Linux环境,需要安装IDA PRO反汇编软件,需要viper环境 <a href="https://github.com/viper-framework/viper" target="_blank" rel="noopener">https://github.com/viper-framework/viper</a>.<br>config.py　环境配置文件<br>pe_select.py　提取样本中的PE文件<br>idabatch.pu　ida反汇编批处理<br>feature.py　特征处理<br>sequence3.py　提取特征序列<br>vector_batch.py &amp;&amp; vector_batch2.py　向量化批处理<br>vectoring.py　向量化<br>train.py　训练集 用于viper平台集成功能<br>test.py　测试集 用于viper平台集成功能<br>ml.py　训练模型 用于viper平台集成功能</p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/bindog/ToyMalwareClassification" target="_blank" rel="noopener">ToyMalwareClassification</a><br>Kaggle微软恶意代码分类<br>比赛说明和数据下载 <a href="https://www.kaggle.com/c/malware-classification/" target="_blank" rel="noopener">https://www.kaggle.com/c/malware-classification/</a><br>代码说明<br>randomsubset.py 抽取训练子集<br>asmimage.py ASM文件图像纹理特征<br>opcode_n-gram.py Opcode n-gram特征<br>firstrandomforest.py 基于ASM文件图像纹理特征的随机森林<br>secondrandomforest.py 基于Opcode n-gram特征特征的随机森林<br>combine.py 将两种类型的特征结合<br>运行说明<br>将完整的训练数据集解压，修改randomsubset.py中的路径并运行<br>修改asmimage.py和opcode_n-gram.py中的路径，并运行run.sh，耐心等待即可看到结果</p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/UP1998/Software-system-security" target="_blank" rel="noopener">Software-system-security</a><br><a href="https://github.com/UP1998/Software-system-security/blob/master/%E5%A4%A7%E4%BD%9C%E4%B8%9A/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A.md" target="_blank" rel="noopener">md</a><br>用于提交软件与系统安全实验和最终大作业<br>通过修改程序可执行文件的方式（不是修改源代码），使得程序运行后显示的内容不为hello world，变成 hello cuc！<br>上一题的程序中，修改的显示内容变为一个很长的字符串（至少2kb长）。并且保证程序正常运行不崩溃。<br>在notepad（32位64位均可）中，输入一段文字。然后使用调试器，在内存中修改这段文字。使得没有在界面操作notepad的修改文字的情况下。notepad中显示的文字变化。<br>通过调试器监控计算器程序的运行，每当运行结果为666时，就改为999。<br>通过API hook的方法，在每次notepad保存txt文件时，就将文件内容修改为： “you have been hacked!”<br>通过API hook的方法，使得cmd的dir命令看不到任意目录下的hacker.exe</p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/shielding/software_security" target="_blank" rel="noopener">software_security</a></p>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/flame0409/Android" target="_blank" rel="noopener">Android</a><br>基于opcode的N-gram安卓恶意软件检测</p>
-</blockquote>
-<p><code>下面是我已经运行成功的code，已经push到我的github上了，都在readme中注明了出处。</code></p>
-<blockquote>
-<p><a href="https://github.com/swhaleDCC/AndroidMalware-ngram-RF.git" target="_blank" rel="noopener">AndroidMalware-ngram-RF</a><br>这个代码在原有基础上实现了用机器学习算法实现恶意代码和良性代码的分类。</p>
-</blockquote>
-<p>学习资料：<br><a href="https://mp.weixin.qq.com/s?__biz=MzI4NjEyMDk0MA==&mid=2649846140&idx=1&sn=a248dbec47578c37f276fe461aa82b8f&chksm=f3e41fffc49396e9020490703eb4f7270e4dd6063575b65bedecedbe69c31e0a70e4a96f4cec&scene=0&key=63570224b333d6fd7954fa9343865bc0b865bbe08a0acb3c" target="_blank" rel="noopener">Android Dalvik 指令集</a><br><a href="https://juejin.im/post/59dd829f6fb9a0450d100dce" target="_blank" rel="noopener">smali 文件格式(apktool)</a></p>
 
       
     </div>
@@ -708,8 +672,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/11/15/百度测开实习面试/" rel="prev" title="「面试」百度测开实习">
-                「面试」百度测开实习 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/11/15/百度测开实习面试/" rel="prev" title="「面试」大四百度测试开发实习">
+                「面试」大四百度测试开发实习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -787,7 +751,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">31</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -828,7 +792,9 @@
         
           
         
-        <span class="site-state-item-count">12</span>
+          
+        
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -907,7 +873,9 @@
         
           
         
-        <span class="site-state-item-count">31</span>
+          
+        
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -1022,7 +990,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java、class、dex、smali、jar、apk关系"><span class="nav-text">java、class、dex、smali、jar、apk关系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#N-gram"><span class="nav-text">N-gram</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用机器学习检测Android恶意代码-–-runner"><span class="nav-text">用机器学习检测Android恶意代码 – runner</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基于机器学习的安卓恶意应用检测方法研究"><span class="nav-text">基于机器学习的安卓恶意应用检测方法研究</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github项目"><span class="nav-text">github项目</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java、class、dex、smali、jar、apk关系"><span class="nav-text">java、class、dex、smali、jar、apk关系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#N-gram"><span class="nav-text">N-gram</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用机器学习检测Android恶意代码-–-runner"><span class="nav-text">用机器学习检测Android恶意代码 – runner</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基于机器学习的安卓恶意应用检测方法研究"><span class="nav-text">基于机器学习的安卓恶意应用检测方法研究</span></a></li></ol></div>
             
 
           </div>
@@ -1070,7 +1038,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.1k字</span>
+  <span class="post-count">博客全站共32.8k字</span>
 </div>
         
 <div class="busuanzi-count">
