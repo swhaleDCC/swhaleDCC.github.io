@@ -1,4 +1,4 @@
-title: ubuntu配置
+title: ubuntu双系统配置记录
 author: Dccun
 tags:
   - ubuntu
@@ -8,7 +8,7 @@ date: 2019-09-30 15:15:00
 ---
 ![upload successful](/images/pasted-130.png) 
 
-> 今天装了ubuntu18.04,记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。
+> 今天装了Windows+ubuntu18.04双系统，记录一下安装完ubuntu之后做的事情，和使用ubuntu的过程中遇到的问题、解决方法、小技巧。
 
 <!--more-->
 

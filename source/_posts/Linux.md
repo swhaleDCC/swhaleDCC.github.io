@@ -1,4 +1,4 @@
-title: Linux
+title: Linux命令入门学习笔记
 author: Dccun
 tags:
   - linux

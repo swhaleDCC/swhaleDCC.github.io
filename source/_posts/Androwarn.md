@@ -1,11 +1,9 @@
-title: Apktool等工具的使用
+title: apk反编译工具的使用
 author: Dccun
 tags:
   - android-tool
-  - ''
 categories:
-  - 毕设
-  - ''
+  - Android恶意代码检测
 date: 2019-10-14 15:56:00
 ---
 ![upload successful](/images/pasted-4.png)

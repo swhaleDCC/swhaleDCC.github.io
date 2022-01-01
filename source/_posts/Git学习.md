@@ -1,4 +1,4 @@
-title: Git
+title: Git入门学习笔记
 tags:
   - Git
 categories:
@@ -15,7 +15,6 @@ date: 2019-05-29 09:08:00
 
 <!--more-->
 
-很久之前在CSDN写的一篇 [git入门博客](https://blog.csdn.net/qq_40631927/article/details/89412674)
 
 # Git：分布式版本控制系统
 

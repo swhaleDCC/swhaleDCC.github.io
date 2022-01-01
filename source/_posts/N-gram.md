@@ -3,7 +3,7 @@ author: Dccun
 tags:
   - N-gram Opcode
 categories:
-  - 毕设
+  - Android恶意代码检测
 date: 2019-11-10 20:18:00
 ---
 >读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。
@@ -17,11 +17,12 @@ date: 2019-11-10 20:18:00
 - [kaggle malware-classification](https://www.kaggle.com/c/malware-classification/)
 - [kaggle_Microsoft_Malware github](https://github.com/daxiongshu/kaggle_Microsoft_Malware)
 
-***
+
 
 # java、class、dex、smali、jar、apk关系
 
 ![upload successful](/images/pasted-73.png)
+
 
 # N-gram
 `n-gram`是自然语言处理领域的概念，早期的语音识别技术和统计语言模型与它密不可分。n-gram基于一个简单的假设，即认为`一个词出现的概率仅与它之前的n-1个词有关`，这个概率可从大量语料中统计得到。例如“吃”的后面出现“苹果”或“披萨”的概率就会比“公路”的概率大(正常的语料中基本不会出现“吃公路”这种组合)，可以看出n-gram在一定程度上包含了部分语言特征。
@@ -30,7 +31,7 @@ date: 2019-11-10 20:18:00
 
 ![upload successful](/images/pasted-54.png)
 
-***
+
 
 # 用机器学习检测Android恶意代码 – runner
 1. 安卓恶意代码检测方法
@@ -66,7 +67,7 @@ DVM拥有专属的DEX可执行文件格式和指令集代码。smali和baksmali 
 测试恶意代码检测模型
 ![upload successful](/images/pasted-25.png)
 
-***
+
 
 # 基于机器学习的安卓恶意应用检测方法研究
 >N-gram Opcode特征实际上是dalvik Opcode特征结合自然语言处理中的N-gram方法而产生的特征集合。
@@ -82,74 +83,3 @@ N-gram Opcode：
 
 ![upload successful](/images/pasted-53.png)
 
-***
-
-# github项目
-恶意代码检测过程通常可以分为三个步骤：
-- 特征提取与选择
-- 选取适当的分类模型
-- 获取分类结果
-其中关键技术就是恶意代码特征提取，特征的质量直接影响恶意代码的检测效果，目前提出的基于机器学习的恶意软件分类方法在恶意软件特征提取方法上存在较大差异。
-
->[malware_classification_system](https://github.com/BiancaGuo/malware_classification_system)
-这个项目没有readme，不知道怎么跑，里面还有html、css代码，还用到了flask_bootstrap包，看起来更像一个网站。
-
->[MalwareClassification](https://github.com/2015-10-10/MalwareClassification)（这个代码看上去不错，跑一下试试）
-gramfeature.csv文件存储特征，分为训练数据和测试数据 
-VirusShare.csv和yingyongbao.csv存储数据id和class 
-tpr_fpr.py文件为模型检测程序 
-.txt文件为ROC曲线实验数据 
-plot.py为ROC曲线画图程序
-其中，良性样本选自yingyongbao（yingyongbao.csv：class为０），恶性样本选自virusshare（VirusShare.csv：class为１）。还用到了TF-IDF（term frequency–inverse document frequency），一种用于信息检索与数据挖掘的常用加权技术。TF意思是词频(Term Frequency)，IDF意思是逆文本频率指数(Inverse Document Frequency)。
-
->[MalwareAnalyze](https://github.com/VoldyRCX/MalwareAnalyze)
-需要Linux环境,需要安装IDA PRO反汇编软件,需要viper环境 https://github.com/viper-framework/viper.
-config.py　环境配置文件
-pe_select.py　提取样本中的PE文件
-idabatch.pu　ida反汇编批处理
-feature.py　特征处理
-sequence3.py　提取特征序列
-vector_batch.py && vector_batch2.py　向量化批处理
-vectoring.py　向量化
-train.py　训练集 用于viper平台集成功能
-test.py　测试集 用于viper平台集成功能
-ml.py　训练模型 用于viper平台集成功能
-
->[ToyMalwareClassification](https://github.com/bindog/ToyMalwareClassification)
-Kaggle微软恶意代码分类
-比赛说明和数据下载 https://www.kaggle.com/c/malware-classification/
-代码说明
-randomsubset.py 抽取训练子集
-asmimage.py ASM文件图像纹理特征
-opcode_n-gram.py Opcode n-gram特征
-firstrandomforest.py 基于ASM文件图像纹理特征的随机森林
-secondrandomforest.py 基于Opcode n-gram特征特征的随机森林
-combine.py 将两种类型的特征结合
-运行说明
-将完整的训练数据集解压，修改randomsubset.py中的路径并运行
-修改asmimage.py和opcode_n-gram.py中的路径，并运行run.sh，耐心等待即可看到结果
-
->[Software-system-security](https://github.com/UP1998/Software-system-security)
-[md](https://github.com/UP1998/Software-system-security/blob/master/%E5%A4%A7%E4%BD%9C%E4%B8%9A/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A.md)
-用于提交软件与系统安全实验和最终大作业
-通过修改程序可执行文件的方式（不是修改源代码），使得程序运行后显示的内容不为hello world，变成 hello cuc！
-上一题的程序中，修改的显示内容变为一个很长的字符串（至少2kb长）。并且保证程序正常运行不崩溃。
-在notepad（32位64位均可）中，输入一段文字。然后使用调试器，在内存中修改这段文字。使得没有在界面操作notepad的修改文字的情况下。notepad中显示的文字变化。
-通过调试器监控计算器程序的运行，每当运行结果为666时，就改为999。
-通过API hook的方法，在每次notepad保存txt文件时，就将文件内容修改为： “you have been hacked!”
-通过API hook的方法，使得cmd的dir命令看不到任意目录下的hacker.exe
-
->[software_security](https://github.com/shielding/software_security)
-
->[Android](https://github.com/flame0409/Android)
-基于opcode的N-gram安卓恶意软件检测
-
-
-`下面是我已经运行成功的code，已经push到我的github上了，都在readme中注明了出处。`
-
->[AndroidMalware-ngram-RF](https://github.com/swhaleDCC/AndroidMalware-ngram-RF.git) 
-这个代码在原有基础上实现了用机器学习算法实现恶意代码和良性代码的分类。
-
-学习资料：
-[Android Dalvik 指令集](https://mp.weixin.qq.com/s?__biz=MzI4NjEyMDk0MA==&mid=2649846140&idx=1&sn=a248dbec47578c37f276fe461aa82b8f&chksm=f3e41fffc49396e9020490703eb4f7270e4dd6063575b65bedecedbe69c31e0a70e4a96f4cec&scene=0&key=63570224b333d6fd7954fa9343865bc0b865bbe08a0acb3c)
-[smali 文件格式(apktool)](https://juejin.im/post/59dd829f6fb9a0450d100dce)
