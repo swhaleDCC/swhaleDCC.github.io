@@ -118,3 +118,6 @@ rm -rf ~/.condarc ~/.conda ~/.continuum
 3. 终端输入 sudo vi /etc/hosts
 4. 添加 151.101.xx.133 raw.githubusercontent.com
 5. 保存，退出 :wq
+
+# 在浏览器运行命令行
+https://mp.weixin.qq.com/s/fOTFQRetykkcpoWCW6A8xA
