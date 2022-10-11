@@ -114,18 +114,18 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="友链：  https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
+  <meta name="description" content="https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
 <meta name="keywords" content="mocha">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试框架 Mocha">
 <meta property="og:url" content="https://swhaledcc.github.io/2020/05/15/mocha/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
-<meta property="og:description" content="友链：  https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
+<meta property="og:description" content="https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-10-11T11:52:32.719Z">
+<meta property="og:updated_time" content="2022-10-11T12:33:22.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试框架 Mocha">
-<meta name="twitter:description" content="友链：  https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
+<meta name="twitter:description" content="https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880 http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html">
 
 
 
@@ -495,13 +495,10 @@
       
 
       
-        <blockquote>
-<p>友链：</p>
-<ul>
+        <ul>
 <li><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880</a></li>
 <li><a href="http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html</a></li>
 </ul>
-</blockquote>
 <a id="more"></a>
 
 <p>mocha[ˈmɒkə]诞生于2011年，是JavaScript的一种单元测试框架，既可以在浏览器环境下运行，也可以在Node.js环境下运行。</p>
@@ -510,22 +507,8 @@
 <li>既可以测试简单的JavaScript函数，又可以测试异步代码，因为异步是JavaScript的特性之一；</li>
 <li>可以自动运行所有测试，也可以只运行特定的测试；</li>
 <li>可以支持before、after、beforeEach和afterEach来编写初始化代码。</li>
+<li>使用Node.js提供的assert模块进行断言</li>
 </ol>
-<p>使用Node.js提供的assert模块进行断言</p>
-<hr>
-<p>自动化测试知识点补充：</p>
-<blockquote>
-<p>友链：</p>
-<ul>
-<li><a href="https://blog.csdn.net/wangmiaoyan/article/details/79026647" target="_blank" rel="noopener">https://blog.csdn.net/wangmiaoyan/article/details/79026647</a></li>
-<li><a href="https://www.ibm.com/developerworks/cn/web/1404_changwz_jasmine/" target="_blank" rel="noopener">https://www.ibm.com/developerworks/cn/web/1404_changwz_jasmine/</a></li>
-<li><a href="https://blog.csdn.net/wangmiaoyan/article/details/79082985" target="_blank" rel="noopener">https://blog.csdn.net/wangmiaoyan/article/details/79082985</a></li>
-<li><a href="https://juejin.im/post/5a6ad46ef265da3e513352c8" target="_blank" rel="noopener">JavaScript异步机制详解</a></li>
-<li><a href="https://www.cnblogs.com/datiangou/p/9759607.html" target="_blank" rel="noopener">理解 JavaScript 的 async/await</a></li>
-</ul>
-</blockquote>
-<!--more-->
-
 <p><code>describe</code>是Jasmine的全局函数，用于创建一个测试套件，可以理解为一组测试用例的集合。<br>describe函数接受两个参数（一个字符串和一个回调函数）。字符串是这个测试套件的名字或标题，通常描述被测试内容，用之前的比喻来说，describe就是一个故事，字符串就是这个故事的标题。回调函数是实现测试套件的代码块（称为describe块）。</p>
 <p><code>it</code>也是Jasmine的全局函数，用来在describe块中创建一个测试用例（spec），和describe一样，it接受两个参数（一个字符串一个回调函数），字符串参数是测试用例的名字或标题，回调函数是实现测试用例的代码块（称为it块）。</p>
 <p>describe和it函数的字符串参数是很重要的。如果描述得当的话，你的测试可以将一个完整的测试场景以自然语言的形式表达出来，形成文档。describe和it都属于JavaScript函数，所以JavaScript的作用域规则也适用于此。<br>用java中学过的全局变量与局部变量的概念来说，我们可以把describe类别为一个class，把it类比于里面的方法，在describe中声明的变量即全局变量，在它里面的所以的it中都可以使用。而it中声明的变量为局部变量，只在此it内部有效。</p>
@@ -950,7 +933,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共21.1k字</span>
+  <span class="post-count">博客全站共21k字</span>
 </div>
         
 <div class="busuanzi-count">
