@@ -114,19 +114,17 @@
 </script>
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="keywords" content="大四实习面试">
+  <meta name="description" content="== 和 equals() equals() 和 hashCode()">
 <meta property="og:type" content="article">
-<meta property="og:title" content="「日常实习」大四百度测试开发实习">
-<meta property="og:url" content="https://swhaledcc.github.io/2019/11/15/百度测开实习面试/index.html">
+<meta property="og:title" content="Java基础 | == 和 equals 和 hashCode">
+<meta property="og:url" content="https://swhaledcc.github.io/2022/10/11/Java基础-和-equals-和-hashCode/index.html">
 <meta property="og:site_name" content="Dccun&#39;s Blog">
+<meta property="og:description" content="== 和 equals() equals() 和 hashCode()">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-71.png">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-66.png">
-<meta property="og:image" content="https://swhaledcc.github.io/images/pasted-67.png">
-<meta property="og:updated_time" content="2022-10-11T11:53:01.667Z">
+<meta property="og:updated_time" content="2022-10-11T12:09:10.266Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="「日常实习」大四百度测试开发实习">
-<meta name="twitter:image" content="https://swhaledcc.github.io/images/pasted-71.png">
+<meta name="twitter:title" content="Java基础 | == 和 equals 和 hashCode">
+<meta name="twitter:description" content="== 和 equals() equals() 和 hashCode()">
 
 
 
@@ -136,7 +134,7 @@
 
   
   
-  <link rel="canonical" href="https://swhaledcc.github.io/2019/11/15/百度测开实习面试/">
+  <link rel="canonical" href="https://swhaledcc.github.io/2022/10/11/Java基础-和-equals-和-hashCode/">
 
 
 
@@ -157,7 +155,7 @@
 </script>
 
   
-  <title>「日常实习」大四百度测试开发实习 | Dccun's Blog</title>
+  <title>Java基础 | == 和 equals 和 hashCode | Dccun's Blog</title>
   
 
 
@@ -393,7 +391,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2019/11/15/百度测开实习面试/">
+    <link itemprop="mainEntityOfPage" href="https://swhaledcc.github.io/2022/10/11/Java基础-和-equals-和-hashCode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dccun">
@@ -410,7 +408,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">「日常实习」大四百度测试开发实习
+          <h1 class="post-title" itemprop="name headline">Java基础 | == 和 equals 和 hashCode
 
               
             
@@ -438,7 +436,7 @@
                 
               
 
-              <time title="创建时间：2019-11-15 14:47:00" itemprop="dateCreated datePublished" datetime="2019-11-15T14:47:00+08:00">2019-11-15</time>
+              <time title="创建时间：2022-10-11 20:04:00" itemprop="dateCreated datePublished" datetime="2022-10-11T20:04:00+08:00">2022-10-11</time>
             </span>
           
 
@@ -453,7 +451,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔试面试/" itemprop="url" rel="index"><span itemprop="name">笔试面试</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java基础/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a></span>
 
                 
                 
@@ -496,79 +494,71 @@
       
 
       
-        <p><img src="/images/pasted-71.png" alt="upload successful"></p>
+        <ul>
+<li>== 和 equals()</li>
+<li>equals() 和 hashCode()</li>
+</ul>
 <a id="more"></a>
 
+<h1 id="和-equals"><a href="#和-equals" class="headerlink" title="== 和 equals()"></a>== 和 equals()</h1><ol>
+<li>==<ul>
+<li>基本数据类型比较的是值，只要值一样就返回true，和类型无关。</li>
+<li>引用数据类型比较的是对象的内存地址，看两个引用是否指向同一个对象实体。</li>
+</ul>
+</li>
+<li>equals()<ul>
+<li>情况1：equals() 方法没有被重写，仍然默认使用==。</li>
+<li>情况2：equals() 方法被重写，则比较的是两个对象的内容。通常情况下，重写equals() 方法就是比较类中相应属性是否都相等。</li>
+</ul>
+</li>
+<li>重写 equals() 方法的步骤<ul>
+<li>判断形参 == this，是则返回true。</li>
+<li>判断形参 instanceof 当前对象的类名，是则把形参强转为当前对象的类的对象，依次判断相应属性是否相等。</li>
+<li>如果相应属性是基础数据类型，用 == 直接判断，否则继续使用 equals() 判断。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">double</span> j = <span class="number">10.0</span>;</span><br><span class="line">        <span class="keyword">char</span> c = <span class="number">10</span>;</span><br><span class="line">        System.out.println(i == j);  <span class="comment">// true</span></span><br><span class="line">        System.out.println(i == c);  <span class="comment">// true</span></span><br><span class="line">        System.out.println(j == c);  <span class="comment">// true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="一面主管面"><a href="#一面主管面" class="headerlink" title="一面主管面"></a>一面主管面</h2><p>一面大约20多分钟.</p>
-<p>1、自我介绍</p>
-<p>2、python</p>
-<p>（1）字典：<br><img src="/images/pasted-66.png" alt="upload successful"></p>
-<p>（2）字典怎么获取所有键：<br><img src="/images/pasted-67.png" alt="upload successful"></p>
-<p>（3）列表和元组的区别：</p>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="equals-和-hashCode"><a href="#equals-和-hashCode" class="headerlink" title="equals() 和 hashCode()"></a>equals() 和 hashCode()</h1><p>（一）equals() 和 hashCode() 本身都是 Object 类中的方法</p>
 <ul>
-<li>列表可以看成是动态数组,它们是可变的并且可以重新设定长度</li>
-<li>元组可以看成是静态的数组,它们是不可变的,并且长度也是一旦创建就无法改变</li>
-<li>从设计上来说:<ul>
-<li>列表是用来保存多个相互独立对象的数据集合</li>
-<li>元组设计的初衷就是为了描述一个不会改变的事物的多个属性</li>
-</ul>
+<li>Object.equals() 方法比较对象的内存地址是否相等。</li>
+<li>Object.hashCode() 是native方法，大部分情况返回对象的内存地址，具体还要取决于运行时库和JVM的具体实现。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">package java.lang;</span><br><span class="line">public class Object &#123;</span><br><span class="line">    public native int hashCode();</span><br><span class="line">    public boolean equals(Object obj) &#123;</span><br><span class="line">        return (this == obj);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<p>（4）list排序：<br>list.sort(cmp=None, key=None, reverse=False)</p>
-<p>（5）浅拷贝与深拷贝的区别：</p>
+<p>（二）自定义类中重写 equals() 和 hashCode() 方法</p>
 <ul>
-<li>Python3中，有6个标准的数据类型，他们又分为可变和不可变：<ul>
-<li>不可变数据（3个）：Number（数字）String（字符串）Tuple（元组）。</li>
-<li>可变数据（3个）：List（列表）Dictionary（字典）Set（集合）</li>
+<li>String 类已经重写了这两个方法。</li>
+<li>重写的 equals() 方法用来判断两个对象是否相等。</li>
+<li>重写的 hashCode() 方法的作用是获取哈希码，实际上是返回一个int整数，确定该对象在哈希表中的索引位置。</li>
+<li>如果两个对象的 equals() 返回true，它们的 hashCode() 值一定相同。</li>
+<li>如果两个对象 hashCode() 相等，它们的 equals() 并不一定返回true。hashCode() 只是用来缩小查找成本，会有哈希碰撞的情况。</li>
 </ul>
-</li>
-<li>浅拷贝<ul>
-<li>对于不可变类型Number String Tuple,浅复制仅仅是地址指向，不会开辟新空间。</li>
-<li>对于可变类型 List、Dictionary、Set，浅复制会开辟新的空间地址(仅仅是最顶层开辟了新的空间，里层的元素地址还是一样的)，进行浅拷贝</li>
-<li>浅拷贝后，改变原始对象中为可变类型的元素的值，会同时影响拷贝对象的；改变原始对象中为不可变类型的元素的值，只有原始类型受影响。 （操作拷贝对象对原始对象的也是同理）</li>
-</ul>
-</li>
-<li>深拷贝<ul>
-<li>浅拷贝除了顶层拷贝，还对子元素也进行了拷贝（本质上递归浅拷贝）</li>
-<li>经过深拷贝后，原始对象和拷贝对象所有的子元素地址都是独立的了</li>
-<li>可以用分片表达式进行深拷贝</li>
-<li>字典的copy方法可以拷贝一个字典</li>
-</ul>
-</li>
-</ul>
-<p>3、你学过数据结构吗？说说二分查找</p>
-<p>4、说一下面向对象的特征？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">package java.lang;</span><br><span class="line"></span><br><span class="line">public final class String implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence &#123;</span><br><span class="line">    public boolean equals(Object anObject) &#123;</span><br><span class="line">        if (this == anObject) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if (anObject instanceof String) &#123;</span><br><span class="line">            String anotherString = (String)anObject;</span><br><span class="line">            int n = value.length;</span><br><span class="line">            if (n == anotherString.value.length) &#123;</span><br><span class="line">                char v1[] = value;</span><br><span class="line">                char v2[] = anotherString.value;</span><br><span class="line">                int i = 0;</span><br><span class="line">                while (n-- != 0) &#123;</span><br><span class="line">                    if (v1[i] != v2[i])</span><br><span class="line">                        return false;</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public int hashCode() &#123;</span><br><span class="line">        int h = hash;</span><br><span class="line">        if (h == 0 &amp;&amp; value.length &gt; 0) &#123;</span><br><span class="line">            char val[] = value;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; value.length; i++) &#123;</span><br><span class="line">                h = 31 * h + val[i];</span><br><span class="line">            &#125;</span><br><span class="line">            hash = h;</span><br><span class="line">        &#125;</span><br><span class="line">        return h;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（三）只要重写了 equals()，必须重写 hashCode() 的场景和原因：</p>
 <ul>
-<li>封装：封装把一个对象的属性私有化，同时提供一些可以被外界访问的属性的方法，如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。</li>
-<li>继承：继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承我们能够非常方便地复用以前的代码。</li>
-<li>多态：所谓多态就是指程序中定义的引用变量所指向的具体类型和通过该引用变量发出的方法调用在编程时并不确定，而是在程序运行期间才确定，即一个引用变量到底会指向哪个类的实例对象，该引用变量发出的方法调用到底是哪个类中实现的方法，必须在由程序运行期间才能决定。</li>
+<li>Set存储的自定义对象必须重写这两个方法。</li>
+<li>如果自定义对象作为Map的key，必须重写这两个方法。</li>
+<li>如果自定义对象不重写 hashCode()，那就自动调用 Object 的 hashCode() 方法，大部分情况返回的是对象的内存地址，违反了“如果两个对象的 equals() 返回true，它们的 hashCode() 值一定相同”原则。</li>
 </ul>
-<p>5、了解微信小程序吗？</p>
-<p>6、了解测试吗？给你一个页面怎么进行测试？比如微信的登录界面。</p>
-<p>其他就是问了项目里面的一些东西，比如数据库是怎么设计的等等。</p>
-<h2 id="二面主管面"><a href="#二面主管面" class="headerlink" title="二面主管面"></a>二面主管面</h2><p>二面也是先自我介绍，接下来就是说到一个点面试官比较感兴趣，就一直深入提问。</p>
-<p>了解开发测试吗？</p>
-<p>了解小程序吗？</p>
-<p>除了微信小程序其他的呢，了解百度的小程序吗？</p>
-<p>说一下在做项目的过程中遇到的一个问题，怎么解决的，具体的说一下细节。<br>等等等。</p>
-<p>最后问：你有什么问题问我吗？</p>
-<h2 id="三面经理面"><a href="#三面经理面" class="headerlink" title="三面经理面"></a>三面经理面</h2><p>跟二面类似，先自我介绍，我是自己搭了这个博客，把链接附到简历上，整个面试三十多分钟面试官一直在问关于这个博客的问题。</p>
-<p>博客搭好后怎么测试的？</p>
-<p>说一下在做项目的过程中遇到的一个问题，怎么解决的，具体的说一下细节。</p>
-<p>你看过哪些关于技术方面的书？</p>
-<p>最后问：你有什么问题问我吗？</p>
-<p id="div-border-top-blue">
-<span style="color:#f63;">
-  <i>2020.8 更：</i>
-  </span>
-  <br>
-  把实习的经历做成了一个视频：
-  <br>
-  https://www.bilibili.com/video/BV1oa4y1L7aJ
-  <br>
-  欢迎三连哦！
-</p>
+<p>（四）重写 hashCode() 方法的原则</p>
+<ul>
+<li>在程序运行时，同一个对象多次调用 hashCode() 应该返回相同的值。</li>
+<li>当两个对象的 equals() 方法返回true时，hashCode() 的返回值也应该相等。</li>
+<li>对象中用作 equals() 方法比较的属性，都应该用来计算 hashCode 值。比如下面的 hashCode() 方法中应该用到 name 和 address 两个属性。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class Animal &#123;</span><br><span class="line"></span><br><span class="line">    private String name;</span><br><span class="line">    private String address;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean equals(Object o) &#123;</span><br><span class="line">        if (this == o) return true;</span><br><span class="line">        if (o == null || getClass() != o.getClass()) return false;</span><br><span class="line">        Animal animal = (Animal) o;</span><br><span class="line">        return Objects.equals(name, animal.name) &amp;&amp; Objects.equals(address, animal.address);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int hashCode() &#123;</span><br><span class="line">        return Objects.hash(name, address);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（五）为什么调用IDE工具自动重写这俩方法时有31这个数字</p>
+<ul>
+<li>选择系数时要选择尽量大的系数，减少冲突</li>
+<li>31只占用5bits，相乘造成数据溢出的概率比较小</li>
+<li>31可以由 i*31==(i&lt;&lt;5)-1 来表示，现在很多虚拟机里面都有做相关优化，提高算法效率</li>
+<li>31是一个素数，如果用一个数字来乘以这个素数，最终出来的结果只能被素数本身和被乘数还有1来整除，减少冲突</li>
+</ul>
+
       
     </div>
 
@@ -627,15 +617,6 @@
 
     <footer class="post-footer">
       
-        
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/大四实习面试/" rel="tag"><i class="fa fa-tag"></i> 大四实习面试</a>
-          
-        </div>
-      
 
       
       
@@ -665,8 +646,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/05/个人博客更换成自己的域名/" rel="next" title="hexo个人博客更换成自己的域名 ">
-                <i class="fa fa-chevron-left"></i> hexo个人博客更换成自己的域名 
+              <a href="/2021/04/15/快慢指针之判断链表中是否有环/" rel="next" title="快慢指针-判断链表中是否有环">
+                <i class="fa fa-chevron-left"></i> 快慢指针-判断链表中是否有环
               </a>
             
           </div>
@@ -675,8 +656,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/12/22/Deep-Learning时代最好用的云GPU——Google-Colab/" rel="prev" title="Deep Learning时代最好用的云GPU——Google Colab">
-                Deep Learning时代最好用的云GPU——Google Colab <i class="fa fa-chevron-right"></i>
+              <a href="/2022/10/11/「暑期实习」2022-亚马逊-嘉实基金-阿里云/" rel="prev" title="「暑期实习」2022-亚马逊+嘉实基金+阿里云">
+                「暑期实习」2022-亚马逊+嘉实基金+阿里云 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -943,7 +924,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一面主管面"><span class="nav-text">一面主管面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二面主管面"><span class="nav-text">二面主管面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三面经理面"><span class="nav-text">三面经理面</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#和-equals"><span class="nav-text">== 和 equals()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#equals-和-hashCode"><span class="nav-text">equals() 和 hashCode()</span></a></li></ol></div>
             
 
           </div>
@@ -1191,7 +1172,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2019/11/15/百度测开实习面试/'
+    refer: '2022/10/11/Java基础-和-equals-和-hashCode/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];

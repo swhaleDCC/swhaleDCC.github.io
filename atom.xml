@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2022-10-11T11:51:48.996Z</updated>
+  <updated>2022-10-11T12:13:52.332Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -15,6 +15,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「秋招」2022年秋招寒冬</title>
+    <link href="https://swhaledcc.github.io/2022/10/11/%E3%80%8C%E7%A7%8B%E6%8B%9B%E3%80%8D2022%E5%B9%B4%E7%A7%8B%E6%8B%9B%E5%AF%92%E5%86%AC/"/>
+    <id>https://swhaledcc.github.io/2022/10/11/「秋招」2022年秋招寒冬/</id>
+    <published>2022-10-11T12:13:00.000Z</published>
+    <updated>2022-10-11T12:13:52.332Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;用友软件开发：&lt;a href=&quot;https://www.nowcoder.com/discuss/1051551&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔试面试" scheme="https://swhaledcc.github.io/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>「暑期实习」2022-亚马逊+嘉实基金+阿里云</title>
+    <link href="https://swhaledcc.github.io/2022/10/11/%E3%80%8C%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E3%80%8D2022-%E4%BA%9A%E9%A9%AC%E9%80%8A-%E5%98%89%E5%AE%9E%E5%9F%BA%E9%87%91-%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <id>https://swhaledcc.github.io/2022/10/11/「暑期实习」2022-亚马逊-嘉实基金-阿里云/</id>
+    <published>2022-10-11T12:11:00.000Z</published>
+    <updated>2022-10-11T12:12:41.573Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;亚马逊SDE：&lt;a href=&quot;https://www.nowcoder.com/discuss/854294&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔试面试" scheme="https://swhaledcc.github.io/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java基础 | == 和 equals 和 hashCode</title>
+    <link href="https://swhaledcc.github.io/2022/10/11/Java%E5%9F%BA%E7%A1%80-%E5%92%8C-equals-%E5%92%8C-hashCode/"/>
+    <id>https://swhaledcc.github.io/2022/10/11/Java基础-和-equals-和-hashCode/</id>
+    <published>2022-10-11T12:04:00.000Z</published>
+    <updated>2022-10-11T12:09:10.266Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;== 和 equals()&lt;/li&gt;
+&lt;li&gt;equals() 和 hashCode()&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Java基础" scheme="https://swhaledcc.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>快慢指针-判断链表中是否有环</title>
@@ -82,7 +153,7 @@
     <link href="https://swhaledcc.github.io/2021/02/15/%E6%94%AF%E4%BB%98%E5%AE%9D%E8%87%AA%E5%8A%A8%E6%94%B6%E8%83%BD%E9%87%8F/"/>
     <id>https://swhaledcc.github.io/2021/02/15/支付宝自动收能量/</id>
     <published>2021-02-15T02:32:00.000Z</published>
-    <updated>2022-10-11T11:52:21.172Z</updated>
+    <updated>2022-10-11T12:09:47.981Z</updated>
     
     <summary type="html">
     
@@ -92,6 +163,8 @@
 &lt;/blockquote&gt;
     
     </summary>
+    
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
