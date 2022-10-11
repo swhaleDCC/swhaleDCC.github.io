@@ -6,7 +6,6 @@ categories:
   - 技术
 date: 2020-05-15 09:12:00
 ---
->友链：
 - https://www.liaoxuefeng.com/wiki/1022910821149312/1101741181366880
 - http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html
 
@@ -18,21 +17,8 @@ mocha的特点主要有：
 1. 既可以测试简单的JavaScript函数，又可以测试异步代码，因为异步是JavaScript的特性之一；
 2. 可以自动运行所有测试，也可以只运行特定的测试；
 3. 可以支持before、after、beforeEach和afterEach来编写初始化代码。
+4. 使用Node.js提供的assert模块进行断言
 
-使用Node.js提供的assert模块进行断言
-
-***
-
-自动化测试知识点补充：
-
->友链：
-- https://blog.csdn.net/wangmiaoyan/article/details/79026647
-- https://www.ibm.com/developerworks/cn/web/1404_changwz_jasmine/
-- https://blog.csdn.net/wangmiaoyan/article/details/79082985
-- [JavaScript异步机制详解](https://juejin.im/post/5a6ad46ef265da3e513352c8)
-- [理解 JavaScript 的 async/await](https://www.cnblogs.com/datiangou/p/9759607.html)
-
-<!--more-->
 
 `describe`是Jasmine的全局函数，用于创建一个测试套件，可以理解为一组测试用例的集合。
 describe函数接受两个参数（一个字符串和一个回调函数）。字符串是这个测试套件的名字或标题，通常描述被测试内容，用之前的比喻来说，describe就是一个故事，字符串就是这个故事的标题。回调函数是实现测试套件的代码块（称为describe块）。
