@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://swhaledcc.github.io/"/>
-  <updated>2021-04-15T15:13:17.362Z</updated>
+  <updated>2022-10-11T11:51:48.996Z</updated>
   <id>https://swhaledcc.github.io/</id>
   
   <author>
@@ -17,17 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>快慢指针之判断链表中是否有环</title>
+    <title>快慢指针-判断链表中是否有环</title>
     <link href="https://swhaledcc.github.io/2021/04/15/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B9%8B%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E4%B8%AD%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF/"/>
     <id>https://swhaledcc.github.io/2021/04/15/快慢指针之判断链表中是否有环/</id>
     <published>2021-04-15T14:57:00.000Z</published>
-    <updated>2021-04-15T15:13:17.362Z</updated>
+    <updated>2022-10-11T11:51:48.996Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;力扣题目链接： &lt;a href=&quot;https://leetcode-cn.com/problems/linked-list-cycle/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;141. 环形链表&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;力扣： &lt;a href=&quot;https://leetcode-cn.com/problems/linked-list-cycle/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;141. 环形链表&lt;/a&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="算法" scheme="https://swhaledcc.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
   </entry>
@@ -37,7 +39,7 @@
     <link href="https://swhaledcc.github.io/2021/03/18/%E3%80%8C%E9%9D%A2%E8%AF%95%E3%80%8D%E5%BA%A6%E5%B0%8F%E6%BB%A1Java%E5%90%8E%E7%AB%AF%E5%AE%9E%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2021/03/18/「面试」度小满Java后端实习/</id>
     <published>2021-03-18T14:39:00.000Z</published>
-    <updated>2022-10-11T11:28:15.286Z</updated>
+    <updated>2022-10-11T11:52:07.392Z</updated>
     
     <summary type="html">
     
@@ -45,7 +47,7 @@
     
     </summary>
     
-      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+      <category term="笔试面试" scheme="https://swhaledcc.github.io/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"/>
     
     
       <category term="度小满" scheme="https://swhaledcc.github.io/tags/%E5%BA%A6%E5%B0%8F%E6%BB%A1/"/>
@@ -79,8 +81,8 @@
     <title>支付宝自动收能量</title>
     <link href="https://swhaledcc.github.io/2021/02/15/%E6%94%AF%E4%BB%98%E5%AE%9D%E8%87%AA%E5%8A%A8%E6%94%B6%E8%83%BD%E9%87%8F/"/>
     <id>https://swhaledcc.github.io/2021/02/15/支付宝自动收能量/</id>
-    <published>2021-02-15T02:32:55.000Z</published>
-    <updated>2021-02-22T15:42:32.124Z</updated>
+    <published>2021-02-15T02:32:00.000Z</published>
+    <updated>2022-10-11T11:52:21.172Z</updated>
     
     <summary type="html">
     
@@ -99,7 +101,7 @@
     <link href="https://swhaledcc.github.io/2020/05/15/mocha/"/>
     <id>https://swhaledcc.github.io/2020/05/15/mocha/</id>
     <published>2020-05-15T01:12:00.000Z</published>
-    <updated>2020-07-24T06:40:23.781Z</updated>
+    <updated>2022-10-11T11:52:32.719Z</updated>
     
     <summary type="html">
     
@@ -113,7 +115,7 @@
     
     </summary>
     
-      <category term="测试" scheme="https://swhaledcc.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="mocha" scheme="https://swhaledcc.github.io/tags/mocha/"/>
@@ -145,7 +147,7 @@
     <link href="https://swhaledcc.github.io/2019/12/22/Deep-Learning%E6%97%B6%E4%BB%A3%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BA%91GPU%E2%80%94%E2%80%94Google-Colab/"/>
     <id>https://swhaledcc.github.io/2019/12/22/Deep-Learning时代最好用的云GPU——Google-Colab/</id>
     <published>2019-12-22T05:47:00.000Z</published>
-    <updated>2020-07-24T06:40:23.779Z</updated>
+    <updated>2022-10-11T11:52:53.757Z</updated>
     
     <summary type="html">
     
@@ -153,7 +155,7 @@
     
     </summary>
     
-      <category term="colab" scheme="https://swhaledcc.github.io/categories/colab/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="colab" scheme="https://swhaledcc.github.io/tags/colab/"/>
@@ -165,7 +167,7 @@
     <link href="https://swhaledcc.github.io/2019/11/15/%E7%99%BE%E5%BA%A6%E6%B5%8B%E5%BC%80%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
     <id>https://swhaledcc.github.io/2019/11/15/百度测开实习面试/</id>
     <published>2019-11-15T06:47:00.000Z</published>
-    <updated>2022-10-11T11:36:08.889Z</updated>
+    <updated>2022-10-11T11:53:01.667Z</updated>
     
     <summary type="html">
     
@@ -173,32 +175,10 @@
     
     </summary>
     
-      <category term="面试" scheme="https://swhaledcc.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+      <category term="笔试面试" scheme="https://swhaledcc.github.io/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"/>
     
     
       <category term="大四实习面试" scheme="https://swhaledcc.github.io/tags/%E5%A4%A7%E5%9B%9B%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android恶意代码检测：N-gram Opcode</title>
-    <link href="https://swhaledcc.github.io/2019/11/10/N-gram/"/>
-    <id>https://swhaledcc.github.io/2019/11/10/N-gram/</id>
-    <published>2019-11-10T12:18:00.000Z</published>
-    <updated>2022-01-01T14:14:16.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;读硕士论文的时候发现很多检测Android恶意代码用到了N-gram，总结一下这方面的学习资料。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Android恶意代码检测" scheme="https://swhaledcc.github.io/categories/Android%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E6%A3%80%E6%B5%8B/"/>
-    
-    
-      <category term="N-gram Opcode" scheme="https://swhaledcc.github.io/tags/N-gram-Opcode/"/>
     
   </entry>
   
@@ -207,18 +187,18 @@
     <link href="https://swhaledcc.github.io/2019/11/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D/"/>
     <id>https://swhaledcc.github.io/2019/11/05/个人博客更换成自己的域名/</id>
     <published>2019-11-05T12:43:00.000Z</published>
-    <updated>2022-01-01T14:00:27.724Z</updated>
+    <updated>2022-10-11T11:53:59.568Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/images/pasted-129.png&quot; alt=&quot;upload successful&quot;&gt; &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在腾讯云花了五毛钱买了一个一年的域名，决定把我的博客更换成自己的域名！&lt;br&gt;2020.11.2更：去年买的域名到期啦，又在腾讯云买了一个 新地址是 &lt;a href=&quot;http://www.dccun.work/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.dccun.work/&lt;/a&gt;  &lt;del&gt;~&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;在腾讯云花了五毛钱买了一个一年的域名，决定把我的博客更换成自己的域名！&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="hexo" scheme="https://swhaledcc.github.io/categories/hexo/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="hexo" scheme="https://swhaledcc.github.io/tags/hexo/"/>
@@ -230,7 +210,7 @@
     <link href="https://swhaledcc.github.io/2019/10/30/%E4%BD%BF%E7%94%A8hexo-GitHub%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/"/>
     <id>https://swhaledcc.github.io/2019/10/30/使用hexo-GitHub搭建的个人博客-文件备份/</id>
     <published>2019-10-30T09:43:00.000Z</published>
-    <updated>2022-01-01T14:00:37.680Z</updated>
+    <updated>2022-10-11T11:54:23.599Z</updated>
     
     <summary type="html">
     
@@ -240,7 +220,7 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://swhaledcc.github.io/categories/hexo/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="hexo" scheme="https://swhaledcc.github.io/tags/hexo/"/>
@@ -252,7 +232,7 @@
     <link href="https://swhaledcc.github.io/2019/10/29/%E4%BD%BF%E7%94%A8WinSCP%E7%BB%99%E9%98%BF%E9%87%8C%E4%BA%91Ubuntu%E7%B3%BB%E7%BB%9F%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/"/>
     <id>https://swhaledcc.github.io/2019/10/29/使用WinSCP给阿里云Ubuntu系统传输文件/</id>
     <published>2019-10-29T12:51:00.000Z</published>
-    <updated>2020-07-24T06:40:23.785Z</updated>
+    <updated>2022-10-11T11:54:33.860Z</updated>
     
     <summary type="html">
     
@@ -260,70 +240,10 @@
     
     </summary>
     
-      <category term="linux" scheme="https://swhaledcc.github.io/categories/linux/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="阿里云" scheme="https://swhaledcc.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tensorflow &amp; keras</title>
-    <link href="https://swhaledcc.github.io/2019/10/21/tensorflow-2-0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://swhaledcc.github.io/2019/10/21/tensorflow-2-0-学习笔记/</id>
-    <published>2019-10-21T02:38:00.000Z</published>
-    <updated>2020-09-10T01:05:23.489Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-8.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;友链：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tensorflow/tensorflow&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/tensorflow/tensorflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tensorflow/tensorboard&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/tensorflow/tensorboard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tensorflow/models&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/tensorflow/models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tensorflow.google.cn/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tensorflow中文文档&lt;/code&gt;：&lt;a href=&quot;https://tf.wiki/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tf.wiki/&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/dragen1860/TensorFlow-2.x-Tutorials&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/dragen1860/TensorFlow-2.x-Tutorials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;keras中文文档&lt;/code&gt;：&lt;a href=&quot;https://github.com/keras-team/keras-docs-zh&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/keras-team/keras-docs-zh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/keras-team/keras&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/keras-team/keras&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/103049619&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;keras模型入门教程：40题刷爆Keras，人生苦短我选Keras&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/lyhue1991/eat_tensorflow2_in_30_days#30%E5%A4%A9%E5%90%83%E6%8E%89%E9%82%A3%E5%8F%AA-tensorflow2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档太辣鸡？TensorFlow 2.0开源工具书，30天「无痛」上手&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="tensorflow" scheme="https://swhaledcc.github.io/tags/tensorflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kaggle</title>
-    <link href="https://swhaledcc.github.io/2019/10/19/kaggle/"/>
-    <id>https://swhaledcc.github.io/2019/10/19/kaggle/</id>
-    <published>2019-10-19T11:31:00.000Z</published>
-    <updated>2022-10-11T11:44:59.377Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/pasted-7.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;kaggle官网地址&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/33087591&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;从零开始，教初学者如何征战Kaggle竞赛-机器之心&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4NTg4NjgxNw==&amp;mid=2656591524&amp;idx=2&amp;sn=fad7a161ed1d6e7f3a55258b359ae900&amp;chksm=847decaab30a65bcb33cf3f516a19ded0c42c3af36e41aec9cbd144d9d2b377475d3e1eb783a&amp;scene=21#wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kaggle入门，看这一篇就够了&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="深度学习" scheme="https://swhaledcc.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="kaggle" scheme="https://swhaledcc.github.io/tags/kaggle/"/>
     
   </entry>
   
@@ -352,7 +272,7 @@
     <link href="https://swhaledcc.github.io/2019/09/30/ubantu%E5%85%A5%E9%97%A8/"/>
     <id>https://swhaledcc.github.io/2019/09/30/ubantu入门/</id>
     <published>2019-09-30T07:15:00.000Z</published>
-    <updated>2022-01-01T13:58:57.917Z</updated>
+    <updated>2022-10-11T11:55:09.753Z</updated>
     
     <summary type="html">
     
@@ -363,7 +283,7 @@
     
     </summary>
     
-      <category term="linux" scheme="https://swhaledcc.github.io/categories/linux/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="ubuntu" scheme="https://swhaledcc.github.io/tags/ubuntu/"/>
@@ -397,7 +317,7 @@
     <link href="https://swhaledcc.github.io/2019/05/30/Linux/"/>
     <id>https://swhaledcc.github.io/2019/05/30/Linux/</id>
     <published>2019-05-30T05:55:00.000Z</published>
-    <updated>2022-01-01T13:56:48.355Z</updated>
+    <updated>2022-10-11T11:55:18.552Z</updated>
     
     <summary type="html">
     
@@ -411,7 +331,7 @@
     
     </summary>
     
-      <category term="linux" scheme="https://swhaledcc.github.io/categories/linux/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="linux" scheme="https://swhaledcc.github.io/tags/linux/"/>
@@ -423,7 +343,7 @@
     <link href="https://swhaledcc.github.io/2019/05/29/Git%E5%AD%A6%E4%B9%A0/"/>
     <id>https://swhaledcc.github.io/2019/05/29/Git学习/</id>
     <published>2019-05-29T01:08:00.000Z</published>
-    <updated>2022-10-11T11:34:45.068Z</updated>
+    <updated>2022-10-11T11:55:25.973Z</updated>
     
     <summary type="html">
     
@@ -437,7 +357,7 @@
     
     </summary>
     
-      <category term="Git" scheme="https://swhaledcc.github.io/categories/Git/"/>
+      <category term="技术" scheme="https://swhaledcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="Git" scheme="https://swhaledcc.github.io/tags/Git/"/>
