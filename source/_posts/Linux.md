@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - linux
 categories:
-  - linux
+  - 技术
+  - ''
 date: 2019-05-30 13:55:00
 ---
 >友链:

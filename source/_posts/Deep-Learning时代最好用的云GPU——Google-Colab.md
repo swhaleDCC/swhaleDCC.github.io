@@ -3,7 +3,7 @@ author: Dccun
 tags:
   - colab
 categories:
-  - colab
+  - 技术
 date: 2019-12-22 13:47:00
 ---
 ![upload successful](/images/pasted-125.png) 

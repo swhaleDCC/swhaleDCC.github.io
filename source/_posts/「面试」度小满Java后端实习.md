@@ -3,7 +3,7 @@ author: Dccun
 tags:
   - 度小满
 categories:
-  - 面试
+  - 笔试面试
 date: 2021-03-18 22:39:00
 ---
 ![upload successful](/images/pasted-178.png)

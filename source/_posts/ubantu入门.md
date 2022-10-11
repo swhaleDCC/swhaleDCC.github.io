@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - ubuntu
 categories:
-  - linux
+  - 技术
+  - ''
 date: 2019-09-30 15:15:00
 ---
 ![upload successful](/images/pasted-130.png) 

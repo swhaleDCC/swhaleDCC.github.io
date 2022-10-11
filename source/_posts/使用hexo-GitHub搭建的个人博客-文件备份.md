@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - hexo
 categories:
-  - hexo
+  - 技术
+  - ''
 date: 2019-10-30 17:43:00
 ---
 >担心博客.md文件放在本地容易丢失，就新建了一个分支来备份。

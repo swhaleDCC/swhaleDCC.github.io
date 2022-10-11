@@ -3,7 +3,7 @@ author: Dccun
 tags:
   - mocha
 categories:
-  - 测试
+  - 技术
 date: 2020-05-15 09:12:00
 ---
 >友链：

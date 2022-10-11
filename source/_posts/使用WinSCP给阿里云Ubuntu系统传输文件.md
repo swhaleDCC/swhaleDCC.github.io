@@ -3,7 +3,8 @@ author: Dccun
 tags:
   - 阿里云
 categories:
-  - linux
+  - 技术
+  - ''
 date: 2019-10-29 20:51:00
 ---
 ![upload successful](/images/pasted-26.png)

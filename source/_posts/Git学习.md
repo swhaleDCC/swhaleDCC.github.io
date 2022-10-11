@@ -2,7 +2,8 @@ title: Git入门学习笔记
 tags:
   - Git
 categories:
-  - Git
+  - 技术
+  - ''
 date: 2019-05-29 09:08:00
 ---
 ![upload successful](/images/pasted-131.png) 
