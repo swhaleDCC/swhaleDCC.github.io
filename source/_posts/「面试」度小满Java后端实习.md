@@ -1,4 +1,4 @@
-title: 「面试」度小满Java后端实习
+title: 「日常实习」度小满Java后端实习
 author: Dccun
 tags:
   - 度小满
